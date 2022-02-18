@@ -23,6 +23,8 @@ CMake is available to use on Windows, Linux, Macintosh, and Cygwin. It provides 
 ### Windows Requirements
 If you are building on Windows, you will need to install the MinGW64 suite of tools to provide the compilers and make command, A form of Windows Perl, and the CMake interface itself. The following links can provide the packages you need:
 
+singularity pull tensorflow.sif docker://tensorflow/tensorflow:latest
+
 
 | Package                |   Link                          |
 |------------------------|---------------------------------|

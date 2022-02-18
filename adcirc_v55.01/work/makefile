@@ -15,7 +15,7 @@ SRCDIR?=$(shell dirname $(PWD))
 
 ########################################################################
 #  Get Canonical Machine NAME from config.guess
-#
+
 $(warning (INFO) Guessing the type of platform ADCIRC will run on...)
 
 NAME     := $(shell ./config.guess)
