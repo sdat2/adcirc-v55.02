@@ -1,0 +1,144 @@
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c
+
+The output was:
+No such file or directory
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: /usr/bin/gfortran 
+Build flags: -mtune=native
+Id flags: 
+
+The output was:
+1
+f951: error: unknown value 'native' for -mtune
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: /usr/bin/gfortran 
+Build flags: -mtune=native
+Id flags: -c
+
+The output was:
+1
+f951: error: unknown value 'native' for -mtune
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: /usr/bin/gfortran 
+Build flags: -mtune=native
+Id flags: -fpp
+
+The output was:
+1
+gfortran: error: unrecognized command line option '-fpp'
+
+
+Checking whether the Fortran compiler is Compaq using "-what" did not match "Compaq Visual Fortran":
+gfortran: error: unrecognized command line option '-what'
+gfortran: fatal error: no input files
+compilation terminated.
+Checking whether the Fortran compiler is NAG using "-V" did not match "NAG Fortran Compiler":
+gfortran: error: unrecognized command line option '-V'
+gfortran: fatal error: no input files
+compilation terminated.
+Determining if the Fortran compiler works failed with the following output:
+Change Dir: /home/adcirc-swan/adcirc_v55.01/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1970013968/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1970013968.dir/build.make CMakeFiles/cmTryCompileExec1970013968.dir/build
+gmake[1]: Entering directory `/home/adcirc-swan/adcirc_v55.01/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/adcirc-swan/adcirc_v55.01/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building Fortran object CMakeFiles/cmTryCompileExec1970013968.dir/testFortranCompiler.f.o
+/usr/bin/gfortran   -mtune=native    -c /home/adcirc-swan/adcirc_v55.01/build/CMakeFiles/CMakeTmp/testFortranCompiler.f -o CMakeFiles/cmTryCompileExec1970013968.dir/testFortranCompiler.f.o
+f951: error: unknown value 'native' for -mtune
+gmake[1]: Leaving directory `/home/adcirc-swan/adcirc_v55.01/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec1970013968.dir/testFortranCompiler.f.o] Error 1
+gmake: *** [cmTryCompileExec1970013968/fast] Error 2
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c
+
+The output was:
+No such file or directory
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: /usr/bin/gfortran 
+Build flags: -mtune=native
+Id flags: 
+
+The output was:
+1
+f951: error: unknown value 'native' for -mtune
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: /usr/bin/gfortran 
+Build flags: -mtune=native
+Id flags: -c
+
+The output was:
+1
+f951: error: unknown value 'native' for -mtune
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: /usr/bin/gfortran 
+Build flags: -mtune=native
+Id flags: -fpp
+
+The output was:
+1
+gfortran: error: unrecognized command line option '-fpp'
+
+
+Checking whether the Fortran compiler is Compaq using "-what" did not match "Compaq Visual Fortran":
+gfortran: error: unrecognized command line option '-what'
+gfortran: fatal error: no input files
+compilation terminated.
+Checking whether the Fortran compiler is NAG using "-V" did not match "NAG Fortran Compiler":
+gfortran: error: unrecognized command line option '-V'
+gfortran: fatal error: no input files
+compilation terminated.
+Determining if the Fortran compiler works failed with the following output:
+Change Dir: /home/adcirc-swan/adcirc_v55.01/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec687817234/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec687817234.dir/build.make CMakeFiles/cmTryCompileExec687817234.dir/build
+gmake[1]: Entering directory `/home/adcirc-swan/adcirc_v55.01/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/adcirc-swan/adcirc_v55.01/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building Fortran object CMakeFiles/cmTryCompileExec687817234.dir/testFortranCompiler.f.o
+/usr/bin/gfortran   -mtune=native    -c /home/adcirc-swan/adcirc_v55.01/build/CMakeFiles/CMakeTmp/testFortranCompiler.f -o CMakeFiles/cmTryCompileExec687817234.dir/testFortranCompiler.f.o
+f951: error: unknown value 'native' for -mtune
+gmake[1]: Leaving directory `/home/adcirc-swan/adcirc_v55.01/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec687817234.dir/testFortranCompiler.f.o] Error 1
+gmake: *** [cmTryCompileExec687817234/fast] Error 2
+
+

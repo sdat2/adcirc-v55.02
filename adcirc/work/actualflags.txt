@@ -1,0 +1,476 @@
+----------------------------------
+Sat Feb 19 16:43:24 UTC 2022
+building adcirc
+PPFC := f90
+FC := f90
+PFC := mpif90
+FFLAGS1 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS2 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS3 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /home/adcirc-swan/adcirc_v55.01/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)
+----------------------------------
+----------------------------------
+Sat Feb 19 16:50:36 UTC 2022
+building padcirc
+PPFC := f90
+FC := f90
+PFC := mpif90
+FFLAGS1 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS2 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS3 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /home/adcirc-swan/adcirc_v55.01/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)
+----------------------------------
+----------------------------------
+Sat Feb 19 16:50:44 UTC 2022
+building padcirc
+PPFC := f90
+FC := f90
+PFC := mpif90
+FFLAGS1 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS2 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS3 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /home/adcirc-swan/adcirc_v55.01/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)
+----------------------------------
+----------------------------------
+Sat Feb 19 16:50:47 UTC 2022
+building padcirc
+PPFC := f90
+FC := f90
+PFC := mpif90
+FFLAGS1 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS2 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS3 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /home/adcirc-swan/adcirc_v55.01/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)
+----------------------------------
+----------------------------------
+Sat Feb 19 16:50:48 UTC 2022
+building padcirc
+PPFC := f90
+FC := f90
+PFC := mpif90
+FFLAGS1 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS2 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS3 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /home/adcirc-swan/adcirc_v55.01/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)
+----------------------------------
+----------------------------------
+Sat Feb 19 16:50:49 UTC 2022
+building padcirc
+PPFC := f90
+FC := f90
+PFC := mpif90
+FFLAGS1 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS2 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS3 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /home/adcirc-swan/adcirc_v55.01/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)
+----------------------------------
+----------------------------------
+Sat Feb 19 16:50:50 UTC 2022
+building padcirc
+PPFC := f90
+FC := f90
+PFC := mpif90
+FFLAGS1 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS2 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS3 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /home/adcirc-swan/adcirc_v55.01/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)
+----------------------------------
+----------------------------------
+Sat Feb 19 16:50:52 UTC 2022
+building padcirc
+PPFC := f90
+FC := f90
+PFC := mpif90
+FFLAGS1 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS2 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS3 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /home/adcirc-swan/adcirc_v55.01/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)
+----------------------------------
+----------------------------------
+Sat Feb 19 16:50:53 UTC 2022
+building padcirc
+PPFC := f90
+FC := f90
+PFC := mpif90
+FFLAGS1 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS2 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS3 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /home/adcirc-swan/adcirc_v55.01/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)
+----------------------------------
+----------------------------------
+Sat Feb 19 16:50:53 UTC 2022
+building padcirc
+PPFC := f90
+FC := f90
+PFC := mpif90
+FFLAGS1 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS2 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS3 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /home/adcirc-swan/adcirc_v55.01/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)
+----------------------------------
+----------------------------------
+Sat Feb 19 16:50:54 UTC 2022
+building padcirc
+PPFC := f90
+FC := f90
+PFC := mpif90
+FFLAGS1 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS2 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS3 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /home/adcirc-swan/adcirc_v55.01/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)
+----------------------------------
+----------------------------------
+Sat Feb 19 16:50:55 UTC 2022
+building padcirc
+PPFC := f90
+FC := f90
+PFC := mpif90
+FFLAGS1 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS2 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS3 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /home/adcirc-swan/adcirc_v55.01/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)
+----------------------------------
+----------------------------------
+Sat Feb 19 16:50:56 UTC 2022
+building padcirc
+PPFC := f90
+FC := f90
+PFC := mpif90
+FFLAGS1 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS2 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS3 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /home/adcirc-swan/adcirc_v55.01/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)
+----------------------------------
+----------------------------------
+Sat Feb 19 16:50:57 UTC 2022
+building padcirc
+PPFC := f90
+FC := f90
+PFC := mpif90
+FFLAGS1 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS2 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS3 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /home/adcirc-swan/adcirc_v55.01/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)
+----------------------------------
+----------------------------------
+Sat Feb 19 17:37:06 UTC 2022
+building adcirc
+PPFC := f90
+FC := f90
+PFC := mpif90
+FFLAGS1 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS2 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS3 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /home/adcirc-swan/adcirc_v55.01/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gnu
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)
+----------------------------------
+----------------------------------
+Sat Feb 19 17:47:50 UTC 2022
+building adcirc
+PPFC := f90
+FC := f90
+PFC := mpif90
+FFLAGS1 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS2 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS3 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /home/adcirc-swan/adcirc_v55.01/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gnu
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)
+----------------------------------
+----------------------------------
+Sat Feb 19 18:03:41 UTC 2022
+building adcirc
+PPFC := f90
+FC := f90
+PFC := mpif90
+FFLAGS1 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS2 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+FFLAGS3 := -I . -I /home/adcirc-swan/adcirc_v55.01/prep
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /home/adcirc-swan/adcirc_v55.01/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gnu
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)
+----------------------------------
