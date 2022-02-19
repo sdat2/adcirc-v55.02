@@ -254,7 +254,7 @@ Cobell 110518: Add compiler flag for local hot start.
                   endif
                   if (myProc.eq.0) then
                      write(*,*) "WARNING: The command line option '",
-     &                  cmdlinearg(1:4),"' is not valid and will be ignored."
+     &                  cmdlinearg(1:4),"' is not valid and is ignored."
                   endif
                end select
             case("-N","-n")
@@ -283,7 +283,7 @@ Cobell 110518: Add compiler flag for local hot start.
                case default
                   if (myProc.eq.0) then
                      write(*,*) "WARNING: The command line option '",
-     &                  cmdlinearg(1:4),"' is not valid and will be ignored."
+     &                  cmdlinearg(1:4),"' is not valid and is ignored"
                   endif
                end select
             case default

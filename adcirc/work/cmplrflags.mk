@@ -74,7 +74,7 @@ ifeq ($(compiler),gnu)
   PPFC		:=  gfortran
   FC		:=  gfortran
   PFC		:=  mpif90
-  FFLAGS1	:=  $(INCDIRS) -O2 -mcmodel=medium -ffixed-line-length-none -march=k8 -m64
+  FFLAGS1	:=  $(INCDIRS) --ffreeform -O2 -std=f90 -mcmodel=medium -ffixed-line-length-none -march=k8 -m64
   FFLAGS2	:=  $(FFLAGS1)
   FFLAGS3	:=  $(FFLAGS1)
   DA		:=  -DREAL8 -DLINUX -DCSCA
@@ -114,8 +114,8 @@ ifeq ($(compiler),gfortran)
      XDMFPATH    := /home/jason/projects/XDMF/Code/latestCode
      XDMFLIBPATH := /home/jason/projects/XDMF/Code/testLatest
   endif
-  PPFC		:=  gfortran
-  FC		:=  gfortran
+  PPFC		:=  gfortran --ffreeform
+  FC		:=  gfortran --ffreeform
   PFC		:=  mpif90
   FFLAGS1	:=  $(INCDIRS) -O2 -ffixed-line-length-none
   ifeq ($(PROFILE),enable)
@@ -1552,17 +1552,17 @@ endif
 ########################################################################
 ifneq ($(FOUND), TRUE)
      $(warning (WARNING) None of the platforms in cmplrflags.mk match your platform. As a result, the specific compilers and flags that are appropriate for you could not be specified. Please edit the cmplrflags.mk file to include your machine and operating system. Continuing with generic selections for compilers.)
-  PPFC	        := f90
-  FC	        := f90
+  PPFC	        := gfortran-4.9
+  FC	        := gfortran-4.9
   PFC	        := mpif90
-  FFLAGS1	:=  $(INCDIRS)
+  FFLAGS1	:=  $(INCDIRS)  -ffixed-line-length-120
   FFLAGS2	:=  $(FFLAGS1)
   FFLAGS3	:=  $(FFLAGS1)
   DA  	   	:=  -DREAL8 -DCSCA -DLINUX
   DP  	   	:=  -DREAL8 -DCSCA -DLINUX -DCMPI
   DPRE	   	:=  -DREAL8 -DLINUX
   IMODS  	:=  -I
-  CC            :=  cc
+  CC            :=  gcc
   CCBE          :=  $(CC)
   CFLAGS        :=  $(INCDIRS) -DLINUX
   LDFLAGS	:=
