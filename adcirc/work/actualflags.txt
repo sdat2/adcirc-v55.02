@@ -2429,3 +2429,227 @@ NETCDF4_COMPRESSION :=
 XDMF := 
 GNU Fortran (Homebrew GCC 10.2.0_4) 10.2.0
 ----------------------------------
+----------------------------------
+Sat 19 Feb 2022 21:57:28 GMT
+building adcirc
+PPFC := gfortran-4.9
+FC := gfortran-4.9
+PFC := mpif90
+FFLAGS1 := -I . -I /Users/simon/adcirc-swan/adcirc/prep -std=f2008  -ffree-line-length-120
+FFLAGS2 := -I . -I /Users/simon/adcirc-swan/adcirc/prep -std=f2008  -ffree-line-length-120
+FFLAGS3 := -I . -I /Users/simon/adcirc-swan/adcirc/prep -std=f2008  -ffree-line-length-120
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /Users/simon/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (Homebrew GCC 4.9.4_2) 4.9.4
+----------------------------------
+----------------------------------
+Sat 19 Feb 2022 21:57:51 GMT
+building adcirc
+PPFC := gfortran-4.9
+FC := gfortran-4.9
+PFC := mpif90
+FFLAGS1 := -I . -I /Users/simon/adcirc-swan/adcirc/prep -std=f2008  -ffixed-line-length-120
+FFLAGS2 := -I . -I /Users/simon/adcirc-swan/adcirc/prep -std=f2008  -ffixed-line-length-120
+FFLAGS3 := -I . -I /Users/simon/adcirc-swan/adcirc/prep -std=f2008  -ffixed-line-length-120
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /Users/simon/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (Homebrew GCC 4.9.4_2) 4.9.4
+----------------------------------
+----------------------------------
+Sat 19 Feb 2022 21:57:53 GMT
+building adcirc
+PPFC := gfortran-4.9
+FC := gfortran-4.9
+PFC := mpif90
+FFLAGS1 := -I . -I /Users/simon/adcirc-swan/adcirc/prep -std=f2008  -ffixed-line-length-120
+FFLAGS2 := -I . -I /Users/simon/adcirc-swan/adcirc/prep -std=f2008  -ffixed-line-length-120
+FFLAGS3 := -I . -I /Users/simon/adcirc-swan/adcirc/prep -std=f2008  -ffixed-line-length-120
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /Users/simon/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (Homebrew GCC 4.9.4_2) 4.9.4
+----------------------------------
+----------------------------------
+Sat 19 Feb 2022 21:58:10 GMT
+building adcirc
+PPFC := gfortran-4.9
+FC := gfortran-4.9
+PFC := mpif90
+FFLAGS1 := -I . -I /Users/simon/adcirc-swan/adcirc/prep -std=f2008  -ffixed-line-length-120
+FFLAGS2 := -I . -I /Users/simon/adcirc-swan/adcirc/prep -std=f2008  -ffixed-line-length-120
+FFLAGS3 := -I . -I /Users/simon/adcirc-swan/adcirc/prep -std=f2008  -ffixed-line-length-120
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /Users/simon/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (Homebrew GCC 4.9.4_2) 4.9.4
+----------------------------------
+----------------------------------
+Sat 19 Feb 2022 21:58:57 GMT
+building adcirc
+PPFC := gfortran-4.9
+FC := gfortran-4.9
+PFC := mpif90
+FFLAGS1 := -I . -I /Users/simon/adcirc-swan/adcirc/prep -ffixed-line-length-120
+FFLAGS2 := -I . -I /Users/simon/adcirc-swan/adcirc/prep -ffixed-line-length-120
+FFLAGS3 := -I . -I /Users/simon/adcirc-swan/adcirc/prep -ffixed-line-length-120
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /Users/simon/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (Homebrew GCC 4.9.4_2) 4.9.4
+----------------------------------
+----------------------------------
+Sat 19 Feb 2022 22:01:13 GMT
+building adcirc
+PPFC := gfortran-4.9
+FC := gfortran-4.9
+PFC := mpif90
+FFLAGS1 := -I . -I /Users/simon/adcirc-swan/adcirc/prep -ffixed-line-length-130
+FFLAGS2 := -I . -I /Users/simon/adcirc-swan/adcirc/prep -ffixed-line-length-130
+FFLAGS3 := -I . -I /Users/simon/adcirc-swan/adcirc/prep -ffixed-line-length-130
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /Users/simon/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (Homebrew GCC 4.9.4_2) 4.9.4
+----------------------------------
+----------------------------------
+Sat 19 Feb 2022 22:01:38 GMT
+building adcirc
+PPFC := gfortran-4.9
+FC := gfortran-4.9
+PFC := mpif90
+FFLAGS1 := -I . -I /Users/simon/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /Users/simon/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /Users/simon/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /Users/simon/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (Homebrew GCC 4.9.4_2) 4.9.4
+----------------------------------
+----------------------------------
+Sat 19 Feb 2022 22:03:06 GMT
+building adcirc
+PPFC := gfortran-4.9
+FC := gfortran-4.9
+PFC := mpif90
+FFLAGS1 := -I . -I /Users/simon/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /Users/simon/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /Users/simon/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /Users/simon/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (Homebrew GCC 4.9.4_2) 4.9.4
+----------------------------------

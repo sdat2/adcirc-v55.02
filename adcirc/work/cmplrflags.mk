@@ -1555,7 +1555,7 @@ ifneq ($(FOUND), TRUE)
   PPFC	        := gfortran-4.9
   FC	        := gfortran-4.9
   PFC	        := mpif90
-  FFLAGS1	:=  $(INCDIRS)  -ffixed-line-length-120
+  FFLAGS1	:=  $(INCDIRS) -ffixed-line-length-150
   FFLAGS2	:=  $(FFLAGS1)
   FFLAGS3	:=  $(FFLAGS1)
   DA  	   	:=  -DREAL8 -DCSCA -DLINUX
