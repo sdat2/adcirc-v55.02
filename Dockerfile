@@ -1,19 +1,17 @@
 FROM centos:7
 
-# first half also works with ubuntu:14.04
-# I pieced varioud different docker files together so that they could reproduce the environment.
-
-# https://github.com/tianon/docker-brew-ubuntu-core/blob/c5bc8f61f0e0a8aa3780a8dc3a09ae6558693117/trusty/Dockerfile
-
 # install sudo
 RUN yum update -y && yum -y install sudo && \
-    sudo yum -y install git curl && \
-    sudo yum -y install make cmake gfortran-4.8 gcc-4.8 cloc && \
-    sudo yum -y install libnetcdf-dev libnetcdff-dev && \
-    sudo yum -y install openmpi3-devel && \
-    sudo yum -y install ncurses-dev
+    sudo yum -y install git curl cloc which
 
-ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
+RUN yum --enablerepo=extras -y install epel-release && \
+    yum -y install netcdf-fortran-openmpi-static &&\
+    ln -s /usr/bin/gfortran /usr/bin/f90 && \
+    ln -s /lib64/openmpi/bin/mpif90 /usr/bin/mpif90 &&\
+    ln -s /lib64/openmpi/bin/mpicc /usr/bin/mpicc && \
+    ln -s /lib64/openmpi/bin/mpifort /usr/bin/mpifort
 
-# docker build . -t sdat2/adcirc-swan-env:centos7-init
+# docker build . -t sdat2/adcirc-swan-env:centos6-mpif90
+# export PATH=$PATH:/usr/lib64/openmpi/bin/
+# ln -s /lib64/openmpi/bin/mpif90 /usr/bin/mpif90
 # docker push

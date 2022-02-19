@@ -14,7 +14,7 @@ ifeq ($(compiler),gnu)
   PPFC		:=  gfortran
   FC		:=  gfortran
   PFC		:=  mpif90
-  FFLAGS1	:=  $(INCDIRS) -O2 -mcmodel=medium -ffixed-line-length-none -march=corei7-avx -m64 -static
+  FFLAGS1	:=  $(INCDIRS) -O2 -mcmodel=medium  -ffixed-line-length-none -march=corei7-avx -m64 -static
   FFLAGS2	:=  $(FFLAGS1)
   FFLAGS3	:=  $(FFLAGS1)
   DA		:=  -DREAL8 -DLINUX -DCSCA
@@ -52,8 +52,8 @@ ifeq ($(MACHINE)-$(OS),x86_64-linux-gnu)
 #
 #compiler=gnu
 #compiler=g95
-#compiler=gfortran
-compiler=intel
+compiler=gfortran
+#compiler=intel
 #compiler=intel-ND
 #compiler=intel-lonestar
 #compiler=intel-sgi
