@@ -2,7 +2,7 @@ FROM centos:7
 
 # install sudo
 RUN yum update -y && yum -y install sudo && \
-    sudo yum -y install git curl cloc which
+    sudo yum -y install git curl cloc which make cmake
 
 RUN yum --enablerepo=extras -y install epel-release && \
     yum -y install netcdf-fortran-openmpi-static &&\
