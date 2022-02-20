@@ -1733,7 +1733,7 @@ endif
 ifneq ($(COMPILER),simac)
   PPFC	        := gfortran-4.9
   FC	        := gfortran-4.9
-  PFC	        := gfortran-4.9
+  PFC	        := mpif90
   FFLAGS1	:=  $(INCDIRS) -ffixed-line-length-132
   FFLAGS2	:=  $(FFLAGS1)
   FFLAGS3	:=  $(FFLAGS1)
