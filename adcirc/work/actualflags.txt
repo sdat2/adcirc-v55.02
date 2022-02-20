@@ -2653,3 +2653,532 @@ NETCDF4_COMPRESSION :=
 XDMF := 
 GNU Fortran (Homebrew GCC 4.9.4_2) 4.9.4
 ----------------------------------
+----------------------------------
+Sun Feb 20 13:18:05 GMT 2022
+building adcirc
+PPFC := gfortran-4.9
+FC := gfortran-4.9
+PFC := mpif90
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := ifort
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+----------------------------------
+----------------------------------
+Sun Feb 20 13:18:16 GMT 2022
+building adcirc
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -xSSE4.2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := intel
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+----------------------------------
+----------------------------------
+Sun Feb 20 13:19:13 GMT 2022
+building adcirc
+PPFC := pgf90
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -fastsse -Mextend
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -fastsse -Mextend
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -fastsse -Mextend -r8 -Mr8 -Mr8intrinsics
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCMPI -DHAVE_MPI_MOD -DCSCA -DDEBUG_WARN_ELEV
+DPRE := -DREAL8 -DLINUX
+IMODS := -module
+CC := cc
+CCBE := cc
+CFLAGS := -c89 -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := cray_xt3
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------
+----------------------------------
+Sun Feb 20 15:24:27 GMT 2022
+building adcirc
+PPFC := ifort
+FC := ifort
+PFC := ifort
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -xSSE4.2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := ifort
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+----------------------------------
+----------------------------------
+Sun Feb 20 15:42:10 GMT 2022
+building adcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -OPT:Olimit=4257 -OPT:reorg_common=ON
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -OPT:Olimit=4257 -OPT:reorg_common=ON
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -OPT:Olimit=4257 -OPT:reorg_common=ON
+DA := -DREAL8 -DSGI -DCSCA
+DP := -DREAL8 -DSGI -DCSCA -DCMPI
+DPRE := -DREAL8 -DSGI
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DSGI
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := cray-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------
+----------------------------------
+Sun Feb 20 15:43:47 GMT 2022
+building adcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -OPT:Olimit=4257 -OPT:reorg_common=ON
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -OPT:Olimit=4257 -OPT:reorg_common=ON
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -OPT:Olimit=4257 -OPT:reorg_common=ON
+DA := -DREAL8 -DSGI -DCSCA
+DP := -DREAL8 -DSGI -DCSCA -DCMPI
+DPRE := -DREAL8 -DSGI
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DSGI
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := cray-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------
+----------------------------------
+Sun Feb 20 15:44:34 GMT 2022
+building adcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2
+DA := -DREAL8 -DSGI -DCSCA
+DP := -DREAL8 -DSGI -DCSCA -DCMPI
+DPRE := -DREAL8 -DSGI
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DSGI
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := cray-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------
+----------------------------------
+Sun Feb 20 15:46:08 GMT 2022
+building adcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-150
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-150
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-150
+DA := -DREAL8 -DSGI -DCSCA
+DP := -DREAL8 -DSGI -DCSCA -DCMPI
+DPRE := -DREAL8 -DSGI
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DSGI
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := cray-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------
+----------------------------------
+Sun Feb 20 15:47:12 GMT 2022
+building adcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -Mextend -Minform,inform -O2 -fastsse
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -Mextend -Minform,inform -O2 -fastsse
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -Mextend -Minform,inform -O2 -fastsse
+DA := -DREAL8 -DSGI -DCSCA
+DP := -DREAL8 -DSGI -DCSCA -DCMPI
+DPRE := -DREAL8 -DSGI
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DSGI
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := cray-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------
+----------------------------------
+Sun Feb 20 15:48:57 GMT 2022
+building adcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -i32 -O2
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -i32 -O2
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -i32 -O2
+DA := -DREAL8 -DSGI -DCSCA
+DP := -DREAL8 -DSGI -DCSCA -DCMPI
+DPRE := -DREAL8 -DSGI
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DSGI
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := cray-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------
+----------------------------------
+Sun Feb 20 15:48:58 GMT 2022
+building adcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -i32 -O2
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -i32 -O2
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -i32 -O2
+DA := -DREAL8 -DSGI -DCSCA
+DP := -DREAL8 -DSGI -DCSCA -DCMPI
+DPRE := -DREAL8 -DSGI
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DSGI
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := cray-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------
+----------------------------------
+Sun Feb 20 15:49:00 GMT 2022
+building adcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -i32 -O2
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -i32 -O2
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -i32 -O2
+DA := -DREAL8 -DSGI -DCSCA
+DP := -DREAL8 -DSGI -DCSCA -DCMPI
+DPRE := -DREAL8 -DSGI
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DSGI
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := cray-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------
+----------------------------------
+Sun Feb 20 15:49:16 GMT 2022
+building adcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -132 -O2
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -132 -O2
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -i32 -O2
+DA := -DREAL8 -DSGI -DCSCA
+DP := -DREAL8 -DSGI -DCSCA -DCMPI
+DPRE := -DREAL8 -DSGI
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DSGI
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := cray-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------
+----------------------------------
+Sun Feb 20 16:07:01 GMT 2022
+building adcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -132 -O2
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -132 -O2
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -i32 -O2
+DA := -DREAL8 -DSGI -DCSCA
+DP := -DREAL8 -DSGI -DCSCA -DCMPI
+DPRE := -DREAL8 -DSGI
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DSGI
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := pgi-ranger
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+AMD clang version 10.0.0 (CLANG: AOCC_2.2.0-Build#93 2020_06_25) (based on LLVM Mirror.Version.10.0.0)
+----------------------------------
+----------------------------------
+Sun Feb 20 16:09:28 GMT 2022
+building adcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -132 -O2
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -132 -O2
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -i32 -O2
+DA := -DREAL8 -DSGI -DCSCA
+DP := -DREAL8 -DSGI -DCSCA -DCMPI
+DPRE := -DREAL8 -DSGI
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DSGI
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := pgi-ranger
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+AMD clang version 10.0.0 (CLANG: AOCC_2.2.0-Build#93 2020_06_25) (based on LLVM Mirror.Version.10.0.0)
+----------------------------------
+----------------------------------
+Sun Feb 20 16:11:30 GMT 2022
+building adcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -132 -O2
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -132 -O2
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -i32 -O2
+DA := -DREAL8 -DSGI -DCSCA
+DP := -DREAL8 -DSGI -DCSCA -DCMPI
+DPRE := -DREAL8 -DSGI
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DSGI
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (GCC) 10.2.0 20200723 (Cray Inc.)
+----------------------------------
+----------------------------------
+Sun Feb 20 16:12:08 GMT 2022
+building adcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -132 -O2
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -132 -O2
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -i32 -O2
+DA := -DREAL8 -DSGI -DCSCA
+DP := -DREAL8 -DSGI -DCSCA -DCMPI
+DPRE := -DREAL8 -DSGI
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DSGI
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------
+----------------------------------
+Sun Feb 20 16:13:57 GMT 2022
+building adcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Sun Feb 20 16:16:27 GMT 2022
+building padcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-132
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-132
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-132
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
