@@ -5,6 +5,8 @@ ADCIRC-SWAN version.
 ```bash
 docker pull asgsdockerhub/asgs
 
+singularity pull docker://zcobell/adcirc_20200513:latest
+
 singularity pull docker://asgsdockerhub/asgs
 ```
 
@@ -28,4 +30,3 @@ ln -s /usr/local/bin/gfortran /usr/local/bin/f90
    cray-mpich-abi/8.1.4 (D)    cray-mpich-abi/8.1.9    cray-mpich/8.1.4 (L,D)    cray-mpich/8.1.9
 
 ```
- 
