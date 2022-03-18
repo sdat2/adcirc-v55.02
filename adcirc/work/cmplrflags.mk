@@ -1679,13 +1679,13 @@ endif
 
 ########################################################################
 # cray-archer2
-ifneq ($(COMPILER),cray-archer2)
+ifeq ($(COMPILER),cray-archer2)
   PPFC            := ftn
   FC              := ftn
   PFC             := ftn
   FFLAGS1	  := $(INCDIRS) -dp -132 -O2
   FFLAGS2	  := $(INCDIRS) -dp -132 -O2
-  FFLAGS3	  := $(INCDIRS) -dp -i32 -O2
+  FFLAGS3	  := $(INCDIRS) -dp -132 -O2
   DA	          :=  -DREAL8 -DSGI -DCSCA
   DP	          :=  -DREAL8 -DSGI -DCSCA -DCMPI
   DPRE	          :=  -DREAL8 -DSGI
@@ -1705,7 +1705,7 @@ endif
 
 ########################################################################
 # gfortran-archer2
-ifneq ($(COMPILER),gfortran-archer2)
+ifeq ($(COMPILER),gfortran-archer2)
   PPFC	        := gfortran
   FC	        := gfortran
   PFC	        := gfortran
@@ -1730,7 +1730,9 @@ ifneq ($(COMPILER),gfortran-archer2)
   endif
 endif
 
-ifneq ($(COMPILER),simac)
+########################################################################
+# Simon's mac
+ifeq ($(COMPILER),simac)
   PPFC	        := gfortran-4.9
   FC	        := gfortran-4.9
   PFC	        := mpif90
@@ -1747,15 +1749,16 @@ ifneq ($(COMPILER),simac)
   LDFLAGS	:=
   FLIBS	        :=
   MSGLIBS	:=
+  $(warning (INFO) Corresponding machine found in cmplrflags.mk.)
   ifneq ($(FOUND),TRUE)
      FOUND := TRUE
   else
      MULTIPLE := TRUE
   endif
 endif
+
 ########################################################################
 # powerpc-apple-darwin using absoft
-
 ifneq (,$(findstring powerpc-darwin,$(MACHINE)-$(OS)))
   PPFC	        := f90
   FC	        := f90
