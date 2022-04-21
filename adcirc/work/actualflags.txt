@@ -3677,3 +3677,31 @@ NETCDF4_COMPRESSION :=
 XDMF := 
 GNU Fortran (SUSE Linux) 7.5.0
 ----------------------------------
+----------------------------------
+Thu Mar 31 18:35:01 BST 2022
+building padcirc
+PPFC := gfortran --ffreeform
+FC := gfortran --ffreeform
+PFC := mpif90
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+----------------------------------
