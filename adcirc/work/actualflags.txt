@@ -4152,3 +4152,1431 @@ NETCDF4_COMPRESSION :=
 XDMF := 
 GNU Fortran (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
 ----------------------------------
+----------------------------------
+Mon Apr 25 14:59:38 BST 2022
+building adcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortan
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 15:00:07 BST 2022
+building padcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortan
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 15:47:55 BST 2022
+building padcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 15:48:20 BST 2022
+building padcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 15:48:21 BST 2022
+building padcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 15:48:24 BST 2022
+building padcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 15:48:25 BST 2022
+building padcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 15:48:39 BST 2022
+building padcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 15:48:40 BST 2022
+building padcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 15:48:41 BST 2022
+building padcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 15:48:43 BST 2022
+building padcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 15:49:02 BST 2022
+building adcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 15:49:17 BST 2022
+building padcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 15:51:51 BST 2022
+building adcprep
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 15:51:58 BST 2022
+building adcpost
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 15:52:15 BST 2022
+building adcprep
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis 
+MSGLIBS := 
+compiler := cray-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 15:52:19 BST 2022
+building adcpost
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := cray-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 15:53:22 BST 2022
+building adcprep
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150 -DHAVE_MPI_MOD
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150 -DHAVE_MPI_MOD
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150 -DHAVE_MPI_MOD
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis 
+MSGLIBS := 
+compiler := cray-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 15:53:27 BST 2022
+building adcpost
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150 -DHAVE_MPI_MOD
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150 -DHAVE_MPI_MOD
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150 -DHAVE_MPI_MOD
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := cray-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 15:53:48 BST 2022
+building adcprep
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150 -DHAVE_MPI_MOD
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150 -DHAVE_MPI_MOD
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150 -DHAVE_MPI_MOD
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis 
+MSGLIBS := 
+compiler := cray-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 15:53:52 BST 2022
+building adcpost
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150 -DHAVE_MPI_MOD
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150 -DHAVE_MPI_MOD
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150 -DHAVE_MPI_MOD
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := cray-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 15:54:19 BST 2022
+building padcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150 -DHAVE_MPI_MOD
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150 -DHAVE_MPI_MOD
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150 -DHAVE_MPI_MOD
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := cray-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 15:54:37 BST 2022
+building padcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150 -DHAVE_MPI_MOD
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150 -DHAVE_MPI_MOD
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150 -DHAVE_MPI_MOD
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 15:59:12 BST 2022
+building padcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150 -DHAVE_MPI_MOD
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150 -DHAVE_MPI_MOD
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150 -DHAVE_MPI_MOD
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 15:59:17 BST 2022
+building padcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150 -DHAVE_MPI_MOD
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150 -DHAVE_MPI_MOD
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150 -DHAVE_MPI_MOD
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := cray-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 16:00:02 BST 2022
+building padcirc
+PPFC := gfortran --ffreeform
+FC := gfortran --ffreeform
+PFC := mpif90
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 16:00:21 BST 2022
+building padcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -132 -O2 -DHAVE_MPI_MOD
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -132 -O2 -DHAVE_MPI_MOD
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -132 -O2 -DHAVE_MPI_MOD
+DA := -DREAL8 -DSGI -DCSCA
+DP := -DREAL8 -DSGI -DCSCA -DCMPI
+DPRE := -DREAL8 -DSGI
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DSGI
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi 
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------
+----------------------------------
+Mon Apr 25 16:00:34 BST 2022
+building padcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -132 -O2 -DHAVE_MPI_MOD
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -132 -O2 -DHAVE_MPI_MOD
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -dp -132 -O2 -DHAVE_MPI_MOD
+DA := -DREAL8 -DSGI -DCSCA
+DP := -DREAL8 -DSGI -DCSCA -DCMPI
+DPRE := -DREAL8 -DSGI
+IMODS := -I
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DSGI
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi 
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------
+----------------------------------
+Mon Apr 25 16:01:25 BST 2022
+building padcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress
+DA := -DREAL8 -DCRAYX1 -DCVEC
+DP := -DREAL8 -DCRAYX1 -DCVEC -DCMPI
+DPRE := -DREAL8 -DCRAYX1 -UCRAY
+IMODS := -p
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -I ../Lib -O2 -DCRAYX1 -UCRAY
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------
+----------------------------------
+Mon Apr 25 16:02:12 BST 2022
+building adcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -ffixed-line-length-132
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress
+DA := -DREAL8 -DCRAYX1 -DCVEC
+DP := -DREAL8 -DCRAYX1 -DCVEC -DCMPI
+DPRE := -DREAL8 -DCRAYX1 -UCRAY
+IMODS := -p
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -I ../Lib -O2 -DCRAYX1 -UCRAY
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------
+----------------------------------
+Mon Apr 25 16:02:37 BST 2022
+building adcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress --132
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress --132
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress --132
+DA := -DREAL8 -DCRAYX1 -DCVEC
+DP := -DREAL8 -DCRAYX1 -DCVEC -DCMPI
+DPRE := -DREAL8 -DCRAYX1 -UCRAY
+IMODS := -p
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -I ../Lib -O2 -DCRAYX1 -UCRAY
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------
+----------------------------------
+Mon Apr 25 16:07:48 BST 2022
+building adcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -132
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -132
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -132
+DA := -DREAL8 -DCRAYX1 -DCVEC
+DP := -DREAL8 -DCRAYX1 -DCVEC -DCMPI
+DPRE := -DREAL8 -DCRAYX1 -UCRAY
+IMODS := -p
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -I ../Lib -O2 -DCRAYX1 -UCRAY
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------
+----------------------------------
+Mon Apr 25 16:07:50 BST 2022
+building adcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -132
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -132
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -132
+DA := -DREAL8 -DCRAYX1 -DCVEC
+DP := -DREAL8 -DCRAYX1 -DCVEC -DCMPI
+DPRE := -DREAL8 -DCRAYX1 -UCRAY
+IMODS := -p
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -I ../Lib -O2 -DCRAYX1 -UCRAY
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------
+----------------------------------
+Mon Apr 25 16:08:32 BST 2022
+building adcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -extend-source 132
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -extend-source 132
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -extend-source 132
+DA := -DREAL8 -DCRAYX1 -DCVEC
+DP := -DREAL8 -DCRAYX1 -DCVEC -DCMPI
+DPRE := -DREAL8 -DCRAYX1 -UCRAY
+IMODS := -p
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -I ../Lib -O2 -DCRAYX1 -UCRAY
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------
+----------------------------------
+Mon Apr 25 16:09:10 BST 2022
+building adcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -Wl 132
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -Wl 132
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -Wl 132
+DA := -DREAL8 -DCRAYX1 -DCVEC
+DP := -DREAL8 -DCRAYX1 -DCVEC -DCMPI
+DPRE := -DREAL8 -DCRAYX1 -UCRAY
+IMODS := -p
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -I ../Lib -O2 -DCRAYX1 -UCRAY
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------
+----------------------------------
+Mon Apr 25 16:09:12 BST 2022
+building adcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -Wl 132
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -Wl 132
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -Wl 132
+DA := -DREAL8 -DCRAYX1 -DCVEC
+DP := -DREAL8 -DCRAYX1 -DCVEC -DCMPI
+DPRE := -DREAL8 -DCRAYX1 -UCRAY
+IMODS := -p
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -I ../Lib -O2 -DCRAYX1 -UCRAY
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------
+----------------------------------
+Mon Apr 25 16:10:18 BST 2022
+building adcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -N 132
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -N 132
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -N 132
+DA := -DREAL8 -DCRAYX1 -DCVEC
+DP := -DREAL8 -DCRAYX1 -DCVEC -DCMPI
+DPRE := -DREAL8 -DCRAYX1 -UCRAY
+IMODS := -p
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -I ../Lib -O2 -DCRAYX1 -UCRAY
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------
+----------------------------------
+Mon Apr 25 16:10:35 BST 2022
+building adcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -N 132
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -N 132
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -N 132
+DA := -DREAL8 -DCRAYX1 -DCVEC
+DP := -DREAL8 -DCRAYX1 -DCVEC -DCMPI
+DPRE := -DREAL8 -DCRAYX1 -UCRAY
+IMODS := -p
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -I ../Lib -O2 -DCRAYX1 -UCRAY
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------
+----------------------------------
+Mon Apr 25 16:26:39 BST 2022
+building adcirc
+PPFC := gfortran --ffreeform
+FC := gfortran --ffreeform
+PFC := mpif90
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 16:27:25 BST 2022
+building adcirc
+PPFC := gfortran --ffreeform
+FC := gfortran --ffreeform
+PFC := mpif90
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 16:28:39 BST 2022
+building adcirc
+PPFC := gfortran --ffreeform
+FC := gfortran --ffreeform
+PFC := mpif90
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 16:28:44 BST 2022
+building adcirc
+PPFC := gfortran --ffreeform
+FC := gfortran --ffreeform
+PFC := mpif90
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 16:28:56 BST 2022
+building adcirc
+PPFC := gfortran --ffreeform
+FC := gfortran --ffreeform
+PFC := mpif90
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 16:30:24 BST 2022
+building adcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-132 -DHAVE_MPI_MOD
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-132 -DHAVE_MPI_MOD
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-132 -DHAVE_MPI_MOD
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 16:30:44 BST 2022
+building padcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-132 -DHAVE_MPI_MOD
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-132 -DHAVE_MPI_MOD
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-132 -DHAVE_MPI_MOD
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 16:33:52 BST 2022
+building padcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-132 -DHAVE_MPI_MOD
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-132 -DHAVE_MPI_MOD
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-132 -DHAVE_MPI_MOD
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpich
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 16:34:00 BST 2022
+building padcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-132 -DHAVE_MPI_MOD
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-132 -DHAVE_MPI_MOD
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-132 -DHAVE_MPI_MOD
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpich
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 16:34:39 BST 2022
+building padcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-132 -DHAVE_MPI_MOD
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-132 -DHAVE_MPI_MOD
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-132 -DHAVE_MPI_MOD
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 16:34:41 BST 2022
+building padcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-132 -DHAVE_MPI_MOD
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-132 -DHAVE_MPI_MOD
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-132 -DHAVE_MPI_MOD
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (SUSE Linux) 7.5.0
+----------------------------------
+----------------------------------
+Mon Apr 25 16:39:09 BST 2022
+building adcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -N 132 -DHAVE_MPI_MOD
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -N 132 -DHAVE_MPI_MOD
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -Oaggress -N 132 -DHAVE_MPI_MOD
+DA := -DREAL8 -DCRAYX1 -DCVEC
+DP := -DREAL8 -DCRAYX1 -DCVEC -DCMPI
+DPRE := -DREAL8 -DCRAYX1 -UCRAY
+IMODS := -p
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -I ../Lib -O2 -DCRAYX1 -UCRAY
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------
+----------------------------------
+Mon Apr 25 16:40:08 BST 2022
+building adcirc
+PPFC := ftn
+FC := ftn
+PFC := ftn
+FFLAGS1 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -N 132 -DHAVE_MPI_MOD
+FFLAGS2 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -N 132 -DHAVE_MPI_MOD
+FFLAGS3 := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -N 132 -DHAVE_MPI_MOD
+DA := -DREAL8 -DCRAYX1 -DCVEC
+DP := -DREAL8 -DCRAYX1 -DCVEC -DCMPI
+DPRE := -DREAL8 -DCRAYX1 -UCRAY
+IMODS := -p
+CC := cc
+CCBE := cc
+CFLAGS := -I . -I /mnt/lustre/a2fs-work1/work/n01/n01/sithom/adcirc-swan/adcirc/prep -I ../Lib -O2 -DCRAYX1 -UCRAY
+CLIBS := 
+LIBS := 
+MSGLIBS := -lmpi
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+Cray Fortran : Version 11.0.4
+----------------------------------

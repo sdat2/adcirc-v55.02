@@ -1679,22 +1679,25 @@ endif
 
 ########################################################################
 # cray-archer2
-ifeq ($(COMPILER),cray-archer2)
+ifeq ($(COMPILER),cray.archer2)
   PPFC            := ftn
   FC              := ftn
   PFC             := ftn
-  FFLAGS1	  := $(INCDIRS) -dp -132 -O2
-  FFLAGS2	  := $(INCDIRS) -dp -132 -O2
-  FFLAGS3	  := $(INCDIRS) -dp -132 -O2
-  DA	          :=  -DREAL8 -DSGI -DCSCA
-  DP	          :=  -DREAL8 -DSGI -DCSCA -DCMPI
-  DPRE	          :=  -DREAL8 -DSGI
-  IMODS   	  :=  -I
-  CC              :=  cc
-  CCBE            :=  $(CC)
-  CFLAGS          :=  $(INCDIRS) -O2 -DSGI
-  FLIBS		  :=
-  MSGLIBS	  := -lmpi
+  FFLAGS1	:=  $(INCDIRS) -N 132 -DHAVE_MPI_MOD
+  FFLAGS2	:=  $(FFLAGS1)
+  FFLAGS3       :=   $(FFLAGS1)
+  FIXED         :=  -f fixed
+  FREE          :=  -f free
+  DA  	        :=  -DREAL8 -DCRAYX1 -DCVEC
+  DP  	        :=  -DREAL8 -DCRAYX1 -DCVEC -DCMPI
+  DPRE	        :=  -DREAL8 -DCRAYX1 -UCRAY
+  IMODS		:=  -p
+  CC            :=  cc
+  CCBE          :=  $(CC)
+  CFLAGS	:=  $(INCDIRS) -I ../Lib -O2 -DCRAYX1 -UCRAY
+  FLIBS  	:=
+  MSGLIBS	:=  -lmpi
+  C_LDFLAGS     :=
   $(warning (INFO) Corresponding machine found in cmplrflags.mk.)
   ifneq ($(FOUND),TRUE)
      FOUND := TRUE
@@ -1705,14 +1708,14 @@ endif
 
 ########################################################################
 # gfortran-archer2
-ifeq ($(COMPILER),gfortran-archer2)
+ifeq ($(COMPILER),gfort.archer2)
   PPFC	        := gfortran
   FC	        := gfortran
   PFC	        := gfortran
-  FFLAGS1	:=  $(INCDIRS) -ffixed-line-length-132
+  FFLAGS1	:=  $(INCDIRS) -ffixed-line-length-132 -DHAVE_MPI_MOD
   FFLAGS2	:=  $(FFLAGS1)
   FFLAGS3	:=  $(FFLAGS1)
-  DA  	   	:=  -DREAL8 -DCSCA -DLINUX
+  DA  	   	:=  -DREAL8 -DCSCA -DLINUX -DHAVE_MPI_MOD
   DP  	   	:=  -DREAL8 -DCSCA -DLINUX -DCMPI
   DPRE	   	:=  -DREAL8 -DLINUX
   IMODS  	:=  -I
@@ -1721,7 +1724,7 @@ ifeq ($(COMPILER),gfortran-archer2)
   CFLAGS        :=  $(INCDIRS) -DLINUX
   LDFLAGS	:=
   FLIBS	        :=
-  MSGLIBS	:=
+  MSGLIBS	:= -lmpi
   $(warning (INFO) Corresponding machine found in cmplrflags.mk.)
   ifneq ($(FOUND),TRUE)
      FOUND := TRUE
@@ -1821,7 +1824,7 @@ ifneq ($(FOUND), TRUE)
   PPFC	        := gfortran
   FC	        := gfortran
   PFC	        := gfortran
-  FFLAGS1	:=  $(INCDIRS) -ffixed-line-length-150
+  FFLAGS1	:=  $(INCDIRS) -ffixed-line-length-150 -DHAVE_MPI_MOD
   FFLAGS2	:=  $(FFLAGS1)
   FFLAGS3	:=  $(FFLAGS1)
   DA  	   	:=  -DREAL8 -DCSCA -DLINUX
