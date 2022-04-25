@@ -3705,3 +3705,450 @@ NETCDF4_COMPRESSION :=
 XDMF := 
 GNU Fortran (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
 ----------------------------------
+----------------------------------
+Mon Apr 25 10:18:56 BST 2022
+building adcprep
+PPFC := gfortran --ffreeform
+FC := gfortran --ffreeform
+PFC := mpif90
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis 
+MSGLIBS := 
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+----------------------------------
+----------------------------------
+Mon Apr 25 10:19:18 BST 2022
+building adcirc
+PPFC := gfortran --ffreeform
+FC := gfortran --ffreeform
+PFC := mpif90
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+----------------------------------
+----------------------------------
+Mon Apr 25 10:21:02 BST 2022
+building padcswan
+PPFC := gfortran --ffreeform
+FC := gfortran --ffreeform
+PFC := mpif90
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+----------------------------------
+----------------------------------
+Mon Apr 25 10:31:57 BST 2022
+building adcprep
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis 
+MSGLIBS := 
+compiler := x86_64-linux-gnu
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+----------------------------------
+----------------------------------
+Mon Apr 25 10:32:03 BST 2022
+building adcpost
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := x86_64-linux-gnu
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+----------------------------------
+----------------------------------
+Mon Apr 25 10:33:28 BST 2022
+building adcprep
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis 
+MSGLIBS := 
+compiler := x86_64-linux-gnu
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+----------------------------------
+----------------------------------
+Mon Apr 25 10:33:33 BST 2022
+building adcpost
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := x86_64-linux-gnu
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+----------------------------------
+----------------------------------
+Mon Apr 25 10:34:00 BST 2022
+building padcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := x86_64-linux-gnu
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+----------------------------------
+----------------------------------
+Mon Apr 25 10:56:28 BST 2022
+building adcprep
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -xSSE4.2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis 
+MSGLIBS := 
+compiler := intel
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+----------------------------------
+----------------------------------
+Mon Apr 25 11:23:04 BST 2022
+building adcprep
+PPFC := gfortran --ffreeform
+FC := gfortran --ffreeform
+PFC := mpif90
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis 
+MSGLIBS := 
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+----------------------------------
+----------------------------------
+Mon Apr 25 11:23:22 BST 2022
+building padcirc
+PPFC := gfortran --ffreeform
+FC := gfortran --ffreeform
+PFC := mpif90
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+----------------------------------
+----------------------------------
+Mon Apr 25 11:24:51 BST 2022
+building adcprep
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis 
+MSGLIBS := 
+compiler := gfortran-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+----------------------------------
+----------------------------------
+Mon Apr 25 11:24:56 BST 2022
+building adcpost
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+----------------------------------
+----------------------------------
+Mon Apr 25 11:25:37 BST 2022
+building padcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+----------------------------------
+----------------------------------
+Mon Apr 25 11:27:45 BST 2022
+building padcirc
+PPFC := gfortran
+FC := gfortran
+PFC := gfortran
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -ffixed-line-length-150
+DA := -DREAL8 -DCSCA -DLINUX
+DP := -DREAL8 -DCSCA -DLINUX -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran-archer2
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+----------------------------------
+----------------------------------
+Mon Apr 25 11:39:22 BST 2022
+building adcirc
+PPFC := gfortran --ffreeform
+FC := gfortran --ffreeform
+PFC := mpif90
+FFLAGS1 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS2 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS3 := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /work/n01/n01/sithom/adcirc-swan/adcirc/prep -O2 -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+GNU Fortran (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+----------------------------------

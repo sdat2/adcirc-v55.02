@@ -1,6 +1,7 @@
 SHELL:=/bin/bash
 PWD=$(shell pwd)
 SRCDIR?=$(shell dirname $(PWD))
+
 #
 #  Makefile to Build PADCIRC and its pre-processor
 #  University of Texas's parallel version of the Hydrodynamics
@@ -675,7 +676,7 @@ help:
 	@echo "make inflate       - makes the output file inflation program"
 	@echo "make hstime   - makes the hot start time examiner"
 	@echo "make adccmp     - makes the output file comparison program"
-#Casey 091013: Add text for the SWAN+ADCIRC targets.
+# Casey 091013: Add text for the SWAN+ADCIRC targets.
 	@echo "make adcswan     - makes the serial SWAN+ADCIRC executable"
 	@echo "make padcswan     - makes the parallel SWAN+ADCIRC executable"
 

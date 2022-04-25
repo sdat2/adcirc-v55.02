@@ -7,7 +7,15 @@ docker pull asgsdockerhub/asgs
 
 singularity pull docker://zcobell/adcirc_20200513:latest
 
+singularity pull docker://zcobell/adcirc_20191101
+
 singularity pull docker://asgsdockerhub/asgs
+
+singularity pull docker://zcobell/adcirc_20170924
+
+singularity shell --bind /work/n01/n01/sithom/adcirc-swan singularity/asgs -nv
+
+
 ```
 
 ```
