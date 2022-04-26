@@ -1683,20 +1683,19 @@ ifeq ($(COMPILER),cray.archer2)
   PPFC            := ftn
   FC              := ftn
   PFC             := ftn
-  FFLAGS1	:=  $(INCDIRS) -N 132 -DHAVE_MPI_MOD
+  FFLAGS1	:=  $(INCDIRS) -N 132
   FFLAGS2	:=  $(FFLAGS1)
   FFLAGS3       :=   $(FFLAGS1)
   FIXED         :=  -f fixed
   FREE          :=  -f free
   DA  	        :=  -DREAL8 -DCRAYX1 -DCVEC
-  DP  	        :=  -DREAL8 -DCRAYX1 -DCVEC -DCMPI
+  DP  	        :=  -DREAL8 -DCRAYX1 -DCVEC -DHAVE_MPI_MOD -DCMPI
   DPRE	        :=  -DREAL8 -DCRAYX1 -UCRAY
   IMODS		:=  -p
   CC            :=  cc
   CCBE          :=  $(CC)
-  CFLAGS	:=  $(INCDIRS) -I ../Lib -O2 -DCRAYX1 -UCRAY
-  FLIBS  	:=
-  MSGLIBS	:=  -lmpi
+  CFLAGS	:=  $(INCDIRS) -O2 -ftree-vectorize -funroll-loops -ffast-math
+  MSGLIBS	:= 
   C_LDFLAGS     :=
   $(warning (INFO) Corresponding machine found in cmplrflags.mk.)
   ifneq ($(FOUND),TRUE)
