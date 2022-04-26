@@ -1708,17 +1708,17 @@ endif
 ########################################################################
 # gfortran-archer2
 ifeq ($(COMPILER),gfort.archer2)
-  PPFC	        := gfortran
-  FC	        := gfortran
-  PFC	        := gfortran
+  PPFC	        := ftn # fortran
+  FC	        := ftn # gfortran
+  PFC	        := ftn # gfortran
   FFLAGS1	:=  $(INCDIRS) -ffixed-line-length-132 -DHAVE_MPI_MOD
   FFLAGS2	:=  $(FFLAGS1)
   FFLAGS3	:=  $(FFLAGS1)
   DA  	   	:=  -DREAL8 -DCSCA -DLINUX -DHAVE_MPI_MOD
   DP  	   	:=  -DREAL8 -DCSCA -DLINUX -DCMPI
   DPRE	   	:=  -DREAL8 -DLINUX
-  IMODS  	:=  -I
-  CC            :=  gcc
+  IMODS  	:=  -p
+  CC            :=  cc
   CCBE          :=  $(CC)
   CFLAGS        :=  $(INCDIRS) -DLINUX
   LDFLAGS	:=
@@ -1823,7 +1823,7 @@ ifneq ($(FOUND), TRUE)
   PPFC	        := gfortran
   FC	        := gfortran
   PFC	        := gfortran
-  FFLAGS1	:=  $(INCDIRS) -ffixed-line-length-150 -DHAVE_MPI_MOD
+  FFLAGS1	:=  $(INCDIRS) -ffixed-line-length-132 -DHAVE_MPI_MOD
   FFLAGS2	:=  $(FFLAGS1)
   FFLAGS3	:=  $(FFLAGS1)
   DA  	   	:=  -DREAL8 -DCSCA -DLINUX

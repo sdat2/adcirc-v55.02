@@ -17,7 +17,12 @@ singularity shell --bind /work/n01/n01/sithom/adcirc-swan singularity/asgs -nv
 
    cmake .. -DCMAKE_C_COMPILER=cc -DCMAKE_CXX_COMPILER=cc -DCMAKE_Fortran_COMPILER=ftn -DCMAKE_Fortran_FLAGS=-N 132
     -DFortran_LINELENGTH_FLAG="-N 132"
-   cmake .. -DCMAKE_C_COMPILER=cc -DCMAKE_CXX_COMPILER=cc -DCMAKE_Fortran_COMPILER=ftn -DBUILD_ADCIRC=ON -DBUILD_PADCIRC=ON -DBUILD_ADCPREP=OFF -DBUILD_ADCSWAN=ON -DBUILD_PADCSWAN=ON -DFortran_LINELENGTH_FLAG="-N 132"
+   cmake .. -DCMAKE_C_COMPILER=cc -DCMAKE_CXX_COMPILER=cc -DCMAKE_Fortran_COMPILER=ftn -DBUILD_ADCIRC=ON -DBUILD_PADCIRC=ON -DBUILD_ADCPREP=OFF -DBUILD_ADCSWAN=OFF 
+   Fortran_COMPILER_SPECIFIC_FLAG="-N 132"
+   -DBUILD_PADCSWAN=OFF -DFortran_LINELENGTH_FLAG="-N 132"
+
+cmake .. -DCMAKE_C_COMPILER=cc -DCMAKE_CXX_COMPILER=cc -DCMAKE_Fortran_COMPILER=ftn -DBUILD_ADCIRC=ON -DBUILD_PADCIRC=ON -DBUILD_ADCPREP=ON -DBUILD_ADCSWAN=OFF -DFortran_COMPILER_SPECIFIC_FLAG=-ffixed-line-length-132 -DBUILD_PADCSWAN=OFF -DFortran_LINELENGTH_FLAG=-ffixed-line-length-132 -DCMAKE_Fortran_FLAGS="-ffree-line-length-132  -ffixed-line-length-132 -DREAL8 -DCSCA -DLINUX -w -fallow-argument-mismatch -O2"
+
 
 //Executable for running MPI programs.
 MPIEXEC_EXECUTABLE:FILEPATH=/usr/lib64/mpi/gcc/openmpi/bin/mpirun
@@ -27,6 +32,9 @@ MPI_CXX_COMPILER:FILEPATH=/opt/cray/pe/craype/2.7.6/bin/cc
 
 //MPI compiler for C
 MPI_C_COMPILER:FILEPATH=/opt/cray/pe/craype/2.7.6/bin/cc
+
+//MPI compiler for Fortran
+MPI_Fortran_COMPILER:FILEPATH=/opt/cray/pe/craype/2.7.6/bin/ftns
 ```
 
 ```
