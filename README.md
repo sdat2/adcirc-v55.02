@@ -91,3 +91,24 @@ ln -s /usr/local/bin/gfortran /usr/local/bin/f90
 
 
 PrgEnv-gnu/8.1.0
+
+
+## Manual Pages for SWAN/ADCIRC
+
+Compiling SWAN manual pages
+https://swanmodel.sourceforge.io/online_doc/swanimp/node8.html
+
+
+## ADCIRC structure
+
+- fort.11  = density initial conditions
+- fort.13 = nodal attributes
+- fort.14 = mesh
+- fort.15 = input parameters
+- fort.19 = Non periodic, time varying elevation boundary condition file if eleveation specificed boundary nodes.
+- fort.20 = Non periodic, Normal Flux Boundary Condition.
+- fort.22 = Meteorological Forcing
+- fort.23 = Wave radiaiton stress frocing
+- fort.61, fort.62, fot.81, fort.71, fort.71. = elevation, velocity, concentation, met stations
+- fort.63, fort.64, fort.83, fort.73, fort.74 = global elevation, velociyt, concentratiion, met stations.
+
