@@ -88,3 +88,6 @@ ln -s /usr/local/bin/gfortran /usr/local/bin/f90
    cray-mpich-abi/8.1.4 (D)    cray-mpich-abi/8.1.9    cray-mpich/8.1.4 (L,D)    cray-mpich/8.1.9
 
 ```
+
+
+PrgEnv-gnu/8.1.0
