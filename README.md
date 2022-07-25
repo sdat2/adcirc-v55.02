@@ -1,6 +1,28 @@
 # adcirc-swan
 
-ADCIRC-SWAN version.
+ADCIRC-SWAN folder, which includes particular versions of the code, and script to run it.
+
+On Archer2 I have found that the cray `gfortran` compilers seem to work the best for compiling ADCIRC.
+
+One particular issue in the code is the presence of Fortran from multiple styles (ending determined), and very long lines (up to 132 characters).
+
+I found that trying to use the default cray compilers was very difficult, as the compiler flag, which should have been `-N 132` did not seem to work.
+
+I experimented to some extent with installing the environment as a singularity container from various docker images, but this was generally unsuccessful.
+
+The `cmake` method seems to be much more reliable than `Makefile`.
+
+## TODO
+
+I still have issues with:
+
+ - compiling SWAN.
+ - running the unit tests.
+ - testing netcdf outputs.
+ - running slurm jobs easily in an automated fashion.
+
+
+## A record of useful commands tried
 
 ```bash
 docker pull asgsdockerhub/asgs
@@ -30,11 +52,20 @@ MPIEXEC_EXECUTABLE:FILEPATH=/usr/lib64/mpi/gcc/openmpi/bin/mpirun
 //MPI compiler for CXX
 MPI_CXX_COMPILER:FILEPATH=/opt/cray/pe/craype/2.7.6/bin/cc
 
+adcirc/adcirc_quarterannular-2d
+
+sh ./RunSingleTest.sh /work/n01/n01/sithom/adcirc-swan/adcirc/work /work/n01/n01/sithom/adcirc-swan/adcirc-cg-testsuite/adcirc/adcirc_quarterannular-2d
+
 //MPI compiler for C
 MPI_C_COMPILER:FILEPATH=/opt/cray/pe/craype/2.7.6/bin/cc
 
 //MPI compiler for Fortran
 MPI_Fortran_COMPILER:FILEPATH=/opt/cray/pe/craype/2.7.6/bin/ftns
+
+
+ sh ./RunSingleTest.sh /work/n01/n01/sithom/adcirc-swan/adcirc/work /work/n01/n01/sithom/adcirc-swan/adcirc-cg-testsuite/adcirc/adcirc_internal_overflow
+
+ 
 ```
 
 ```

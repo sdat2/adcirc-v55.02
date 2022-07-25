@@ -36,3 +36,11 @@
 
 # Output files
 *.out
+
+# ADCIRC TESTSUITE
+adcirc-cg-testsuite/
+xdmf/
+pyadcirc/
+talea/
+new-orleans/
+sithom/

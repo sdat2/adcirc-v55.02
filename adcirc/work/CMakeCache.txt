@@ -45,7 +45,7 @@ BUILD_ADCPREPR:UNINITIALIZED=ON
 BUILD_ADCSWAN:BOOL=OFF
 
 //Build ASWIP (ASymmetric Wind Input Preprocessor)
-BUILD_ASWIP:BOOL=OFF
+BUILD_ASWIP:BOOL=ON
 
 //Build the shared library version of ADCIRC
 BUILD_LIBADCIRC_SHARED:BOOL=OFF
@@ -66,7 +66,7 @@ BUILD_PUNSWAN:BOOL=OFF
 BUILD_SWAN:BOOL=OFF
 
 //Build the ADCIRC utility programs
-BUILD_UTILITIES:BOOL=OFF
+BUILD_UTILITIES:BOOL=ON
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/opt/cray/pe/cce/11.0.4/binutils/x86_64/x86_64-pc-linux-gnu/bin/ar

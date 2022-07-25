@@ -6,10 +6,18 @@ ASGSPATH    := /home/jason/asgs/master
 LIBS        := -L$(XDMFLIBPATH) -L$(NETCDFPATH)/lib -L$(HDF5PATH)/lib
 INCLUDES    := -I$(XDMFPATH)/utils -I$(ASGSPATH)/output -I$(NETCDFPATH)/include
 LDFLAGS     := -lXdmfCore -lXdmfUtils -lXdmf -lnetcdff -Wl,-rpath=$(HDF5PATH)/lib
-# 
+
 # specify compiler=gfortran on the make command line
 ifeq ($(compiler),gfortran)
    FC := gfortran
+   FFLAGS := -cpp -ffree-line-length-none
+   ifeq ($(DEBUG),full)
+      FFLAGS := -cpp -g -O0 -fbacktrace -fbounds-check -ffpe-trap=zero,invalid,underflow,overflow,denormal #-Wall
+   endif
+endif
+
+ifeq ($(compiler),ftn)
+   FC := ftn
    FFLAGS := -cpp -ffree-line-length-none
    ifeq ($(DEBUG),full)
       FFLAGS := -cpp -g -O0 -fbacktrace -fbounds-check -ffpe-trap=zero,invalid,underflow,overflow,denormal #-Wall
