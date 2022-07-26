@@ -17,10 +17,20 @@ The `cmake` method seems to be much more reliable than `Makefile`.
 ```bash
 module load PrgEnv-gnu/8.0.0
 module load cray-mpich-abi/8.1.4 
-module load epcc-cray-netcdf-hdf5parallel/4.7.4.3
-module load cray-parallel-netcdf/1.12.1.7
+module load cray-hdf5
+# module load cray-netcdf
+module load cray-hdf5-parallel
+module load cray-netcdf-hdf5parallel
+
+# /opt/cray/pe/netcdf/4.7.4.3/bin/ncdump
 
 sh compile.sh
+```
+
+## Netcdf path
+```bash
+ls /opt/cray/pe/netcdf/4.7.4.3/bin
+nc-config  nccopy  ncdump  ncgen  ncgen3  ncxx4-config  nf-config
 ```
 
 ## TODO
@@ -29,6 +39,8 @@ I still have issues with:
 
  - compiling SWAN.
  - running the unit tests.
+ - Adding netcdf path to it.
+    - `/opt/cray/pe/netcdf/4.7.4.3/bin`
  - testing netcdf outputs.
  - running slurm jobs easily in an automated fashion.
 

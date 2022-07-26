@@ -501,6 +501,12 @@ NETCDF_F90_LIBRARY:FILEPATH=NETCDF_F90_LIBRARY-NOTFOUND
 //Path to a file.
 NETCDF_INCLUDE_DIR:PATH=NETCDF_INCLUDE_DIR-NOTFOUND
 
+//No help, variable specified on the command line.
+NETCDF_INCLUDE_DIRS:UNINITIALIZED=/opt/cray/pe/netcdf/4.7.4.3/bin
+
+//No help, variable specified on the command line.
+NETCDF_LIBRARIES:UNINITIALIZED=/opt/cray/pe/netcdf/4.7.4.3/bin
+
 //Path to a library.
 NETCDF_LIBRARY:FILEPATH=NETCDF_LIBRARY-NOTFOUND
 
