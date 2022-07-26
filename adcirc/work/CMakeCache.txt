@@ -35,14 +35,14 @@ ADDITIONAL_FLAGS_UTLIITIES:STRING=
 //Build the serial ADCIRC executable
 BUILD_ADCIRC:BOOL=ON
 
-//No help, variable specified on the command line.
-BUILD_ADCPREP:UNINITIALIZED=ON
+//Build the MPI parallel ADCIRC preprocessor
+BUILD_ADCPREP:BOOL=ON
 
 //No help, variable specified on the command line.
 BUILD_ADCPREPR:UNINITIALIZED=ON
 
 //Build the serial SWAN+ADCIRC executable
-BUILD_ADCSWAN:BOOL=OFF
+BUILD_ADCSWAN:BOOL=ON
 
 //Build ASWIP (ASymmetric Wind Input Preprocessor)
 BUILD_ASWIP:BOOL=ON
@@ -53,11 +53,11 @@ BUILD_LIBADCIRC_SHARED:BOOL=OFF
 //Build the static library version of ADCIRC
 BUILD_LIBADCIRC_STATIC:BOOL=OFF
 
-//No help, variable specified on the command line.
-BUILD_PADCIRC:UNINITIALIZED=ON
+//Build the MPI parallel ADCIRC executable
+BUILD_PADCIRC:BOOL=ON
 
-//No help, variable specified on the command line.
-BUILD_PADCSWAN:UNINITIALIZED=OFF
+//Build the MPI parallel SWAN+ADCIRC executable
+BUILD_PADCSWAN:BOOL=OFF
 
 //Build the MPI parallel unstructured SWAN executable
 BUILD_PUNSWAN:BOOL=OFF
@@ -845,13 +845,13 @@ MPI_RESULT_C_test_mpi_normal:INTERNAL=TRUE
 //Result of TRY_COMPILE
 MPI_RESULT_Fortran_mpiver_F08_MODULE:INTERNAL=TRUE
 //Result of TRY_COMPILE
-MPI_RESULT_Fortran_test_mpi_F08_MODULE:INTERNAL=FALSE
+MPI_RESULT_Fortran_test_mpi_F08_MODULE:INTERNAL=TRUE
 //Result of TRY_COMPILE
-MPI_RESULT_Fortran_test_mpi_F77_HEADER:INTERNAL=FALSE
+MPI_RESULT_Fortran_test_mpi_F77_HEADER:INTERNAL=TRUE
 //Result of TRY_COMPILE
 MPI_RESULT_Fortran_test_mpi_F77_HEADER_NOKIND:INTERNAL=FALSE
 //Result of TRY_COMPILE
-MPI_RESULT_Fortran_test_mpi_F90_MODULE:INTERNAL=FALSE
+MPI_RESULT_Fortran_test_mpi_F90_MODULE:INTERNAL=TRUE
 //ADVANCED property for variable: PRECISION_8BYTE
 PRECISION_8BYTE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SGI

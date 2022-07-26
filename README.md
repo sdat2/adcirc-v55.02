@@ -12,6 +12,15 @@ I experimented to some extent with installing the environment as a singularity c
 
 The `cmake` method seems to be much more reliable than `Makefile`.
 
+## Compile on ARCHER2
+
+```bash
+module load PrgEnv-gnu/8.0.0
+module load cray-mpich-abi/8.1.4 
+
+sh compile.sh
+```
+
 ## TODO
 
 I still have issues with:
@@ -65,6 +74,7 @@ MPI_Fortran_COMPILER:FILEPATH=/opt/cray/pe/craype/2.7.6/bin/ftns
 
  sh ./RunSingleTest.sh /work/n01/n01/sithom/adcirc-swan/adcirc/work /work/n01/n01/sithom/adcirc-swan/adcirc-cg-testsuite/adcirc/adcirc_internal_overflow
 
+PrgEnv-gnu/8.0.0
  
 ```
 
@@ -74,7 +84,7 @@ https://wiki.adcirc.org/wiki/Compiling
 
 mpif90 libmpich-dev_3.0.4-6ubuntu1_amd64
 
-
+module load PrgEnv-gnu/8.0.0
 module load cray-mpich-abi/8.1.4 
 
 ```bash
@@ -98,8 +108,10 @@ PrgEnv-gnu/8.1.0
 Compiling SWAN manual pages
 https://swanmodel.sourceforge.io/online_doc/swanimp/node8.html
 
+ADCIRC architecture
+https://adcirc.org/wp-content/uploads/sites/2255/2013/02/ADCIRC-Architecture.png
 
-## ADCIRC structure
+## ADCIRC inputs structure
 
 - fort.11  = density initial conditions
 - fort.13 = nodal attributes
@@ -112,3 +124,15 @@ https://swanmodel.sourceforge.io/online_doc/swanimp/node8.html
 - fort.61, fort.62, fot.81, fort.71, fort.71. = elevation, velocity, concentation, met stations
 - fort.63, fort.64, fort.83, fort.73, fort.74 = global elevation, velociyt, concentratiion, met stations.
 
+
+
+## SWAN Compilation problem
+
+```
+Error: Syntax error in data declaration at (1)
+/work/n01/n01/sithom/adcirc-swan/adcirc/work/CMakeFiles/swan_serial_source/swmod1.f:2617:77:
+
+ 2617 |       REAL                FPI                                             40.88
+      |                                                                             1
+Error: Syntax error in data declaration at (1)
+```
