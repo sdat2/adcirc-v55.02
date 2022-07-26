@@ -493,13 +493,13 @@ MPI_Fortran_LINK_FLAGS:STRING=
 NETCDF_AdditionalLibs:STRING=
 
 //Path to a file.
-NETCDF_F90_INCLUDE_DIR:PATH=NETCDF_F90_INCLUDE_DIR-NOTFOUND
+NETCDF_F90_INCLUDE_DIR:PATH=/opt/cray/pe/netcdf/4.7.4.3/bin
 
 //Path to a library.
-NETCDF_F90_LIBRARY:FILEPATH=NETCDF_F90_LIBRARY-NOTFOUND
+NETCDF_F90_LIBRARY:FILEPATH=/opt/cray/pe/netcdf/4.7.4.3/bin
 
 //Path to a file.
-NETCDF_INCLUDE_DIR:PATH=NETCDF_INCLUDE_DIR-NOTFOUND
+NETCDF_INCLUDE_DIR:PATH=/opt/cray/pe/netcdf/4.7.4.3/bin
 
 //No help, variable specified on the command line.
 NETCDF_INCLUDE_DIRS:UNINITIALIZED=/opt/cray/pe/netcdf/4.7.4.3/bin
@@ -508,7 +508,7 @@ NETCDF_INCLUDE_DIRS:UNINITIALIZED=/opt/cray/pe/netcdf/4.7.4.3/bin
 NETCDF_LIBRARIES:UNINITIALIZED=/opt/cray/pe/netcdf/4.7.4.3/bin
 
 //Path to a library.
-NETCDF_LIBRARY:FILEPATH=NETCDF_LIBRARY-NOTFOUND
+NETCDF_LIBRARY:FILEPATH=/opt/cray/pe/netcdf/4.7.4.3/bin
 
 //Path to a program.
 PERL:FILEPATH=/usr/bin/perl
@@ -814,6 +814,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_MPI_C:INTERNAL=[/opt/cray/pe/craype/2.7.6/bin/cc][T
 FIND_PACKAGE_MESSAGE_DETAILS_MPI_CXX:INTERNAL=[/opt/cray/pe/craype/2.7.6/bin/cc][TRUE][v3.1()]
 //Details about finding MPI_Fortran
 FIND_PACKAGE_MESSAGE_DETAILS_MPI_Fortran:INTERNAL=[/opt/cray/pe/craype/2.7.6/bin/ftn][TRUE][v3.1()]
+//Details about finding NetCDF
+FIND_PACKAGE_MESSAGE_DETAILS_NetCDF:INTERNAL=[/opt/cray/pe/netcdf/4.7.4.3/bin;/opt/cray/pe/netcdf/4.7.4.3/bin][/opt/cray/pe/netcdf/4.7.4.3/bin;/opt/cray/pe/netcdf/4.7.4.3/bin][YES][v()]
 //ADVANCED property for variable: IBM
 IBM-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPIEXEC_EXECUTABLE
@@ -884,6 +886,10 @@ NETCDF_F90_LIBRARY-ADVANCED:INTERNAL=1
 NETCDF_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: NETCDF_LIBRARY
 NETCDF_LIBRARY-ADVANCED:INTERNAL=1
+//Result of TRY_COMPILE
+NETCDF_TEST1:INTERNAL=TRUE
+//Result of TRY_COMPILE
+NETCDF_TEST2:INTERNAL=TRUE
 //ADVANCED property for variable: PRECISION_8BYTE
 PRECISION_8BYTE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SGI
