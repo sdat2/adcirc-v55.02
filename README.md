@@ -138,15 +138,10 @@ https://github.com/ec-jrc/pyStorms/blob/master/Notebooks/Estimate%20Holland%20Pa
 
 https://ccht.ccee.ncsu.edu/figuregen-v-49/
 
-## Figure
-
-```bash
-./run.sh $adcirc_path $err 2>/dev/null
-```
-
 ## ADCIRC KATRINA current error
 
 ```bash
+
     TEST CASE: adcirc_katrina-2d-parallel
 
     Prepping case...done!
