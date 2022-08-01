@@ -19,4 +19,4 @@ module load cray-netcdf-hdf5parallel
 
 # srun launches the parallel program based on the SBATCH options
 
-srun $exepath/padcirc > padcirc_log.txt
+srun /work/n01/n01/sithom/adcirc-swan/adcirc/work/padcirc > padcirc_log.txt

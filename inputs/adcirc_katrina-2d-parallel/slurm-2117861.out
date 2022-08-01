@@ -1,0 +1,265 @@
+
+Lmod is automatically replacing "cce/11.0.4" with "gcc/10.2.0".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.0.0" with "PrgEnv-gnu/8.0.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/8.1.4
+
+MPICH ERROR [Rank 9] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(9) (rank 9 in comm 496): application called MPI_Abort(comm=0x84000001, 9) - process 9
+
+MPICH ERROR [Rank 26] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(26) (rank 26 in comm 496): application called MPI_Abort(comm=0x84000001, 26) - process 26
+
+MPICH ERROR [Rank 59] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(59) (rank 59 in comm 496): application called MPI_Abort(comm=0x84000001, 59) - process 59
+
+MPICH ERROR [Rank 10] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(10) (rank 10 in comm 496): application called MPI_Abort(comm=0x84000001, 10) - process 10
+
+MPICH ERROR [Rank 32] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(32) (rank 32 in comm 496): application called MPI_Abort(comm=0x84000001, 32) - process 32
+
+MPICH ERROR [Rank 81] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(81) (rank 81 in comm 496): application called MPI_Abort(comm=0x84000001, 81) - process 81
+
+MPICH ERROR [Rank 94] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(94) (rank 94 in comm 496): application called MPI_Abort(comm=0x84000001, 94) - process 94
+
+MPICH ERROR [Rank 33] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(33) (rank 33 in comm 496): application called MPI_Abort(comm=0x84000001, 33) - process 33
+
+MPICH ERROR [Rank 16] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(16) (rank 16 in comm 496): application called MPI_Abort(comm=0x84000001, 16) - process 16
+
+MPICH ERROR [Rank 17] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(17) (rank 17 in comm 496): application called MPI_Abort(comm=0x84000001, 17) - process 17
+
+MPICH ERROR [Rank 112] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(112) (rank 112 in comm 496): application called MPI_Abort(comm=0x84000001, 112) - process 112
+
+MPICH ERROR [Rank 42] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(42) (rank 42 in comm 496): application called MPI_Abort(comm=0x84000001, 42) - process 42
+
+MPICH ERROR [Rank 18] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(18) (rank 18 in comm 496): application called MPI_Abort(comm=0x84000001, 18) - process 18
+
+MPICH ERROR [Rank 48] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(48) (rank 48 in comm 496): application called MPI_Abort(comm=0x84000001, 48) - process 48
+
+MPICH ERROR [Rank 56] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(56) (rank 56 in comm 496): application called MPI_Abort(comm=0x84000001, 56) - process 56
+
+MPICH ERROR [Rank 24] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(24) (rank 24 in comm 496): application called MPI_Abort(comm=0x84000001, 24) - process 24
+
+MPICH ERROR [Rank 78] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(78) (rank 78 in comm 496): application called MPI_Abort(comm=0x84000001, 78) - process 78
+
+MPICH ERROR [Rank 34] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(34) (rank 34 in comm 496): application called MPI_Abort(comm=0x84000001, 34) - process 34
+
+MPICH ERROR [Rank 25] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(25) (rank 25 in comm 496): application called MPI_Abort(comm=0x84000001, 25) - process 25
+
+MPICH ERROR [Rank 40] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(40) (rank 40 in comm 496): application called MPI_Abort(comm=0x84000001, 40) - process 40
+
+MPICH ERROR [Rank 50] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(50) (rank 50 in comm 496): application called MPI_Abort(comm=0x84000001, 50) - process 50
+
+MPICH ERROR [Rank 41] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(41) (rank 41 in comm 496): application called MPI_Abort(comm=0x84000001, 41) - process 41
+
+MPICH ERROR [Rank 58] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(58) (rank 58 in comm 496): application called MPI_Abort(comm=0x84000001, 58) - process 58
+
+MPICH ERROR [Rank 8] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(8) (rank 8 in comm 496): application called MPI_Abort(comm=0x84000001, 8) - process 8
+
+MPICH ERROR [Rank 35] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(35) (rank 35 in comm 496): application called MPI_Abort(comm=0x84000001, 35) - process 35
+
+MPICH ERROR [Rank 51] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(51) (rank 51 in comm 496): application called MPI_Abort(comm=0x84000001, 51) - process 51
+
+MPICH ERROR [Rank 70] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(70) (rank 70 in comm 496): application called MPI_Abort(comm=0x84000001, 70) - process 70
+
+MPICH ERROR [Rank 96] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(96) (rank 96 in comm 496): application called MPI_Abort(comm=0x84000001, 96) - process 96
+
+MPICH ERROR [Rank 80] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(80) (rank 80 in comm 496): application called MPI_Abort(comm=0x84000001, 80) - process 80
+
+MPICH ERROR [Rank 49] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(49) (rank 49 in comm 496): application called MPI_Abort(comm=0x84000001, 49) - process 49
+
+MPICH ERROR [Rank 83] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(83) (rank 83 in comm 496): application called MPI_Abort(comm=0x84000001, 83) - process 83
+
+MPICH ERROR [Rank 120] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(120) (rank 120 in comm 496): application called MPI_Abort(comm=0x84000001, 120) - process 120
+
+MPICH ERROR [Rank 86] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(86) (rank 86 in comm 496): application called MPI_Abort(comm=0x84000001, 86) - process 86
+
+MPICH ERROR [Rank 104] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(104) (rank 104 in comm 496): application called MPI_Abort(comm=0x84000001, 104) - process 104
+
+MPICH ERROR [Rank 57] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(57) (rank 57 in comm 496): application called MPI_Abort(comm=0x84000001, 57) - process 57
+
+MPICH ERROR [Rank 64] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(64) (rank 64 in comm 496): application called MPI_Abort(comm=0x84000001, 64) - process 64
+
+MPICH ERROR [Rank 65] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(65) (rank 65 in comm 496): application called MPI_Abort(comm=0x84000001, 65) - process 65
+
+MPICH ERROR [Rank 72] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(72) (rank 72 in comm 496): application called MPI_Abort(comm=0x84000001, 72) - process 72
+
+MPICH ERROR [Rank 88] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(88) (rank 88 in comm 496): application called MPI_Abort(comm=0x84000001, 88) - process 88
+
+MPICH ERROR [Rank 95] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(95) (rank 95 in comm 496): application called MPI_Abort(comm=0x84000001, 95) - process 95
+
+MPICH ERROR [Rank 121] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(121) (rank 121 in comm 496): application called MPI_Abort(comm=0x84000001, 121) - process 121
+
+MPICH ERROR [Rank 54] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(54) (rank 54 in comm 496): application called MPI_Abort(comm=0x84000001, 54) - process 54
+
+MPICH ERROR [Rank 74] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(74) (rank 74 in comm 496): application called MPI_Abort(comm=0x84000001, 74) - process 74
+
+MPICH ERROR [Rank 110] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(110) (rank 110 in comm 496): application called MPI_Abort(comm=0x84000001, 110) - process 110
+
+MPICH ERROR [Rank 66] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(66) (rank 66 in comm 496): application called MPI_Abort(comm=0x84000001, 66) - process 66
+
+MPICH ERROR [Rank 98] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(98) (rank 98 in comm 496): application called MPI_Abort(comm=0x84000001, 98) - process 98
+
+MPICH ERROR [Rank 114] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(114) (rank 114 in comm 496): application called MPI_Abort(comm=0x84000001, 114) - process 114
+
+MPICH ERROR [Rank 122] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(122) (rank 122 in comm 496): application called MPI_Abort(comm=0x84000001, 122) - process 122
+
+MPICH ERROR [Rank 62] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(62) (rank 62 in comm 496): application called MPI_Abort(comm=0x84000001, 62) - process 62
+
+MPICH ERROR [Rank 106] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(106) (rank 106 in comm 496): application called MPI_Abort(comm=0x84000001, 106) - process 106
+
+MPICH ERROR [Rank 82] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(82) (rank 82 in comm 496): application called MPI_Abort(comm=0x84000001, 82) - process 82
+
+MPICH ERROR [Rank 89] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(89) (rank 89 in comm 496): application called MPI_Abort(comm=0x84000001, 89) - process 89
+
+MPICH ERROR [Rank 116] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(116) (rank 116 in comm 496): application called MPI_Abort(comm=0x84000001, 116) - process 116
+
+MPICH ERROR [Rank 126] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(126) (rank 126 in comm 496): application called MPI_Abort(comm=0x84000001, 126) - process 126
+
+MPICH ERROR [Rank 102] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(102) (rank 102 in comm 496): application called MPI_Abort(comm=0x84000001, 102) - process 102
+
+MPICH ERROR [Rank 90] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(90) (rank 90 in comm 496): application called MPI_Abort(comm=0x84000001, 90) - process 90
+
+MPICH ERROR [Rank 118] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(118) (rank 118 in comm 496): application called MPI_Abort(comm=0x84000001, 118) - process 118
+
+MPICH ERROR [Rank 38] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(38) (rank 38 in comm 496): application called MPI_Abort(comm=0x84000001, 38) - process 38
+
+MPICH ERROR [Rank 55] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(55) (rank 55 in comm 496): application called MPI_Abort(comm=0x84000001, 55) - process 55
+
+MPICH ERROR [Rank 63] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(63) (rank 63 in comm 496): application called MPI_Abort(comm=0x84000001, 63) - process 63
+
+MPICH ERROR [Rank 105] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(105) (rank 105 in comm 496): application called MPI_Abort(comm=0x84000001, 105) - process 105
+
+MPICH ERROR [Rank 113] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(113) (rank 113 in comm 496): application called MPI_Abort(comm=0x84000001, 113) - process 113
+
+MPICH ERROR [Rank 119] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(119) (rank 119 in comm 496): application called MPI_Abort(comm=0x84000001, 119) - process 119
+
+MPICH ERROR [Rank 3] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(3) (rank 3 in comm 496): application called MPI_Abort(comm=0x84000001, 3) - process 3
+
+MPICH ERROR [Rank 19] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(19) (rank 19 in comm 496): application called MPI_Abort(comm=0x84000001, 19) - process 19
+
+MPICH ERROR [Rank 73] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(73) (rank 73 in comm 496): application called MPI_Abort(comm=0x84000001, 73) - process 73
+
+MPICH ERROR [Rank 97] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(97) (rank 97 in comm 496): application called MPI_Abort(comm=0x84000001, 97) - process 97
+
+MPICH ERROR [Rank 117] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(117) (rank 117 in comm 496): application called MPI_Abort(comm=0x84000001, 117) - process 117
+
+MPICH ERROR [Rank 46] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(46) (rank 46 in comm 496): application called MPI_Abort(comm=0x84000001, 46) - process 46
+
+MPICH ERROR [Rank 108] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(108) (rank 108 in comm 496): application called MPI_Abort(comm=0x84000001, 108) - process 108
+
+MPICH ERROR [Rank 6] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(6) (rank 6 in comm 496): application called MPI_Abort(comm=0x84000001, 6) - process 6
+
+MPICH ERROR [Rank 39] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(39) (rank 39 in comm 496): application called MPI_Abort(comm=0x84000001, 39) - process 39
+
+MPICH ERROR [Rank 14] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(14) (rank 14 in comm 496): application called MPI_Abort(comm=0x84000001, 14) - process 14
+
+MPICH ERROR [Rank 22] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(22) (rank 22 in comm 496): application called MPI_Abort(comm=0x84000001, 22) - process 22
+
+MPICH ERROR [Rank 30] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(30) (rank 30 in comm 496): application called MPI_Abort(comm=0x84000001, 30) - process 30
+
+MPICH ERROR [Rank 11] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(11) (rank 11 in comm 496): application called MPI_Abort(comm=0x84000001, 11) - process 11
+
+MPICH ERROR [Rank 43] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(43) (rank 43 in comm 496): application called MPI_Abort(comm=0x84000001, 43) - process 43
+
+MPICH ERROR [Rank 45] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(45) (rank 45 in comm 496): application called MPI_Abort(comm=0x84000001, 45) - process 45
+
+MPICH ERROR [Rank 53] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(53) (rank 53 in comm 496): application called MPI_Abort(comm=0x84000001, 53) - process 53
+
+MPICH ERROR [Rank 93] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(93) (rank 93 in comm 496): application called MPI_Abort(comm=0x84000001, 93) - process 93
+
+MPICH ERROR [Rank 91] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(91) (rank 91 in comm 496): application called MPI_Abort(comm=0x84000001, 91) - process 91
+
+MPICH ERROR [Rank 27] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(27) (rank 27 in comm 496): application called MPI_Abort(comm=0x84000001, 27) - process 27
+
+MPICH ERROR [Rank 101] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(101) (rank 101 in comm 496): application called MPI_Abort(comm=0x84000001, 101) - process 101
+
+MPICH ERROR [Rank 20] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(20) (rank 20 in comm 496): application called MPI_Abort(comm=0x84000001, 20) - process 20
+
+MPICH ERROR [Rank 67] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(67) (rank 67 in comm 496): application called MPI_Abort(comm=0x84000001, 67) - process 67
+
+MPICH ERROR [Rank 13] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(13) (rank 13 in comm 496): application called MPI_Abort(comm=0x84000001, 13) - process 13
+
+MPICH ERROR [Rank 75] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(75) (rank 75 in comm 496): application called MPI_Abort(comm=0x84000001, 75) - process 75
+
+MPICH ERROR [Rank 37] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(37) (rank 37 in comm 496): application called MPI_Abort(comm=0x84000001, 37) - process 37
+
+MPICH ERROR [Rank 79] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(79) (rank 79 in comm 496): application called MPI_Abort(comm=0x84000001, 79) - process 79
+
+MPICH ERROR [Rank 99] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(99) (rank 99 in comm 496): application called MPI_Abort(comm=0x84000001, 99) - process 99
+
+MPICH ERROR [Rank 109] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(109) (rank 109 in comm 496): application called MPI_Abort(comm=0x84000001, 109) - process 109
+
+MPICH ERROR [Rank 87] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(87) (rank 87 in comm 496): application called MPI_Abort(comm=0x84000001, 87) - process 87
+
+MPICH ERROR [Rank 12] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(12) (rank 12 in comm 496): application called MPI_Abort(comm=0x84000001, 12) - process 12
+
+MPICH ERROR [Rank 31] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(31) (rank 31 in comm 496): application called MPI_Abort(comm=0x84000001, 31) - process 31
+
+MPICH ERROR [Rank 61] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(61) (rank 61 in comm 496): application called MPI_Abort(comm=0x84000001, 61) - process 61
+
+MPICH ERROR [Rank 5] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(5) (rank 5 in comm 496): application called MPI_Abort(comm=0x84000001, 5) - process 5
+
+MPICH ERROR [Rank 69] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(69) (rank 69 in comm 496): application called MPI_Abort(comm=0x84000001, 69) - process 69
+
+MPICH ERROR [Rank 115] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(115) (rank 115 in comm 496): application called MPI_Abort(comm=0x84000001, 115) - process 115
+
+MPICH ERROR [Rank 71] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(71) (rank 71 in comm 496): application called MPI_Abort(comm=0x84000001, 71) - process 71
+
+MPICH ERROR [Rank 107] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(107) (rank 107 in comm 496): application called MPI_Abort(comm=0x84000001, 107) - process 107
+
+MPICH ERROR [Rank 111] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(111) (rank 111 in comm 496): application called MPI_Abort(comm=0x84000001, 111) - process 111
+
+MPICH ERROR [Rank 4] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(4) (rank 4 in comm 496): application called MPI_Abort(comm=0x84000001, 4) - process 4
+
+MPICH ERROR [Rank 123] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(123) (rank 123 in comm 496): application called MPI_Abort(comm=0x84000001, 123) - process 123
+
+MPICH ERROR [Rank 15] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(15) (rank 15 in comm 496): application called MPI_Abort(comm=0x84000001, 15) - process 15
+
+MPICH ERROR [Rank 103] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(103) (rank 103 in comm 496): application called MPI_Abort(comm=0x84000001, 103) - process 103
+
+MPICH ERROR [Rank 21] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(21) (rank 21 in comm 496): application called MPI_Abort(comm=0x84000001, 21) - process 21
+
+MPICH ERROR [Rank 29] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(29) (rank 29 in comm 496): application called MPI_Abort(comm=0x84000001, 29) - process 29
+
+MPICH ERROR [Rank 7] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(7) (rank 7 in comm 496): application called MPI_Abort(comm=0x84000001, 7) - process 7
+
+MPICH ERROR [Rank 77] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(77) (rank 77 in comm 496): application called MPI_Abort(comm=0x84000001, 77) - process 77
+
+MPICH ERROR [Rank 127] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(127) (rank 127 in comm 496): application called MPI_Abort(comm=0x84000001, 127) - process 127
+
+MPICH ERROR [Rank 85] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(85) (rank 85 in comm 496): application called MPI_Abort(comm=0x84000001, 85) - process 85
+
+MPICH ERROR [Rank 47] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(47) (rank 47 in comm 496): application called MPI_Abort(comm=0x84000001, 47) - process 47
+
+MPICH ERROR [Rank 124] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(124) (rank 124 in comm 496): application called MPI_Abort(comm=0x84000001, 124) - process 124
+
+MPICH ERROR [Rank 125] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(125) (rank 125 in comm 496): application called MPI_Abort(comm=0x84000001, 125) - process 125
+
+MPICH ERROR [Rank 68] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(68) (rank 68 in comm 496): application called MPI_Abort(comm=0x84000001, 68) - process 68
+
+MPICH ERROR [Rank 84] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(84) (rank 84 in comm 496): application called MPI_Abort(comm=0x84000001, 84) - process 84
+
+MPICH ERROR [Rank 92] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(92) (rank 92 in comm 496): application called MPI_Abort(comm=0x84000001, 92) - process 92
+
+MPICH ERROR [Rank 28] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(28) (rank 28 in comm 496): application called MPI_Abort(comm=0x84000001, 28) - process 28
+
+MPICH ERROR [Rank 23] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(23) (rank 23 in comm 496): application called MPI_Abort(comm=0x84000001, 23) - process 23
+
+MPICH ERROR [Rank 36] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(36) (rank 36 in comm 496): application called MPI_Abort(comm=0x84000001, 36) - process 36
+
+MPICH ERROR [Rank 44] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(44) (rank 44 in comm 496): application called MPI_Abort(comm=0x84000001, 44) - process 44
+
+MPICH ERROR [Rank 52] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(52) (rank 52 in comm 496): application called MPI_Abort(comm=0x84000001, 52) - process 52
+
+MPICH ERROR [Rank 60] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(60) (rank 60 in comm 496): application called MPI_Abort(comm=0x84000001, 60) - process 60
+
+MPICH ERROR [Rank 76] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(76) (rank 76 in comm 496): application called MPI_Abort(comm=0x84000001, 76) - process 76
+
+MPICH ERROR [Rank 100] [job id 2117861.0] [Mon Aug  1 19:40:22 2022] [nid003659] - Abort(100) (rank 100 in comm 496): application called MPI_Abort(comm=0x84000001, 100) - process 100
+
+srun: error: nid003659: tasks 0-9,11-34: Exited with exit code 10
+srun: launch/slurm: _step_signal: Terminating StepId=2117861.0
+slurmstepd: error: *** STEP 2117861.0 ON nid003659 CANCELLED AT 2022-08-01T19:40:22 ***
+srun: error: nid003659: tasks 10,35-127: Terminated
+srun: Force Terminated StepId=2117861.0
