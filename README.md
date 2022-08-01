@@ -15,6 +15,7 @@ The `cmake` method seems to be much more reliable than `Makefile`.
 ## Compile on ARCHER2
 
 ```bash
+
 module load PrgEnv-gnu/8.0.0
 module load cray-mpich-abi/8.1.4 
 module load cray-hdf5
@@ -23,11 +24,12 @@ module load cray-hdf5-parallel
 module load cray-netcdf-hdf5parallel
 
 # /opt/cray/pe/netcdf/4.7.4.3/bin/ncdump
-
 sh compile.sh
+
 ```
 
 ## Netcdf path
+
 ```bash
 ls /opt/cray/pe/netcdf/4.7.4.3/bin
 nc-config  nccopy  ncdump  ncgen  ncgen3  ncxx4-config  nf-config
@@ -39,8 +41,6 @@ I still have issues with:
 
  - compiling SWAN.
  - running the unit tests.
- - Adding netcdf path to it.
-    - `/opt/cray/pe/netcdf/4.7.4.3/bin`
  - testing netcdf outputs.
  - running slurm jobs easily in an automated fashion.
 
@@ -48,6 +48,7 @@ I still have issues with:
 ## A record of useful commands tried
 
 ```bash
+
 docker pull asgsdockerhub/asgs
 
 singularity pull docker://zcobell/adcirc_20200513:latest
@@ -60,14 +61,11 @@ singularity pull docker://zcobell/adcirc_20170924
 
 singularity shell --bind /work/n01/n01/sithom/adcirc-swan singularity/asgs -nv
 
-   cmake .. -DCMAKE_C_COMPILER=cc -DCMAKE_CXX_COMPILER=cc -DCMAKE_Fortran_COMPILER=ftn -DCMAKE_Fortran_FLAGS=-N 132
-    -DFortran_LINELENGTH_FLAG="-N 132"
-   cmake .. -DCMAKE_C_COMPILER=cc -DCMAKE_CXX_COMPILER=cc -DCMAKE_Fortran_COMPILER=ftn -DBUILD_ADCIRC=ON -DBUILD_PADCIRC=ON -DBUILD_ADCPREP=OFF -DBUILD_ADCSWAN=OFF 
-   Fortran_COMPILER_SPECIFIC_FLAG="-N 132"
-   -DBUILD_PADCSWAN=OFF -DFortran_LINELENGTH_FLAG="-N 132"
+cmake .. -DCMAKE_C_COMPILER=cc -DCMAKE_CXX_COMPILER=cc -DCMAKE_Fortran_COMPILER=ftn -DCMAKE_Fortran_FLAGS="-N 132" -DFortran_LINELENGTH_FLAG="-N 132"
+
+cmake .. -DCMAKE_C_COMPILER=cc -DCMAKE_CXX_COMPILER=cc -DCMAKE_Fortran_COMPILER=ftn -DBUILD_ADCIRC=ON -DBUILD_PADCIRC=ON -DBUILD_ADCPREP=OFF -DBUILD_ADCSWAN=OFF Fortran_COMPILER_SPECIFIC_FLAG="-N 132" -DBUILD_PADCSWAN=OFF -DFortran_LINELENGTH_FLAG="-N 132"
 
 cmake .. -DCMAKE_C_COMPILER=cc -DCMAKE_CXX_COMPILER=cc -DCMAKE_Fortran_COMPILER=ftn -DBUILD_ADCIRC=ON -DBUILD_PADCIRC=ON -DBUILD_ADCPREP=ON -DBUILD_ADCSWAN=OFF -DFortran_COMPILER_SPECIFIC_FLAG=-ffixed-line-length-132 -DBUILD_PADCSWAN=OFF -DFortran_LINELENGTH_FLAG=-ffixed-line-length-132 -DCMAKE_Fortran_FLAGS="-ffree-line-length-132  -ffixed-line-length-132 -DREAL8 -DCSCA -DLINUX -w -fallow-argument-mismatch -O2"
-
 
 //Executable for running MPI programs.
 MPIEXEC_EXECUTABLE:FILEPATH=/usr/lib64/mpi/gcc/openmpi/bin/mpirun
@@ -85,42 +83,11 @@ MPI_C_COMPILER:FILEPATH=/opt/cray/pe/craype/2.7.6/bin/cc
 //MPI compiler for Fortran
 MPI_Fortran_COMPILER:FILEPATH=/opt/cray/pe/craype/2.7.6/bin/ftns
 
-
- sh ./RunSingleTest.sh /work/n01/n01/sithom/adcirc-swan/adcirc/work /work/n01/n01/sithom/adcirc-swan/adcirc-cg-testsuite/adcirc/adcirc_internal_overflow
+sh ./RunSingleTest.sh /work/n01/n01/sithom/adcirc-swan/adcirc/work /work/n01/n01/sithom/adcirc-swan/adcirc-cg-testsuite/adcirc/adcirc_internal_overflow
 
 PrgEnv-gnu/8.0.0
  
 ```
-
-```
-https://wiki.adcirc.org/wiki/Compiling
-```
-
-mpif90 libmpich-dev_3.0.4-6ubuntu1_amd64
-
-module load PrgEnv-gnu/8.0.0
-module load cray-mpich-abi/8.1.4 
-module load cray-hdf5
-# module load cray-netcdf
-module load cray-hdf5-parallel
-module load cray-netcdf-hdf5parallel
-
-# /opt/cray/pe/netcdf/4.7.4.3/bin/ncdump
-
-```bash
-
-ln -s /usr/bin/gfortran /usr/bin/f90
-alias f90=gfortran
-alias f90="gfortran --ffreeform"
-ln -s /usr/local/bin/gfortran /usr/local/bin/f90
-
----------------------------------------------- /opt/cray/pe/lmod/modulefiles/comnet/crayclang/10.0/ofi/1.0 -----------------------------------------------
-   cray-mpich-abi/8.1.4 (D)    cray-mpich-abi/8.1.9    cray-mpich/8.1.4 (L,D)    cray-mpich/8.1.9
-
-```
-
-
-PrgEnv-gnu/8.1.0
 
 
 ## Manual Pages for SWAN/ADCIRC
@@ -130,6 +97,9 @@ https://swanmodel.sourceforge.io/online_doc/swanimp/node8.html
 
 ADCIRC architecture
 https://adcirc.org/wp-content/uploads/sites/2255/2013/02/ADCIRC-Architecture.png
+
+ADCIRC compiling.
+https://wiki.adcirc.org/wiki/Compiling
 
 ## ADCIRC inputs structure
 
@@ -148,11 +118,28 @@ https://adcirc.org/wp-content/uploads/sites/2255/2013/02/ADCIRC-Architecture.png
 
 ## SWAN Compilation problem
 
-```
+```txt
 Error: Syntax error in data declaration at (1)
 /work/n01/n01/sithom/adcirc-swan/adcirc/work/CMakeFiles/swan_serial_source/swmod1.f:2617:77:
 
  2617 |       REAL                FPI                                             40.88
       |                                                                             1
 Error: Syntax error in data declaration at (1)
+```
+
+## Holland Hurricane Model
+
+https://github.com/CLIMADA-project/climada_python
+
+https://github.com/ec-jrc/pyStorms/blob/master/Notebooks/Estimate%20Holland%20Parameters.ipynb
+
+
+## Figure generation script based on GMT
+
+https://ccht.ccee.ncsu.edu/figuregen-v-49/
+
+## Figure
+
+```bash
+./run.sh $adcirc_path $err 2>/dev/null
 ```

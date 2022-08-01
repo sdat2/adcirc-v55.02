@@ -1,5 +1,13 @@
 #!/bin/bash
 
+module load PrgEnv-gnu/8.0.0
+module load cray-mpich-abi/8.1.4 
+module load cray-hdf5
+# module load cray-netcdf
+module load cray-hdf5-parallel
+module load cray-netcdf-hdf5parallel
+
+
 cd adcirc
 cd work
 
