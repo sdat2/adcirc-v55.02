@@ -143,3 +143,15 @@ https://ccht.ccee.ncsu.edu/figuregen-v-49/
 ```bash
 ./run.sh $adcirc_path $err 2>/dev/null
 ```
+
+## ADCIRC KATRINA current error
+
+```bash
+    TEST CASE: adcirc_katrina-2d-parallel
+
+    Prepping case...done!
+    Runnning case...MPICH ERROR [Rank 0] [job id ] [Mon Aug  1 19:08:41 2022] [ln04] - Abort(0) (rank 0 in comm 496): application called MPI_Abort(comm=0x84000000, 0) - process 0
+
+Finished
+    ADCIRC Exit Code: 0
+```

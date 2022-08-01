@@ -14,7 +14,6 @@ module load cray-netcdf-hdf5parallel
 exepath=/work/n01/n01/sithom/adcirc-swan/adcirc/work
 err=0.00001
 np=3
-
 nfiles=9
 files=( "fort.63.nc" "fort.64.nc" "fort.73.nc" "fort.74.nc"
         "maxele.63.nc" "maxvel.63.nc" "maxwvel.63.nc" "minpr.63.nc" 
@@ -36,7 +35,7 @@ else
 fi
 
 echo -n "    Runnning case..."
-mpirun --allow-run-as-root -np $np $exepath/padcirc > padcirc_log.txt
+$exepath/padcirc > padcirc_log.txt
 exitstat=$?
 echo "Finished"
 echo "    ADCIRC Exit Code: $exitstat"
