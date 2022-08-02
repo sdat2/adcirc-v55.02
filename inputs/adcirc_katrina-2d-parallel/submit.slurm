@@ -1,13 +1,14 @@
 #!/bin/bash --login
 
 #SBATCH --job-name=test_job
-#SBATCH --nodes=1
+#SBATCH --nodes=5
 #SBATCH --tasks-per-node=128
 #SBATCH --cpus-per-task=1
 #SBATCH --time=0:5:0
 
 # Replace [budget code] below with your project code (e.g. t01)
-#SBATCH --account=n01-sowise
+# changed 
+#SBATCH --account=n01-SOWISE
 #SBATCH --partition=standard
 #SBATCH --qos=standard
 
@@ -19,4 +20,8 @@ module load cray-netcdf-hdf5parallel
 
 # srun launches the parallel program based on the SBATCH options
 
+
+echo "about to run"
 srun /work/n01/n01/sithom/adcirc-swan/adcirc/work/padcirc > padcirc_log.txt
+echo "ran"
+which mpiexec

@@ -150,3 +150,9 @@ https://ccht.ccee.ncsu.edu/figuregen-v-49/
 Finished
     ADCIRC Exit Code: 0
 ```
+
+
+```
+cd /work/n01/n01/sithom/adcirc-swan/inputs/adcirc_katrina-2d-parallel
+sbatch submit.slurm
+```
