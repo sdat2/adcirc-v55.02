@@ -1,14 +1,14 @@
 #!/bin/bash --login
 
-#SBATCH --job-name=test_job
-#SBATCH --nodes=5
+#SBATCH --job-name=ardcirc_katrina_parralel
+#SBATCH --nodes=50
 #SBATCH --tasks-per-node=128
 #SBATCH --cpus-per-task=1
 #SBATCH --time=0:5:0
 
 # Replace [budget code] below with your project code (e.g. t01)
 # changed 
-#SBATCH --account=n01-SOWISE
+#SBATCH --account=n01-sowise
 #SBATCH --partition=standard
 #SBATCH --qos=standard
 
@@ -22,6 +22,6 @@ module load cray-netcdf-hdf5parallel
 
 
 echo "about to run"
-srun /work/n01/n01/sithom/adcirc-swan/adcirc/work/padcirc > padcirc_log.txt
+srun  --distribution=block:block /work/n01/n01/sithom/adcirc-swan/adcirc/work/padcirc
 echo "ran"
 which mpiexec
