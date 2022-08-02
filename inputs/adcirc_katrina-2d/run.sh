@@ -35,7 +35,7 @@ else
 fi
 
 echo -n "    Runnning case..."
-$exepath/adcirc > padcirc_log.txt
+$exepath/adcirc
 exitstat=$?
 echo "Finished"
 echo "    ADCIRC Exit Code: $exitstat"

@@ -1,7 +1,7 @@
 #!/bin/bash --login
 
 #SBATCH --job-name=ardcirc_katrina_normal
-#SBATCH --nodes=50
+#SBATCH --nodes=1
 #SBATCH --tasks-per-node=128
 #SBATCH --cpus-per-task=1
 #SBATCH --time=0:5:0
@@ -22,5 +22,5 @@ module load cray-netcdf-hdf5parallel
 
 
 echo "about to run"
-srun  n --distribution=block:block --hint=nomultithread /work/n01/n01/sithom/adcirc-swan/adcirc/work/adcirc
+/work/n01/n01/sithom/adcirc-swan/adcirc/work/adcirc
 echo "ran"
