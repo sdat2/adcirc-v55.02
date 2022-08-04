@@ -1,0 +1,86 @@
+
+Lmod is automatically replacing "cce/11.0.4" with "gcc/10.2.0".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.0.0" with "PrgEnv-gnu/8.0.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/8.1.4
+
+about to run
+ INFO: Searching for ADCIRC subdomain directories:
+ INFO: Looking for './PE0000/fort.14' ...
+ INFO: File './PE0000/fort.14' was found!
+ INFO: The search for the subdomain directory was completed successfully.
+ INFO: The ROOTDIR is  '.'.
+ INFO: The INPUTDIR is './PE0000'.
+ INFO: The GBLINPUTDIR is '.'.
+ INFO: The GLOBALDIR is '.'.
+ INFO: The LOCALDIR is './PE0000'.
+WARNING: read14FindDims: Number of land boundary nodes was set to 608 but 606 were found.
+
+ _______________________________________________________________________________
+
+
+                   PROGRAM ADCIRC   VERSION 022ef7c
+
+     AN ADVANCED CIRCULATION MODEL FOR SHELVES, COASTAL SEAS AND ESTUARIES
+
+
+       -  DEVELOPED BY
+
+          R.A. LUETTICH, JR
+            UNIVERSITY OF NORTH CAROLINA AT CHAPEL HILL
+            INSTITUTE OF MARINE SCIENCES
+
+          J.J. WESTERINK 
+            DEPARTMENT OF CIVIL ENGINEERING AND GEOLOGICAL SCIENCES
+            UNIVERSITY OF NOTRE DAME
+
+
+       -  THE ADCIRC SOURCE CODE IS COPYRIGHTED BY
+
+          R.A. LUETTICH, JR. AND J.J. WESTERINK, 1994-2006
+
+       NO PART OF THIS CODE MAY BE REPRODUCED OR REDISTRIBUTED
+          WITHOUT THE WRITTEN PERMISSION OF THE AUTHORS
+
+
+
+ _______________________________________________________________________________
+INFO: initializeMesh: THE NEIGHBOR TABLE IS BEING COMPUTED.
+INFO: initializeMesh: THE NEIGHBOR TABLE IS COMPLETED. THE MINIMUM NUMBER OF NEIGHBORS FOR ANY NODE = 3. 1+THE MAXIMUM NUMBER OF NEIGHBORS FOR ANY NODE = 9. THE PARAMETER MNEI CAN BE SET AS SMALL AS 9.
+ADCIRC Version is 022ef7c                                                                         
+
+ _______________________________________________________________________________
+
+ WIND (AND PRESSURE) INFORMATION READ.
+
+INFO: readHeader: 'reading Oceanweather start date' in  './katrina.221' is '2005082500'.
+INFO: readHeader: 'reading Oceanweather end date' in  './katrina.221' is '2005083121'.
+INFO: readHeader: 'reading Oceanweather start date' in  './katrina.222' is '2005082500'.
+INFO: readHeader: 'reading Oceanweather end date' in  './katrina.222' is '2005083121'.
+INFO: readHeader: 'reading Oceanweather start date' in  './katrina.223' is '2005082500'.
+INFO: readHeader: 'reading Oceanweather end date' in  './katrina.223' is '2005083121'.
+INFO: readHeader: 'reading Oceanweather start date' in  './katrina.224' is '2005082500'.
+INFO: readHeader: 'reading Oceanweather end date' in  './katrina.224' is '2005083121'.
+INFO: readHeader: 'reading Oceanweather start date' in  './katrina.217' is '2005082500'.
+INFO: readHeader: 'reading Oceanweather end date' in  './katrina.217' is '2005083121'.
+INFO: readHeader: 'reading Oceanweather start date' in  './katrina.218' is '2005082500'.
+INFO: readHeader: 'reading Oceanweather end date' in  './katrina.218' is '2005083121'.
+INFO: nws12get: INSERTING A BLANK WIND SNAP, COUNT=   1
+INFO: nws12get: INSERTING A BLANK WIND SNAP, COUNT=   2
+
+ _______________________________________________________________________________
+
+
+ LIMITED RUNTIME INFORMATION SECTION 
+
+
+INFO: ADCIRC_Run: Begin timestepping.
+MPICH ERROR [Rank 0] [job id ] [Thu Aug  4 17:02:57 2022] [nid001214] - Abort(1007286534) (rank 0 in comm 0): Fatal error in PMPI_Irecv: Invalid rank, error stack:
+PMPI_Irecv(170): MPI_Irecv(buf=0x1486c50, count=54, MPI_DOUBLE_PRECISION, src=1, tag=100, comm=0x84000001, request=0x120d270) failed
+PMPI_Irecv(103): Invalid rank has value 1 but must be nonnegative and less than 1
+
+ran

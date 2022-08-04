@@ -538,10 +538,10 @@ metis_LIB_DEPENDS:STATIC=
 mkdir_LIB_DEPENDS:STATIC=
 
 //Dependencies for the target
-templib_adcswan1_LIB_DEPENDS:STATIC=general;version;
+templib_adcswan1_LIB_DEPENDS:STATIC=general;version;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;/opt/cray/pe/netcdf/4.7.4.3/bin;
 
 //Dependencies for the target
-templib_padcswan1_LIB_DEPENDS:STATIC=general;version;general;mkdir;
+templib_padcswan1_LIB_DEPENDS:STATIC=general;version;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;mkdir;
 
 //Dependencies for target
 templib_swan1parallel_LIB_DEPENDS:STATIC=

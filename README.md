@@ -17,9 +17,6 @@ The `cmake` method seems to be much more reliable than `Makefile`.
 ```bash
 
 module load PrgEnv-gnu/8.0.0
-module load cray-mpich-abi/8.1.4 
-module load cray-hdf5
-# module load cray-netcdf
 module load cray-hdf5-parallel
 module load cray-netcdf-hdf5parallel
 
@@ -111,7 +108,7 @@ https://wiki.adcirc.org/wiki/Compiling
 - fort.20 = Non periodic, Normal Flux Boundary Condition.
 - fort.22 = Meteorological Forcing
 - fort.23 = Wave radiaiton stress frocing
-- fort.61, fort.62, fot.81, fort.71, fort.71. = elevation, velocity, concentation, met stations
+- fort.61, fort.62, fot.81, fort.71, fort.71 = elevation, velocity, concentation, met stations
 - fort.63, fort.64, fort.83, fort.73, fort.74 = global elevation, velociyt, concentratiion, met stations.
 
 
@@ -151,6 +148,7 @@ Finished
     ADCIRC Exit Code: 0
 ```
 
+## Run Test
 
 ```
 cd /work/n01/n01/sithom/adcirc-swan/inputs/adcirc_katrina-2d-parallel
