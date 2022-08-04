@@ -14,7 +14,6 @@
 
 # Load the xthi module to get access to the xthi program
 module load PrgEnv-gnu/8.0.0
-module load cray-mpich-abi/8.1.4 
 module load cray-hdf5-parallel
 module load cray-netcdf-hdf5parallel
 
@@ -22,6 +21,5 @@ module load cray-netcdf-hdf5parallel
 
 
 echo "about to run"
-srun  --distribution=block:block /work/n01/n01/sithom/adcirc-swan/adcirc/work/padcirc
+srun /work/n01/n01/sithom/adcirc-swan/adcirc/work/padcirc
 echo "ran"
-which mpiexec

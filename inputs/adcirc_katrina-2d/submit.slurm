@@ -19,8 +19,6 @@ module load cray-hdf5-parallel
 module load cray-netcdf-hdf5parallel
 
 # srun launches the parallel program based on the SBATCH options
-
-
 echo "about to run"
 /work/n01/n01/sithom/adcirc-swan/adcirc/work/adcirc
 echo "ran"

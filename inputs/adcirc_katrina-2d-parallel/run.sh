@@ -3,8 +3,6 @@
 case_name="adcirc_katrina-2d-parallel"
 
 module load PrgEnv-gnu/8.0.0
-module load cray-mpich-abi/8.1.4 
-module load cray-hdf5
 # module load cray-netcdf
 module load cray-hdf5-parallel
 module load cray-netcdf-hdf5parallel
@@ -25,8 +23,8 @@ echo "|---------------------------------------------|"
 echo "    TEST CASE: $case_name"
 echo ""
 echo -n "    Prepping case..."
-$exepath/adcprep --np $np --partmesh >  adcprep.log
-$exepath/adcprep --np $np --prepall  >> adcprep.log
+$exepath/adcprep --np $np --partmesh
+$exepath/adcprep --np $np --prepall
 if [ $? == 0 ] ; then
     echo "done!"
 else
@@ -35,7 +33,7 @@ else
 fi
 
 echo -n "    Runnning case..."
-$exepath/padcirc > padcirc_log.txt
+$exepath/padcirc
 exitstat=$?
 echo "Finished"
 echo "    ADCIRC Exit Code: $exitstat"
@@ -44,9 +42,3 @@ if [ "x$exitstat" != "x0" ] ; then
     exit 1
 fi
 echo ""
-
-if [ $fail == 1 ] ; then
-    exit 1
-else
-    exit 0
-fi
