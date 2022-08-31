@@ -158,3 +158,288 @@ INFO: ADCIRC_Run: Begin timestepping.
   ELMAX = -2.4441E+000 AT NODE      177  SPEEDMAX =  1.8448E+000 AT NODE      172
  TIME STEP =   17640  29.17% COMPLETE     ITERATIONS =    0     TIME =  0.35280000E+06
   ELMAX =  3.4580E+000 AT NODE       22  SPEEDMAX =  1.5810E+000 AT NODE       23
+ TIME STEP =   18000  29.76% COMPLETE     ITERATIONS =    0     TIME =  0.36000000E+06
+  ELMAX =  6.0316E+000 AT NODE       29  SPEEDMAX =  1.6906E+000 AT NODE       16
+ TIME STEP =   18360  30.36% COMPLETE     ITERATIONS =    0     TIME =  0.36720000E+06
+  ELMAX =  5.0690E+000 AT NODE       23  SPEEDMAX =  1.8907E+000 AT NODE      140
+ TIME STEP =   18720  30.95% COMPLETE     ITERATIONS =    0     TIME =  0.37440000E+06
+  ELMAX =  3.5745E+000 AT NODE        8  SPEEDMAX =  2.1920E+000 AT NODE       16
+ TIME STEP =   19080  31.55% COMPLETE     ITERATIONS =    0     TIME =  0.38160000E+06
+  ELMAX = -8.0220E+000 AT NODE       31  SPEEDMAX =  2.0674E+000 AT NODE       28
+ TIME STEP =   19440  32.14% COMPLETE     ITERATIONS =    0     TIME =  0.38880000E+06
+  ELMAX = -2.8152E+000 AT NODE      141  SPEEDMAX =  2.0426E+000 AT NODE      140
+ TIME STEP =   19800  32.74% COMPLETE     ITERATIONS =    0     TIME =  0.39600000E+06
+  ELMAX =  3.3338E+000 AT NODE       40  SPEEDMAX =  1.4461E+000 AT NODE      897
+ TIME STEP =   20160  33.33% COMPLETE     ITERATIONS =    0     TIME =  0.40320000E+06
+  ELMAX =  5.3015E+000 AT NODE       29  SPEEDMAX =  1.3292E+000 AT NODE       16
+ TIME STEP =   20520  33.93% COMPLETE     ITERATIONS =    0     TIME =  0.41040000E+06
+  ELMAX =  5.4322E+000 AT NODE       23  SPEEDMAX =  1.7611E+000 AT NODE      140
+ TIME STEP =   20880  34.52% COMPLETE     ITERATIONS =    0     TIME =  0.41760000E+06
+  ELMAX =  3.8315E+000 AT NODE        8  SPEEDMAX =  1.9847E+000 AT NODE       16
+ TIME STEP =   21240  35.12% COMPLETE     ITERATIONS =    0     TIME =  0.42480000E+06
+  ELMAX = -7.6242E+000 AT NODE       31  SPEEDMAX =  1.9891E+000 AT NODE       28
+ TIME STEP =   21600  35.71% COMPLETE     ITERATIONS =    0     TIME =  0.43200000E+06
+  ELMAX = -4.1076E+000 AT NODE       31  SPEEDMAX =  2.1467E+000 AT NODE      140
+ TIME STEP =   21960  36.31% COMPLETE     ITERATIONS =    0     TIME =  0.43920000E+06
+  ELMAX =  2.1185E+000 AT NODE       31  SPEEDMAX =  1.4448E+000 AT NODE      897
+ TIME STEP =   22320  36.90% COMPLETE     ITERATIONS =    0     TIME =  0.44640000E+06
+  ELMAX =  4.5508E+000 AT NODE       85  SPEEDMAX =  1.0538E+000 AT NODE      986
+ TIME STEP =   22680  37.50% COMPLETE     ITERATIONS =    0     TIME =  0.45360000E+06
+  ELMAX =  5.3693E+000 AT NODE       23  SPEEDMAX =  1.6008E+000 AT NODE      140
+ TIME STEP =   23040  38.10% COMPLETE     ITERATIONS =    0     TIME =  0.46080000E+06
+  ELMAX =  3.8432E+000 AT NODE        8  SPEEDMAX =  1.7803E+000 AT NODE      172
+ TIME STEP =   23400  38.69% COMPLETE     ITERATIONS =    0     TIME =  0.46800000E+06
+  ELMAX = -6.4456E+000 AT NODE       31  SPEEDMAX =  1.9002E+000 AT NODE       28
+ TIME STEP =   23760  39.29% COMPLETE     ITERATIONS =    0     TIME =  0.47520000E+06
+  ELMAX = -5.5272E+000 AT NODE       31  SPEEDMAX =  2.1030E+000 AT NODE      140
+ TIME STEP =   24120  39.88% COMPLETE     ITERATIONS =    0     TIME =  0.48240000E+06
+  ELMAX = -1.6814E+000 AT NODE      258  SPEEDMAX =  1.4452E+000 AT NODE      172
+ TIME STEP =   24480  40.48% COMPLETE     ITERATIONS =    0     TIME =  0.48960000E+06
+  ELMAX =  4.2022E+000 AT NODE       85  SPEEDMAX =  1.2190E+000 AT NODE       17
+ TIME STEP =   24840  41.07% COMPLETE     ITERATIONS =    0     TIME =  0.49680000E+06
+  ELMAX =  5.4016E+000 AT NODE       23  SPEEDMAX =  1.4586E+000 AT NODE      140
+ TIME STEP =   25200  41.67% COMPLETE     ITERATIONS =    0     TIME =  0.50400000E+06
+  ELMAX =  4.0003E+000 AT NODE        8  SPEEDMAX =  1.8420E+000 AT NODE      140
+Using group1 to interpolate pressure and wind fields from time 518400.00 to time 529200.00.
+Using group2 to interpolate pressure and wind fields from time 518400.00 to time 529200.00.
+Using group3 to interpolate pressure and wind fields from time 518400.00 to time 529200.00.
+ TIME STEP =   25560  42.26% COMPLETE     ITERATIONS =    0     TIME =  0.51120000E+06
+  ELMAX = -4.8648E+000 AT NODE       31  SPEEDMAX =  1.8754E+000 AT NODE       28
+ TIME STEP =   25920  42.86% COMPLETE     ITERATIONS =    0     TIME =  0.51840000E+06
+  ELMAX = -6.6794E+000 AT NODE       31  SPEEDMAX =  2.0461E+000 AT NODE       28
+Using group1 to interpolate pressure and wind fields from time 529200.00 to time 540000.00.
+Using group2 to interpolate pressure and wind fields from time 529200.00 to time 540000.00.
+Using group3 to interpolate pressure and wind fields from time 529200.00 to time 540000.00.
+ TIME STEP =   26280  43.45% COMPLETE     ITERATIONS =    0     TIME =  0.52560000E+06
+  ELMAX = -1.7699E+000 AT NODE      584  SPEEDMAX =  1.4618E+000 AT NODE      172
+Using group1 to interpolate pressure and wind fields from time 540000.00 to time 550800.00.
+Using group2 to interpolate pressure and wind fields from time 540000.00 to time 550800.00.
+Using group3 to interpolate pressure and wind fields from time 540000.00 to time 550800.00.
+ TIME STEP =   26640  44.05% COMPLETE     ITERATIONS =    0     TIME =  0.53280000E+06
+  ELMAX =  3.6405E+000 AT NODE       38  SPEEDMAX =  1.5989E+000 AT NODE       17
+ TIME STEP =   27000  44.64% COMPLETE     ITERATIONS =    0     TIME =  0.54000000E+06
+  ELMAX =  4.7564E+000 AT NODE       22  SPEEDMAX =  1.4157E+000 AT NODE       16
+Using group1 to interpolate pressure and wind fields from time 550800.00 to time 561600.00.
+Using group2 to interpolate pressure and wind fields from time 550800.00 to time 561600.00.
+Using group3 to interpolate pressure and wind fields from time 550800.00 to time 561600.00.
+ TIME STEP =   27360  45.24% COMPLETE     ITERATIONS =    0     TIME =  0.54720000E+06
+  ELMAX =  3.5552E+000 AT NODE        3  SPEEDMAX =  1.7812E+000 AT NODE      140
+Using group1 to interpolate pressure and wind fields from time 561600.00 to time 572400.00.
+Using group2 to interpolate pressure and wind fields from time 561600.00 to time 572400.00.
+Using group3 to interpolate pressure and wind fields from time 561600.00 to time 572400.00.
+ TIME STEP =   27720  45.83% COMPLETE     ITERATIONS =    0     TIME =  0.55440000E+06
+  ELMAX = -3.5704E+000 AT NODE       83  SPEEDMAX =  1.6022E+000 AT NODE       28
+ TIME STEP =   28080  46.43% COMPLETE     ITERATIONS =    0     TIME =  0.56160000E+06
+  ELMAX = -6.7013E+000 AT NODE       31  SPEEDMAX =  1.9259E+000 AT NODE       28
+Using group1 to interpolate pressure and wind fields from time 572400.00 to time 583200.00.
+Using group2 to interpolate pressure and wind fields from time 572400.00 to time 583200.00.
+Using group3 to interpolate pressure and wind fields from time 572400.00 to time 583200.00.
+ TIME STEP =   28440  47.02% COMPLETE     ITERATIONS =    0     TIME =  0.56880000E+06
+  ELMAX = -1.9262E+000 AT NODE      176  SPEEDMAX =  1.5316E+000 AT NODE      172
+Using group1 to interpolate pressure and wind fields from time 583200.00 to time 594000.00.
+Using group2 to interpolate pressure and wind fields from time 583200.00 to time 594000.00.
+Using group3 to interpolate pressure and wind fields from time 583200.00 to time 594000.00.
+ TIME STEP =   28800  47.62% COMPLETE     ITERATIONS =    0     TIME =  0.57600000E+06
+  ELMAX =  3.2682E+000 AT NODE       29  SPEEDMAX =  1.5756E+000 AT NODE       16
+ TIME STEP =   29160  48.21% COMPLETE     ITERATIONS =    0     TIME =  0.58320000E+06
+  ELMAX =  5.1625E+000 AT NODE       22  SPEEDMAX =  1.6703E+000 AT NODE       16
+Using group1 to interpolate pressure and wind fields from time 594000.00 to time 604800.00.
+Using group2 to interpolate pressure and wind fields from time 594000.00 to time 604800.00.
+Using group3 to interpolate pressure and wind fields from time 594000.00 to time 604800.00.
+ TIME STEP =   29520  48.81% COMPLETE     ITERATIONS =    0     TIME =  0.59040000E+06
+  ELMAX =  4.1135E+000 AT NODE       23  SPEEDMAX =  1.7347E+000 AT NODE      140
+Using group1 to interpolate pressure and wind fields from time 604800.00 to time 615600.00.
+Using group2 to interpolate pressure and wind fields from time 604800.00 to time 615600.00.
+Using group3 to interpolate pressure and wind fields from time 604800.00 to time 615600.00.
+ TIME STEP =   29880  49.40% COMPLETE     ITERATIONS =    0     TIME =  0.59760000E+06
+  ELMAX =  2.9891E+000 AT NODE        8  SPEEDMAX =  1.8838E+000 AT NODE       16
+ TIME STEP =   30240  50.00% COMPLETE     ITERATIONS =    0     TIME =  0.60480000E+06
+  ELMAX = -6.5868E+000 AT NODE       31  SPEEDMAX =  1.9094E+000 AT NODE       28
+Using group1 to interpolate pressure and wind fields from time 615600.00 to time 626400.00.
+Using group2 to interpolate pressure and wind fields from time 615600.00 to time 626400.00.
+Using group3 to interpolate pressure and wind fields from time 615600.00 to time 626400.00.
+ TIME STEP =   30600  50.60% COMPLETE     ITERATIONS =    0     TIME =  0.61200000E+06
+  ELMAX = -2.1339E+000 AT NODE      177  SPEEDMAX =  1.6753E+000 AT NODE      140
+Using group1 to interpolate pressure and wind fields from time 626400.00 to time 637200.00.
+Using group2 to interpolate pressure and wind fields from time 626400.00 to time 637200.00.
+Using group3 to interpolate pressure and wind fields from time 626400.00 to time 637200.00.
+ TIME STEP =   30960  51.19% COMPLETE     ITERATIONS =    0     TIME =  0.61920000E+06
+  ELMAX =  2.7267E+000 AT NODE       22  SPEEDMAX =  1.3526E+000 AT NODE       23
+ TIME STEP =   31320  51.79% COMPLETE     ITERATIONS =    0     TIME =  0.62640000E+06
+  ELMAX =  4.7033E+000 AT NODE       29  SPEEDMAX =  1.2057E+000 AT NODE       16
+Using group1 to interpolate pressure and wind fields from time 637200.00 to time 648000.00.
+Using group2 to interpolate pressure and wind fields from time 637200.00 to time 648000.00.
+Using group3 to interpolate pressure and wind fields from time 637200.00 to time 648000.00.
+ TIME STEP =   31680  52.38% COMPLETE     ITERATIONS =    0     TIME =  0.63360000E+06
+  ELMAX =  3.9515E+000 AT NODE       23  SPEEDMAX =  1.4684E+000 AT NODE      140
+Using group1 to interpolate pressure and wind fields from time 648000.00 to time 658800.00.
+Using group2 to interpolate pressure and wind fields from time 648000.00 to time 658800.00.
+Using group3 to interpolate pressure and wind fields from time 648000.00 to time 658800.00.
+ TIME STEP =   32040  52.98% COMPLETE     ITERATIONS =    0     TIME =  0.64080000E+06
+  ELMAX =  2.7646E+000 AT NODE        8  SPEEDMAX =  1.8851E+000 AT NODE       16
+ TIME STEP =   32400  53.57% COMPLETE     ITERATIONS =    0     TIME =  0.64800000E+06
+  ELMAX = -6.2593E+000 AT NODE       31  SPEEDMAX =  1.5349E+000 AT NODE       28
+Using group1 to interpolate pressure and wind fields from time 658800.00 to time 669600.00.
+Using group2 to interpolate pressure and wind fields from time 658800.00 to time 669600.00.
+Using group3 to interpolate pressure and wind fields from time 658800.00 to time 669600.00.
+ TIME STEP =   32760  54.17% COMPLETE     ITERATIONS =    0     TIME =  0.65520000E+06
+  ELMAX = -2.3226E+000 AT NODE       63  SPEEDMAX =  1.7378E+000 AT NODE      140
+Using group1 to interpolate pressure and wind fields from time 669600.00 to time 680400.00.
+Using group2 to interpolate pressure and wind fields from time 669600.00 to time 680400.00.
+Using group3 to interpolate pressure and wind fields from time 669600.00 to time 680400.00.
+ TIME STEP =   33120  54.76% COMPLETE     ITERATIONS =    0     TIME =  0.66240000E+06
+  ELMAX =  2.5971E+000 AT NODE       40  SPEEDMAX =  1.1777E+000 AT NODE      897
+ TIME STEP =   33480  55.36% COMPLETE     ITERATIONS =    0     TIME =  0.66960000E+06
+  ELMAX =  4.0574E+000 AT NODE       22  SPEEDMAX =  1.0200E+000 AT NODE       16
+Using group1 to interpolate pressure and wind fields from time 680400.00 to time 691200.00.
+Using group2 to interpolate pressure and wind fields from time 680400.00 to time 691200.00.
+Using group3 to interpolate pressure and wind fields from time 680400.00 to time 691200.00.
+ TIME STEP =   33840  55.95% COMPLETE     ITERATIONS =    0     TIME =  0.67680000E+06
+  ELMAX =  4.4878E+000 AT NODE       23  SPEEDMAX =  1.3764E+000 AT NODE      140
+Using group1 to interpolate pressure and wind fields from time 691200.00 to time 702000.00.
+Using group2 to interpolate pressure and wind fields from time 691200.00 to time 702000.00.
+Using group3 to interpolate pressure and wind fields from time 691200.00 to time 702000.00.
+ TIME STEP =   34200  56.55% COMPLETE     ITERATIONS =    0     TIME =  0.68400000E+06
+  ELMAX =  3.1140E+000 AT NODE        8  SPEEDMAX =  1.4834E+000 AT NODE       16
+ TIME STEP =   34560  57.14% COMPLETE     ITERATIONS =    0     TIME =  0.69120000E+06
+  ELMAX = -5.5157E+000 AT NODE       31  SPEEDMAX =  1.5409E+000 AT NODE       28
+Using group1 to interpolate pressure and wind fields from time 702000.00 to time 712800.00.
+Using group2 to interpolate pressure and wind fields from time 702000.00 to time 712800.00.
+Using group3 to interpolate pressure and wind fields from time 702000.00 to time 712800.00.
+ TIME STEP =   34920  57.74% COMPLETE     ITERATIONS =    0     TIME =  0.69840000E+06
+  ELMAX = -3.6563E+000 AT NODE       31  SPEEDMAX =  1.7437E+000 AT NODE      140
+Using group1 to interpolate pressure and wind fields from time 712800.00 to time 723600.00.
+Using group2 to interpolate pressure and wind fields from time 712800.00 to time 723600.00.
+Using group3 to interpolate pressure and wind fields from time 712800.00 to time 723600.00.
+ TIME STEP =   35280  58.33% COMPLETE     ITERATIONS =    0     TIME =  0.70560000E+06
+  ELMAX =  1.3676E+000 AT NODE       46  SPEEDMAX =  1.1644E+000 AT NODE      172
+ TIME STEP =   35640  58.93% COMPLETE     ITERATIONS =    0     TIME =  0.71280000E+06
+  ELMAX =  3.2440E+000 AT NODE       85  SPEEDMAX =  9.1277E-001 AT NODE       17
+Using group1 to interpolate pressure and wind fields from time 723600.00 to time 734400.00.
+Using group2 to interpolate pressure and wind fields from time 723600.00 to time 734400.00.
+Using group3 to interpolate pressure and wind fields from time 723600.00 to time 734400.00.
+ TIME STEP =   36000  59.52% COMPLETE     ITERATIONS =    0     TIME =  0.72000000E+06
+  ELMAX =  3.6421E+000 AT NODE       23  SPEEDMAX =  1.1323E+000 AT NODE      140
+Using group1 to interpolate pressure and wind fields from time 734400.00 to time 745200.00.
+Using group2 to interpolate pressure and wind fields from time 734400.00 to time 745200.00.
+Using group3 to interpolate pressure and wind fields from time 734400.00 to time 745200.00.
+ TIME STEP =   36360  60.12% COMPLETE     ITERATIONS =    0     TIME =  0.72720000E+06
+  ELMAX =  2.5392E+000 AT NODE        3  SPEEDMAX =  1.4074E+000 AT NODE      140
+ TIME STEP =   36720  60.71% COMPLETE     ITERATIONS =    0     TIME =  0.73440000E+06
+  ELMAX = -4.2426E+000 AT NODE       31  SPEEDMAX =  1.3291E+000 AT NODE       28
+Using group1 to interpolate pressure and wind fields from time 745200.00 to time 756000.00.
+Using group2 to interpolate pressure and wind fields from time 745200.00 to time 756000.00.
+Using group3 to interpolate pressure and wind fields from time 745200.00 to time 756000.00.
+ TIME STEP =   37080  61.31% COMPLETE     ITERATIONS =    0     TIME =  0.74160000E+06
+  ELMAX = -4.6565E+000 AT NODE       31  SPEEDMAX =  1.5110E+000 AT NODE      140
+Using group1 to interpolate pressure and wind fields from time 756000.00 to time 766800.00.
+Using group2 to interpolate pressure and wind fields from time 756000.00 to time 766800.00.
+Using group3 to interpolate pressure and wind fields from time 756000.00 to time 766800.00.
+ TIME STEP =   37440  61.90% COMPLETE     ITERATIONS =    0     TIME =  0.74880000E+06
+  ELMAX = -1.2144E+000 AT NODE      584  SPEEDMAX =  1.1739E+000 AT NODE      172
+ TIME STEP =   37800  62.50% COMPLETE     ITERATIONS =    0     TIME =  0.75600000E+06
+  ELMAX =  3.0146E+000 AT NODE       65  SPEEDMAX =  1.3207E+000 AT NODE       17
+Using group1 to interpolate pressure and wind fields from time 766800.00 to time 777600.00.
+Using group2 to interpolate pressure and wind fields from time 766800.00 to time 777600.00.
+Using group3 to interpolate pressure and wind fields from time 766800.00 to time 777600.00.
+ TIME STEP =   38160  63.10% COMPLETE     ITERATIONS =    0     TIME =  0.76320000E+06
+  ELMAX =  3.9119E+000 AT NODE       17  SPEEDMAX =  1.1507E+000 AT NODE       12
+Using group1 to interpolate pressure and wind fields from time 777600.00 to time 788400.00.
+Using group2 to interpolate pressure and wind fields from time 777600.00 to time 788400.00.
+Using group3 to interpolate pressure and wind fields from time 777600.00 to time 788400.00.
+ TIME STEP =   38520  63.69% COMPLETE     ITERATIONS =    0     TIME =  0.77040000E+06
+  ELMAX =  2.8270E+000 AT NODE       23  SPEEDMAX =  1.4681E+000 AT NODE      140
+ TIME STEP =   38880  64.29% COMPLETE     ITERATIONS =    0     TIME =  0.77760000E+06
+  ELMAX = -2.5276E+000 AT NODE       83  SPEEDMAX =  1.2641E+000 AT NODE       28
+Using group1 to interpolate pressure and wind fields from time 788400.00 to time 799200.00.
+Using group2 to interpolate pressure and wind fields from time 788400.00 to time 799200.00.
+Using group3 to interpolate pressure and wind fields from time 788400.00 to time 799200.00.
+ TIME STEP =   39240  64.88% COMPLETE     ITERATIONS =    0     TIME =  0.78480000E+06
+  ELMAX = -4.9876E+000 AT NODE       31  SPEEDMAX =  1.5810E+000 AT NODE       28
+Using group1 to interpolate pressure and wind fields from time 799200.00 to time 810000.00.
+Using group2 to interpolate pressure and wind fields from time 799200.00 to time 810000.00.
+Using group3 to interpolate pressure and wind fields from time 799200.00 to time 810000.00.
+ TIME STEP =   39600  65.48% COMPLETE     ITERATIONS =    0     TIME =  0.79200000E+06
+  ELMAX = -1.6125E+000 AT NODE      258  SPEEDMAX =  1.2122E+000 AT NODE      140
+ TIME STEP =   39960  66.07% COMPLETE     ITERATIONS =    0     TIME =  0.79920000E+06
+  ELMAX =  2.2989E+000 AT NODE       17  SPEEDMAX =  1.1574E+000 AT NODE       16
+Using group1 to interpolate pressure and wind fields from time 810000.00 to time 820800.00.
+Using group2 to interpolate pressure and wind fields from time 810000.00 to time 820800.00.
+Using group3 to interpolate pressure and wind fields from time 810000.00 to time 820800.00.
+ TIME STEP =   40320  66.67% COMPLETE     ITERATIONS =    0     TIME =  0.80640000E+06
+  ELMAX =  3.3770E+000 AT NODE       22  SPEEDMAX =  1.2204E+000 AT NODE       16
+Using group1 to interpolate pressure and wind fields from time 820800.00 to time 831600.00.
+Using group2 to interpolate pressure and wind fields from time 820800.00 to time 831600.00.
+Using group3 to interpolate pressure and wind fields from time 820800.00 to time 831600.00.
+ TIME STEP =   40680  67.26% COMPLETE     ITERATIONS =    0     TIME =  0.81360000E+06
+  ELMAX =  2.6152E+000 AT NODE       23  SPEEDMAX =  1.2094E+000 AT NODE      140
+ TIME STEP =   41040  67.86% COMPLETE     ITERATIONS =    0     TIME =  0.82080000E+06
+  ELMAX =  1.9072E+000 AT NODE        8  SPEEDMAX =  1.4513E+000 AT NODE       16
+Using group1 to interpolate pressure and wind fields from time 831600.00 to time 842400.00.
+Using group2 to interpolate pressure and wind fields from time 831600.00 to time 842400.00.
+Using group3 to interpolate pressure and wind fields from time 831600.00 to time 842400.00.
+ TIME STEP =   41400  68.45% COMPLETE     ITERATIONS =    0     TIME =  0.82800000E+06
+  ELMAX = -4.6966E+000 AT NODE       31  SPEEDMAX =  1.2081E+000 AT NODE       28
+Using group1 to interpolate pressure and wind fields from time 842400.00 to time 853200.00.
+Using group2 to interpolate pressure and wind fields from time 842400.00 to time 853200.00.
+Using group3 to interpolate pressure and wind fields from time 842400.00 to time 853200.00.
+ TIME STEP =   41760  69.05% COMPLETE     ITERATIONS =    0     TIME =  0.83520000E+06
+  ELMAX = -1.7097E+000 AT NODE      258  SPEEDMAX =  1.3316E+000 AT NODE      140
+ TIME STEP =   42120  69.64% COMPLETE     ITERATIONS =    0     TIME =  0.84240000E+06
+  ELMAX =  2.0565E+000 AT NODE       22  SPEEDMAX =  1.1482E+000 AT NODE       23
+Using group1 to interpolate pressure and wind fields from time 853200.00 to time 864000.00.
+Using group2 to interpolate pressure and wind fields from time 853200.00 to time 864000.00.
+Using group3 to interpolate pressure and wind fields from time 853200.00 to time 864000.00.
+ TIME STEP =   42480  70.24% COMPLETE     ITERATIONS =    0     TIME =  0.84960000E+06
+  ELMAX =  3.8519E+000 AT NODE       29  SPEEDMAX =  1.1422E+000 AT NODE       16
+Using group1 to interpolate pressure and wind fields from time 864000.00 to time 874800.00.
+Using group2 to interpolate pressure and wind fields from time 864000.00 to time 874800.00.
+Using group3 to interpolate pressure and wind fields from time 864000.00 to time 874800.00.
+ TIME STEP =   42840  70.83% COMPLETE     ITERATIONS =    0     TIME =  0.85680000E+06
+  ELMAX =  3.3277E+000 AT NODE       23  SPEEDMAX =  1.1120E+000 AT NODE      140
+ TIME STEP =   43200  71.43% COMPLETE     ITERATIONS =    0     TIME =  0.86400000E+06
+  ELMAX =  2.2943E+000 AT NODE        8  SPEEDMAX =  1.3729E+000 AT NODE       16
+Using group1 to interpolate pressure and wind fields from time 874800.00 to time 885600.00.
+Using group2 to interpolate pressure and wind fields from time 874800.00 to time 885600.00.
+Using group3 to interpolate pressure and wind fields from time 874800.00 to time 885600.00.
+ TIME STEP =   43560  72.02% COMPLETE     ITERATIONS =    0     TIME =  0.87120000E+06
+  ELMAX = -4.3671E+000 AT NODE       31  SPEEDMAX =  1.1439E+000 AT NODE       28
+Using group1 to interpolate pressure and wind fields from time 885600.00 to time 896400.00.
+Using group2 to interpolate pressure and wind fields from time 885600.00 to time 896400.00.
+Using group3 to interpolate pressure and wind fields from time 885600.00 to time 896400.00.
+ TIME STEP =   43920  72.62% COMPLETE     ITERATIONS =    0     TIME =  0.87840000E+06
+  ELMAX = -2.3140E+000 AT NODE       63  SPEEDMAX =  1.4151E+000 AT NODE      140
+ TIME STEP =   44280  73.21% COMPLETE     ITERATIONS =    0     TIME =  0.88560000E+06
+  ELMAX = -1.9920E+000 AT NODE     4088  SPEEDMAX =  1.0225E+000 AT NODE     5507
+Using group1 to interpolate pressure and wind fields from time 896400.00 to time 907200.00.
+Using group2 to interpolate pressure and wind fields from time 896400.00 to time 907200.00.
+Using group3 to interpolate pressure and wind fields from time 896400.00 to time 907200.00.
+ TIME STEP =   44640  73.81% COMPLETE     ITERATIONS =    0     TIME =  0.89280000E+06
+  ELMAX =  2.4924E+000 AT NODE       85  SPEEDMAX =  1.0399E+000 AT NODE     5507
+Using group1 to interpolate pressure and wind fields from time 907200.00 to time 918000.00.
+Using group2 to interpolate pressure and wind fields from time 907200.00 to time 918000.00.
+Using group3 to interpolate pressure and wind fields from time 907200.00 to time 918000.00.
+ TIME STEP =   45000  74.40% COMPLETE     ITERATIONS =    0     TIME =  0.90000000E+06
+  ELMAX =  2.6458E+000 AT NODE       23  SPEEDMAX =  1.6699E+000 AT NODE     4468
+ TIME STEP =   45360  75.00% COMPLETE     ITERATIONS =    0     TIME =  0.90720000E+06
+  ELMAX = -2.0328E+000 AT NODE     4476  SPEEDMAX =  1.0968E+000 AT NODE      140
+Using group1 to interpolate pressure and wind fields from time 918000.00 to time 928800.00.
+Using group2 to interpolate pressure and wind fields from time 918000.00 to time 928800.00.
+Using group3 to interpolate pressure and wind fields from time 918000.00 to time 928800.00.
+ TIME STEP =   45720  75.60% COMPLETE     ITERATIONS =    0     TIME =  0.91440000E+06
+  ELMAX = -3.2578E+000 AT NODE       31  SPEEDMAX =  1.0533E+000 AT NODE       28
+Using group1 to interpolate pressure and wind fields from time 928800.00 to time 939600.00.
+Using group2 to interpolate pressure and wind fields from time 928800.00 to time 939600.00.
+Using group3 to interpolate pressure and wind fields from time 928800.00 to time 939600.00.
+ TIME STEP =   46080  76.19% COMPLETE     ITERATIONS =    0     TIME =  0.92160000E+06
+  ELMAX = -3.6774E+000 AT NODE       31  SPEEDMAX =  1.1818E+000 AT NODE       28
+ TIME STEP =   46440  76.79% COMPLETE     ITERATIONS =    0     TIME =  0.92880000E+06
+  ELMAX = -2.0485E+000 AT NODE     4465  SPEEDMAX =  1.1902E+000 AT NODE     4474
+Using group1 to interpolate pressure and wind fields from time 939600.00 to time 950400.00.
+Using group2 to interpolate pressure and wind fields from time 939600.00 to time 950400.00.
+Using group3 to interpolate pressure and wind fields from time 939600.00 to time 950400.00.
+ TIME STEP =   46800  77.38% COMPLETE     ITERATIONS =    0     TIME =  0.93600000E+06
+  ELMAX = -2.9893E+000 AT NODE     4465  SPEEDMAX =  1.1937E+000 AT NODE       17
+Using group1 to interpolate pressure and wind fields from time 950400.00 to time 961200.00.
+Using group2 to interpolate pressure and wind fields from time 950400.00 to time 961200.00.
+slurmstepd: error: *** JOB 2131871 ON nid002145 CANCELLED AT 2022-08-04T17:56:11 DUE TO TIME LIMIT ***
