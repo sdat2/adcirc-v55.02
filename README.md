@@ -42,6 +42,12 @@ I still have issues with:
  - running slurm jobs easily in an automated fashion.
 
 
+## Look at old jobs
+
+```bash
+sacct -l
+```
+
 ## A record of useful commands tried
 
 ```bash
