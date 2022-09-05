@@ -221,7 +221,6 @@ ifeq ($(compiler),g95)
   endif
 endif
 #
-# jgf45.12 These flags work on the UNC Topsail Cluster.
 # jgf: The -i-dynamic flag defers the inclusion of the library with
 # feupdateenv until run time, thus avoiding the error message:
 # "feupdateenv is not implemented and will always fail"

@@ -2653,3 +2653,331 @@ NETCDF4_COMPRESSION :=
 XDMF := 
 GNU Fortran (Homebrew GCC 4.9.4_2) 4.9.4
 ----------------------------------
+----------------------------------
+Sat 19 Feb 22:21:08 GMT 2022
+building adcirc
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+FFLAGS2 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+FFLAGS3 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -xSSE4.2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := intel
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 14.0.2 20140120
+----------------------------------
+----------------------------------
+Sat 19 Feb 22:25:53 GMT 2022
+building padcirc
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+FFLAGS2 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+FFLAGS3 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -xSSE4.2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := intel
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 14.0.2 20140120
+----------------------------------
+----------------------------------
+Sat 19 Feb 22:27:48 GMT 2022
+building padcirc
+PPFC := ifort
+FC := ifort
+PFC := mpiif90
+FFLAGS1 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+FFLAGS2 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+FFLAGS3 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -xSSE4.2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := intel
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 14.0.2 20140120
+----------------------------------
+----------------------------------
+Sat 19 Feb 22:29:10 GMT 2022
+building padcirc
+PPFC := ifort
+FC := ifort
+PFC := mpiifort
+FFLAGS1 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+FFLAGS2 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+FFLAGS3 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -xSSE4.2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := intel
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 14.0.2 20140120
+----------------------------------
+----------------------------------
+Sat 19 Feb 22:34:11 GMT 2022
+building padcirc
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -extend-source 132-noextend-source -xSSE4.2 -assume buffered_io
+FFLAGS2 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -extend-source 132-noextend-source -xSSE4.2 -assume buffered_io
+FFLAGS3 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -extend-source 132-noextend-source -xSSE4.2 -assume buffered_io
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -xSSE4.2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := intel
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 14.0.2 20140120
+----------------------------------
+----------------------------------
+Sat 19 Feb 22:36:46 GMT 2022
+building padcirc
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -extend-source 132-noextend-source -xSSE4.2 -assume buffered_io
+FFLAGS2 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -extend-source 132-noextend-source -xSSE4.2 -assume buffered_io
+FFLAGS3 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -extend-source 132-noextend-source -xSSE4.2 -assume buffered_io
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -xSSE4.2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := intel
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 14.0.2 20140120
+----------------------------------
+----------------------------------
+Sat 19 Feb 22:40:53 GMT 2022
+building padcirc
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+FFLAGS2 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+FFLAGS3 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -xSSE4.2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := intel
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 14.0.2 20140120
+----------------------------------
+----------------------------------
+Sat 19 Feb 22:44:02 GMT 2022
+building padcirc
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+FFLAGS2 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+FFLAGS3 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -xSSE4.2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := intel
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 14.0.2 20140120
+----------------------------------
+----------------------------------
+Sat 19 Feb 22:46:56 GMT 2022
+building padcirc
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+FFLAGS2 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+FFLAGS3 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -xSSE4.2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := intel
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 19.1.0.166 20191121
+----------------------------------
+----------------------------------
+Sat 19 Feb 22:48:49 GMT 2022
+building padcirc
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+FFLAGS2 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+FFLAGS3 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -xSSE4.2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := intel
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 19.1.0.166 20191121
+----------------------------------
+----------------------------------
+Sat 19 Feb 22:50:30 GMT 2022
+building adcirc
+PPFC := gfortran --ffreeform
+FC := gfortran --ffreeform
+PFC := mpif90
+FFLAGS1 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS2 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+FFLAGS3 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -ffixed-line-length-none
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := gcc
+CCBE := gcc
+CFLAGS := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := gfortran
+----------------------------------
+Sat 19 Feb 22:51:20 GMT 2022
+building adcirc
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+FFLAGS2 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+FFLAGS3 := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -FI -assume byterecl -132 -xSSE4.2 -assume buffered_io
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I /home/users/sithom/adcirc-swan/adcirc/prep -O2 -xSSE4.2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := intel
+MACHINENAME := 
+NETCDF := 
+NETCDFHOME := 
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 19.1.0.166 20191121
+----------------------------------
