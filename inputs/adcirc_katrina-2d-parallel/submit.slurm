@@ -8,16 +8,22 @@
 
 # Replace [budget code] below with your project code (e.g. t01)
 # changed 
-#SBATCH --account=n01-sowise
 #SBATCH --partition=standard
 #SBATCH --qos=standard
 
 # Load the xthi module to get access to the xthi program
-module load PrgEnv-gnu/8.0.0
-module load cray-hdf5-parallel
-module load cray-netcdf-hdf5parallel
+module load intel/20.0.0
+module load intel/cce/20.0.0
+module load eb/OpenMPI/intel/4.1.0
+module load intel/mpi/5.1.2.150
+module load libpnetcdf/intel/14.0/1.5.0
+module load libPHDF5/intel/14.0/1.8.12
+module load netcdf/intel/14.0/4.3.2
+module load netcdff/intel/14.0/4.2
+module load parallel-netcdf/intel/20141122
+
 
 # srun launches the parallel program based on the SBATCH options
 echo "about to run"
-/work/n01/n01/sithom/adcirc-swan/adcirc/work/padcirc
+mpirun /home/users/sithom/adcirc-swan-old/adcirc/work/padcirc
 echo "ran"

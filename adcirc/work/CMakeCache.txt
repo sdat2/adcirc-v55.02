@@ -320,7 +320,7 @@ DEBUG_MESH_TRACE:BOOL=OFF
 DEBUG_MESSENGER_TRACE:BOOL=OFF
 
 //Write the tracing debug information for the netCDF modle
-DEBUG_NETCDF_TRACE:BOOL=OFF
+DEBUG_NETCDF_TRACE:BOOL=ON
 
 //Write the tracing debug information for the nodal attributes
 // module
@@ -370,7 +370,10 @@ ENABLE_DATETIME:BOOL=OFF
 ENABLE_GRIB2:BOOL=OFF
 
 //Turn on netCDF output options
-ENABLE_OUTPUT_NETCDF:BOOL=OFF
+ENABLE_OUTPUT_NETCDF:BOOL=ON
+
+//Turn on XDMF output options
+ENABLE_OUTPUT_XDMF:BOOL=OFF
 
 //Force Powell wind drag to be enabled. Warning: Overrides any
 // other options specified at run time.
@@ -405,7 +408,7 @@ MPIEXEC_POSTFLAGS:STRING=
 // run by MPIEXEC.
 MPIEXEC_PREFLAGS:STRING=
 
-//Path to a program.
+//Cleared
 MPI_CXX_COMPILER:FILEPATH=/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/bin/mpicxx
 
 //MPI CXX compilation flags
@@ -420,7 +423,7 @@ MPI_CXX_LIBRARIES:STRING=/apps/intel/2016.1/compilers_and_libraries/linux/mpi/in
 //MPI CXX linking flags
 MPI_CXX_LINK_FLAGS:STRING=
 
-//Path to a program.
+//Cleared
 MPI_C_COMPILER:FILEPATH=/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/bin/mpicc
 
 //MPI C compilation flags
@@ -438,7 +441,7 @@ MPI_C_LINK_FLAGS:STRING=
 //Extra MPI libraries to link against
 MPI_EXTRA_LIBRARY:STRING=/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpifort.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/release_mt/libmpi.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpigi.a;/usr/lib64/libdl.so;/usr/lib64/librt.so;/usr/lib64/libpthread.so
 
-//Path to a program.
+//Cleared
 MPI_Fortran_COMPILER:FILEPATH=/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/bin/mpif90
 
 //MPI Fortran compilation flags
@@ -455,6 +458,31 @@ MPI_Fortran_LINK_FLAGS:STRING=
 
 //MPI library to link against
 MPI_LIBRARY:FILEPATH=/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpicxx.so
+
+//Additional libraries that may be required for netCDF
+NETCDF_AdditionalLibs:STRING=
+
+//Path to a file.
+NETCDF_F90_INCLUDE_DIR:PATH=NETCDF_F90_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+NETCDF_F90_LIBRARY:FILEPATH=/lib64/libnetcdff.so
+
+NETCDF_INCLUDES:PATH=/usr/include
+
+NETCDF_INCLUDES_F90:PATH=NETCDF_INCLUDES_F90-NOTFOUND
+
+//Path to a file.
+NETCDF_INCLUDE_DIR:PATH=/usr/include
+
+NETCDF_LIBRARIES:STRING=/usr/lib64/libnetcdf.so
+
+NETCDF_LIBRARIES_C:FILEPATH=/usr/lib64/libnetcdf.so
+
+NETCDF_LIBRARIES_F90:FILEPATH=/usr/lib64/libnetcdff.so
+
+//Path to a library.
+NETCDF_LIBRARY:FILEPATH=/lib64/libnetcdf.so
 
 //Path to a program.
 PERL:FILEPATH=/usr/bin/perl
@@ -479,6 +507,9 @@ adcirc_BINARY_DIR:STATIC=/home/users/sithom/adcirc-swan-old/adcirc/work
 
 //Value Computed by CMake
 adcirc_SOURCE_DIR:STATIC=/home/users/sithom/adcirc-swan-old/adcirc
+
+//Path to a program.
+file_cmd:FILEPATH=/usr/bin/file
 
 //Dependencies for target
 metis_LIB_DEPENDS:STATIC=
@@ -781,6 +812,14 @@ MPI_Fortran_LINK_FLAGS-ADVANCED:INTERNAL=1
 MPI_HEADER_PATH:INTERNAL=MPI_HEADER_PATH-NOTFOUND
 //Scratch variable for MPI lib detection
 MPI_LIB:INTERNAL=MPI_LIB-NOTFOUND
+//ADVANCED property for variable: NETCDF_F90_INCLUDE_DIR
+NETCDF_F90_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: NETCDF_F90_LIBRARY
+NETCDF_F90_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: NETCDF_INCLUDE_DIR
+NETCDF_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: NETCDF_LIBRARY
+NETCDF_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PRECISION_8BYTE
 PRECISION_8BYTE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SGI
@@ -791,4 +830,6 @@ SUN-ADVANCED:INTERNAL=1
 VECTOR_COMPUTER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: XIAR
 XIAR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: file_cmd
+file_cmd-ADVANCED:INTERNAL=1
 

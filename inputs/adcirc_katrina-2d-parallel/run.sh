@@ -2,20 +2,21 @@
 
 case_name="adcirc_katrina-2d-parallel"
 
-module load PrgEnv-gnu/8.0.0
-# module load cray-netcdf
-module load cray-hdf5-parallel
-module load cray-netcdf-hdf5parallel
+module load intel/20.0.0
+module load intel/cce/20.0.0
+module load eb/OpenMPI/intel/4.1.0
+module load intel/mpi/5.1.2.150
+module load libpnetcdf/intel/14.0/1.5.0
+module load libPHDF5/intel/14.0/1.8.12
+module load netcdf/intel/14.0/4.3.2
+module load netcdff/intel/14.0/4.2
+module load parallel-netcdf/intel/20141122
+
 
 
 #...Set variables
-exepath=/work/n01/n01/sithom/adcirc-swan/adcirc/work
-err=0.00001
+exepath=/home/users/sithom/adcirc-swan-old/adcirc/work
 np=3
-nfiles=9
-files=( "fort.63.nc" "fort.64.nc" "fort.73.nc" "fort.74.nc"
-        "maxele.63.nc" "maxvel.63.nc" "maxwvel.63.nc" "minpr.63.nc" 
-        "windDrag.173.nc" )
 
 #...Run the case
 echo ""
