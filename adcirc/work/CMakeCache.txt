@@ -39,7 +39,7 @@ BUILD_ADCIRC:BOOL=ON
 BUILD_ADCPREP:BOOL=ON
 
 //Build the serial SWAN+ADCIRC executable
-BUILD_ADCSWAN:BOOL=ON
+BUILD_ADCSWAN:BOOL=OFF
 
 //Build ASWIP (ASymmetric Wind Input Preprocessor)
 BUILD_ASWIP:BOOL=ON
@@ -54,13 +54,13 @@ BUILD_LIBADCIRC_STATIC:BOOL=ON
 BUILD_PADCIRC:BOOL=ON
 
 //Build the MPI parallel SWAN+ADCIRC executable
-BUILD_PADCSWAN:BOOL=ON
+BUILD_PADCSWAN:BOOL=OFF
 
 //Build the MPI parallel unstructured SWAN executable
-BUILD_PUNSWAN:BOOL=ON
+BUILD_PUNSWAN:BOOL=OFF
 
 //Build the serial SWAN executable
-BUILD_SWAN:BOOL=ON
+BUILD_SWAN:BOOL=OFF
 
 //Build the ADCIRC utility programs
 BUILD_UTILITIES:BOOL=ON
@@ -390,9 +390,6 @@ ENABLE_GRIB2:BOOL=OFF
 //Turn on netCDF output options
 ENABLE_OUTPUT_NETCDF:BOOL=OFF
 
-//Turn on XDMF output options
-ENABLE_OUTPUT_XDMF:BOOL=OFF
-
 //Force Powell wind drag to be enabled. Warning: Overrides any
 // other options specified at run time.
 ENABLE_POWELL:BOOL=OFF
@@ -477,21 +474,6 @@ MPI_Fortran_LINK_FLAGS:STRING= -Wl,-rpath  -Wl,/apps/eb/software/hwloc/2.0.2-GCC
 //MPI library to link against
 MPI_LIBRARY:FILEPATH=/apps/eb/software/OpenMPI/4.0.0-GCC-8.2.0-2.31.1/lib/libmpi.so
 
-//Additional libraries that may be required for netCDF
-NETCDF_AdditionalLibs:STRING=
-
-//Path to a file.
-NETCDF_F90_INCLUDE_DIR:PATH=NETCDF_F90_INCLUDE_DIR-NOTFOUND
-
-//Path to a library.
-NETCDF_F90_LIBRARY:FILEPATH=/lib64/libnetcdff.so
-
-//Path to a file.
-NETCDF_INCLUDE_DIR:PATH=/usr/include
-
-//Path to a library.
-NETCDF_LIBRARY:FILEPATH=/lib64/libnetcdf.so
-
 //Path to a program.
 PERL:FILEPATH=/usr/bin/perl
 
@@ -516,8 +498,17 @@ adcirc_SOURCE_DIR:STATIC=/home/users/sithom/adcirc-swan/adcirc
 //Path to a program.
 file_cmd:FILEPATH=/usr/bin/file
 
+//Dependencies for the target
+libadcirc_shared_LIB_DEPENDS:STATIC=general;version;general;/apps/eb/software/OpenMPI/4.0.0-GCC-8.2.0-2.31.1/lib/libmpi_usempif08.so;general;/apps/eb/software/OpenMPI/4.0.0-GCC-8.2.0-2.31.1/lib/libmpi_usempi_ignore_tkr.so;general;/apps/eb/software/OpenMPI/4.0.0-GCC-8.2.0-2.31.1/lib/libmpi_mpifh.so;general;/apps/eb/software/OpenMPI/4.0.0-GCC-8.2.0-2.31.1/lib/libmpi.so;general;mkdir2;
+
+//Dependencies for the target
+libadcirc_static_LIB_DEPENDS:STATIC=general;version;general;mkdir;general;version;general;/apps/eb/software/OpenMPI/4.0.0-GCC-8.2.0-2.31.1/lib/libmpi_usempif08.so;general;/apps/eb/software/OpenMPI/4.0.0-GCC-8.2.0-2.31.1/lib/libmpi_usempi_ignore_tkr.so;general;/apps/eb/software/OpenMPI/4.0.0-GCC-8.2.0-2.31.1/lib/libmpi_mpifh.so;general;/apps/eb/software/OpenMPI/4.0.0-GCC-8.2.0-2.31.1/lib/libmpi.so;
+
 //Dependencies for target
 metis_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+mkdir2_LIB_DEPENDS:STATIC=
 
 //Dependencies for target
 mkdir_LIB_DEPENDS:STATIC=
@@ -826,14 +817,6 @@ MPI_Fortran_LINK_FLAGS-ADVANCED:INTERNAL=1
 MPI_HEADER_PATH:INTERNAL=MPI_HEADER_PATH-NOTFOUND
 //Scratch variable for MPI lib detection
 MPI_LIB:INTERNAL=MPI_LIB-NOTFOUND
-//ADVANCED property for variable: NETCDF_F90_INCLUDE_DIR
-NETCDF_F90_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: NETCDF_F90_LIBRARY
-NETCDF_F90_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: NETCDF_INCLUDE_DIR
-NETCDF_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: NETCDF_LIBRARY
-NETCDF_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PRECISION_8BYTE
 PRECISION_8BYTE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SGI
