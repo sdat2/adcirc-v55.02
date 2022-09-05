@@ -35,29 +35,11 @@ ADDITIONAL_FLAGS_UTLIITIES:STRING=
 //Build the serial ADCIRC executable
 BUILD_ADCIRC:BOOL=OFF
 
-//Build the MPI parallel ADCIRC preprocessor
-BUILD_ADCPREP:BOOL=OFF
-
 //Build the serial SWAN+ADCIRC executable
 BUILD_ADCSWAN:BOOL=OFF
 
 //Build ASWIP (ASymmetric Wind Input Preprocessor)
 BUILD_ASWIP:BOOL=OFF
-
-//Build the shared library version of ADCIRC
-BUILD_LIBADCIRC_SHARED:BOOL=OFF
-
-//Build the static library version of ADCIRC
-BUILD_LIBADCIRC_STATIC:BOOL=OFF
-
-//Build the MPI parallel ADCIRC executable
-BUILD_PADCIRC:BOOL=OFF
-
-//Build the MPI parallel SWAN+ADCIRC executable
-BUILD_PADCSWAN:BOOL=OFF
-
-//Build the MPI parallel unstructured SWAN executable
-BUILD_PUNSWAN:BOOL=OFF
 
 //Build the serial SWAN executable
 BUILD_SWAN:BOOL=OFF
@@ -78,7 +60,7 @@ CMAKE_BUILD_TYPE:STRING=Release
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler.
-CMAKE_CXX_COMPILER:FILEPATH=/apps/eb/software/GCCcore/8.2.0/bin/c++
+CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/gcc
 
 //Flags used by the compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -98,7 +80,7 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler.
-CMAKE_C_COMPILER:FILEPATH=/apps/eb/software/GCCcore/8.2.0/bin/cc
+CMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc
 
 //Flags used by the compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -136,7 +118,7 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=OFF
 
 //Fortran compiler.
-CMAKE_Fortran_COMPILER:FILEPATH=/apps/eb/software/GCCcore/8.2.0/bin/gfortran
+CMAKE_Fortran_COMPILER:FILEPATH=/usr/bin/gfortran
 
 //Flags for Fortran compiler.
 CMAKE_Fortran_FLAGS:STRING=
@@ -513,8 +495,6 @@ version_LIB_DEPENDS:STATIC=
 ADCIRC_NOF2008-ADVANCED:INTERNAL=1
 //Result of TRY_COMPILE
 ARCH_TEST_COMPILE:INTERNAL=TRUE
-//ADVANCED property for variable: BUILD_PUNSWAN
-BUILD_PUNSWAN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: BUILD_SWAN
 BUILD_SWAN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -761,7 +741,9 @@ MPIEXEC_POSTFLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPIEXEC_PREFLAGS
 MPIEXEC_PREFLAGS-ADVANCED:INTERNAL=1
 //Result of TRY_COMPILE
-MPIMOD_COMPILE:INTERNAL=TRUE
+MPIINC_COMPILE:INTERNAL=FALSE
+//Result of TRY_COMPILE
+MPIMOD_COMPILE:INTERNAL=FALSE
 //ADVANCED property for variable: MPI_CXX_COMPILER
 MPI_CXX_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_CXX_COMPILE_FLAGS
