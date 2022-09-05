@@ -143,6 +143,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named adcirc
+
+# Build rule for target.
+adcirc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 adcirc
+.PHONY : adcirc
+
+# fast build rule for target.
+adcirc/fast:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/build
+.PHONY : adcirc/fast
+
+#=============================================================================
+# Target rules for targets named adcprep
+
+# Build rule for target.
+adcprep: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 adcprep
+.PHONY : adcprep
+
+# fast build rule for target.
+adcprep/fast:
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/build
+.PHONY : adcprep/fast
+
+#=============================================================================
 # Target rules for targets named metis
 
 # Build rule for target.
@@ -169,6 +195,19 @@ mkdir/fast:
 .PHONY : mkdir/fast
 
 #=============================================================================
+# Target rules for targets named padcirc
+
+# Build rule for target.
+padcirc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 padcirc
+.PHONY : padcirc
+
+# fast build rule for target.
+padcirc/fast:
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/build
+.PHONY : padcirc/fast
+
+#=============================================================================
 # Target rules for targets named version
 
 # Build rule for target.
@@ -188,6 +227,46 @@ CMakeFiles/version_cmake.o: CMakeFiles/version_cmake.F.o
 CMakeFiles/version_cmake.F.o:
 	$(MAKE) -f CMakeFiles/version.dir/build.make CMakeFiles/version.dir/CMakeFiles/version_cmake.F.o
 .PHONY : CMakeFiles/version_cmake.F.o
+
+prep/adcprep.o: prep/adcprep.F.o
+.PHONY : prep/adcprep.o
+
+# target to build an object file
+prep/adcprep.F.o:
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/prep/adcprep.F.o
+.PHONY : prep/adcprep.F.o
+
+prep/decomp.o: prep/decomp.F.o
+.PHONY : prep/decomp.o
+
+# target to build an object file
+prep/decomp.F.o:
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/prep/decomp.F.o
+.PHONY : prep/decomp.F.o
+
+prep/interp.o: prep/interp.F.o
+.PHONY : prep/interp.o
+
+# target to build an object file
+prep/interp.F.o:
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/prep/interp.F.o
+.PHONY : prep/interp.F.o
+
+prep/machdep.o: prep/machdep.F.o
+.PHONY : prep/machdep.o
+
+# target to build an object file
+prep/machdep.F.o:
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/prep/machdep.F.o
+.PHONY : prep/machdep.F.o
+
+prep/metis.o: prep/metis.F.o
+.PHONY : prep/metis.o
+
+# target to build an object file
+prep/metis.F.o:
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/prep/metis.F.o
+.PHONY : prep/metis.F.o
 
 prep/mkdir.o: prep/mkdir.c.o
 .PHONY : prep/mkdir.o
@@ -212,6 +291,426 @@ prep/mkdir.s: prep/mkdir.c.s
 prep/mkdir.c.s:
 	$(MAKE) -f CMakeFiles/mkdir.dir/build.make CMakeFiles/mkdir.dir/prep/mkdir.c.s
 .PHONY : prep/mkdir.c.s
+
+prep/pre_global.o: prep/pre_global.F.o
+.PHONY : prep/pre_global.o
+
+# target to build an object file
+prep/pre_global.F.o:
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/prep/pre_global.F.o
+.PHONY : prep/pre_global.F.o
+
+prep/prep.o: prep/prep.F.o
+.PHONY : prep/prep.o
+
+# target to build an object file
+prep/prep.F.o:
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/prep/prep.F.o
+.PHONY : prep/prep.F.o
+
+prep/prep_weir.o: prep/prep_weir.F.o
+.PHONY : prep/prep_weir.o
+
+# target to build an object file
+prep/prep_weir.F.o:
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/prep/prep_weir.F.o
+.PHONY : prep/prep_weir.F.o
+
+prep/presizes.o: prep/presizes.F.o
+.PHONY : prep/presizes.o
+
+# target to build an object file
+prep/presizes.F.o:
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/prep/presizes.F.o
+.PHONY : prep/presizes.F.o
+
+prep/read_global.o: prep/read_global.F.o
+.PHONY : prep/read_global.o
+
+# target to build an object file
+prep/read_global.F.o:
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/prep/read_global.F.o
+.PHONY : prep/read_global.F.o
+
+prep/subprep.o: prep/subprep.F.o
+.PHONY : prep/subprep.o
+
+# target to build an object file
+prep/subprep.F.o:
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/prep/subprep.F.o
+.PHONY : prep/subprep.F.o
+
+src/adcirc.o: src/adcirc.F.o
+.PHONY : src/adcirc.o
+
+# target to build an object file
+src/adcirc.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/adcirc.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/adcirc.F.o
+.PHONY : src/adcirc.F.o
+
+src/boundaries.o: src/boundaries.F.o
+.PHONY : src/boundaries.o
+
+# target to build an object file
+src/boundaries.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/boundaries.F.o
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/boundaries.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/boundaries.F.o
+.PHONY : src/boundaries.F.o
+
+src/control.o: src/control.F.o
+.PHONY : src/control.o
+
+# target to build an object file
+src/control.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/control.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/control.F.o
+.PHONY : src/control.F.o
+
+src/couple2baroclinic3D.o: src/couple2baroclinic3D.F.o
+.PHONY : src/couple2baroclinic3D.o
+
+# target to build an object file
+src/couple2baroclinic3D.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/couple2baroclinic3D.F.o
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/couple2baroclinic3D.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/couple2baroclinic3D.F.o
+.PHONY : src/couple2baroclinic3D.F.o
+
+src/couple2swan.o: src/couple2swan.F.o
+.PHONY : src/couple2swan.o
+
+# target to build an object file
+src/couple2swan.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/couple2swan.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/couple2swan.F.o
+.PHONY : src/couple2swan.F.o
+
+src/cstart.o: src/cstart.F.o
+.PHONY : src/cstart.o
+
+# target to build an object file
+src/cstart.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/cstart.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/cstart.F.o
+.PHONY : src/cstart.F.o
+
+src/driver.o: src/driver.F.o
+.PHONY : src/driver.o
+
+# target to build an object file
+src/driver.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/driver.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/driver.F.o
+.PHONY : src/driver.F.o
+
+src/global.o: src/global.F.o
+.PHONY : src/global.o
+
+# target to build an object file
+src/global.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/global.F.o
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/global.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/global.F.o
+.PHONY : src/global.F.o
+
+src/global_3dvs.o: src/global_3dvs.F.o
+.PHONY : src/global_3dvs.o
+
+# target to build an object file
+src/global_3dvs.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/global_3dvs.F.o
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/global_3dvs.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/global_3dvs.F.o
+.PHONY : src/global_3dvs.F.o
+
+src/globalio.o: src/globalio.F.o
+.PHONY : src/globalio.o
+
+# target to build an object file
+src/globalio.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/globalio.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/globalio.F.o
+.PHONY : src/globalio.F.o
+
+src/gwce.o: src/gwce.F.o
+.PHONY : src/gwce.o
+
+# target to build an object file
+src/gwce.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/gwce.F.o
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/gwce.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/gwce.F.o
+.PHONY : src/gwce.F.o
+
+src/harm.o: src/harm.F.o
+.PHONY : src/harm.o
+
+# target to build an object file
+src/harm.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/harm.F.o
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/harm.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/harm.F.o
+.PHONY : src/harm.F.o
+
+src/hashtable.o: src/hashtable.F.o
+.PHONY : src/hashtable.o
+
+# target to build an object file
+src/hashtable.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/hashtable.F.o
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/hashtable.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/hashtable.F.o
+.PHONY : src/hashtable.F.o
+
+src/hstart.o: src/hstart.F.o
+.PHONY : src/hstart.o
+
+# target to build an object file
+src/hstart.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/hstart.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/hstart.F.o
+.PHONY : src/hstart.F.o
+
+src/itpackv.o: src/itpackv.F.o
+.PHONY : src/itpackv.o
+
+# target to build an object file
+src/itpackv.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/itpackv.F.o
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/itpackv.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/itpackv.F.o
+.PHONY : src/itpackv.F.o
+
+src/mesh.o: src/mesh.F.o
+.PHONY : src/mesh.o
+
+# target to build an object file
+src/mesh.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/mesh.F.o
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/mesh.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/mesh.F.o
+.PHONY : src/mesh.F.o
+
+src/messenger.o: src/messenger.F.o
+.PHONY : src/messenger.o
+
+# target to build an object file
+src/messenger.F.o:
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/messenger.F.o
+.PHONY : src/messenger.F.o
+
+src/momentum.o: src/momentum.F.o
+.PHONY : src/momentum.o
+
+# target to build an object file
+src/momentum.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/momentum.F.o
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/momentum.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/momentum.F.o
+.PHONY : src/momentum.F.o
+
+src/netcdfio.o: src/netcdfio.F.o
+.PHONY : src/netcdfio.o
+
+# target to build an object file
+src/netcdfio.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/netcdfio.F.o
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/netcdfio.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/netcdfio.F.o
+.PHONY : src/netcdfio.F.o
+
+src/nodalattr.o: src/nodalattr.F.o
+.PHONY : src/nodalattr.o
+
+# target to build an object file
+src/nodalattr.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/nodalattr.F.o
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/nodalattr.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/nodalattr.F.o
+.PHONY : src/nodalattr.F.o
+
+src/owi_ice.o: src/owi_ice.F.o
+.PHONY : src/owi_ice.o
+
+# target to build an object file
+src/owi_ice.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/owi_ice.F.o
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/owi_ice.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/owi_ice.F.o
+.PHONY : src/owi_ice.F.o
+
+src/owiwind.o: src/owiwind.F.o
+.PHONY : src/owiwind.o
+
+# target to build an object file
+src/owiwind.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/owiwind.F.o
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/owiwind.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/owiwind.F.o
+.PHONY : src/owiwind.F.o
+
+src/owiwind_netcdf.o: src/owiwind_netcdf.F.o
+.PHONY : src/owiwind_netcdf.o
+
+# target to build an object file
+src/owiwind_netcdf.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/owiwind_netcdf.F.o
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/owiwind_netcdf.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/owiwind_netcdf.F.o
+.PHONY : src/owiwind_netcdf.F.o
+
+src/quadrature.o: src/quadrature.F.o
+.PHONY : src/quadrature.o
+
+# target to build an object file
+src/quadrature.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/quadrature.F.o
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/quadrature.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/quadrature.F.o
+.PHONY : src/quadrature.F.o
+
+src/read_input.o: src/read_input.F.o
+.PHONY : src/read_input.o
+
+# target to build an object file
+src/read_input.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/read_input.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/read_input.F.o
+.PHONY : src/read_input.F.o
+
+src/rs2.o: src/rs2.F.o
+.PHONY : src/rs2.o
+
+# target to build an object file
+src/rs2.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/rs2.F.o
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/rs2.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/rs2.F.o
+.PHONY : src/rs2.F.o
+
+src/sizes.o: src/sizes.F.o
+.PHONY : src/sizes.o
+
+# target to build an object file
+src/sizes.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/sizes.F.o
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/sizes.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/sizes.F.o
+.PHONY : src/sizes.F.o
+
+src/sponge_layer.o: src/sponge_layer.F.o
+.PHONY : src/sponge_layer.o
+
+# target to build an object file
+src/sponge_layer.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/sponge_layer.F.o
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/sponge_layer.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/sponge_layer.F.o
+.PHONY : src/sponge_layer.F.o
+
+src/subdomain.o: src/subdomain.F.o
+.PHONY : src/subdomain.o
+
+# target to build an object file
+src/subdomain.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/subdomain.F.o
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/subdomain.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/subdomain.F.o
+.PHONY : src/subdomain.F.o
+
+src/timestep.o: src/timestep.F.o
+.PHONY : src/timestep.o
+
+# target to build an object file
+src/timestep.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/timestep.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/timestep.F.o
+.PHONY : src/timestep.F.o
+
+src/transport.o: src/transport.F.o
+.PHONY : src/transport.o
+
+# target to build an object file
+src/transport.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/transport.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/transport.F.o
+.PHONY : src/transport.F.o
+
+src/vsmy.o: src/vsmy.F.o
+.PHONY : src/vsmy.o
+
+# target to build an object file
+src/vsmy.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/vsmy.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/vsmy.F.o
+.PHONY : src/vsmy.F.o
+
+src/weir_boundary.o: src/weir_boundary.F.o
+.PHONY : src/weir_boundary.o
+
+# target to build an object file
+src/weir_boundary.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/weir_boundary.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/weir_boundary.F.o
+.PHONY : src/weir_boundary.F.o
+
+src/wetdry.o: src/wetdry.F.o
+.PHONY : src/wetdry.o
+
+# target to build an object file
+src/wetdry.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/wetdry.F.o
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/wetdry.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/wetdry.F.o
+.PHONY : src/wetdry.F.o
+
+src/wind.o: src/wind.F.o
+.PHONY : src/wind.o
+
+# target to build an object file
+src/wind.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/wind.F.o
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/wind.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/wind.F.o
+.PHONY : src/wind.F.o
+
+src/write_output.o: src/write_output.F.o
+.PHONY : src/write_output.o
+
+# target to build an object file
+src/write_output.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/write_output.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/write_output.F.o
+.PHONY : src/write_output.F.o
+
+src/writer.o: src/writer.F.o
+.PHONY : src/writer.o
+
+# target to build an object file
+src/writer.F.o:
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/writer.F.o
+.PHONY : src/writer.F.o
+
+src/xdmfio.o: src/xdmfio.F.o
+.PHONY : src/xdmfio.o
+
+# target to build an object file
+src/xdmfio.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/xdmfio.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/xdmfio.F.o
+.PHONY : src/xdmfio.F.o
+
+thirdparty/KDTREE2/kdtree2.o: thirdparty/KDTREE2/kdtree2.F.o
+.PHONY : thirdparty/KDTREE2/kdtree2.o
+
+# target to build an object file
+thirdparty/KDTREE2/kdtree2.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/thirdparty/KDTREE2/kdtree2.F.o
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/thirdparty/KDTREE2/kdtree2.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/thirdparty/KDTREE2/kdtree2.F.o
+.PHONY : thirdparty/KDTREE2/kdtree2.F.o
 
 thirdparty/metis/Lib/balance.o: thirdparty/metis/Lib/balance.c.o
 .PHONY : thirdparty/metis/Lib/balance.o
@@ -1461,12 +1960,24 @@ thirdparty/metis/Lib/util.c.s:
 	$(MAKE) -f CMakeFiles/metis.dir/build.make CMakeFiles/metis.dir/thirdparty/metis/Lib/util.c.s
 .PHONY : thirdparty/metis/Lib/util.c.s
 
+wind/vortex.o: wind/vortex.F.o
+.PHONY : wind/vortex.o
+
+# target to build an object file
+wind/vortex.F.o:
+	$(MAKE) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/wind/vortex.F.o
+	$(MAKE) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/wind/vortex.F.o
+	$(MAKE) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/wind/vortex.F.o
+.PHONY : wind/vortex.F.o
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... adcirc"
+	@echo "... adcprep"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
@@ -1474,12 +1985,63 @@ help:
 	@echo "... list_install_components"
 	@echo "... metis"
 	@echo "... mkdir"
+	@echo "... padcirc"
 	@echo "... rebuild_cache"
 	@echo "... version"
 	@echo "... CMakeFiles/version_cmake.o"
+	@echo "... prep/adcprep.o"
+	@echo "... prep/decomp.o"
+	@echo "... prep/interp.o"
+	@echo "... prep/machdep.o"
+	@echo "... prep/metis.o"
 	@echo "... prep/mkdir.o"
 	@echo "... prep/mkdir.i"
 	@echo "... prep/mkdir.s"
+	@echo "... prep/pre_global.o"
+	@echo "... prep/prep.o"
+	@echo "... prep/prep_weir.o"
+	@echo "... prep/presizes.o"
+	@echo "... prep/read_global.o"
+	@echo "... prep/subprep.o"
+	@echo "... src/adcirc.o"
+	@echo "... src/boundaries.o"
+	@echo "... src/control.o"
+	@echo "... src/couple2baroclinic3D.o"
+	@echo "... src/couple2swan.o"
+	@echo "... src/cstart.o"
+	@echo "... src/driver.o"
+	@echo "... src/global.o"
+	@echo "... src/global_3dvs.o"
+	@echo "... src/globalio.o"
+	@echo "... src/gwce.o"
+	@echo "... src/harm.o"
+	@echo "... src/hashtable.o"
+	@echo "... src/hstart.o"
+	@echo "... src/itpackv.o"
+	@echo "... src/mesh.o"
+	@echo "... src/messenger.o"
+	@echo "... src/momentum.o"
+	@echo "... src/netcdfio.o"
+	@echo "... src/nodalattr.o"
+	@echo "... src/owi_ice.o"
+	@echo "... src/owiwind.o"
+	@echo "... src/owiwind_netcdf.o"
+	@echo "... src/quadrature.o"
+	@echo "... src/read_input.o"
+	@echo "... src/rs2.o"
+	@echo "... src/sizes.o"
+	@echo "... src/sponge_layer.o"
+	@echo "... src/subdomain.o"
+	@echo "... src/timestep.o"
+	@echo "... src/transport.o"
+	@echo "... src/vsmy.o"
+	@echo "... src/weir_boundary.o"
+	@echo "... src/wetdry.o"
+	@echo "... src/wind.o"
+	@echo "... src/write_output.o"
+	@echo "... src/writer.o"
+	@echo "... src/xdmfio.o"
+	@echo "... thirdparty/KDTREE2/kdtree2.o"
 	@echo "... thirdparty/metis/Lib/balance.o"
 	@echo "... thirdparty/metis/Lib/balance.i"
 	@echo "... thirdparty/metis/Lib/balance.s"
@@ -1636,6 +2198,7 @@ help:
 	@echo "... thirdparty/metis/Lib/util.o"
 	@echo "... thirdparty/metis/Lib/util.i"
 	@echo "... thirdparty/metis/Lib/util.s"
+	@echo "... wind/vortex.o"
 .PHONY : help
 
 

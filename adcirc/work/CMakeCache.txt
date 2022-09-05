@@ -33,13 +33,22 @@ ADDITIONAL_FLAGS_SWAN:STRING=
 ADDITIONAL_FLAGS_UTLIITIES:STRING=
 
 //Build the serial ADCIRC executable
-BUILD_ADCIRC:BOOL=OFF
+BUILD_ADCIRC:BOOL=ON
+
+//No help, variable specified on the command line.
+BUILD_ADCPREP:UNINITIALIZED=ON
 
 //Build the serial SWAN+ADCIRC executable
 BUILD_ADCSWAN:BOOL=OFF
 
 //Build ASWIP (ASymmetric Wind Input Preprocessor)
 BUILD_ASWIP:BOOL=OFF
+
+//No help, variable specified on the command line.
+BUILD_PADCIRC:UNINITIALIZED=ON
+
+//No help, variable specified on the command line.
+BUILD_PADCSWAN:UNINITIALIZED=OFF
 
 //Build the serial SWAN executable
 BUILD_SWAN:BOOL=OFF
@@ -121,7 +130,7 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=OFF
 CMAKE_Fortran_COMPILER:FILEPATH=/usr/bin/gfortran
 
 //Flags for Fortran compiler.
-CMAKE_Fortran_FLAGS:STRING=
+CMAKE_Fortran_FLAGS:STRING=-ffree-line-length-132  -ffixed-line-length-132 -lnetcdff -DREAL8 -DCSCA -DLINUX -w -O2
 
 //Flags used by the compiler during debug builds.
 CMAKE_Fortran_FLAGS_DEBUG:STRING=-g
@@ -380,10 +389,10 @@ ENABLE_POWELL:BOOL=OFF
 ENABLE_WARN_ELEV_DEBUG:BOOL=OFF
 
 //Compiler specific flags
-Fortran_COMPILER_SPECIFIC_FLAG:STRING=-mcmodel=medium
+Fortran_COMPILER_SPECIFIC_FLAG:STRING=-ffixed-line-length-132
 
 //Compiler specific flag to enable extended Fortran line length
-Fortran_LINELENGTH_FLAG:STRING=-ffixed-line-length-none
+Fortran_LINELENGTH_FLAG:STRING=-ffixed-line-length-132
 
 //Format code for IBM based architectures
 IBM:BOOL=OFF
@@ -405,7 +414,7 @@ MPIEXEC_POSTFLAGS:STRING=
 // run by MPIEXEC.
 MPIEXEC_PREFLAGS:STRING=
 
-//Path to a program.
+//Cleared
 MPI_CXX_COMPILER:FILEPATH=/apps/eb/software/OpenMPI/4.0.0-GCC-8.2.0-2.31.1/bin/mpicxx
 
 //MPI CXX compilation flags
@@ -420,7 +429,7 @@ MPI_CXX_LIBRARIES:STRING=/apps/eb/software/OpenMPI/4.0.0-GCC-8.2.0-2.31.1/lib/li
 //MPI CXX linking flags
 MPI_CXX_LINK_FLAGS:STRING= -Wl,-rpath  -Wl,/apps/eb/software/hwloc/2.0.2-GCCcore-8.2.0/lib  -Wl,-rpath  -Wl,/apps/eb/software/OpenMPI/4.0.0-GCC-8.2.0-2.31.1/lib  -Wl,--enable-new-dtags
 
-//Path to a program.
+//Cleared
 MPI_C_COMPILER:FILEPATH=/apps/eb/software/OpenMPI/4.0.0-GCC-8.2.0-2.31.1/bin/mpicc
 
 //MPI C compilation flags
@@ -438,7 +447,7 @@ MPI_C_LINK_FLAGS:STRING= -Wl,-rpath  -Wl,/apps/eb/software/hwloc/2.0.2-GCCcore-8
 //Extra MPI libraries to link against
 MPI_EXTRA_LIBRARY:STRING=MPI_EXTRA_LIBRARY-NOTFOUND
 
-//Path to a program.
+//Cleared
 MPI_Fortran_COMPILER:FILEPATH=/apps/eb/software/OpenMPI/4.0.0-GCC-8.2.0-2.31.1/bin/mpif90
 
 //MPI Fortran compilation flags
@@ -455,6 +464,12 @@ MPI_Fortran_LINK_FLAGS:STRING= -Wl,-rpath  -Wl,/apps/eb/software/hwloc/2.0.2-GCC
 
 //MPI library to link against
 MPI_LIBRARY:FILEPATH=/apps/eb/software/OpenMPI/4.0.0-GCC-8.2.0-2.31.1/lib/libmpi.so
+
+NETCDF_LIBRARIES:STRING=/usr/lib64/libnetcdf.so
+
+NETCDF_LIBRARIES_C:FILEPATH=/usr/lib64/libnetcdf.so
+
+NETCDF_LIBRARIES_F90:FILEPATH=/usr/lib64/libnetcdff.so
 
 //Path to a program.
 PERL:FILEPATH=/usr/bin/perl
@@ -476,6 +491,9 @@ adcirc_BINARY_DIR:STATIC=/home/users/sithom/adcirc-swan/adcirc/work
 
 //Value Computed by CMake
 adcirc_SOURCE_DIR:STATIC=/home/users/sithom/adcirc-swan/adcirc
+
+//Path to a program.
+file_cmd:FILEPATH=/usr/bin/file
 
 //Dependencies for target
 metis_LIB_DEPENDS:STATIC=
@@ -786,4 +804,6 @@ SGI-ADVANCED:INTERNAL=1
 SUN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: VECTOR_COMPUTER
 VECTOR_COMPUTER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: file_cmd
+file_cmd-ADVANCED:INTERNAL=1
 
