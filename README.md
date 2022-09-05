@@ -12,6 +12,19 @@ I experimented to some extent with installing the environment as a singularity c
 
 The `cmake` method seems to be much more reliable than `Makefile`.
 
+## JASMIN INTEL
+
+```txt
+Environment variables set for netCDF Fortran bindings in
+  /apps/libs/netCDF/intel14/fortran/4.2/
+You will also need to link your code to a compatible netCDF C library in
+  /apps/libs/netCDF/intel14/4.3.2/
+Environment variables set for netCDF Fortran bindings in
+  /apps/libs/netCDF/intel14/fortran/4.2/
+You will also need to link your code to a compatible netCDF C library in
+  /apps/libs/netCDF/intel14/4.3.2/
+```
+
 ## Compile on ARCHER2
 
 ```bash
