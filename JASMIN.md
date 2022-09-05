@@ -10,7 +10,7 @@ Only openmpi available.
 
 ```bash
 eb/OpenMPI/gcc/3.1.1 
-eb/OpenMPI/gcc/4.0.0       
+eb/OpenMPI/gcc/4.0.0
 eb/OpenMPI/intel/3.1.1
 ```
 
