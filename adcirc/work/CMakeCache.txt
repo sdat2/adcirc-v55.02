@@ -33,37 +33,19 @@ ADDITIONAL_FLAGS_SWAN:STRING=
 ADDITIONAL_FLAGS_UTLIITIES:STRING=
 
 //Build the serial ADCIRC executable
-BUILD_ADCIRC:BOOL=ON
-
-//Build the MPI parallel ADCIRC preprocessor
-BUILD_ADCPREP:BOOL=ON
+BUILD_ADCIRC:BOOL=OFF
 
 //Build the serial SWAN+ADCIRC executable
-BUILD_ADCSWAN:BOOL=ON
+BUILD_ADCSWAN:BOOL=OFF
 
 //Build ASWIP (ASymmetric Wind Input Preprocessor)
-BUILD_ASWIP:BOOL=ON
-
-//Build the shared library version of ADCIRC
-BUILD_LIBADCIRC_SHARED:BOOL=ON
-
-//Build the static library version of ADCIRC
-BUILD_LIBADCIRC_STATIC:BOOL=ON
-
-//Build the MPI parallel ADCIRC executable
-BUILD_PADCIRC:BOOL=ON
-
-//Build the MPI parallel SWAN+ADCIRC executable
-BUILD_PADCSWAN:BOOL=ON
-
-//Build the MPI parallel unstructured SWAN executable
-BUILD_PUNSWAN:BOOL=ON
+BUILD_ASWIP:BOOL=OFF
 
 //Build the serial SWAN executable
-BUILD_SWAN:BOOL=ON
+BUILD_SWAN:BOOL=OFF
 
 //Build the ADCIRC utility programs
-BUILD_UTILITIES:BOOL=ON
+BUILD_UTILITIES:BOOL=OFF
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
@@ -423,7 +405,7 @@ MPIEXEC_POSTFLAGS:STRING=
 // run by MPIEXEC.
 MPIEXEC_PREFLAGS:STRING=
 
-//Cleared
+//Path to a program.
 MPI_CXX_COMPILER:FILEPATH=/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/bin/mpicxx
 
 //MPI CXX compilation flags
@@ -433,12 +415,12 @@ MPI_CXX_COMPILE_FLAGS:STRING=
 MPI_CXX_INCLUDE_PATH:STRING=/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/include
 
 //MPI CXX libraries to link against
-MPI_CXX_LIBRARIES:STRING=/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpicxx.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpifort.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/release_mt/libmpi.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpigi.a;/lib64/libdl.so;/lib64/librt.so;/lib64/libpthread.so
+MPI_CXX_LIBRARIES:STRING=/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpicxx.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpifort.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/release_mt/libmpi.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpigi.a;/usr/lib64/libdl.so;/usr/lib64/librt.so;/usr/lib64/libpthread.so
 
 //MPI CXX linking flags
 MPI_CXX_LINK_FLAGS:STRING=
 
-//Cleared
+//Path to a program.
 MPI_C_COMPILER:FILEPATH=/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/bin/mpicc
 
 //MPI C compilation flags
@@ -448,25 +430,25 @@ MPI_C_COMPILE_FLAGS:STRING=
 MPI_C_INCLUDE_PATH:STRING=/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/include
 
 //MPI C libraries to link against
-MPI_C_LIBRARIES:STRING=/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpifort.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/release_mt/libmpi.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpigi.a;/lib64/libdl.so;/lib64/librt.so;/lib64/libpthread.so
+MPI_C_LIBRARIES:STRING=/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpifort.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/release_mt/libmpi.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpigi.a;/usr/lib64/libdl.so;/usr/lib64/librt.so;/usr/lib64/libpthread.so
 
 //MPI C linking flags
 MPI_C_LINK_FLAGS:STRING=
 
 //Extra MPI libraries to link against
-MPI_EXTRA_LIBRARY:STRING=/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpifort.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/release_mt/libmpi.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpigi.a;/lib64/libdl.so;/lib64/librt.so;/lib64/libpthread.so
+MPI_EXTRA_LIBRARY:STRING=/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpifort.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/release_mt/libmpi.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpigi.a;/usr/lib64/libdl.so;/usr/lib64/librt.so;/usr/lib64/libpthread.so
 
-//Cleared
+//Path to a program.
 MPI_Fortran_COMPILER:FILEPATH=/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/bin/mpif90
 
 //MPI Fortran compilation flags
 MPI_Fortran_COMPILE_FLAGS:STRING=
 
 //MPI Fortran include path
-MPI_Fortran_INCLUDE_PATH:STRING=/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/include/gfortran;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/include
+MPI_Fortran_INCLUDE_PATH:STRING=/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/include/gfortran/4.8.0;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/include
 
 //MPI Fortran libraries to link against
-MPI_Fortran_LIBRARIES:STRING=/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpifort.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/release_mt/libmpi.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpigi.a;/lib64/libdl.so;/lib64/librt.so;/lib64/libpthread.so
+MPI_Fortran_LIBRARIES:STRING=/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpifort.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/release_mt/libmpi.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpigi.a;/usr/lib64/libdl.so;/usr/lib64/librt.so;/usr/lib64/libpthread.so
 
 //MPI Fortran linking flags
 MPI_Fortran_LINK_FLAGS:STRING=
@@ -498,47 +480,11 @@ adcirc_BINARY_DIR:STATIC=/home/users/sithom/adcirc-swan-old/adcirc/work
 //Value Computed by CMake
 adcirc_SOURCE_DIR:STATIC=/home/users/sithom/adcirc-swan-old/adcirc
 
-//Path to a program.
-file_cmd:FILEPATH=/usr/bin/file
-
-//Dependencies for the target
-libadcirc_shared_LIB_DEPENDS:STATIC=general;version;general;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpifort.so;general;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/release_mt/libmpi.so;general;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpigi.a;general;/lib64/libdl.so;general;/lib64/librt.so;general;/lib64/libpthread.so;general;mkdir2;
-
-//Dependencies for the target
-libadcirc_static_LIB_DEPENDS:STATIC=general;version;general;mkdir;general;version;general;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpifort.so;general;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/release_mt/libmpi.so;general;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpigi.a;general;/lib64/libdl.so;general;/lib64/librt.so;general;/lib64/libpthread.so;
-
 //Dependencies for target
 metis_LIB_DEPENDS:STATIC=
 
 //Dependencies for target
-mkdir2_LIB_DEPENDS:STATIC=
-
-//Dependencies for target
 mkdir_LIB_DEPENDS:STATIC=
-
-//Dependencies for the target
-templib_adcswan1_LIB_DEPENDS:STATIC=general;version;
-
-//Dependencies for the target
-templib_padcswan1_LIB_DEPENDS:STATIC=general;version;general;mkdir;general;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpifort.so;general;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/release_mt/libmpi.so;general;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpigi.a;general;/lib64/libdl.so;general;/lib64/librt.so;general;/lib64/libpthread.so;
-
-//Dependencies for the target
-templib_punmsglib_LIB_DEPENDS:STATIC=general;version;general;version;general;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpifort.so;general;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/release_mt/libmpi.so;general;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpigi.a;general;/lib64/libdl.so;general;/lib64/librt.so;general;/lib64/libpthread.so;
-
-//Dependencies for the target
-templib_punswan1_LIB_DEPENDS:STATIC=general;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpifort.so;general;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/release_mt/libmpi.so;general;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpigi.a;general;/lib64/libdl.so;general;/lib64/librt.so;general;/lib64/libpthread.so;
-
-//Dependencies for the target
-templib_swan1parallel_LIB_DEPENDS:STATIC=general;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpifort.so;general;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/release_mt/libmpi.so;general;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpigi.a;general;/lib64/libdl.so;general;/lib64/librt.so;general;/lib64/libpthread.so;
-
-//Dependencies for target
-templib_swan1serial_LIB_DEPENDS:STATIC=
-
-//Dependencies for the target
-templib_swan2parallel_LIB_DEPENDS:STATIC=general;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpifort.so;general;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/release_mt/libmpi.so;general;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpigi.a;general;/lib64/libdl.so;general;/lib64/librt.so;general;/lib64/libpthread.so;
-
-//Dependencies for target
-templib_swan2serial_LIB_DEPENDS:STATIC=
 
 //Dependencies for target
 version_LIB_DEPENDS:STATIC=
@@ -552,8 +498,6 @@ version_LIB_DEPENDS:STATIC=
 ADCIRC_NOF2008-ADVANCED:INTERNAL=1
 //Result of TRY_COMPILE
 ARCH_TEST_COMPILE:INTERNAL=TRUE
-//ADVANCED property for variable: BUILD_PUNSWAN
-BUILD_PUNSWAN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: BUILD_SWAN
 BUILD_SWAN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -782,11 +726,11 @@ DEBUG_WRITE_OUTPUT_TRACE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ENABLE_POWELL
 ENABLE_POWELL-ADVANCED:INTERNAL=1
 //Details about finding MPI_C
-FIND_PACKAGE_MESSAGE_DETAILS_MPI_C:INTERNAL=[/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpifort.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/release_mt/libmpi.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpigi.a;/lib64/libdl.so;/lib64/librt.so;/lib64/libpthread.so][/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/include][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_MPI_C:INTERNAL=[/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpifort.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/release_mt/libmpi.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpigi.a;/usr/lib64/libdl.so;/usr/lib64/librt.so;/usr/lib64/libpthread.so][/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/include][v()]
 //Details about finding MPI_CXX
-FIND_PACKAGE_MESSAGE_DETAILS_MPI_CXX:INTERNAL=[/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpicxx.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpifort.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/release_mt/libmpi.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpigi.a;/lib64/libdl.so;/lib64/librt.so;/lib64/libpthread.so][/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/include][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_MPI_CXX:INTERNAL=[/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpicxx.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpifort.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/release_mt/libmpi.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpigi.a;/usr/lib64/libdl.so;/usr/lib64/librt.so;/usr/lib64/libpthread.so][/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/include][v()]
 //Details about finding MPI_Fortran
-FIND_PACKAGE_MESSAGE_DETAILS_MPI_Fortran:INTERNAL=[/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpifort.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/release_mt/libmpi.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpigi.a;/lib64/libdl.so;/lib64/librt.so;/lib64/libpthread.so][/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/include/gfortran;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/include][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_MPI_Fortran:INTERNAL=[/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpifort.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/release_mt/libmpi.so;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/lib/libmpigi.a;/usr/lib64/libdl.so;/usr/lib64/librt.so;/usr/lib64/libpthread.so][/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/include/gfortran/4.8.0;/apps/intel/2016.1/compilers_and_libraries/linux/mpi/intel64/include][v()]
 //ADVANCED property for variable: IBM
 IBM-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPIEXEC
@@ -800,7 +744,9 @@ MPIEXEC_POSTFLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPIEXEC_PREFLAGS
 MPIEXEC_PREFLAGS-ADVANCED:INTERNAL=1
 //Result of TRY_COMPILE
-MPIMOD_COMPILE:INTERNAL=TRUE
+MPIINC_COMPILE:INTERNAL=FALSE
+//Result of TRY_COMPILE
+MPIMOD_COMPILE:INTERNAL=FALSE
 //ADVANCED property for variable: MPI_CXX_COMPILER
 MPI_CXX_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_CXX_COMPILE_FLAGS
@@ -845,6 +791,4 @@ SUN-ADVANCED:INTERNAL=1
 VECTOR_COMPUTER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: XIAR
 XIAR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: file_cmd
-file_cmd-ADVANCED:INTERNAL=1
 
