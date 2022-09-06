@@ -33,19 +33,19 @@ ADDITIONAL_FLAGS_SWAN:STRING=
 ADDITIONAL_FLAGS_UTLIITIES:STRING=
 
 //Build the serial ADCIRC executable
-BUILD_ADCIRC:BOOL=OFF
+BUILD_ADCIRC:BOOL=ON
 
 //Build the serial SWAN+ADCIRC executable
-BUILD_ADCSWAN:BOOL=OFF
+BUILD_ADCSWAN:BOOL=ON
 
 //Build ASWIP (ASymmetric Wind Input Preprocessor)
-BUILD_ASWIP:BOOL=OFF
+BUILD_ASWIP:BOOL=ON
 
 //Build the serial SWAN executable
-BUILD_SWAN:BOOL=OFF
+BUILD_SWAN:BOOL=ON
 
 //Build the ADCIRC utility programs
-BUILD_UTILITIES:BOOL=OFF
+BUILD_UTILITIES:BOOL=ON
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
@@ -320,7 +320,7 @@ DEBUG_MESH_TRACE:BOOL=OFF
 DEBUG_MESSENGER_TRACE:BOOL=OFF
 
 //Write the tracing debug information for the netCDF modle
-DEBUG_NETCDF_TRACE:BOOL=ON
+DEBUG_NETCDF_TRACE:BOOL=OFF
 
 //Write the tracing debug information for the nodal attributes
 // module
@@ -468,18 +468,8 @@ NETCDF_F90_INCLUDE_DIR:PATH=NETCDF_F90_INCLUDE_DIR-NOTFOUND
 //Path to a library.
 NETCDF_F90_LIBRARY:FILEPATH=/lib64/libnetcdff.so
 
-NETCDF_INCLUDES:PATH=/usr/include
-
-NETCDF_INCLUDES_F90:PATH=NETCDF_INCLUDES_F90-NOTFOUND
-
 //Path to a file.
 NETCDF_INCLUDE_DIR:PATH=/usr/include
-
-NETCDF_LIBRARIES:STRING=/usr/lib64/libnetcdf.so
-
-NETCDF_LIBRARIES_C:FILEPATH=/usr/lib64/libnetcdf.so
-
-NETCDF_LIBRARIES_F90:FILEPATH=/usr/lib64/libnetcdff.so
 
 //Path to a library.
 NETCDF_LIBRARY:FILEPATH=/lib64/libnetcdf.so
@@ -516,6 +506,15 @@ metis_LIB_DEPENDS:STATIC=
 
 //Dependencies for target
 mkdir_LIB_DEPENDS:STATIC=
+
+//Dependencies for the target
+templib_adcswan1_LIB_DEPENDS:STATIC=general;version;
+
+//Dependencies for target
+templib_swan1serial_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+templib_swan2serial_LIB_DEPENDS:STATIC=
 
 //Dependencies for target
 version_LIB_DEPENDS:STATIC=
