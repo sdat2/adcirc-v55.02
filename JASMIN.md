@@ -20,3 +20,12 @@ eb/OpenMPI/intel/3.1.1
 module load eb/OpenMPI/gcc/4.0.0
 mpirun ./mpi_myname.exe
 ```
+
+### GNU
+
+- Non-parralel non-swan working. padcirc compile.
+- No netcdf.
+
+### Intel
+
+- Parralel ADCIRC+SWAN working, but no netcdf output.
