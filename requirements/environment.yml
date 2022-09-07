@@ -1,0 +1,11 @@
+prefix: ./env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8
+  - pip
+  - gpy
+  - pip:
+    - -r package.txt
+    - -r dev-requirements.txt

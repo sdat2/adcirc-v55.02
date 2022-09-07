@@ -1,0 +1,75 @@
+
+# core packages
+proj
+numpy
+cython>=0.15.1
+pyshp
+six
+xarray==0.17
+# cartopy
+matplotlib>=3.3
+seaborn
+
+
+# external requirements (mostly linters and formatters)
+flake8              # flake8 linter
+flake8-docstrings   # docstring support for flake8
+mypy                # python type checker
+black               # automatic formatting provider
+isort               # automatic import sorter
+python-dotenv       # environment variable manager
+pylint              # use pylint instead of flake8
+pre-commit          # perform checks on code
+
+# hq, diffusion coeffieincets
+# epsilon u, epsilon v, 
+# no precip trend over land.
+# different answer depending of reanalysis
+# ECMWF mean vs. CMIP6 mean.
+#
+
+# testing
+pytest
+coveralls
+
+# Documentation:
+sphinx
+sphinx_autodoc_typehints
+sphinx_rtd_theme
+sphinx-markdown-tables
+recommonmark
+nbsphinx
+sphinx-fortran
+
+# linear algebra and general data analysis
+numpy               # arrays, linear algebra
+scipy               # linear algebra and numerical mathematics
+numba               # speeding up array operations
+pandas              # tabular data analysis
+scipy               # constants, stats
+astropy             # some constants
+
+# interactive computing
+tqdm                # loading bar
+jupyterlab          # jupyter notebooks
+jupyter
+ipython
+jupyterthemes       # change the color of jupyter-notebooks etc
+
+# useful xarray extensions
+eccodes
+dask[complete]      # allows more lazy operation for xarray.
+bottleneck
+nc-time-axis
+netCDF4             # makes sure that the default driver is netCDF4.
+
+# configuration inputs.
+hydra-core
+
+# Wandb
+wandb              # automatic recording of runs
+wandb_summarizer  # cool summarisation library
+
+# graphics
+imageio
+imageio-ffmpeg

@@ -1,0 +1,69 @@
+# NOTE: These requirements are used for developing code on the repo. 
+# As a standard they include certain formatters and linters.
+
+# core packages
+xarray==0.17       # The most recent version as fo the start of the project.
+matplotlib>=3.1    # if lower this can cause some issues.
+
+# For emulation and experiment design.
+emukit
+pyDOE         # latin hypercube etc.
+sobol-seq     # Sobol sequences
+
+# external requirements (mostly linters and formatters)
+flake8              # flake8 linter
+flake8-docstrings   # docstring support for flake8
+mypy                # python type checker
+black               # automatic formatting provider
+isort               # automatic import sorter
+python-dotenv       # environment variable manager
+pylint              # use pylint instead of flake8
+pre-commit          # perform checks on code
+# autoreload        # useful?
+
+#testing
+pytest
+coveralls
+recursive_diff     # test netcdfs
+typeguard
+sithom
+
+
+# linear algebra and general data analysis
+numpy               # arrays, linear algebra
+scipy               # linear algebra and numerical mathematics
+numba               # speeding up array operations
+pandas              # tabular data analysis
+scipy               # scipy for constants, curvefitting etc.
+uncertainties       # linear error propagation
+astropy             # astropy has constants e.g. radius of earth.
+pint                # units
+
+# interactive computing
+tqdm                # loading bar
+jupyterlab          # jupyter notebooks
+jupyter
+ipython
+jupyterthemes       # change the color of jupyter-notebooks etc
+
+# useful xarray extensions
+eccodes
+cftime
+dask[complete]      # allows more lazy operation for xarray.
+bottleneck          # useful for operations on arrays.
+nc-time-axis        # Hopefully this allows time to be decoded
+netCDF4             # makes sure that the default driver is netCDF4.
+
+# configuration inputs.
+hydra-core
+
+# Wandb
+wandb              # automatic recording of runs
+
+# graphics
+imageio            # make animations
+imageio-ffmpeg     # animations driver
+
+# improved plotting
+seaborn
+cmocean
