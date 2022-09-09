@@ -44,3 +44,16 @@ else
 	@bash -c "source `which virtualenvwrapper.sh`;mkvirtualenv $(PROJECT_NAME) --python=$(PYTHON_INTERPRETER)"
 	@echo ">>> New virtualenv created. Activate with:\nworkon $(PROJECT_NAME)"
 endif
+
+
+cmake:
+	cd adcirc/work
+	cmake .. -DCMAKE_C_COMPILER="/opt/homebrew/Cellar/gcc" -DCMAKE_CXX_COMPILER="/opt/homebrew/Cellar/gcc" -DCMAKE_Fortran_COMPILER="/opt/homebrew/Cellar/gcc" -DBUILD_ADCIRC=ON -DBUILD_PADCIRC=ON -DBUILD_ADCPREP=ON -DBUILD_LIBADCIRC_SHARED=ON -DBUILD_LIBADCIRC_SHARED=ON -DBUILD_SWAN=OFF -DBUILD_UTILITIES=OFF -DBUILD_ADCSWAN=OFF -DBUILD_PADCSWAN=OFF  -DBUILD_PUNSWAN=OFF -DADDITIONAL_FLAGS_SWAN="-ffixed-line-length-132 -ffree-line-length-132" -DENABLE_OUTPUT_NETCDF=ON -DNETCDF_LIBRARIES="/opt/homebrew/Cellar/netcdf/4.8.1_3/bin" -DFortran_LINELENGTH_FLAG="-ffixed-line-length-132 -ffree-line-length-132" -DCMAKE_Fortran_FLAGS="-ffree-line-length-132  -ffixed-line-length-132 -fallow-argument-mismatch -O2"
+	make
+	cd ../..
+
+
+make:
+	cd adcirc/work
+	make
+	cd ../..
