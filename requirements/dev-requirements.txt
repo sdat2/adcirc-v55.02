@@ -47,6 +47,7 @@ ipython
 jupyterthemes       # change the color of jupyter-notebooks etc
 
 # useful xarray extensions
+pyschism
 eccodes
 cftime
 dask[complete]      # allows more lazy operation for xarray.
