@@ -7,6 +7,9 @@ dependencies:
   - pip
   - gpy
   - eccodes
+  - cf-python
+  - cf-plot 
+  - udunits2
   - pip:
     - -r package.txt
     - -r dev-requirements.txt
