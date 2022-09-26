@@ -96,12 +96,15 @@ PrgEnv-gnu/8.0.0
 ## Manual Pages for SWAN/ADCIRC
 
 Compiling SWAN manual pages
+
 https://swanmodel.sourceforge.io/online_doc/swanimp/node8.html
 
 ADCIRC architecture
+
 https://adcirc.org/wp-content/uploads/sites/2255/2013/02/ADCIRC-Architecture.png
 
 ADCIRC compiling.
+
 https://wiki.adcirc.org/wiki/Compiling
 
 ## ADCIRC inputs structure
@@ -115,8 +118,10 @@ https://wiki.adcirc.org/wiki/Compiling
 - fort.22 = Meteorological Forcing
 - fort.23 = Wave radiaiton stress frocing
 - fort.61, fort.62, fot.81, fort.71, fort.71 = elevation, velocity, concentation, met stations
-- fort.63, fort.64, fort.83, fort.73, fort.74 = global elevation, velociyt, concentratiion, met stations.
+- fort.63, fort.64, fort.83, fort.73, fort.74 = global elevation, velocity, concentratiion, met
 
+# Adding adcirc to exe
+- PATH=/Users/simon/adcirc-swan/adcircpy/exe:$PATH
 
 
 ## SWAN Compilation problem
