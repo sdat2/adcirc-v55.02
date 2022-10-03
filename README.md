@@ -120,9 +120,9 @@ https://wiki.adcirc.org/wiki/Compiling
 - fort.61, fort.62, fot.81, fort.71, fort.71 = elevation, velocity, concentation, met stations
 - fort.63, fort.64, fort.83, fort.73, fort.74 = global elevation, velocity, concentratiion, met
 
-# Adding adcirc to exe
-- PATH=/Users/simon/adcirc-swan/adcircpy/exe:$PATH
+## Adding adcirc to exe
 
+- PATH=/Users/simon/adcirc-swan/adcircpy/exe:$PATH
 
 ## SWAN Compilation problem
 
