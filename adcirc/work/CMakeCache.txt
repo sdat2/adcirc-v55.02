@@ -18,19 +18,19 @@
 ADCIRC_NOF2008:BOOL=OFF
 
 //Additional flags to compile ADCIRC with
-ADDITIONAL_FLAGS_ADCIRC:STRING=
+ADDITIONAL_FLAGS_ADCIRC:STRING=-ffixed-line-length-132 -ffree-line-length-132
 
 //Additional flags to compile ADCPREP with
-ADDITIONAL_FLAGS_ADCPREP:STRING=
+ADDITIONAL_FLAGS_ADCPREP:STRING=-ffixed-line-length-132 -ffree-line-length-132
 
 //Additional flags to compile ASWIP with
-ADDITIONAL_FLAGS_ASWIP:STRING=
+ADDITIONAL_FLAGS_ASWIP:STRING=-ffixed-line-length-132 -ffree-line-length-132
 
 //Additional flags to compile SWAN with
-ADDITIONAL_FLAGS_SWAN:STRING=
+ADDITIONAL_FLAGS_SWAN:STRING=-ffixed-line-length-72 -ffree-line-length-72
 
 //Additional flags for utility programs
-ADDITIONAL_FLAGS_UTLIITIES:STRING=
+ADDITIONAL_FLAGS_UTLIITIES:STRING=-ffixed-line-length-132 -ffree-line-length-132
 
 //Build the serial ADCIRC executable
 BUILD_ADCIRC:BOOL=ON
@@ -42,7 +42,7 @@ BUILD_ADCPREP:BOOL=ON
 BUILD_ADCPREPR:UNINITIALIZED=ON
 
 //Build the serial SWAN+ADCIRC executable
-BUILD_ADCSWAN:BOOL=OFF
+BUILD_ADCSWAN:BOOL=ON
 
 //Build ASWIP (ASymmetric Wind Input Preprocessor)
 BUILD_ASWIP:BOOL=ON
@@ -152,10 +152,10 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=OFF
 CMAKE_Fortran_COMPILER:UNINITIALIZED=ftn
 
 //Flags for Fortran compiler.
-CMAKE_Fortran_FLAGS:STRING=-ffree-line-length-132  -ffixed-line-length-132 -DREAL8 -DCSCA -DLINUX -w -fallow-argument-mismatch -O2
+CMAKE_Fortran_FLAGS:STRING=-DREAL8 -DCSCA -DLINUX -w -fallow-argument-mismatch -O2
 
 //Flags used by the compiler during debug builds.
-CMAKE_Fortran_FLAGS_DEBUG:STRING=
+CMAKE_Fortran_FLAGS_DEBUG:STRING="
 
 //Flags used by the compiler during release builds for minimum
 // size.
@@ -413,13 +413,13 @@ ENABLE_POWELL:BOOL=OFF
 ENABLE_WARN_ELEV_DEBUG:BOOL=OFF
 
 //Compiler specific flags
-Fortran_COMPILER_SPECIFIC_FLAG:STRING=-ffixed-line-length-132
+Fortran_COMPILER_SPECIFIC_FLAG:STRING=
 
 //No help, variable specified on the command line.
 Fortran_FORMAT:UNINITIALIZED=FREE
 
 //Compiler specific flag to enable extended Fortran line length
-Fortran_LINELENGTH_FLAG:STRING=-ffixed-line-length-132
+Fortran_LINELENGTH_FLAG:STRING=-ffixed-line-length-132 -ffree-line-length-132
 
 //Format code for IBM based architectures
 IBM:BOOL=OFF
