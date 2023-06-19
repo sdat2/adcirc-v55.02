@@ -25,7 +25,7 @@ sh compile.sh
 
 ```
 
-## Netcdf path
+## NetCDF path
 
 ```bash
 ls /opt/cray/pe/netcdf/4.7.4.3/bin

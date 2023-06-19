@@ -391,7 +391,7 @@ DEBUG_WRITER_TRACE:BOOL=OFF
 DEBUG_WRITE_OUTPUT_TRACE:BOOL=OFF
 
 //Use DATETIME static libraries.
-ENABLE_DATETIME:BOOL=OFF
+ENABLE_DATETIME:BOOL=ON
 
 //Use GRIB2API static libraries.
 ENABLE_GRIB2:BOOL=OFF
@@ -528,11 +528,20 @@ adcirc_BINARY_DIR:STATIC=/work/n01/n01/sithom/adcirc-swan/adcirc/work
 //Value Computed by CMake
 adcirc_SOURCE_DIR:STATIC=/work/n01/n01/sithom/adcirc-swan/adcirc
 
-//Dependencies for the target
-libadcirc_shared_LIB_DEPENDS:STATIC=general;version;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;mkdir2;
+//Value Computed by CMake
+datetime-fortran_BINARY_DIR:STATIC=/work/n01/n01/sithom/adcirc-swan/adcirc/work/thirdparty/datetime_fortran
+
+//Value Computed by CMake
+datetime-fortran_SOURCE_DIR:STATIC=/work/n01/n01/sithom/adcirc-swan/adcirc/thirdparty/datetime_fortran
+
+//Dependencies for target
+datetime_LIB_DEPENDS:STATIC=
 
 //Dependencies for the target
-libadcirc_static_LIB_DEPENDS:STATIC=general;version;general;mkdir;general;version;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;/opt/cray/pe/netcdf/4.7.4.3/bin;
+libadcirc_shared_LIB_DEPENDS:STATIC=general;version;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;datetime;general;mkdir2;
+
+//Dependencies for the target
+libadcirc_static_LIB_DEPENDS:STATIC=general;version;general;mkdir;general;version;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;datetime;
 
 //Dependencies for target
 metis_LIB_DEPENDS:STATIC=
@@ -544,13 +553,13 @@ mkdir2_LIB_DEPENDS:STATIC=
 mkdir_LIB_DEPENDS:STATIC=
 
 //Dependencies for the target
-templib_adcswan1_LIB_DEPENDS:STATIC=general;version;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;/opt/cray/pe/netcdf/4.7.4.3/bin;
+templib_adcswan1_LIB_DEPENDS:STATIC=general;version;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;datetime;
 
 //Dependencies for the target
-templib_padcswan1_LIB_DEPENDS:STATIC=general;version;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;mkdir;
+templib_padcswan1_LIB_DEPENDS:STATIC=general;version;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;datetime;general;mkdir;
 
 //Dependencies for the target
-templib_punmsglib_LIB_DEPENDS:STATIC=general;version;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;version;
+templib_punmsglib_LIB_DEPENDS:STATIC=general;version;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;datetime;general;version;
 
 //Dependencies for target
 templib_punswan1_LIB_DEPENDS:STATIC=
@@ -723,7 +732,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

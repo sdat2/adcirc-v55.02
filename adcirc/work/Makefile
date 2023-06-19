@@ -639,6 +639,19 @@ adcircResultsComparison/fast:
 	$(MAKE) -f CMakeFiles/adcircResultsComparison.dir/build.make CMakeFiles/adcircResultsComparison.dir/build
 .PHONY : adcircResultsComparison/fast
 
+#=============================================================================
+# Target rules for targets named datetime
+
+# Build rule for target.
+datetime: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 datetime
+.PHONY : datetime
+
+# fast build rule for target.
+datetime/fast:
+	$(MAKE) -f thirdparty/datetime_fortran/CMakeFiles/datetime.dir/build.make thirdparty/datetime_fortran/CMakeFiles/datetime.dir/build
+.PHONY : datetime/fast
+
 CMakeFiles/swan_parallel_source/SdsBabanin.o: CMakeFiles/swan_parallel_source/SdsBabanin.f90.o
 
 .PHONY : CMakeFiles/swan_parallel_source/SdsBabanin.o
@@ -12070,6 +12083,7 @@ help:
 	@echo "... templib_swan2parallel"
 	@echo "... metis"
 	@echo "... adcircResultsComparison"
+	@echo "... datetime"
 	@echo "... CMakeFiles/swan_parallel_source/SdsBabanin.o"
 	@echo "... CMakeFiles/swan_parallel_source/SdsBabanin.i"
 	@echo "... CMakeFiles/swan_parallel_source/SdsBabanin.s"
