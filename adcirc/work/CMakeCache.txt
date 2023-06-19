@@ -21,28 +21,28 @@ ADDITIONAL_FLAGS_SWAN:UNINITIALIZED=-ffixed-line-length-73 -ffree-line-length-73
 BUILD_ADCIRC:UNINITIALIZED=ON
 
 //No help, variable specified on the command line.
-BUILD_ADCPREP:UNINITIALIZED=ON
+BUILD_ADCPREP:UNINITIALIZED=OFF
 
 //No help, variable specified on the command line.
-BUILD_ADCSWAN:UNINITIALIZED=ON
+BUILD_ADCSWAN:UNINITIALIZED=OFF
 
 //No help, variable specified on the command line.
-BUILD_LIBADCIRC_SHARED:UNINITIALIZED=ON
+BUILD_LIBADCIRC_SHARED:UNINITIALIZED=OFF
 
 //No help, variable specified on the command line.
-BUILD_PADCIRC:UNINITIALIZED=ON
+BUILD_PADCIRC:UNINITIALIZED=OFF
 
 //No help, variable specified on the command line.
-BUILD_PADCSWAN:UNINITIALIZED=ON
+BUILD_PADCSWAN:UNINITIALIZED=OFF
 
 //No help, variable specified on the command line.
-BUILD_PUNSWAN:UNINITIALIZED=ON
+BUILD_PUNSWAN:UNINITIALIZED=OFF
 
 //No help, variable specified on the command line.
-BUILD_SWAN:UNINITIALIZED=ON
+BUILD_SWAN:UNINITIALIZED=OFF
 
 //No help, variable specified on the command line.
-BUILD_UTILITIES:UNINITIALIZED=ON
+BUILD_UTILITIES:UNINITIALIZED=OFF
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
@@ -59,8 +59,8 @@ CMAKE_BUILD_TYPE:STRING=Release
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-//No help, variable specified on the command line.
-CMAKE_CXX_COMPILER:UNINITIALIZED=/opt/homebrew/bin/gcc-12
+//CXX compiler
+CMAKE_CXX_COMPILER:STRING=/opt/homebrew/bin/gcc-12
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -85,8 +85,8 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//No help, variable specified on the command line.
-CMAKE_C_COMPILER:UNINITIALIZED=/opt/homebrew/bin/gcc-12
+//C compiler
+CMAKE_C_COMPILER:STRING=/opt/homebrew/bin/gcc-12
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -100,16 +100,16 @@ CMAKE_C_COMPILER_RANLIB:FILEPATH=/opt/homebrew/bin/gcc-ranlib-12
 CMAKE_C_FLAGS:STRING=
 
 //Flags used by the C compiler during DEBUG builds.
-CMAKE_C_FLAGS_DEBUG:STRING=
+CMAKE_C_FLAGS_DEBUG:STRING=-g
 
 //Flags used by the C compiler during MINSIZEREL builds.
-CMAKE_C_FLAGS_MINSIZEREL:STRING=
+CMAKE_C_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
 
 //Flags used by the C compiler during RELEASE builds.
-CMAKE_C_FLAGS_RELEASE:STRING=
+CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 
 //Flags used by the C compiler during RELWITHDEBINFO builds.
-CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=
+CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Path to a program.
 CMAKE_DLLTOOL:FILEPATH=CMAKE_DLLTOOL-NOTFOUND
@@ -367,7 +367,7 @@ CMAKE_DLLTOOL-ADVANCED:INTERNAL=1
 //Path to cache edit program executable.
 CMAKE_EDIT_COMMAND:INTERNAL=/opt/homebrew/Cellar/cmake/3.24.1/bin/ccmake
 //Executable file format
-CMAKE_EXECUTABLE_FORMAT:INTERNAL=Unknown
+CMAKE_EXECUTABLE_FORMAT:INTERNAL=MACHO
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS
 CMAKE_EXE_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_DEBUG
