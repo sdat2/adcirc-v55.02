@@ -22,7 +22,7 @@ elemental_slope_limiter
 advection_state
  1      ! NCOR - VARIABLE CORIOLIS IN SPACE OPTION PARAMETER
  1      ! NTIP - TIDAL POTENTIAL OPTION PARAMETER
-12   	 	 ! NWS
+ 12   	 	 ! NWS
  2      ! NRAMP - RAMP FUNCTION OPTION
  9.81   ! G - ACCELERATION DUE TO GRAVITY - DETERMINES UNITS
  -3.0   ! TAU0 - WEIGHTING FACTOR IN GWCE
@@ -1261,3 +1261,11 @@ NOAA HPC
 CF
 jason.fleming@seahorsecoastal.com
 2005-07-24 18:00:00
+! -- Begin met Control Namelist -- 
+&metControl
+WindDragLimit = 2.500000e-03,
+DragLawString = "default",
+outputWindDrag = T,
+invertedBarometerOnElevationBoundary = F,
+/
+! -- End met Control Namelist -- 
