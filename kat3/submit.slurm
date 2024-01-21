@@ -1,7 +1,7 @@
 #!/bin/bash --login
 
 #SBATCH --job-name=kat3
-#SBATCH --nodes=4
+#SBATCH --nodes=1
 #SBATCH --tasks-per-node=128
 #SBATCH --cpus-per-task=1
 #SBATCH --time=10:0:0
@@ -16,6 +16,7 @@
 #SBATCH --mail-type=BEGIN
 #SBATCH --mail-type=END
 #SBATCH --mail-user=sdat2@cam.ac.uk
+
 
 # Load modules
 module load PrgEnv-gnu/8.3.3
@@ -33,11 +34,10 @@ d1=/work/n01/n01/sithom/adcirc-swan/katrina1
 echo "hook 1"
 eval "$(conda shell.bash hook)"
 
-case_name="kat3"
 
-#...Set variables
-np=512
-
+# define variables
+case_name="kat3" # name for printing
+np=128 # how many parallel tasks to define
 
 export OMP_NUM_THREADS=1
 
