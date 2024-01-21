@@ -1,37 +1,34 @@
-ASGS cs:20050724180000 cy:KATRINA31 ASGS       ! 32 CHARACTER ALPHANUMERIC RUN DESCRIPTION
-nowcast           ! 24 CHARACTER ALPANUMERIC RUN IDENTIFICATION
- 1      ! NFOVER - NONFATAL ERROR OVERRIDE OPTION
- 1      ! NABOUT - ABREVIATED OUTPUT OPTION PARAMETER
- -1    ! NSCREEN - UNIT 6 OUTPUT OPTION PARAMETER
-0      ! IHOT - HOT START PARAMETER
- 2      ! ICS - COORDINATE SYSTEM SELECTION PARAMETER
- 111112      ! IM - MODEL SELECTION PARAMETER
- 1      ! NOLIBF - BOTTOM FRICTION TERM SELECTION PARAMETER
- 2      ! NOLIFA - FINITE AMPLITUDE TERM SELECTION PARAMETE
- 1      ! NOLICA - SPATIAL DERIVATIVE CONVECTIVE SELECTION PARAMETER
- 1      ! NOLICAT - TIME DERIVATIVE CONVECTIVE TERM SELECTION PARAMETER
- 9      ! NWP - VARIABLE BOTTOM FRICTION AND LATERAL VISCOSITY OPTION PARAMETER
-surface_submergence_state
-surface_directional_effective_roughness_length
-surface_canopy_coefficient
-mannings_n_at_sea_floor
-sea_surface_height_above_geoid
-primitive_weighting_in_continuity_equation
-average_horizontal_eddy_viscosity_in_sea_water_wrt_depth
-elemental_slope_limiter
-advection_state
- 1      ! NCOR - VARIABLE CORIOLIS IN SPACE OPTION PARAMETER
- 1      ! NTIP - TIDAL POTENTIAL OPTION PARAMETER
-13     ! NWS - WIND STRESS AND BAROMETRIC PRESSURE OPTION PARAMETER
- 2      ! NRAMP - RAMP FUNCTION OPTION
- 9.81   ! G - ACCELERATION DUE TO GRAVITY - DETERMINES UNITS
- -3.0   ! TAU0 - WEIGHTING FACTOR IN GWCE
-1.0    ! DT - TIME STEP (IN SECONDS)
- 0.00   ! STATIM - STARTING TIME (IN DAYS)
- 0.00   ! REFTIM - REFERENCE TIME (IN DAYS)
-2005 07 24 18 1 0.9 1
-36.75    ! RNDAY - TOTAL LENGTH OF SIMULATION (IN DAYS)
- 12.0 0.5 4.0           ! DRAMP - DURATION OF RAMP FUNCTION (IN DAYS)
+OceanMesh2D
+Run_001
+1        	 ! NFOVER 
+0        	 ! NABOUT 
+360        	 ! NSCREEN 
+0        	 ! IHOT 
+2         	 ! ICS 
+511112          	 ! IM 
+1            	 ! NOLIBF 
+2            	 ! NOLIFA 
+1           	 ! NOLICA 
+1           	 ! NOLICAT 
+0           	 ! NWP 
+1   	 	 ! NCOR 
+1   	 	 ! NTIP 
+12   	 	 ! NWS 
+1    	 	 ! NRAMP 
+9.810000    	 ! G  
+-1   	 	 ! TAU0 
+1    	 	 ! DTDP 
+0  	 	 ! STATIM 
+0   	 	 ! REFTIM 
+10800
+14   	 	 ! RNDY 
+2   	 	 ! DRAMP 
+0 1 0   	  ! A00, B00, C00 
+0.1 0 0 0.01    	 ! H0, 2*dummy, VELMIN 
+-76.572766 23.241697  	 	 ! SLAM0, SFEA0 
+0.002500     	 ! CF 
+-0.050000     	 	 ! ELSM 
+0.000000   	 ! CORI 
  0.0 1.0 0.0         ! TIME WEIGHTING FACTORS FOR THE GWCE EQUATION
  0.10 0 0 0.01          ! H0, NODEDRYMIN, NODEWETMIN, VELMIN
  265.5 29.0             ! SLAM0,SFEA0 - CENTER OF CPP PROJECTION (NOT USED IF ICS=1, NTIP=0, NCOR=0)
@@ -1261,3 +1258,11 @@ NOAA HPC
 CF
 jason.fleming@seahorsecoastal.com
 2005-07-24 18:00:00
+! -- Begin met Control Namelist -- 
+&metControl
+WindDragLimit = 2.500000e-03,
+DragLawString = "default",
+outputWindDrag = T,
+invertedBarometerOnElevationBoundary = F,
+/
+! -- End met Control Namelist -- 
