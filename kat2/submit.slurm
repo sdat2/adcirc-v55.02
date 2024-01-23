@@ -1,7 +1,7 @@
 #!/bin/bash --login
 
 #SBATCH --job-name=kat2
-#SBATCH --nodes=4
+#SBATCH --nodes=1
 #SBATCH --tasks-per-node=128
 #SBATCH --cpus-per-task=1
 #SBATCH --time=10:0:0
@@ -36,7 +36,7 @@ eval "$(conda shell.bash hook)"
 case_name="kat2"
 
 #...Set variables
-np=512
+np=128
 
 
 export OMP_NUM_THREADS=1
