@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=128
 #SBATCH --cpus-per-task=1
-#SBATCH --time=10:0:0
+#SBATCH --time=1:0:0
 
 # Replace [budget code] below with your project code (e.g. t01)
 
@@ -35,7 +35,7 @@ echo "hook 1"
 eval "$(conda shell.bash hook)"
 
 # define variables
-case_name="nws13" # name for printing
+case_name=$SLURM_JOB_NAME # name for printing
 np=128 # how many parallel tasks to define
 
 export OMP_NUM_THREADS=1
