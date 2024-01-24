@@ -1,5 +1,6 @@
 #!/bin/bash --login
 
+# iconv -f UTF-8 -t ASCII input_utf8.txt -o output_ascii.txt
 #SBATCH --job-name=kat.nws13
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=128
