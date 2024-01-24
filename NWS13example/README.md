@@ -4,9 +4,9 @@ fort.22.nc file format:
  - groups:
     - Main
         - dimensions:
-            - time
-            - xi
-            - yi
+            - time (673)
+            - yi (385)
+            - xi (393)
         - variables:
             - lat (yi, xi)
             - lon (yi, xi)
@@ -15,9 +15,9 @@ fort.22.nc file format:
             - V10 (time, yi, xi)
     - TCName
         - dimensions:
-            - time
-            - xi
-            - yi
+            - time (481)
+            - yi (161)
+            - xi (161)
         - variables:
             - lat (time, yi, xi)
             - lon (time, yi, xi)
