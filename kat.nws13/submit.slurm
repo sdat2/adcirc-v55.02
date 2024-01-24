@@ -2,8 +2,8 @@
 
 #SBATCH --job-name=kat.nws13
 #SBATCH --nodes=1
-#SBATCH --tasks-per-node=64
-#SBATCH --cpus-per-task=2
+#SBATCH --tasks-per-node=128
+#SBATCH --cpus-per-task=1
 #SBATCH --time=2:0:0
 
 # Potentially should underpopulate node for memory issues.
