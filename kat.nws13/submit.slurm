@@ -39,7 +39,7 @@ eval "$(conda shell.bash hook)"
 
 # define variables
 case_name=$SLURM_JOB_NAME # name for printing
-np=128 # how many parallel tasks to define
+np=64 # how many parallel tasks to define
 
 export OMP_NUM_THREADS=1
 
