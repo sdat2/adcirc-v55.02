@@ -1,4 +1,5 @@
-ASGS cs:20050724180000 cy:KATRINA31 ASGS       ! 32 CHARACTER ALPHANUMERIC RUN DESCRIPTION
+OceanMesh2D
+Run_001
  1      ! NFOVER - NONFATAL ERROR OVERRIDE OPTION
  1      ! NABOUT - ABREVIATED OUTPUT OPTION PARAMETER
  360    ! NSCREEN - UNIT 6 OUTPUT OPTION PARAMETER
@@ -1261,6 +1262,9 @@ CF
 jason.fleming@seahorsecoastal.com
 2005-07-24 18:00:00
 ! -- Begin met Control Namelist -- 
+ &owiWindNetcdf
+  NWS13ColdStartString='20050819.000000',
+ /
 &metControl
 WindDragLimit = 2.500000e-03,
 DragLawString = "default",
