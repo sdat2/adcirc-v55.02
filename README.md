@@ -160,3 +160,10 @@ Finished
 cd /work/n01/n01/sithom/adcirc-swan/inputs/adcirc_katrina-2d-parallel
 sbatch submit.slurm
 ```
+
+
+### Getting NWS 13 span up
+
+- First check that editing NWS13 files using xarray-datatree works ok.
+- Translate betweeen track netcdf and `fort.22.nc'
+- Force some 30k node examples.
