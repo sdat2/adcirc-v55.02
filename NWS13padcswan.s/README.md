@@ -1,3 +1,10 @@
+# PADCSWAN
+https://ccht.ccee.ncsu.edu/how-to-compile-and-run-swanadcirc/
+
+- swaninit
+- fort.63
+
+
 # New NWS=13 setting
 
 fort.22.nc file format:
