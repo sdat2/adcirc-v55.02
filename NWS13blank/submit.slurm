@@ -1,6 +1,6 @@
 #!/bin/bash --login
 
-#SBATCH --job-name=nws13.padcswan
+#SBATCH --job-name=nws13.blank
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=128
 #SBATCH --cpus-per-task=1
@@ -67,7 +67,7 @@ else
 fi
 
 echo -n "    Runnning case..."
-srun --distribution=block:block --hint=nomultithread ${d1}/padcswan > padcswan_log.txt
+srun --distribution=block:block --hint=nomultithread ${d1}/padcirc > padcirc_log.txt
 exitstat=$?
 echo "Finished"
 echo "    ADCIRC Exit Code: $exitstat"

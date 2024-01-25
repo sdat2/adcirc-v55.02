@@ -1,7 +1,7 @@
 #!/bin/bash --login
 
-#SBATCH --job-name=nws13.padcswan
-#SBATCH --nodes=1
+#SBATCH --job-name=nws13.c
+#SBATCH --nodes=2
 #SBATCH --tasks-per-node=128
 #SBATCH --cpus-per-task=1
 #SBATCH --time=1:0:0
@@ -36,7 +36,7 @@ eval "$(conda shell.bash hook)"
 
 # define variables
 case_name=$SLURM_JOB_NAME # name for printing
-np=128 # how many parallel tasks to define
+np=256 # how many parallel tasks to define
 
 export OMP_NUM_THREADS=1
 
@@ -67,7 +67,7 @@ else
 fi
 
 echo -n "    Runnning case..."
-srun --distribution=block:block --hint=nomultithread ${d1}/padcswan > padcswan_log.txt
+srun --distribution=block:block --hint=nomultithread ${d1}/padcirc > padcirc_log.txt
 exitstat=$?
 echo "Finished"
 echo "    ADCIRC Exit Code: $exitstat"
