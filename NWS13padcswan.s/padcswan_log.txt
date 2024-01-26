@@ -1,4 +1,3 @@
-ECHO: Application launched with: /work/n01/n01/sithom/adcirc-swan/katrina1/padcswan -W
  INFO: Searching for ADCIRC subdomain directories:
  INFO: Looking for './PE0000/fort.14' ...
  INFO: File './PE0000/fort.14' was found!
@@ -8,7 +7,7 @@ ECHO: Application launched with: /work/n01/n01/sithom/adcirc-swan/katrina1/padcs
  INFO: The GBLINPUTDIR is '.'.
  INFO: The GLOBALDIR is '.'.
  INFO: The LOCALDIR is './PE0000'.
-WARNING: read14FindDims: Number of land boundary nodes was set to 23 but 22 were found.
+WARNING: read14FindDims: Number of land boundary nodes was set to 72 but 68 were found.
 
  _______________________________________________________________________________
 
@@ -54,14 +53,6 @@ Using group2 to interpolate pressure and wind fields from time 0.00 to time 900.
 
  RADIATION STRESS INFORMATION READ.
 
-INFO: initOutput2D: Output file ./fort.63 will be written via dedicated writer processor(s).
-INFO: initOutput2D: Output file ./fort.64 will be written via dedicated writer processor(s).
-INFO: initOutput2D: Output file ./fort.73 will be written via dedicated writer processor(s).
-INFO: initOutput2D: Output file ./fort.74 will be written via dedicated writer processor(s).
-INFO: initOutput2D: Output file ./rads.64 will be written via dedicated writer processor(s).
-INFO: initOutput2D: Output file ./swan_HS.63 will be written via dedicated writer processor(s).
-INFO: initOutput2D: Output file ./swan_DIR.63 will be written via dedicated writer processor(s).
-INFO: initOutput2D: Output file ./swan_TPS.63 will be written via dedicated writer processor(s).
 
  _______________________________________________________________________________
 
@@ -69,7 +60,6 @@ INFO: initOutput2D: Output file ./swan_TPS.63 will be written via dedicated writ
  LIMITED RUNTIME INFORMATION SECTION 
 
 
-ECHO: Application launched with: /work/n01/n01/sithom/adcirc-swan/katrina1/padcswan -W
  INFO: Searching for ADCIRC subdomain directories:
  INFO: Looking for './PE0000/fort.14' ...
  INFO: File './PE0000/fort.14' was found!
@@ -83,3 +73,1702 @@ ECHO: Application launched with: /work/n01/n01/sithom/adcirc-swan/katrina1/padcs
  SWAN is preparing computation
 
 INFO: ADCIRC_Run: Begin timestepping.
+ TIME STEP =     100   0.02% COMPLETE     ITERATIONS =    0     TIME =  0.10000000E+03
+  ELMAX =  1.2418E-006 AT NODE      545  SPEEDMAX =  2.8347E-006 AT NODE       72  ON MYPROC =    0
+ TIME STEP =     200   0.03% COMPLETE     ITERATIONS =    0     TIME =  0.20000000E+03
+  ELMAX =  6.3570E-006 AT NODE      545  SPEEDMAX =  9.4119E-006 AT NODE       72  ON MYPROC =    0
+ TIME STEP =     300   0.05% COMPLETE     ITERATIONS =    0     TIME =  0.30000000E+03
+  ELMAX =  1.4108E-005 AT NODE      545  SPEEDMAX =  1.7379E-005 AT NODE       72  ON MYPROC =    0
+ TIME STEP =     400   0.07% COMPLETE     ITERATIONS =    0     TIME =  0.40000000E+03
+  ELMAX =  2.6124E-005 AT NODE      548  SPEEDMAX =  2.5049E-005 AT NODE       72  ON MYPROC =    0
+ TIME STEP =     500   0.08% COMPLETE     ITERATIONS =    0     TIME =  0.50000000E+03
+  ELMAX =  4.0435E-005 AT NODE      548  SPEEDMAX =  3.1340E-005 AT NODE       72  ON MYPROC =    0
+ TIME STEP =     600   0.10% COMPLETE     ITERATIONS =    0     TIME =  0.60000000E+03
+  ELMAX =  5.4594E-005 AT NODE      548  SPEEDMAX =  3.5713E-005 AT NODE       72  ON MYPROC =    0
+ TIME STEP =     700   0.12% COMPLETE     ITERATIONS =    0     TIME =  0.70000000E+03
+  ELMAX =  6.6166E-005 AT NODE      548  SPEEDMAX =  3.8107E-005 AT NODE       72  ON MYPROC =    0
+ TIME STEP =     800   0.13% COMPLETE     ITERATIONS =    0     TIME =  0.80000000E+03
+  ELMAX =  7.3090E-005 AT NODE      548  SPEEDMAX =  3.8876E-005 AT NODE       72  ON MYPROC =    0
+ TIME STEP =     900   0.15% COMPLETE     ITERATIONS =    0     TIME =  0.90000000E+03
+  ELMAX =  7.4525E-005 AT NODE      548  SPEEDMAX =  3.8727E-005 AT NODE       72  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 1800.00 to time 2700.00.
+Using group2 to interpolate pressure and wind fields from time 1800.00 to time 2700.00.
+ TIME STEP =    1000   0.17% COMPLETE     ITERATIONS =    0     TIME =  0.10000000E+04
+  ELMAX =  7.2692E-005 AT NODE      548  SPEEDMAX =  3.8575E-005 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    1100   0.18% COMPLETE     ITERATIONS =    0     TIME =  0.11000000E+04
+  ELMAX =  7.4251E-005 AT NODE      548  SPEEDMAX =  3.9706E-005 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    1200   0.20% COMPLETE     ITERATIONS =    0     TIME =  0.12000000E+04
+  ELMAX =  8.3701E-005 AT NODE      541  SPEEDMAX =  4.4023E-005 AT NODE       72  ON MYPROC =    0
++time 20110825.122000   , step      1; iteration    1
++time 20110825.122000   , step      1; iteration    2
++time 20110825.122000   , step      1; iteration    3
++time 20110825.122000   , step      1; iteration    4
++time 20110825.122000   , step      1; iteration    5
++time 20110825.122000   , step      1; iteration    6
++time 20110825.122000   , step      1; iteration    7
++time 20110825.122000   , step      1; iteration    8
++time 20110825.122000   , step      1; iteration    9
++time 20110825.122000   , step      1; iteration   10
++time 20110825.122000   , step      1; iteration   11
++time 20110825.122000   , step      1; iteration   12
++time 20110825.122000   , step      1; iteration   13
++time 20110825.122000   , step      1; iteration   14
++time 20110825.122000   , step      1; iteration   15
++time 20110825.122000   , step      1; iteration   16
++time 20110825.122000   , step      1; iteration   17
++time 20110825.122000   , step      1; iteration   18
++time 20110825.122000   , step      1; iteration   19
++time 20110825.122000   , step      1; iteration   20
+ TIME STEP =    1300   0.21% COMPLETE     ITERATIONS =    0     TIME =  0.13000000E+04
+  ELMAX =  1.0138E-004 AT NODE      548  SPEEDMAX =  5.4041E-005 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    1400   0.23% COMPLETE     ITERATIONS =    0     TIME =  0.14000000E+04
+  ELMAX =  1.3022E-004 AT NODE      548  SPEEDMAX =  7.3002E-005 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    1500   0.25% COMPLETE     ITERATIONS =    0     TIME =  0.15000000E+04
+  ELMAX =  1.6811E-004 AT NODE      548  SPEEDMAX =  1.0497E-004 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    1600   0.26% COMPLETE     ITERATIONS =    0     TIME =  0.16000000E+04
+  ELMAX =  2.1234E-004 AT NODE      548  SPEEDMAX =  1.5484E-004 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    1700   0.28% COMPLETE     ITERATIONS =    0     TIME =  0.17000000E+04
+  ELMAX =  2.5951E-004 AT NODE      548  SPEEDMAX =  2.2839E-004 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    1800   0.30% COMPLETE     ITERATIONS =    0     TIME =  0.18000000E+04
+  ELMAX =  3.0661E-004 AT NODE      548  SPEEDMAX =  3.3232E-004 AT NODE       72  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 2700.00 to time 3600.00.
+Using group2 to interpolate pressure and wind fields from time 2700.00 to time 3600.00.
+ TIME STEP =    1900   0.31% COMPLETE     ITERATIONS =    0     TIME =  0.19000000E+04
+  ELMAX =  3.5167E-004 AT NODE      548  SPEEDMAX =  4.5722E-004 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    2000   0.33% COMPLETE     ITERATIONS =    0     TIME =  0.20000000E+04
+  ELMAX =  3.9131E-004 AT NODE      548  SPEEDMAX =  5.8862E-004 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    2100   0.35% COMPLETE     ITERATIONS =    0     TIME =  0.21000000E+04
+  ELMAX =  4.2474E-004 AT NODE      548  SPEEDMAX =  7.2640E-004 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    2200   0.36% COMPLETE     ITERATIONS =    0     TIME =  0.22000000E+04
+  ELMAX =  4.5194E-004 AT NODE      548  SPEEDMAX =  8.7045E-004 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    2300   0.38% COMPLETE     ITERATIONS =    0     TIME =  0.23000000E+04
+  ELMAX =  4.7396E-004 AT NODE      548  SPEEDMAX =  1.0207E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    2400   0.40% COMPLETE     ITERATIONS =    0     TIME =  0.24000000E+04
+  ELMAX =  4.9624E-004 AT NODE      541  SPEEDMAX =  1.1769E-003 AT NODE       72  ON MYPROC =    0
++time 20110825.124000   , step      2; iteration    1
++time 20110825.124000   , step      2; iteration    2
++time 20110825.124000   , step      2; iteration    3
++time 20110825.124000   , step      2; iteration    4
++time 20110825.124000   , step      2; iteration    5
++time 20110825.124000   , step      2; iteration    6
++time 20110825.124000   , step      2; iteration    7
++time 20110825.124000   , step      2; iteration    8
++time 20110825.124000   , step      2; iteration    9
++time 20110825.124000   , step      2; iteration   10
++time 20110825.124000   , step      2; iteration   11
++time 20110825.124000   , step      2; iteration   12
++time 20110825.124000   , step      2; iteration   13
++time 20110825.124000   , step      2; iteration   14
++time 20110825.124000   , step      2; iteration   15
++time 20110825.124000   , step      2; iteration   16
++time 20110825.124000   , step      2; iteration   17
++time 20110825.124000   , step      2; iteration   18
++time 20110825.124000   , step      2; iteration   19
++time 20110825.124000   , step      2; iteration   20
+ TIME STEP =    2500   0.41% COMPLETE     ITERATIONS =    0     TIME =  0.25000000E+04
+  ELMAX =  5.3791E-004 AT NODE      541  SPEEDMAX =  1.3390E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    2600   0.43% COMPLETE     ITERATIONS =    0     TIME =  0.26000000E+04
+  ELMAX =  5.8222E-004 AT NODE      541  SPEEDMAX =  1.5069E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    2700   0.45% COMPLETE     ITERATIONS =    0     TIME =  0.27000000E+04
+  ELMAX =  6.3027E-004 AT NODE      541  SPEEDMAX =  1.6804E-003 AT NODE       72  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 3600.00 to time 4500.00.
+Using group2 to interpolate pressure and wind fields from time 3600.00 to time 4500.00.
+ TIME STEP =    2800   0.46% COMPLETE     ITERATIONS =    0     TIME =  0.28000000E+04
+  ELMAX =  6.8227E-004 AT NODE      541  SPEEDMAX =  1.8594E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    2900   0.48% COMPLETE     ITERATIONS =    0     TIME =  0.29000000E+04
+  ELMAX =  7.3794E-004 AT NODE      541  SPEEDMAX =  2.0437E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    3000   0.50% COMPLETE     ITERATIONS =    0     TIME =  0.30000000E+04
+  ELMAX =  7.9696E-004 AT NODE      541  SPEEDMAX =  2.2332E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    3100   0.51% COMPLETE     ITERATIONS =    0     TIME =  0.31000000E+04
+  ELMAX =  8.5906E-004 AT NODE      541  SPEEDMAX =  2.4277E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    3200   0.53% COMPLETE     ITERATIONS =    0     TIME =  0.32000000E+04
+  ELMAX =  9.2381E-004 AT NODE      541  SPEEDMAX =  2.6272E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    3300   0.55% COMPLETE     ITERATIONS =    0     TIME =  0.33000000E+04
+  ELMAX =  9.9028E-004 AT NODE      541  SPEEDMAX =  2.8314E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    3400   0.56% COMPLETE     ITERATIONS =    0     TIME =  0.34000000E+04
+  ELMAX =  1.0570E-003 AT NODE      541  SPEEDMAX =  3.0402E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    3500   0.58% COMPLETE     ITERATIONS =    0     TIME =  0.35000000E+04
+  ELMAX =  1.1221E-003 AT NODE      541  SPEEDMAX =  3.2535E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    3600   0.60% COMPLETE     ITERATIONS =    0     TIME =  0.36000000E+04
+  ELMAX =  1.1835E-003 AT NODE      541  SPEEDMAX =  3.4711E-003 AT NODE       72  ON MYPROC =    0
++time 20110825.130000   , step      3; iteration    1
++time 20110825.130000   , step      3; iteration    2
++time 20110825.130000   , step      3; iteration    3
++time 20110825.130000   , step      3; iteration    4
++time 20110825.130000   , step      3; iteration    5
++time 20110825.130000   , step      3; iteration    6
++time 20110825.130000   , step      3; iteration    7
++time 20110825.130000   , step      3; iteration    8
++time 20110825.130000   , step      3; iteration    9
++time 20110825.130000   , step      3; iteration   10
++time 20110825.130000   , step      3; iteration   11
++time 20110825.130000   , step      3; iteration   12
++time 20110825.130000   , step      3; iteration   13
++time 20110825.130000   , step      3; iteration   14
++time 20110825.130000   , step      3; iteration   15
++time 20110825.130000   , step      3; iteration   16
+Using group1 to interpolate pressure and wind fields from time 4500.00 to time 5400.00.
+Using group2 to interpolate pressure and wind fields from time 4500.00 to time 5400.00.
+ TIME STEP =    3700   0.61% COMPLETE     ITERATIONS =    0     TIME =  0.37000000E+04
+  ELMAX =  1.2397E-003 AT NODE      541  SPEEDMAX =  3.6947E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    3800   0.63% COMPLETE     ITERATIONS =    0     TIME =  0.38000000E+04
+  ELMAX =  1.2972E-003 AT NODE      363  SPEEDMAX =  3.9259E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    3900   0.64% COMPLETE     ITERATIONS =    0     TIME =  0.39000000E+04
+  ELMAX =  1.3755E-003 AT NODE      363  SPEEDMAX =  4.1647E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    4000   0.66% COMPLETE     ITERATIONS =    0     TIME =  0.40000000E+04
+  ELMAX =  1.4521E-003 AT NODE      363  SPEEDMAX =  4.4111E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    4100   0.68% COMPLETE     ITERATIONS =    0     TIME =  0.41000000E+04
+  ELMAX =  1.5259E-003 AT NODE      363  SPEEDMAX =  4.6651E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    4200   0.69% COMPLETE     ITERATIONS =    0     TIME =  0.42000000E+04
+  ELMAX =  1.5956E-003 AT NODE      363  SPEEDMAX =  4.9267E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    4300   0.71% COMPLETE     ITERATIONS =    0     TIME =  0.43000000E+04
+  ELMAX =  1.6682E-003 AT NODE      549  SPEEDMAX =  5.1957E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    4400   0.73% COMPLETE     ITERATIONS =    0     TIME =  0.44000000E+04
+  ELMAX =  1.7780E-003 AT NODE      549  SPEEDMAX =  5.4722E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    4500   0.74% COMPLETE     ITERATIONS =    0     TIME =  0.45000000E+04
+  ELMAX =  1.8922E-003 AT NODE      549  SPEEDMAX =  5.7562E-003 AT NODE       72  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 5400.00 to time 6300.00.
+Using group2 to interpolate pressure and wind fields from time 5400.00 to time 6300.00.
+ TIME STEP =    4600   0.76% COMPLETE     ITERATIONS =    0     TIME =  0.46000000E+04
+  ELMAX =  2.0104E-003 AT NODE      549  SPEEDMAX =  6.0475E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    4700   0.78% COMPLETE     ITERATIONS =    0     TIME =  0.47000000E+04
+  ELMAX =  2.1323E-003 AT NODE      549  SPEEDMAX =  6.3461E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    4800   0.79% COMPLETE     ITERATIONS =    0     TIME =  0.48000000E+04
+  ELMAX =  2.2575E-003 AT NODE      549  SPEEDMAX =  6.6519E-003 AT NODE       72  ON MYPROC =    0
++time 20110825.132000   , step      4; iteration    1
++time 20110825.132000   , step      4; iteration    2
++time 20110825.132000   , step      4; iteration    3
++time 20110825.132000   , step      4; iteration    4
++time 20110825.132000   , step      4; iteration    5
++time 20110825.132000   , step      4; iteration    6
++time 20110825.132000   , step      4; iteration    7
++time 20110825.132000   , step      4; iteration    8
+ TIME STEP =    4900   0.81% COMPLETE     ITERATIONS =    0     TIME =  0.49000000E+04
+  ELMAX =  2.3858E-003 AT NODE      549  SPEEDMAX =  6.9651E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    5000   0.83% COMPLETE     ITERATIONS =    0     TIME =  0.50000000E+04
+  ELMAX =  2.5168E-003 AT NODE      549  SPEEDMAX =  7.2854E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    5100   0.84% COMPLETE     ITERATIONS =    0     TIME =  0.51000000E+04
+  ELMAX =  2.6503E-003 AT NODE      549  SPEEDMAX =  7.6127E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    5200   0.86% COMPLETE     ITERATIONS =    0     TIME =  0.52000000E+04
+  ELMAX =  2.7860E-003 AT NODE      549  SPEEDMAX =  7.9467E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    5300   0.88% COMPLETE     ITERATIONS =    0     TIME =  0.53000000E+04
+  ELMAX =  2.9239E-003 AT NODE      549  SPEEDMAX =  8.2875E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    5400   0.89% COMPLETE     ITERATIONS =    0     TIME =  0.54000000E+04
+  ELMAX =  3.0639E-003 AT NODE      549  SPEEDMAX =  8.6348E-003 AT NODE       72  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 6300.00 to time 7200.00.
+Using group2 to interpolate pressure and wind fields from time 6300.00 to time 7200.00.
+ TIME STEP =    5500   0.91% COMPLETE     ITERATIONS =    0     TIME =  0.55000000E+04
+  ELMAX =  3.2060E-003 AT NODE      549  SPEEDMAX =  8.9881E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    5600   0.93% COMPLETE     ITERATIONS =    0     TIME =  0.56000000E+04
+  ELMAX =  3.3504E-003 AT NODE      549  SPEEDMAX =  9.3476E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    5700   0.94% COMPLETE     ITERATIONS =    0     TIME =  0.57000000E+04
+  ELMAX =  3.4976E-003 AT NODE      549  SPEEDMAX =  9.7132E-003 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    5800   0.96% COMPLETE     ITERATIONS =    0     TIME =  0.58000000E+04
+  ELMAX =  3.6483E-003 AT NODE      549  SPEEDMAX =  1.0085E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    5900   0.98% COMPLETE     ITERATIONS =    0     TIME =  0.59000000E+04
+  ELMAX =  3.8030E-003 AT NODE      549  SPEEDMAX =  1.0463E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    6000   0.99% COMPLETE     ITERATIONS =    0     TIME =  0.60000000E+04
+  ELMAX =  3.9623E-003 AT NODE      549  SPEEDMAX =  1.0846E-002 AT NODE       72  ON MYPROC =    0
++time 20110825.134000   , step      5; iteration    1
++time 20110825.134000   , step      5; iteration    2
++time 20110825.134000   , step      5; iteration    3
++time 20110825.134000   , step      5; iteration    4
++time 20110825.134000   , step      5; iteration    5
++time 20110825.134000   , step      5; iteration    6
+ TIME STEP =    6100   1.01% COMPLETE     ITERATIONS =    0     TIME =  0.61000000E+04
+  ELMAX =  4.1266E-003 AT NODE      549  SPEEDMAX =  1.1237E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    6200   1.03% COMPLETE     ITERATIONS =    0     TIME =  0.62000000E+04
+  ELMAX =  4.2962E-003 AT NODE      549  SPEEDMAX =  1.1633E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    6300   1.04% COMPLETE     ITERATIONS =    0     TIME =  0.63000000E+04
+  ELMAX =  4.4707E-003 AT NODE      549  SPEEDMAX =  1.2036E-002 AT NODE       72  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 7200.00 to time 8100.00.
+Using group2 to interpolate pressure and wind fields from time 7200.00 to time 8100.00.
+ TIME STEP =    6400   1.06% COMPLETE     ITERATIONS =    0     TIME =  0.64000000E+04
+  ELMAX =  4.6499E-003 AT NODE      549  SPEEDMAX =  1.2446E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    6500   1.07% COMPLETE     ITERATIONS =    0     TIME =  0.65000000E+04
+  ELMAX =  4.8334E-003 AT NODE      549  SPEEDMAX =  1.2862E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    6600   1.09% COMPLETE     ITERATIONS =    0     TIME =  0.66000000E+04
+  ELMAX =  5.0207E-003 AT NODE      549  SPEEDMAX =  1.3284E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    6700   1.11% COMPLETE     ITERATIONS =    0     TIME =  0.67000000E+04
+  ELMAX =  5.2109E-003 AT NODE      549  SPEEDMAX =  1.3713E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    6800   1.12% COMPLETE     ITERATIONS =    0     TIME =  0.68000000E+04
+  ELMAX =  5.4034E-003 AT NODE      549  SPEEDMAX =  1.4148E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    6900   1.14% COMPLETE     ITERATIONS =    0     TIME =  0.69000000E+04
+  ELMAX =  5.5978E-003 AT NODE      549  SPEEDMAX =  1.4589E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    7000   1.16% COMPLETE     ITERATIONS =    0     TIME =  0.70000000E+04
+  ELMAX =  5.7935E-003 AT NODE      549  SPEEDMAX =  1.5038E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    7100   1.17% COMPLETE     ITERATIONS =    0     TIME =  0.71000000E+04
+  ELMAX =  5.9902E-003 AT NODE      549  SPEEDMAX =  1.5494E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    7200   1.19% COMPLETE     ITERATIONS =    0     TIME =  0.72000000E+04
+  ELMAX =  6.1874E-003 AT NODE      549  SPEEDMAX =  1.5956E-002 AT NODE       72  ON MYPROC =    0
++time 20110825.140000   , step      6; iteration    1
++time 20110825.140000   , step      6; iteration    2
++time 20110825.140000   , step      6; iteration    3
++time 20110825.140000   , step      6; iteration    4
++time 20110825.140000   , step      6; iteration    5
++time 20110825.140000   , step      6; iteration    6
+Using group1 to interpolate pressure and wind fields from time 8100.00 to time 9000.00.
+Using group2 to interpolate pressure and wind fields from time 8100.00 to time 9000.00.
+ TIME STEP =    7300   1.21% COMPLETE     ITERATIONS =    0     TIME =  0.73000000E+04
+  ELMAX =  6.3850E-003 AT NODE      549  SPEEDMAX =  1.6427E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    7400   1.22% COMPLETE     ITERATIONS =    0     TIME =  0.74000000E+04
+  ELMAX =  6.5827E-003 AT NODE      549  SPEEDMAX =  1.6904E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    7500   1.24% COMPLETE     ITERATIONS =    0     TIME =  0.75000000E+04
+  ELMAX =  6.7798E-003 AT NODE      549  SPEEDMAX =  1.7387E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    7600   1.26% COMPLETE     ITERATIONS =    0     TIME =  0.76000000E+04
+  ELMAX =  6.9757E-003 AT NODE      549  SPEEDMAX =  1.7876E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    7700   1.27% COMPLETE     ITERATIONS =    0     TIME =  0.77000000E+04
+  ELMAX =  7.1699E-003 AT NODE      549  SPEEDMAX =  1.8370E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    7800   1.29% COMPLETE     ITERATIONS =    0     TIME =  0.78000000E+04
+  ELMAX =  7.3616E-003 AT NODE      549  SPEEDMAX =  1.8870E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    7900   1.31% COMPLETE     ITERATIONS =    0     TIME =  0.79000000E+04
+  ELMAX =  7.5499E-003 AT NODE      549  SPEEDMAX =  1.9372E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    8000   1.32% COMPLETE     ITERATIONS =    0     TIME =  0.80000000E+04
+  ELMAX =  7.7338E-003 AT NODE      549  SPEEDMAX =  1.9878E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    8100   1.34% COMPLETE     ITERATIONS =    0     TIME =  0.81000000E+04
+  ELMAX =  7.9125E-003 AT NODE      549  SPEEDMAX =  2.0387E-002 AT NODE       72  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 9000.00 to time 9900.00.
+Using group2 to interpolate pressure and wind fields from time 9000.00 to time 9900.00.
+ TIME STEP =    8200   1.36% COMPLETE     ITERATIONS =    0     TIME =  0.82000000E+04
+  ELMAX =  8.0849E-003 AT NODE      549  SPEEDMAX =  2.0899E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    8300   1.37% COMPLETE     ITERATIONS =    0     TIME =  0.83000000E+04
+  ELMAX =  8.2786E-003 AT NODE      548  SPEEDMAX =  2.1412E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    8400   1.39% COMPLETE     ITERATIONS =    0     TIME =  0.84000000E+04
+  ELMAX =  8.4757E-003 AT NODE      548  SPEEDMAX =  2.1926E-002 AT NODE       72  ON MYPROC =    0
++time 20110825.142000   , step      7; iteration    1
++time 20110825.142000   , step      7; iteration    2
++time 20110825.142000   , step      7; iteration    3
++time 20110825.142000   , step      7; iteration    4
++time 20110825.142000   , step      7; iteration    5
++time 20110825.142000   , step      7; iteration    6
+ TIME STEP =    8500   1.41% COMPLETE     ITERATIONS =    0     TIME =  0.85000000E+04
+  ELMAX =  8.6663E-003 AT NODE      548  SPEEDMAX =  2.2444E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    8600   1.42% COMPLETE     ITERATIONS =    0     TIME =  0.86000000E+04
+  ELMAX =  8.8496E-003 AT NODE      548  SPEEDMAX =  2.2962E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    8700   1.44% COMPLETE     ITERATIONS =    0     TIME =  0.87000000E+04
+  ELMAX =  9.0243E-003 AT NODE      548  SPEEDMAX =  2.3480E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    8800   1.46% COMPLETE     ITERATIONS =    0     TIME =  0.88000000E+04
+  ELMAX =  9.1895E-003 AT NODE      548  SPEEDMAX =  2.3998E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    8900   1.47% COMPLETE     ITERATIONS =    0     TIME =  0.89000000E+04
+  ELMAX =  9.3442E-003 AT NODE      548  SPEEDMAX =  2.4515E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    9000   1.49% COMPLETE     ITERATIONS =    0     TIME =  0.90000000E+04
+  ELMAX =  9.4872E-003 AT NODE      548  SPEEDMAX =  2.5031E-002 AT NODE       72  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 9900.00 to time 10800.00.
+Using group2 to interpolate pressure and wind fields from time 9900.00 to time 10800.00.
+ TIME STEP =    9100   1.50% COMPLETE     ITERATIONS =    0     TIME =  0.91000000E+04
+  ELMAX =  9.6174E-003 AT NODE      548  SPEEDMAX =  2.5542E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    9200   1.52% COMPLETE     ITERATIONS =    0     TIME =  0.92000000E+04
+  ELMAX =  9.7337E-003 AT NODE      548  SPEEDMAX =  2.6051E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    9300   1.54% COMPLETE     ITERATIONS =    0     TIME =  0.93000000E+04
+  ELMAX =  9.8352E-003 AT NODE      548  SPEEDMAX =  2.6557E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    9400   1.55% COMPLETE     ITERATIONS =    0     TIME =  0.94000000E+04
+  ELMAX =  9.9207E-003 AT NODE      548  SPEEDMAX =  2.7061E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    9500   1.57% COMPLETE     ITERATIONS =    0     TIME =  0.95000000E+04
+  ELMAX =  9.9893E-003 AT NODE      548  SPEEDMAX =  2.7563E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    9600   1.59% COMPLETE     ITERATIONS =    0     TIME =  0.96000000E+04
+  ELMAX =  1.0040E-002 AT NODE      548  SPEEDMAX =  2.8063E-002 AT NODE       72  ON MYPROC =    0
++time 20110825.144000   , step      8; iteration    1
++time 20110825.144000   , step      8; iteration    2
++time 20110825.144000   , step      8; iteration    3
++time 20110825.144000   , step      8; iteration    4
++time 20110825.144000   , step      8; iteration    5
++time 20110825.144000   , step      8; iteration    6
+ TIME STEP =    9700   1.60% COMPLETE     ITERATIONS =    0     TIME =  0.97000000E+04
+  ELMAX =  1.0072E-002 AT NODE      548  SPEEDMAX =  2.8567E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    9800   1.62% COMPLETE     ITERATIONS =    0     TIME =  0.98000000E+04
+  ELMAX =  1.0121E-002 AT NODE      497  SPEEDMAX =  2.9072E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =    9900   1.64% COMPLETE     ITERATIONS =    0     TIME =  0.99000000E+04
+  ELMAX =  1.0186E-002 AT NODE      433  SPEEDMAX =  2.9578E-002 AT NODE       72  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 10800.00 to time 11700.00.
+Using group2 to interpolate pressure and wind fields from time 10800.00 to time 11700.00.
+ TIME STEP =   10000   1.65% COMPLETE     ITERATIONS =    0     TIME =  0.10000000E+05
+  ELMAX =  1.0246E-002 AT NODE      433  SPEEDMAX =  3.0085E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   10100   1.67% COMPLETE     ITERATIONS =    0     TIME =  0.10100000E+05
+  ELMAX =  1.0284E-002 AT NODE      433  SPEEDMAX =  3.0595E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   10200   1.69% COMPLETE     ITERATIONS =    0     TIME =  0.10200000E+05
+  ELMAX =  1.0300E-002 AT NODE      433  SPEEDMAX =  3.1108E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   10300   1.70% COMPLETE     ITERATIONS =    0     TIME =  0.10300000E+05
+  ELMAX =  1.0450E-002 AT NODE      192  SPEEDMAX =  3.1621E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   10400   1.72% COMPLETE     ITERATIONS =    0     TIME =  0.10400000E+05
+  ELMAX =  1.0582E-002 AT NODE      192  SPEEDMAX =  3.2136E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   10500   1.74% COMPLETE     ITERATIONS =    0     TIME =  0.10500000E+05
+  ELMAX =  1.0693E-002 AT NODE      221  SPEEDMAX =  3.2657E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   10600   1.75% COMPLETE     ITERATIONS =    0     TIME =  0.10600000E+05
+  ELMAX =  1.0842E-002 AT NODE      221  SPEEDMAX =  3.3184E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   10700   1.77% COMPLETE     ITERATIONS =    0     TIME =  0.10700000E+05
+  ELMAX =  1.0968E-002 AT NODE      221  SPEEDMAX =  3.3717E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   10800   1.79% COMPLETE     ITERATIONS =    0     TIME =  0.10800000E+05
+  ELMAX =  1.1070E-002 AT NODE      221  SPEEDMAX =  3.4258E-002 AT NODE       72  ON MYPROC =    0
++time 20110825.150000   , step      9; iteration    1
++time 20110825.150000   , step      9; iteration    2
++time 20110825.150000   , step      9; iteration    3
++time 20110825.150000   , step      9; iteration    4
++time 20110825.150000   , step      9; iteration    5
++time 20110825.150000   , step      9; iteration    6
+Using group1 to interpolate pressure and wind fields from time 11700.00 to time 12600.00.
+Using group2 to interpolate pressure and wind fields from time 11700.00 to time 12600.00.
+ TIME STEP =   10900   1.80% COMPLETE     ITERATIONS =    0     TIME =  0.10900000E+05
+  ELMAX =  1.1145E-002 AT NODE      221  SPEEDMAX =  3.4810E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   11000   1.82% COMPLETE     ITERATIONS =    0     TIME =  0.11000000E+05
+  ELMAX =  1.1192E-002 AT NODE      221  SPEEDMAX =  3.5363E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   11100   1.84% COMPLETE     ITERATIONS =    0     TIME =  0.11100000E+05
+  ELMAX =  1.1231E-002 AT NODE      190  SPEEDMAX =  3.5917E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   11200   1.85% COMPLETE     ITERATIONS =    0     TIME =  0.11200000E+05
+  ELMAX =  1.1604E-002 AT NODE      190  SPEEDMAX =  3.6475E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   11300   1.87% COMPLETE     ITERATIONS =    0     TIME =  0.11300000E+05
+  ELMAX =  1.1973E-002 AT NODE      190  SPEEDMAX =  3.7037E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   11400   1.88% COMPLETE     ITERATIONS =    0     TIME =  0.11400000E+05
+  ELMAX =  1.2335E-002 AT NODE      190  SPEEDMAX =  3.7603E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   11500   1.90% COMPLETE     ITERATIONS =    0     TIME =  0.11500000E+05
+  ELMAX =  1.2690E-002 AT NODE      190  SPEEDMAX =  3.8168E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   11600   1.92% COMPLETE     ITERATIONS =    0     TIME =  0.11600000E+05
+  ELMAX =  1.3034E-002 AT NODE      190  SPEEDMAX =  3.8737E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   11700   1.93% COMPLETE     ITERATIONS =    0     TIME =  0.11700000E+05
+  ELMAX =  1.3367E-002 AT NODE      190  SPEEDMAX =  3.9312E-002 AT NODE       72  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 12600.00 to time 13500.00.
+Using group2 to interpolate pressure and wind fields from time 12600.00 to time 13500.00.
+ TIME STEP =   11800   1.95% COMPLETE     ITERATIONS =    0     TIME =  0.11800000E+05
+  ELMAX =  1.3686E-002 AT NODE      190  SPEEDMAX =  3.9893E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   11900   1.97% COMPLETE     ITERATIONS =    0     TIME =  0.11900000E+05
+  ELMAX =  1.3989E-002 AT NODE      190  SPEEDMAX =  4.0481E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   12000   1.98% COMPLETE     ITERATIONS =    0     TIME =  0.12000000E+05
+  ELMAX =  1.4273E-002 AT NODE      190  SPEEDMAX =  4.1075E-002 AT NODE       72  ON MYPROC =    0
++time 20110825.152000   , step     10; iteration    1
++time 20110825.152000   , step     10; iteration    2
++time 20110825.152000   , step     10; iteration    3
++time 20110825.152000   , step     10; iteration    4
++time 20110825.152000   , step     10; iteration    5
++time 20110825.152000   , step     10; iteration    6
+ TIME STEP =   12100   2.00% COMPLETE     ITERATIONS =    0     TIME =  0.12100000E+05
+  ELMAX =  1.4536E-002 AT NODE      190  SPEEDMAX =  4.1689E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   12200   2.02% COMPLETE     ITERATIONS =    0     TIME =  0.12200000E+05
+  ELMAX =  1.4777E-002 AT NODE      190  SPEEDMAX =  4.2313E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   12300   2.03% COMPLETE     ITERATIONS =    0     TIME =  0.12300000E+05
+  ELMAX =  1.4991E-002 AT NODE      190  SPEEDMAX =  4.2947E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   12400   2.05% COMPLETE     ITERATIONS =    0     TIME =  0.12400000E+05
+  ELMAX =  1.5176E-002 AT NODE      190  SPEEDMAX =  4.3591E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   12500   2.07% COMPLETE     ITERATIONS =    0     TIME =  0.12500000E+05
+  ELMAX =  1.5329E-002 AT NODE      190  SPEEDMAX =  4.4244E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   12600   2.08% COMPLETE     ITERATIONS =    0     TIME =  0.12600000E+05
+  ELMAX =  1.5448E-002 AT NODE      190  SPEEDMAX =  4.4906E-002 AT NODE       72  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 13500.00 to time 14400.00.
+Using group2 to interpolate pressure and wind fields from time 13500.00 to time 14400.00.
+ TIME STEP =   12700   2.10% COMPLETE     ITERATIONS =    0     TIME =  0.12700000E+05
+  ELMAX =  1.5529E-002 AT NODE      190  SPEEDMAX =  4.5565E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   12800   2.12% COMPLETE     ITERATIONS =    0     TIME =  0.12800000E+05
+  ELMAX =  1.5569E-002 AT NODE      190  SPEEDMAX =  4.6228E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   12900   2.13% COMPLETE     ITERATIONS =    0     TIME =  0.12900000E+05
+  ELMAX =  1.5565E-002 AT NODE      190  SPEEDMAX =  4.6896E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   13000   2.15% COMPLETE     ITERATIONS =    0     TIME =  0.13000000E+05
+  ELMAX =  1.5515E-002 AT NODE      190  SPEEDMAX =  4.7567E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   13100   2.17% COMPLETE     ITERATIONS =    0     TIME =  0.13100000E+05
+  ELMAX =  1.5415E-002 AT NODE      190  SPEEDMAX =  4.8241E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   13200   2.18% COMPLETE     ITERATIONS =    0     TIME =  0.13200000E+05
+  ELMAX =  1.5262E-002 AT NODE      190  SPEEDMAX =  4.8918E-002 AT NODE       72  ON MYPROC =    0
++time 20110825.154000   , step     11; iteration    1
++time 20110825.154000   , step     11; iteration    2
++time 20110825.154000   , step     11; iteration    3
++time 20110825.154000   , step     11; iteration    4
++time 20110825.154000   , step     11; iteration    5
++time 20110825.154000   , step     11; iteration    6
+ TIME STEP =   13300   2.20% COMPLETE     ITERATIONS =    0     TIME =  0.13300000E+05
+  ELMAX =  1.5053E-002 AT NODE      190  SPEEDMAX =  4.9611E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   13400   2.22% COMPLETE     ITERATIONS =    0     TIME =  0.13400000E+05
+  ELMAX =  1.4787E-002 AT NODE      190  SPEEDMAX =  5.0307E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   13500   2.23% COMPLETE     ITERATIONS =    0     TIME =  0.13500000E+05
+  ELMAX =  1.4459E-002 AT NODE      190  SPEEDMAX =  5.1006E-002 AT NODE       72  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 14400.00 to time 15300.00.
+Using group2 to interpolate pressure and wind fields from time 14400.00 to time 15300.00.
+ TIME STEP =   13600   2.25% COMPLETE     ITERATIONS =    0     TIME =  0.13600000E+05
+  ELMAX =  1.4068E-002 AT NODE      190  SPEEDMAX =  5.1707E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   13700   2.27% COMPLETE     ITERATIONS =    0     TIME =  0.13700000E+05
+  ELMAX =  1.3611E-002 AT NODE      190  SPEEDMAX =  5.2408E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   13800   2.28% COMPLETE     ITERATIONS =    0     TIME =  0.13800000E+05
+  ELMAX =  1.3087E-002 AT NODE      190  SPEEDMAX =  5.3108E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   13900   2.30% COMPLETE     ITERATIONS =    0     TIME =  0.13900000E+05
+  ELMAX =  1.2965E-002 AT NODE       73  SPEEDMAX =  5.3791E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   14000   2.31% COMPLETE     ITERATIONS =    0     TIME =  0.14000000E+05
+  ELMAX =  1.2945E-002 AT NODE       73  SPEEDMAX =  5.4469E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   14100   2.33% COMPLETE     ITERATIONS =    0     TIME =  0.14100000E+05
+  ELMAX =  1.2912E-002 AT NODE       73  SPEEDMAX =  5.5142E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   14200   2.35% COMPLETE     ITERATIONS =    0     TIME =  0.14200000E+05
+  ELMAX = -1.2967E-002 AT NODE      326  SPEEDMAX =  5.5808E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   14300   2.36% COMPLETE     ITERATIONS =    0     TIME =  0.14300000E+05
+  ELMAX = -1.3324E-002 AT NODE      326  SPEEDMAX =  5.6469E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   14400   2.38% COMPLETE     ITERATIONS =    0     TIME =  0.14400000E+05
+  ELMAX = -1.3648E-002 AT NODE      326  SPEEDMAX =  5.7123E-002 AT NODE       72  ON MYPROC =    0
++time 20110825.160000   , step     12; iteration    1
++time 20110825.160000   , step     12; iteration    2
++time 20110825.160000   , step     12; iteration    3
++time 20110825.160000   , step     12; iteration    4
++time 20110825.160000   , step     12; iteration    5
++time 20110825.160000   , step     12; iteration    6
+Using group1 to interpolate pressure and wind fields from time 15300.00 to time 16200.00.
+Using group2 to interpolate pressure and wind fields from time 15300.00 to time 16200.00.
+ TIME STEP =   14500   2.40% COMPLETE     ITERATIONS =    0     TIME =  0.14500000E+05
+  ELMAX = -1.4233E-002 AT NODE      328  SPEEDMAX =  5.7791E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   14600   2.41% COMPLETE     ITERATIONS =    0     TIME =  0.14600000E+05
+  ELMAX = -1.5355E-002 AT NODE      328  SPEEDMAX =  5.8455E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   14700   2.43% COMPLETE     ITERATIONS =    0     TIME =  0.14700000E+05
+  ELMAX = -1.6453E-002 AT NODE      328  SPEEDMAX =  5.9117E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   14800   2.45% COMPLETE     ITERATIONS =    0     TIME =  0.14800000E+05
+  ELMAX = -1.7520E-002 AT NODE      328  SPEEDMAX =  5.9775E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   14900   2.46% COMPLETE     ITERATIONS =    0     TIME =  0.14900000E+05
+  ELMAX = -1.8554E-002 AT NODE      328  SPEEDMAX =  6.0430E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   15000   2.48% COMPLETE     ITERATIONS =    0     TIME =  0.15000000E+05
+  ELMAX = -1.9549E-002 AT NODE      328  SPEEDMAX =  6.1081E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   15100   2.50% COMPLETE     ITERATIONS =    0     TIME =  0.15100000E+05
+  ELMAX = -2.0501E-002 AT NODE      328  SPEEDMAX =  6.1710E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   15200   2.51% COMPLETE     ITERATIONS =    0     TIME =  0.15200000E+05
+  ELMAX = -2.1406E-002 AT NODE      328  SPEEDMAX =  6.2331E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   15300   2.53% COMPLETE     ITERATIONS =    0     TIME =  0.15300000E+05
+  ELMAX = -2.2261E-002 AT NODE      328  SPEEDMAX =  6.2945E-002 AT NODE       72  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 16200.00 to time 17100.00.
+Using group2 to interpolate pressure and wind fields from time 16200.00 to time 17100.00.
+ TIME STEP =   15400   2.55% COMPLETE     ITERATIONS =    0     TIME =  0.15400000E+05
+  ELMAX = -2.3062E-002 AT NODE      328  SPEEDMAX =  6.3551E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   15500   2.56% COMPLETE     ITERATIONS =    0     TIME =  0.15500000E+05
+  ELMAX = -2.3808E-002 AT NODE      328  SPEEDMAX =  6.4150E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   15600   2.58% COMPLETE     ITERATIONS =    0     TIME =  0.15600000E+05
+  ELMAX = -2.4494E-002 AT NODE      328  SPEEDMAX =  6.4743E-002 AT NODE       72  ON MYPROC =    0
++time 20110825.162000   , step     13; iteration    1
++time 20110825.162000   , step     13; iteration    2
++time 20110825.162000   , step     13; iteration    3
++time 20110825.162000   , step     13; iteration    4
++time 20110825.162000   , step     13; iteration    5
++time 20110825.162000   , step     13; iteration    6
+ TIME STEP =   15700   2.60% COMPLETE     ITERATIONS =    0     TIME =  0.15700000E+05
+  ELMAX = -2.5120E-002 AT NODE      328  SPEEDMAX =  6.5351E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   15800   2.61% COMPLETE     ITERATIONS =    0     TIME =  0.15800000E+05
+  ELMAX = -2.5685E-002 AT NODE      328  SPEEDMAX =  6.5956E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   15900   2.63% COMPLETE     ITERATIONS =    0     TIME =  0.15900000E+05
+  ELMAX = -2.6186E-002 AT NODE      328  SPEEDMAX =  6.6558E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   16000   2.65% COMPLETE     ITERATIONS =    0     TIME =  0.16000000E+05
+  ELMAX = -2.6624E-002 AT NODE      328  SPEEDMAX =  6.7155E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   16100   2.66% COMPLETE     ITERATIONS =    0     TIME =  0.16100000E+05
+  ELMAX = -2.6999E-002 AT NODE      328  SPEEDMAX =  6.7747E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   16200   2.68% COMPLETE     ITERATIONS =    0     TIME =  0.16200000E+05
+  ELMAX = -2.7565E-002 AT NODE      259  SPEEDMAX =  6.8334E-002 AT NODE       72  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 17100.00 to time 18000.00.
+Using group2 to interpolate pressure and wind fields from time 17100.00 to time 18000.00.
+ TIME STEP =   16300   2.70% COMPLETE     ITERATIONS =    0     TIME =  0.16300000E+05
+  ELMAX = -2.8144E-002 AT NODE      259  SPEEDMAX =  6.8890E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   16400   2.71% COMPLETE     ITERATIONS =    0     TIME =  0.16400000E+05
+  ELMAX = -2.8648E-002 AT NODE      259  SPEEDMAX =  6.9434E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   16500   2.73% COMPLETE     ITERATIONS =    0     TIME =  0.16500000E+05
+  ELMAX = -2.9076E-002 AT NODE      259  SPEEDMAX =  6.9966E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   16600   2.74% COMPLETE     ITERATIONS =    0     TIME =  0.16600000E+05
+  ELMAX = -2.9429E-002 AT NODE      259  SPEEDMAX =  7.0486E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   16700   2.76% COMPLETE     ITERATIONS =    0     TIME =  0.16700000E+05
+  ELMAX = -2.9707E-002 AT NODE      259  SPEEDMAX =  7.0994E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   16800   2.78% COMPLETE     ITERATIONS =    0     TIME =  0.16800000E+05
+  ELMAX = -2.9910E-002 AT NODE      259  SPEEDMAX =  7.1489E-002 AT NODE       72  ON MYPROC =    0
++time 20110825.164000   , step     14; iteration    1
++time 20110825.164000   , step     14; iteration    2
++time 20110825.164000   , step     14; iteration    3
++time 20110825.164000   , step     14; iteration    4
++time 20110825.164000   , step     14; iteration    5
++time 20110825.164000   , step     14; iteration    6
+ TIME STEP =   16900   2.79% COMPLETE     ITERATIONS =    0     TIME =  0.16900000E+05
+  ELMAX = -3.0764E-002 AT NODE      190  SPEEDMAX =  7.1998E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   17000   2.81% COMPLETE     ITERATIONS =    0     TIME =  0.17000000E+05
+  ELMAX = -3.2351E-002 AT NODE      190  SPEEDMAX =  7.2500E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   17100   2.83% COMPLETE     ITERATIONS =    0     TIME =  0.17100000E+05
+  ELMAX = -3.3884E-002 AT NODE      190  SPEEDMAX =  7.2992E-002 AT NODE       72  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 18000.00 to time 18900.00.
+Using group2 to interpolate pressure and wind fields from time 18000.00 to time 18900.00.
+ TIME STEP =   17200   2.84% COMPLETE     ITERATIONS =    0     TIME =  0.17200000E+05
+  ELMAX = -3.5357E-002 AT NODE      190  SPEEDMAX =  7.3473E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   17300   2.86% COMPLETE     ITERATIONS =    0     TIME =  0.17300000E+05
+  ELMAX = -3.6766E-002 AT NODE      190  SPEEDMAX =  7.3944E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   17400   2.88% COMPLETE     ITERATIONS =    0     TIME =  0.17400000E+05
+  ELMAX = -3.8105E-002 AT NODE      190  SPEEDMAX =  7.4404E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   17500   2.89% COMPLETE     ITERATIONS =    0     TIME =  0.17500000E+05
+  ELMAX = -3.9369E-002 AT NODE      190  SPEEDMAX =  7.4823E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   17600   2.91% COMPLETE     ITERATIONS =    0     TIME =  0.17600000E+05
+  ELMAX = -4.0555E-002 AT NODE      190  SPEEDMAX =  7.5225E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   17700   2.93% COMPLETE     ITERATIONS =    0     TIME =  0.17700000E+05
+  ELMAX = -4.1659E-002 AT NODE      190  SPEEDMAX =  7.5609E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   17800   2.94% COMPLETE     ITERATIONS =    0     TIME =  0.17800000E+05
+  ELMAX = -4.2677E-002 AT NODE      190  SPEEDMAX =  7.5976E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   17900   2.96% COMPLETE     ITERATIONS =    0     TIME =  0.17900000E+05
+  ELMAX = -4.3607E-002 AT NODE      190  SPEEDMAX =  7.6325E-002 AT NODE       72  ON MYPROC =    0
+ TIME STEP =   18000   2.98% COMPLETE     ITERATIONS =    0     TIME =  0.18000000E+05
+  ELMAX = -4.4446E-002 AT NODE      190  SPEEDMAX =  7.7672E-002 AT NODE       90  ON MYPROC =    0
++time 20110825.170000   , step     15; iteration    1
++time 20110825.170000   , step     15; iteration    2
++time 20110825.170000   , step     15; iteration    3
++time 20110825.170000   , step     15; iteration    4
++time 20110825.170000   , step     15; iteration    5
++time 20110825.170000   , step     15; iteration    6
+Using group1 to interpolate pressure and wind fields from time 18900.00 to time 19800.00.
+Using group2 to interpolate pressure and wind fields from time 18900.00 to time 19800.00.
+ TIME STEP =   18100   2.99% COMPLETE     ITERATIONS =    0     TIME =  0.18100000E+05
+  ELMAX = -4.5192E-002 AT NODE      190  SPEEDMAX =  7.9521E-002 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   18200   3.01% COMPLETE     ITERATIONS =    0     TIME =  0.18200000E+05
+  ELMAX = -4.5844E-002 AT NODE      190  SPEEDMAX =  8.1347E-002 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   18300   3.03% COMPLETE     ITERATIONS =    0     TIME =  0.18300000E+05
+  ELMAX = -4.6401E-002 AT NODE      190  SPEEDMAX =  8.3145E-002 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   18400   3.04% COMPLETE     ITERATIONS =    0     TIME =  0.18400000E+05
+  ELMAX = -4.6862E-002 AT NODE      190  SPEEDMAX =  8.4912E-002 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   18500   3.06% COMPLETE     ITERATIONS =    0     TIME =  0.18500000E+05
+  ELMAX = -4.7227E-002 AT NODE      190  SPEEDMAX =  8.6644E-002 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   18600   3.08% COMPLETE     ITERATIONS =    0     TIME =  0.18600000E+05
+  ELMAX = -4.7497E-002 AT NODE      190  SPEEDMAX =  8.8337E-002 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   18700   3.09% COMPLETE     ITERATIONS =    0     TIME =  0.18700000E+05
+  ELMAX = -4.7671E-002 AT NODE      190  SPEEDMAX =  8.9988E-002 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   18800   3.11% COMPLETE     ITERATIONS =    0     TIME =  0.18800000E+05
+  ELMAX = -4.7753E-002 AT NODE      190  SPEEDMAX =  9.1593E-002 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   18900   3.12% COMPLETE     ITERATIONS =    0     TIME =  0.18900000E+05
+  ELMAX = -4.7742E-002 AT NODE      190  SPEEDMAX =  9.3149E-002 AT NODE       90  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 19800.00 to time 20700.00.
+Using group2 to interpolate pressure and wind fields from time 19800.00 to time 20700.00.
+ TIME STEP =   19000   3.14% COMPLETE     ITERATIONS =    0     TIME =  0.19000000E+05
+  ELMAX = -4.7642E-002 AT NODE      190  SPEEDMAX =  9.4650E-002 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   19100   3.16% COMPLETE     ITERATIONS =    0     TIME =  0.19100000E+05
+  ELMAX = -4.7454E-002 AT NODE      190  SPEEDMAX =  9.6094E-002 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   19200   3.17% COMPLETE     ITERATIONS =    0     TIME =  0.19200000E+05
+  ELMAX = -4.7181E-002 AT NODE      190  SPEEDMAX =  9.7478E-002 AT NODE       90  ON MYPROC =    0
++time 20110825.172000   , step     16; iteration    1
++time 20110825.172000   , step     16; iteration    2
++time 20110825.172000   , step     16; iteration    3
++time 20110825.172000   , step     16; iteration    4
++time 20110825.172000   , step     16; iteration    5
++time 20110825.172000   , step     16; iteration    6
+ TIME STEP =   19300   3.19% COMPLETE     ITERATIONS =    0     TIME =  0.19300000E+05
+  ELMAX = -4.6825E-002 AT NODE      190  SPEEDMAX =  9.8796E-002 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   19400   3.21% COMPLETE     ITERATIONS =    0     TIME =  0.19400000E+05
+  ELMAX = -4.6391E-002 AT NODE      190  SPEEDMAX =  1.0005E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   19500   3.22% COMPLETE     ITERATIONS =    0     TIME =  0.19500000E+05
+  ELMAX = -4.5881E-002 AT NODE      190  SPEEDMAX =  1.0123E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   19600   3.24% COMPLETE     ITERATIONS =    0     TIME =  0.19600000E+05
+  ELMAX = -4.5299E-002 AT NODE      190  SPEEDMAX =  1.0234E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   19700   3.26% COMPLETE     ITERATIONS =    0     TIME =  0.19700000E+05
+  ELMAX = -4.4648E-002 AT NODE      190  SPEEDMAX =  1.0338E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   19800   3.27% COMPLETE     ITERATIONS =    0     TIME =  0.19800000E+05
+  ELMAX = -4.3932E-002 AT NODE      190  SPEEDMAX =  1.0434E-001 AT NODE       90  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 20700.00 to time 21600.00.
+Using group2 to interpolate pressure and wind fields from time 20700.00 to time 21600.00.
+ TIME STEP =   19900   3.29% COMPLETE     ITERATIONS =    0     TIME =  0.19900000E+05
+  ELMAX = -4.3758E-002 AT NODE      220  SPEEDMAX =  1.0522E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   20000   3.31% COMPLETE     ITERATIONS =    0     TIME =  0.20000000E+05
+  ELMAX = -4.3615E-002 AT NODE      220  SPEEDMAX =  1.0603E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   20100   3.32% COMPLETE     ITERATIONS =    0     TIME =  0.20100000E+05
+  ELMAX = -4.3411E-002 AT NODE      220  SPEEDMAX =  1.0676E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   20200   3.34% COMPLETE     ITERATIONS =    0     TIME =  0.20200000E+05
+  ELMAX = -4.3147E-002 AT NODE      220  SPEEDMAX =  1.0742E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   20300   3.36% COMPLETE     ITERATIONS =    0     TIME =  0.20300000E+05
+  ELMAX = -4.2825E-002 AT NODE      220  SPEEDMAX =  1.0800E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   20400   3.37% COMPLETE     ITERATIONS =    0     TIME =  0.20400000E+05
+  ELMAX = -4.2446E-002 AT NODE      220  SPEEDMAX =  1.0850E-001 AT NODE       90  ON MYPROC =    0
++time 20110825.174000   , step     17; iteration    1
++time 20110825.174000   , step     17; iteration    2
++time 20110825.174000   , step     17; iteration    3
++time 20110825.174000   , step     17; iteration    4
++time 20110825.174000   , step     17; iteration    5
++time 20110825.174000   , step     17; iteration    6
+ TIME STEP =   20500   3.39% COMPLETE     ITERATIONS =    0     TIME =  0.20500000E+05
+  ELMAX = -4.2380E-002 AT NODE      191  SPEEDMAX =  1.0892E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   20600   3.41% COMPLETE     ITERATIONS =    0     TIME =  0.20600000E+05
+  ELMAX = -4.2527E-002 AT NODE      191  SPEEDMAX =  1.0927E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   20700   3.42% COMPLETE     ITERATIONS =    0     TIME =  0.20700000E+05
+  ELMAX = -4.2624E-002 AT NODE      191  SPEEDMAX =  1.0954E-001 AT NODE       90  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 21600.00 to time 22500.00.
+Using group2 to interpolate pressure and wind fields from time 21600.00 to time 22500.00.
+ TIME STEP =   20800   3.44% COMPLETE     ITERATIONS =    0     TIME =  0.20800000E+05
+  ELMAX = -4.2668E-002 AT NODE      191  SPEEDMAX =  1.0974E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   20900   3.46% COMPLETE     ITERATIONS =    0     TIME =  0.20900000E+05
+  ELMAX = -4.2661E-002 AT NODE      191  SPEEDMAX =  1.0987E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   21000   3.47% COMPLETE     ITERATIONS =    0     TIME =  0.21000000E+05
+  ELMAX = -4.2601E-002 AT NODE      191  SPEEDMAX =  1.0993E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   21100   3.49% COMPLETE     ITERATIONS =    0     TIME =  0.21100000E+05
+  ELMAX = -4.2488E-002 AT NODE      191  SPEEDMAX =  1.0992E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   21200   3.51% COMPLETE     ITERATIONS =    0     TIME =  0.21200000E+05
+  ELMAX = -4.2322E-002 AT NODE      191  SPEEDMAX =  1.0985E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   21300   3.52% COMPLETE     ITERATIONS =    0     TIME =  0.21300000E+05
+  ELMAX = -4.2104E-002 AT NODE      191  SPEEDMAX =  1.0971E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   21400   3.54% COMPLETE     ITERATIONS =    0     TIME =  0.21400000E+05
+  ELMAX = -4.1833E-002 AT NODE      191  SPEEDMAX =  1.0951E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   21500   3.55% COMPLETE     ITERATIONS =    0     TIME =  0.21500000E+05
+  ELMAX = -4.1509E-002 AT NODE      191  SPEEDMAX =  1.0924E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   21600   3.57% COMPLETE     ITERATIONS =    0     TIME =  0.21600000E+05
+  ELMAX = -4.1133E-002 AT NODE      191  SPEEDMAX =  1.0891E-001 AT NODE       90  ON MYPROC =    0
++time 20110825.180000   , step     18; iteration    1
++time 20110825.180000   , step     18; iteration    2
++time 20110825.180000   , step     18; iteration    3
++time 20110825.180000   , step     18; iteration    4
++time 20110825.180000   , step     18; iteration    5
++time 20110825.180000   , step     18; iteration    6
+Using group1 to interpolate pressure and wind fields from time 22500.00 to time 23400.00.
+Using group2 to interpolate pressure and wind fields from time 22500.00 to time 23400.00.
+ TIME STEP =   21700   3.59% COMPLETE     ITERATIONS =    0     TIME =  0.21700000E+05
+  ELMAX = -4.0705E-002 AT NODE      191  SPEEDMAX =  1.0852E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   21800   3.60% COMPLETE     ITERATIONS =    0     TIME =  0.21800000E+05
+  ELMAX = -4.0225E-002 AT NODE      191  SPEEDMAX =  1.0807E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   21900   3.62% COMPLETE     ITERATIONS =    0     TIME =  0.21900000E+05
+  ELMAX = -4.0348E-002 AT NODE       72  SPEEDMAX =  1.0756E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   22000   3.64% COMPLETE     ITERATIONS =    0     TIME =  0.22000000E+05
+  ELMAX = -4.0574E-002 AT NODE       72  SPEEDMAX =  1.0700E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   22100   3.65% COMPLETE     ITERATIONS =    0     TIME =  0.22100000E+05
+  ELMAX = -4.0767E-002 AT NODE       72  SPEEDMAX =  1.0638E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   22200   3.67% COMPLETE     ITERATIONS =    0     TIME =  0.22200000E+05
+  ELMAX = -4.0927E-002 AT NODE       72  SPEEDMAX =  1.0570E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   22300   3.69% COMPLETE     ITERATIONS =    0     TIME =  0.22300000E+05
+  ELMAX = -4.1053E-002 AT NODE       72  SPEEDMAX =  1.0497E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   22400   3.70% COMPLETE     ITERATIONS =    0     TIME =  0.22400000E+05
+  ELMAX = -4.1147E-002 AT NODE       72  SPEEDMAX =  1.0418E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   22500   3.72% COMPLETE     ITERATIONS =    0     TIME =  0.22500000E+05
+  ELMAX = -4.1208E-002 AT NODE       72  SPEEDMAX =  1.0334E-001 AT NODE       90  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 23400.00 to time 24300.00.
+Using group2 to interpolate pressure and wind fields from time 23400.00 to time 24300.00.
+ TIME STEP =   22600   3.74% COMPLETE     ITERATIONS =    0     TIME =  0.22600000E+05
+  ELMAX = -4.1236E-002 AT NODE       72  SPEEDMAX =  1.0245E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   22700   3.75% COMPLETE     ITERATIONS =    0     TIME =  0.22700000E+05
+  ELMAX = -4.1233E-002 AT NODE       72  SPEEDMAX =  1.0150E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   22800   3.77% COMPLETE     ITERATIONS =    0     TIME =  0.22800000E+05
+  ELMAX = -4.1197E-002 AT NODE       72  SPEEDMAX =  1.0049E-001 AT NODE       90  ON MYPROC =    0
++time 20110825.182000   , step     19; iteration    1
++time 20110825.182000   , step     19; iteration    2
++time 20110825.182000   , step     19; iteration    3
++time 20110825.182000   , step     19; iteration    4
++time 20110825.182000   , step     19; iteration    5
++time 20110825.182000   , step     19; iteration    6
+ TIME STEP =   22900   3.79% COMPLETE     ITERATIONS =    0     TIME =  0.22900000E+05
+  ELMAX = -4.1129E-002 AT NODE       72  SPEEDMAX =  9.9430E-002 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   23000   3.80% COMPLETE     ITERATIONS =    0     TIME =  0.23000000E+05
+  ELMAX = -4.1030E-002 AT NODE       72  SPEEDMAX =  9.8314E-002 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   23100   3.82% COMPLETE     ITERATIONS =    0     TIME =  0.23100000E+05
+  ELMAX = -4.0899E-002 AT NODE       72  SPEEDMAX =  9.7144E-002 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   23200   3.84% COMPLETE     ITERATIONS =    0     TIME =  0.23200000E+05
+  ELMAX = -4.0736E-002 AT NODE       72  SPEEDMAX =  9.6273E-002 AT NODE       73  ON MYPROC =    0
+ TIME STEP =   23300   3.85% COMPLETE     ITERATIONS =    0     TIME =  0.23300000E+05
+  ELMAX = -4.0541E-002 AT NODE       72  SPEEDMAX =  9.5599E-002 AT NODE       73  ON MYPROC =    0
+ TIME STEP =   23400   3.87% COMPLETE     ITERATIONS =    0     TIME =  0.23400000E+05
+  ELMAX = -4.0315E-002 AT NODE       72  SPEEDMAX =  9.4866E-002 AT NODE       73  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 24300.00 to time 25200.00.
+Using group2 to interpolate pressure and wind fields from time 24300.00 to time 25200.00.
+ TIME STEP =   23500   3.89% COMPLETE     ITERATIONS =    0     TIME =  0.23500000E+05
+  ELMAX = -4.0058E-002 AT NODE       72  SPEEDMAX =  9.4077E-002 AT NODE       73  ON MYPROC =    0
+ TIME STEP =   23600   3.90% COMPLETE     ITERATIONS =    0     TIME =  0.23600000E+05
+  ELMAX = -3.9771E-002 AT NODE       72  SPEEDMAX =  9.3231E-002 AT NODE       73  ON MYPROC =    0
+ TIME STEP =   23700   3.92% COMPLETE     ITERATIONS =    0     TIME =  0.23700000E+05
+  ELMAX = -3.9453E-002 AT NODE       72  SPEEDMAX =  9.2331E-002 AT NODE       73  ON MYPROC =    0
+ TIME STEP =   23800   3.94% COMPLETE     ITERATIONS =    0     TIME =  0.23800000E+05
+  ELMAX = -3.9105E-002 AT NODE       72  SPEEDMAX =  9.1377E-002 AT NODE       73  ON MYPROC =    0
+ TIME STEP =   23900   3.95% COMPLETE     ITERATIONS =    0     TIME =  0.23900000E+05
+  ELMAX = -3.8727E-002 AT NODE       72  SPEEDMAX =  9.0371E-002 AT NODE       73  ON MYPROC =    0
+ TIME STEP =   24000   3.97% COMPLETE     ITERATIONS =    0     TIME =  0.24000000E+05
+  ELMAX = -3.8319E-002 AT NODE       72  SPEEDMAX =  8.9315E-002 AT NODE       73  ON MYPROC =    0
++time 20110825.184000   , step     20; iteration    1
++time 20110825.184000   , step     20; iteration    2
++time 20110825.184000   , step     20; iteration    3
++time 20110825.184000   , step     20; iteration    4
++time 20110825.184000   , step     20; iteration    5
++time 20110825.184000   , step     20; iteration    6
+ TIME STEP =   24100   3.98% COMPLETE     ITERATIONS =    0     TIME =  0.24100000E+05
+  ELMAX = -3.7882E-002 AT NODE       72  SPEEDMAX =  8.8207E-002 AT NODE       73  ON MYPROC =    0
+ TIME STEP =   24200   4.00% COMPLETE     ITERATIONS =    0     TIME =  0.24200000E+05
+  ELMAX = -3.7414E-002 AT NODE       72  SPEEDMAX =  8.7051E-002 AT NODE       73  ON MYPROC =    0
+ TIME STEP =   24300   4.02% COMPLETE     ITERATIONS =    0     TIME =  0.24300000E+05
+  ELMAX = -3.6918E-002 AT NODE       72  SPEEDMAX =  8.5849E-002 AT NODE       73  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 25200.00 to time 26100.00.
+Using group2 to interpolate pressure and wind fields from time 25200.00 to time 26100.00.
+ TIME STEP =   24400   4.03% COMPLETE     ITERATIONS =    0     TIME =  0.24400000E+05
+  ELMAX = -3.6391E-002 AT NODE       72  SPEEDMAX =  8.4601E-002 AT NODE       73  ON MYPROC =    0
+ TIME STEP =   24500   4.05% COMPLETE     ITERATIONS =    0     TIME =  0.24500000E+05
+  ELMAX = -3.5836E-002 AT NODE       72  SPEEDMAX =  8.3309E-002 AT NODE       73  ON MYPROC =    0
+ TIME STEP =   24600   4.07% COMPLETE     ITERATIONS =    0     TIME =  0.24600000E+05
+  ELMAX = -3.5251E-002 AT NODE       72  SPEEDMAX =  8.1975E-002 AT NODE       73  ON MYPROC =    0
+ TIME STEP =   24700   4.08% COMPLETE     ITERATIONS =    0     TIME =  0.24700000E+05
+  ELMAX = -3.4637E-002 AT NODE       72  SPEEDMAX =  8.1977E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   24800   4.10% COMPLETE     ITERATIONS =    0     TIME =  0.24800000E+05
+  ELMAX = -3.3994E-002 AT NODE       72  SPEEDMAX =  8.2503E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   24900   4.12% COMPLETE     ITERATIONS =    0     TIME =  0.24900000E+05
+  ELMAX = -3.3671E-002 AT NODE       24  SPEEDMAX =  8.3038E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   25000   4.13% COMPLETE     ITERATIONS =    0     TIME =  0.25000000E+05
+  ELMAX = -3.3394E-002 AT NODE       24  SPEEDMAX =  8.3580E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   25100   4.15% COMPLETE     ITERATIONS =    0     TIME =  0.25100000E+05
+  ELMAX = -3.3094E-002 AT NODE       24  SPEEDMAX =  8.4129E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   25200   4.17% COMPLETE     ITERATIONS =    0     TIME =  0.25200000E+05
+  ELMAX = -3.2770E-002 AT NODE       24  SPEEDMAX =  8.4686E-002 AT NODE      221  ON MYPROC =    0
++time 20110825.190000   , step     21; iteration    1
++time 20110825.190000   , step     21; iteration    2
++time 20110825.190000   , step     21; iteration    3
++time 20110825.190000   , step     21; iteration    4
++time 20110825.190000   , step     21; iteration    5
++time 20110825.190000   , step     21; iteration    6
+Using group1 to interpolate pressure and wind fields from time 26100.00 to time 27000.00.
+Using group2 to interpolate pressure and wind fields from time 26100.00 to time 27000.00.
+ TIME STEP =   25300   4.18% COMPLETE     ITERATIONS =    0     TIME =  0.25300000E+05
+  ELMAX = -3.2424E-002 AT NODE       24  SPEEDMAX =  8.5249E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   25400   4.20% COMPLETE     ITERATIONS =    0     TIME =  0.25400000E+05
+  ELMAX = -3.2053E-002 AT NODE       24  SPEEDMAX =  8.5813E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   25500   4.22% COMPLETE     ITERATIONS =    0     TIME =  0.25500000E+05
+  ELMAX = -3.1659E-002 AT NODE       24  SPEEDMAX =  8.6379E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   25600   4.23% COMPLETE     ITERATIONS =    0     TIME =  0.25600000E+05
+  ELMAX = -3.1240E-002 AT NODE       24  SPEEDMAX =  8.6946E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   25700   4.25% COMPLETE     ITERATIONS =    0     TIME =  0.25700000E+05
+  ELMAX =  3.1819E-002 AT NODE      480  SPEEDMAX =  8.7515E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   25800   4.27% COMPLETE     ITERATIONS =    0     TIME =  0.25800000E+05
+  ELMAX =  3.2736E-002 AT NODE      480  SPEEDMAX =  8.8086E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   25900   4.28% COMPLETE     ITERATIONS =    0     TIME =  0.25900000E+05
+  ELMAX =  3.3643E-002 AT NODE      480  SPEEDMAX =  8.8656E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   26000   4.30% COMPLETE     ITERATIONS =    0     TIME =  0.26000000E+05
+  ELMAX =  3.4541E-002 AT NODE      480  SPEEDMAX =  8.9228E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   26100   4.32% COMPLETE     ITERATIONS =    0     TIME =  0.26100000E+05
+  ELMAX =  3.5428E-002 AT NODE      480  SPEEDMAX =  8.9802E-002 AT NODE      221  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 27000.00 to time 27900.00.
+Using group2 to interpolate pressure and wind fields from time 27000.00 to time 27900.00.
+ TIME STEP =   26200   4.33% COMPLETE     ITERATIONS =    0     TIME =  0.26200000E+05
+  ELMAX =  3.6305E-002 AT NODE      480  SPEEDMAX =  9.0379E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   26300   4.35% COMPLETE     ITERATIONS =    0     TIME =  0.26300000E+05
+  ELMAX =  3.7171E-002 AT NODE      480  SPEEDMAX =  9.0958E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   26400   4.37% COMPLETE     ITERATIONS =    0     TIME =  0.26400000E+05
+  ELMAX =  3.8025E-002 AT NODE      480  SPEEDMAX =  9.1540E-002 AT NODE      221  ON MYPROC =    0
++time 20110825.192000   , step     22; iteration    1
++time 20110825.192000   , step     22; iteration    2
++time 20110825.192000   , step     22; iteration    3
++time 20110825.192000   , step     22; iteration    4
++time 20110825.192000   , step     22; iteration    5
++time 20110825.192000   , step     22; iteration    6
+ TIME STEP =   26500   4.38% COMPLETE     ITERATIONS =    0     TIME =  0.26500000E+05
+  ELMAX =  3.8866E-002 AT NODE      480  SPEEDMAX =  9.2129E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   26600   4.40% COMPLETE     ITERATIONS =    0     TIME =  0.26600000E+05
+  ELMAX =  3.9694E-002 AT NODE      480  SPEEDMAX =  9.2722E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   26700   4.41% COMPLETE     ITERATIONS =    0     TIME =  0.26700000E+05
+  ELMAX =  4.0508E-002 AT NODE      480  SPEEDMAX =  9.3320E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   26800   4.43% COMPLETE     ITERATIONS =    0     TIME =  0.26800000E+05
+  ELMAX =  4.1308E-002 AT NODE      480  SPEEDMAX =  9.3924E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   26900   4.45% COMPLETE     ITERATIONS =    0     TIME =  0.26900000E+05
+  ELMAX =  4.2188E-002 AT NODE      224  SPEEDMAX =  9.4535E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   27000   4.46% COMPLETE     ITERATIONS =    0     TIME =  0.27000000E+05
+  ELMAX =  4.3285E-002 AT NODE      224  SPEEDMAX =  9.5152E-002 AT NODE      221  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 27900.00 to time 28800.00.
+Using group2 to interpolate pressure and wind fields from time 27900.00 to time 28800.00.
+ TIME STEP =   27100   4.48% COMPLETE     ITERATIONS =    0     TIME =  0.27100000E+05
+  ELMAX =  4.4343E-002 AT NODE      224  SPEEDMAX =  9.5773E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   27200   4.50% COMPLETE     ITERATIONS =    0     TIME =  0.27200000E+05
+  ELMAX =  4.5361E-002 AT NODE      224  SPEEDMAX =  9.6402E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   27300   4.51% COMPLETE     ITERATIONS =    0     TIME =  0.27300000E+05
+  ELMAX =  4.6338E-002 AT NODE      224  SPEEDMAX =  9.7038E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   27400   4.53% COMPLETE     ITERATIONS =    0     TIME =  0.27400000E+05
+  ELMAX =  4.7274E-002 AT NODE      224  SPEEDMAX =  9.7683E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   27500   4.55% COMPLETE     ITERATIONS =    0     TIME =  0.27500000E+05
+  ELMAX =  4.8169E-002 AT NODE      224  SPEEDMAX =  9.8336E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   27600   4.56% COMPLETE     ITERATIONS =    0     TIME =  0.27600000E+05
+  ELMAX =  4.9182E-002 AT NODE      328  SPEEDMAX =  9.8997E-002 AT NODE      221  ON MYPROC =    0
++time 20110825.194000   , step     23; iteration    1
++time 20110825.194000   , step     23; iteration    2
++time 20110825.194000   , step     23; iteration    3
++time 20110825.194000   , step     23; iteration    4
++time 20110825.194000   , step     23; iteration    5
++time 20110825.194000   , step     23; iteration    6
+ TIME STEP =   27700   4.58% COMPLETE     ITERATIONS =    0     TIME =  0.27700000E+05
+  ELMAX =  5.0277E-002 AT NODE      328  SPEEDMAX =  9.9671E-002 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   27800   4.60% COMPLETE     ITERATIONS =    0     TIME =  0.27800000E+05
+  ELMAX =  5.1315E-002 AT NODE      328  SPEEDMAX =  1.0035E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   27900   4.61% COMPLETE     ITERATIONS =    0     TIME =  0.27900000E+05
+  ELMAX =  5.2294E-002 AT NODE      328  SPEEDMAX =  1.0105E-001 AT NODE      221  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 28800.00 to time 29700.00.
+Using group2 to interpolate pressure and wind fields from time 28800.00 to time 29700.00.
+ TIME STEP =   28000   4.63% COMPLETE     ITERATIONS =    0     TIME =  0.28000000E+05
+  ELMAX =  5.3212E-002 AT NODE      328  SPEEDMAX =  1.0175E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   28100   4.65% COMPLETE     ITERATIONS =    0     TIME =  0.28100000E+05
+  ELMAX =  5.4069E-002 AT NODE      328  SPEEDMAX =  1.0247E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   28200   4.66% COMPLETE     ITERATIONS =    0     TIME =  0.28200000E+05
+  ELMAX =  5.4865E-002 AT NODE      328  SPEEDMAX =  1.0320E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   28300   4.68% COMPLETE     ITERATIONS =    0     TIME =  0.28300000E+05
+  ELMAX =  5.5599E-002 AT NODE      328  SPEEDMAX =  1.0394E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   28400   4.70% COMPLETE     ITERATIONS =    0     TIME =  0.28400000E+05
+  ELMAX =  5.6272E-002 AT NODE      328  SPEEDMAX =  1.0469E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   28500   4.71% COMPLETE     ITERATIONS =    0     TIME =  0.28500000E+05
+  ELMAX =  5.6882E-002 AT NODE      328  SPEEDMAX =  1.0545E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   28600   4.73% COMPLETE     ITERATIONS =    0     TIME =  0.28600000E+05
+  ELMAX =  5.7440E-002 AT NODE      329  SPEEDMAX =  1.0622E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   28700   4.75% COMPLETE     ITERATIONS =    0     TIME =  0.28700000E+05
+  ELMAX =  5.8253E-002 AT NODE      329  SPEEDMAX =  1.0700E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   28800   4.76% COMPLETE     ITERATIONS =    0     TIME =  0.28800000E+05
+  ELMAX =  5.9015E-002 AT NODE      329  SPEEDMAX =  1.0780E-001 AT NODE      221  ON MYPROC =    0
++time 20110825.200000   , step     24; iteration    1
++time 20110825.200000   , step     24; iteration    2
++time 20110825.200000   , step     24; iteration    3
++time 20110825.200000   , step     24; iteration    4
++time 20110825.200000   , step     24; iteration    5
++time 20110825.200000   , step     24; iteration    6
+Using group1 to interpolate pressure and wind fields from time 29700.00 to time 30600.00.
+Using group2 to interpolate pressure and wind fields from time 29700.00 to time 30600.00.
+ TIME STEP =   28900   4.78% COMPLETE     ITERATIONS =    0     TIME =  0.28900000E+05
+  ELMAX =  6.0261E-002 AT NODE      191  SPEEDMAX =  1.0860E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   29000   4.79% COMPLETE     ITERATIONS =    0     TIME =  0.29000000E+05
+  ELMAX =  6.1628E-002 AT NODE      191  SPEEDMAX =  1.0943E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   29100   4.81% COMPLETE     ITERATIONS =    0     TIME =  0.29100000E+05
+  ELMAX =  6.2967E-002 AT NODE      191  SPEEDMAX =  1.1026E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   29200   4.83% COMPLETE     ITERATIONS =    0     TIME =  0.29200000E+05
+  ELMAX =  6.4277E-002 AT NODE      191  SPEEDMAX =  1.1111E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   29300   4.84% COMPLETE     ITERATIONS =    0     TIME =  0.29300000E+05
+  ELMAX =  6.5556E-002 AT NODE      191  SPEEDMAX =  1.1197E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   29400   4.86% COMPLETE     ITERATIONS =    0     TIME =  0.29400000E+05
+  ELMAX =  6.6802E-002 AT NODE      191  SPEEDMAX =  1.1284E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   29500   4.88% COMPLETE     ITERATIONS =    0     TIME =  0.29500000E+05
+  ELMAX =  6.8015E-002 AT NODE      191  SPEEDMAX =  1.1372E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   29600   4.89% COMPLETE     ITERATIONS =    0     TIME =  0.29600000E+05
+  ELMAX =  6.9194E-002 AT NODE      191  SPEEDMAX =  1.1461E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   29700   4.91% COMPLETE     ITERATIONS =    0     TIME =  0.29700000E+05
+  ELMAX =  7.0337E-002 AT NODE      191  SPEEDMAX =  1.1551E-001 AT NODE      221  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 30600.00 to time 31500.00.
+Using group2 to interpolate pressure and wind fields from time 30600.00 to time 31500.00.
+ TIME STEP =   29800   4.93% COMPLETE     ITERATIONS =    0     TIME =  0.29800000E+05
+  ELMAX =  7.1443E-002 AT NODE      191  SPEEDMAX =  1.1642E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   29900   4.94% COMPLETE     ITERATIONS =    0     TIME =  0.29900000E+05
+  ELMAX =  7.2510E-002 AT NODE      191  SPEEDMAX =  1.1734E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   30000   4.96% COMPLETE     ITERATIONS =    0     TIME =  0.30000000E+05
+  ELMAX =  7.3538E-002 AT NODE      191  SPEEDMAX =  1.1827E-001 AT NODE      221  ON MYPROC =    0
++time 20110825.202000   , step     25; iteration    1
++time 20110825.202000   , step     25; iteration    2
++time 20110825.202000   , step     25; iteration    3
++time 20110825.202000   , step     25; iteration    4
++time 20110825.202000   , step     25; iteration    5
++time 20110825.202000   , step     25; iteration    6
+ TIME STEP =   30100   4.98% COMPLETE     ITERATIONS =    0     TIME =  0.30100000E+05
+  ELMAX =  7.4525E-002 AT NODE      191  SPEEDMAX =  1.1920E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   30200   4.99% COMPLETE     ITERATIONS =    0     TIME =  0.30200000E+05
+  ELMAX =  7.5471E-002 AT NODE      191  SPEEDMAX =  1.2015E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   30300   5.01% COMPLETE     ITERATIONS =    0     TIME =  0.30300000E+05
+  ELMAX =  7.6373E-002 AT NODE      191  SPEEDMAX =  1.2110E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   30400   5.03% COMPLETE     ITERATIONS =    0     TIME =  0.30400000E+05
+  ELMAX =  7.7231E-002 AT NODE      191  SPEEDMAX =  1.2206E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   30500   5.04% COMPLETE     ITERATIONS =    0     TIME =  0.30500000E+05
+  ELMAX =  7.8044E-002 AT NODE      191  SPEEDMAX =  1.2303E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   30600   5.06% COMPLETE     ITERATIONS =    0     TIME =  0.30600000E+05
+  ELMAX =  7.8811E-002 AT NODE      191  SPEEDMAX =  1.2400E-001 AT NODE      221  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 31500.00 to time 32400.00.
+Using group2 to interpolate pressure and wind fields from time 31500.00 to time 32400.00.
+ TIME STEP =   30700   5.08% COMPLETE     ITERATIONS =    0     TIME =  0.30700000E+05
+  ELMAX =  7.9531E-002 AT NODE      191  SPEEDMAX =  1.2497E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   30800   5.09% COMPLETE     ITERATIONS =    0     TIME =  0.30800000E+05
+  ELMAX =  8.0203E-002 AT NODE      191  SPEEDMAX =  1.2595E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   30900   5.11% COMPLETE     ITERATIONS =    0     TIME =  0.30900000E+05
+  ELMAX =  8.0827E-002 AT NODE      191  SPEEDMAX =  1.2693E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   31000   5.13% COMPLETE     ITERATIONS =    0     TIME =  0.31000000E+05
+  ELMAX =  8.1401E-002 AT NODE      191  SPEEDMAX =  1.2790E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   31100   5.14% COMPLETE     ITERATIONS =    0     TIME =  0.31100000E+05
+  ELMAX =  8.1925E-002 AT NODE      191  SPEEDMAX =  1.2888E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   31200   5.16% COMPLETE     ITERATIONS =    0     TIME =  0.31200000E+05
+  ELMAX =  8.2399E-002 AT NODE      191  SPEEDMAX =  1.2986E-001 AT NODE      221  ON MYPROC =    0
++time 20110825.204000   , step     26; iteration    1
++time 20110825.204000   , step     26; iteration    2
++time 20110825.204000   , step     26; iteration    3
++time 20110825.204000   , step     26; iteration    4
++time 20110825.204000   , step     26; iteration    5
++time 20110825.204000   , step     26; iteration    6
+ TIME STEP =   31300   5.18% COMPLETE     ITERATIONS =    0     TIME =  0.31300000E+05
+  ELMAX =  8.2822E-002 AT NODE      191  SPEEDMAX =  1.3084E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   31400   5.19% COMPLETE     ITERATIONS =    0     TIME =  0.31400000E+05
+  ELMAX =  8.3193E-002 AT NODE      191  SPEEDMAX =  1.3181E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   31500   5.21% COMPLETE     ITERATIONS =    0     TIME =  0.31500000E+05
+  ELMAX =  8.3513E-002 AT NODE      191  SPEEDMAX =  1.3278E-001 AT NODE      221  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 32400.00 to time 33300.00.
+Using group2 to interpolate pressure and wind fields from time 32400.00 to time 33300.00.
+ TIME STEP =   31600   5.22% COMPLETE     ITERATIONS =    0     TIME =  0.31600000E+05
+  ELMAX =  8.3781E-002 AT NODE      191  SPEEDMAX =  1.3375E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   31700   5.24% COMPLETE     ITERATIONS =    0     TIME =  0.31700000E+05
+  ELMAX =  8.3997E-002 AT NODE      191  SPEEDMAX =  1.3471E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   31800   5.26% COMPLETE     ITERATIONS =    0     TIME =  0.31800000E+05
+  ELMAX =  8.4162E-002 AT NODE      191  SPEEDMAX =  1.3567E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   31900   5.27% COMPLETE     ITERATIONS =    0     TIME =  0.31900000E+05
+  ELMAX =  8.4274E-002 AT NODE      191  SPEEDMAX =  1.3662E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   32000   5.29% COMPLETE     ITERATIONS =    0     TIME =  0.32000000E+05
+  ELMAX =  8.4335E-002 AT NODE      191  SPEEDMAX =  1.3756E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   32100   5.31% COMPLETE     ITERATIONS =    0     TIME =  0.32100000E+05
+  ELMAX =  8.4345E-002 AT NODE      191  SPEEDMAX =  1.3849E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   32200   5.32% COMPLETE     ITERATIONS =    0     TIME =  0.32200000E+05
+  ELMAX =  8.4305E-002 AT NODE      191  SPEEDMAX =  1.3941E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   32300   5.34% COMPLETE     ITERATIONS =    0     TIME =  0.32300000E+05
+  ELMAX =  8.4214E-002 AT NODE      191  SPEEDMAX =  1.4032E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   32400   5.36% COMPLETE     ITERATIONS =    0     TIME =  0.32400000E+05
+  ELMAX =  8.4073E-002 AT NODE      191  SPEEDMAX =  1.4123E-001 AT NODE      221  ON MYPROC =    0
++time 20110825.210000   , step     27; iteration    1
++time 20110825.210000   , step     27; iteration    2
++time 20110825.210000   , step     27; iteration    3
++time 20110825.210000   , step     27; iteration    4
++time 20110825.210000   , step     27; iteration    5
++time 20110825.210000   , step     27; iteration    6
+Using group1 to interpolate pressure and wind fields from time 33300.00 to time 34200.00.
+Using group2 to interpolate pressure and wind fields from time 33300.00 to time 34200.00.
+ TIME STEP =   32500   5.37% COMPLETE     ITERATIONS =    0     TIME =  0.32500000E+05
+  ELMAX =  8.3883E-002 AT NODE      191  SPEEDMAX =  1.4212E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   32600   5.39% COMPLETE     ITERATIONS =    0     TIME =  0.32600000E+05
+  ELMAX =  8.3644E-002 AT NODE      191  SPEEDMAX =  1.4300E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   32700   5.41% COMPLETE     ITERATIONS =    0     TIME =  0.32700000E+05
+  ELMAX =  8.3358E-002 AT NODE      191  SPEEDMAX =  1.4387E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   32800   5.42% COMPLETE     ITERATIONS =    0     TIME =  0.32800000E+05
+  ELMAX =  8.3026E-002 AT NODE      191  SPEEDMAX =  1.4473E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   32900   5.44% COMPLETE     ITERATIONS =    0     TIME =  0.32900000E+05
+  ELMAX =  8.2647E-002 AT NODE      191  SPEEDMAX =  1.4557E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   33000   5.46% COMPLETE     ITERATIONS =    0     TIME =  0.33000000E+05
+  ELMAX =  8.2224E-002 AT NODE      191  SPEEDMAX =  1.4641E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   33100   5.47% COMPLETE     ITERATIONS =    0     TIME =  0.33100000E+05
+  ELMAX =  8.1756E-002 AT NODE      191  SPEEDMAX =  1.4722E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   33200   5.49% COMPLETE     ITERATIONS =    0     TIME =  0.33200000E+05
+  ELMAX =  8.2420E-002 AT NODE       23  SPEEDMAX =  1.4803E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   33300   5.51% COMPLETE     ITERATIONS =    0     TIME =  0.33300000E+05
+  ELMAX =  8.3184E-002 AT NODE       23  SPEEDMAX =  1.4882E-001 AT NODE      221  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 34200.00 to time 35100.00.
+Using group2 to interpolate pressure and wind fields from time 34200.00 to time 35100.00.
+ TIME STEP =   33400   5.52% COMPLETE     ITERATIONS =    0     TIME =  0.33400000E+05
+  ELMAX =  8.3905E-002 AT NODE       23  SPEEDMAX =  1.4960E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   33500   5.54% COMPLETE     ITERATIONS =    0     TIME =  0.33500000E+05
+  ELMAX =  8.4583E-002 AT NODE       23  SPEEDMAX =  1.5036E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   33600   5.56% COMPLETE     ITERATIONS =    0     TIME =  0.33600000E+05
+  ELMAX =  8.5392E-002 AT NODE       13  SPEEDMAX =  1.5111E-001 AT NODE      221  ON MYPROC =    0
++time 20110825.212000   , step     28; iteration    1
++time 20110825.212000   , step     28; iteration    2
++time 20110825.212000   , step     28; iteration    3
++time 20110825.212000   , step     28; iteration    4
++time 20110825.212000   , step     28; iteration    5
++time 20110825.212000   , step     28; iteration    6
+ TIME STEP =   33700   5.57% COMPLETE     ITERATIONS =    0     TIME =  0.33700000E+05
+  ELMAX =  8.6167E-002 AT NODE       13  SPEEDMAX =  1.5185E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   33800   5.59% COMPLETE     ITERATIONS =    0     TIME =  0.33800000E+05
+  ELMAX =  8.6900E-002 AT NODE       13  SPEEDMAX =  1.5258E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   33900   5.61% COMPLETE     ITERATIONS =    0     TIME =  0.33900000E+05
+  ELMAX =  8.7593E-002 AT NODE       13  SPEEDMAX =  1.5329E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   34000   5.62% COMPLETE     ITERATIONS =    0     TIME =  0.34000000E+05
+  ELMAX =  8.8246E-002 AT NODE       13  SPEEDMAX =  1.5399E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   34100   5.64% COMPLETE     ITERATIONS =    0     TIME =  0.34100000E+05
+  ELMAX =  8.8872E-002 AT NODE        5  SPEEDMAX =  1.5468E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   34200   5.65% COMPLETE     ITERATIONS =    0     TIME =  0.34200000E+05
+  ELMAX =  8.9706E-002 AT NODE        5  SPEEDMAX =  1.5535E-001 AT NODE      221  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 35100.00 to time 36000.00.
+Using group2 to interpolate pressure and wind fields from time 35100.00 to time 36000.00.
+ TIME STEP =   34300   5.67% COMPLETE     ITERATIONS =    0     TIME =  0.34300000E+05
+  ELMAX =  9.0512E-002 AT NODE        5  SPEEDMAX =  1.5601E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   34400   5.69% COMPLETE     ITERATIONS =    0     TIME =  0.34400000E+05
+  ELMAX =  9.1290E-002 AT NODE        5  SPEEDMAX =  1.5666E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   34500   5.70% COMPLETE     ITERATIONS =    0     TIME =  0.34500000E+05
+  ELMAX =  9.2040E-002 AT NODE        5  SPEEDMAX =  1.5730E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   34600   5.72% COMPLETE     ITERATIONS =    0     TIME =  0.34600000E+05
+  ELMAX =  9.2763E-002 AT NODE        5  SPEEDMAX =  1.5792E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   34700   5.74% COMPLETE     ITERATIONS =    0     TIME =  0.34700000E+05
+  ELMAX =  9.3459E-002 AT NODE        5  SPEEDMAX =  1.5853E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   34800   5.75% COMPLETE     ITERATIONS =    0     TIME =  0.34800000E+05
+  ELMAX =  9.4128E-002 AT NODE        5  SPEEDMAX =  1.5914E-001 AT NODE      221  ON MYPROC =    0
++time 20110825.214000   , step     29; iteration    1
++time 20110825.214000   , step     29; iteration    2
++time 20110825.214000   , step     29; iteration    3
++time 20110825.214000   , step     29; iteration    4
++time 20110825.214000   , step     29; iteration    5
++time 20110825.214000   , step     29; iteration    6
+ TIME STEP =   34900   5.77% COMPLETE     ITERATIONS =    0     TIME =  0.34900000E+05
+  ELMAX =  9.4888E-002 AT NODE        1  SPEEDMAX =  1.5973E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   35000   5.79% COMPLETE     ITERATIONS =    0     TIME =  0.35000000E+05
+  ELMAX =  9.5710E-002 AT NODE        1  SPEEDMAX =  1.6031E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   35100   5.80% COMPLETE     ITERATIONS =    0     TIME =  0.35100000E+05
+  ELMAX =  9.6494E-002 AT NODE        1  SPEEDMAX =  1.6089E-001 AT NODE      221  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 36000.00 to time 36900.00.
+Using group2 to interpolate pressure and wind fields from time 36000.00 to time 36900.00.
+ TIME STEP =   35200   5.82% COMPLETE     ITERATIONS =    0     TIME =  0.35200000E+05
+  ELMAX =  9.7240E-002 AT NODE        1  SPEEDMAX =  1.6146E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   35300   5.84% COMPLETE     ITERATIONS =    0     TIME =  0.35300000E+05
+  ELMAX =  9.7946E-002 AT NODE        1  SPEEDMAX =  1.6201E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   35400   5.85% COMPLETE     ITERATIONS =    0     TIME =  0.35400000E+05
+  ELMAX =  9.8612E-002 AT NODE        1  SPEEDMAX =  1.6256E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   35500   5.87% COMPLETE     ITERATIONS =    0     TIME =  0.35500000E+05
+  ELMAX =  9.9238E-002 AT NODE        1  SPEEDMAX =  1.6311E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   35600   5.89% COMPLETE     ITERATIONS =    0     TIME =  0.35600000E+05
+  ELMAX =  9.9822E-002 AT NODE        1  SPEEDMAX =  1.6364E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   35700   5.90% COMPLETE     ITERATIONS =    0     TIME =  0.35700000E+05
+  ELMAX =  1.0036E-001 AT NODE        1  SPEEDMAX =  1.6417E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   35800   5.92% COMPLETE     ITERATIONS =    0     TIME =  0.35800000E+05
+  ELMAX =  1.0086E-001 AT NODE        1  SPEEDMAX =  1.6469E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   35900   5.94% COMPLETE     ITERATIONS =    0     TIME =  0.35900000E+05
+  ELMAX =  1.0131E-001 AT NODE        1  SPEEDMAX =  1.6520E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   36000   5.95% COMPLETE     ITERATIONS =    0     TIME =  0.36000000E+05
+  ELMAX =  1.0203E-001 AT NODE       73  SPEEDMAX =  1.6571E-001 AT NODE      221  ON MYPROC =    0
++time 20110825.220000   , step     30; iteration    1
++time 20110825.220000   , step     30; iteration    2
++time 20110825.220000   , step     30; iteration    3
++time 20110825.220000   , step     30; iteration    4
++time 20110825.220000   , step     30; iteration    5
++time 20110825.220000   , step     30; iteration    6
+Using group1 to interpolate pressure and wind fields from time 36900.00 to time 37800.00.
+Using group2 to interpolate pressure and wind fields from time 36900.00 to time 37800.00.
+ TIME STEP =   36100   5.97% COMPLETE     ITERATIONS =    0     TIME =  0.36100000E+05
+  ELMAX =  1.0325E-001 AT NODE       73  SPEEDMAX =  1.6622E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   36200   5.99% COMPLETE     ITERATIONS =    0     TIME =  0.36200000E+05
+  ELMAX =  1.0447E-001 AT NODE       73  SPEEDMAX =  1.6672E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   36300   6.00% COMPLETE     ITERATIONS =    0     TIME =  0.36300000E+05
+  ELMAX =  1.0569E-001 AT NODE       73  SPEEDMAX =  1.6722E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   36400   6.02% COMPLETE     ITERATIONS =    0     TIME =  0.36400000E+05
+  ELMAX =  1.0689E-001 AT NODE       73  SPEEDMAX =  1.6772E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   36500   6.04% COMPLETE     ITERATIONS =    0     TIME =  0.36500000E+05
+  ELMAX =  1.0808E-001 AT NODE       73  SPEEDMAX =  1.6822E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   36600   6.05% COMPLETE     ITERATIONS =    0     TIME =  0.36600000E+05
+  ELMAX =  1.0927E-001 AT NODE       73  SPEEDMAX =  1.6871E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   36700   6.07% COMPLETE     ITERATIONS =    0     TIME =  0.36700000E+05
+  ELMAX =  1.1044E-001 AT NODE       73  SPEEDMAX =  1.6920E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   36800   6.08% COMPLETE     ITERATIONS =    0     TIME =  0.36800000E+05
+  ELMAX =  1.1160E-001 AT NODE       73  SPEEDMAX =  1.6969E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   36900   6.10% COMPLETE     ITERATIONS =    0     TIME =  0.36900000E+05
+  ELMAX =  1.1275E-001 AT NODE       73  SPEEDMAX =  1.7018E-001 AT NODE      221  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 37800.00 to time 38700.00.
+Using group2 to interpolate pressure and wind fields from time 37800.00 to time 38700.00.
+ TIME STEP =   37000   6.12% COMPLETE     ITERATIONS =    0     TIME =  0.37000000E+05
+  ELMAX =  1.1388E-001 AT NODE       73  SPEEDMAX =  1.7067E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   37100   6.13% COMPLETE     ITERATIONS =    0     TIME =  0.37100000E+05
+  ELMAX =  1.1499E-001 AT NODE       73  SPEEDMAX =  1.7116E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   37200   6.15% COMPLETE     ITERATIONS =    0     TIME =  0.37200000E+05
+  ELMAX =  1.1609E-001 AT NODE       73  SPEEDMAX =  1.7165E-001 AT NODE      221  ON MYPROC =    0
++time 20110825.222000   , step     31; iteration    1
++time 20110825.222000   , step     31; iteration    2
++time 20110825.222000   , step     31; iteration    3
++time 20110825.222000   , step     31; iteration    4
++time 20110825.222000   , step     31; iteration    5
++time 20110825.222000   , step     31; iteration    6
+ TIME STEP =   37300   6.17% COMPLETE     ITERATIONS =    0     TIME =  0.37300000E+05
+  ELMAX =  1.1716E-001 AT NODE       73  SPEEDMAX =  1.7214E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   37400   6.18% COMPLETE     ITERATIONS =    0     TIME =  0.37400000E+05
+  ELMAX =  1.1822E-001 AT NODE       73  SPEEDMAX =  1.7263E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   37500   6.20% COMPLETE     ITERATIONS =    0     TIME =  0.37500000E+05
+  ELMAX =  1.1925E-001 AT NODE       73  SPEEDMAX =  1.7313E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   37600   6.22% COMPLETE     ITERATIONS =    0     TIME =  0.37600000E+05
+  ELMAX =  1.2026E-001 AT NODE       73  SPEEDMAX =  1.7363E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   37700   6.23% COMPLETE     ITERATIONS =    0     TIME =  0.37700000E+05
+  ELMAX =  1.2125E-001 AT NODE       73  SPEEDMAX =  1.7413E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   37800   6.25% COMPLETE     ITERATIONS =    0     TIME =  0.37800000E+05
+  ELMAX =  1.2221E-001 AT NODE       73  SPEEDMAX =  1.7464E-001 AT NODE      221  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 38700.00 to time 39600.00.
+Using group2 to interpolate pressure and wind fields from time 38700.00 to time 39600.00.
+ TIME STEP =   37900   6.27% COMPLETE     ITERATIONS =    0     TIME =  0.37900000E+05
+  ELMAX =  1.2314E-001 AT NODE       73  SPEEDMAX =  1.7514E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   38000   6.28% COMPLETE     ITERATIONS =    0     TIME =  0.38000000E+05
+  ELMAX =  1.2404E-001 AT NODE       73  SPEEDMAX =  1.7565E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   38100   6.30% COMPLETE     ITERATIONS =    0     TIME =  0.38100000E+05
+  ELMAX =  1.2491E-001 AT NODE       73  SPEEDMAX =  1.7617E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   38200   6.32% COMPLETE     ITERATIONS =    0     TIME =  0.38200000E+05
+  ELMAX =  1.2575E-001 AT NODE       73  SPEEDMAX =  1.7668E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   38300   6.33% COMPLETE     ITERATIONS =    0     TIME =  0.38300000E+05
+  ELMAX =  1.2655E-001 AT NODE       73  SPEEDMAX =  1.7720E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   38400   6.35% COMPLETE     ITERATIONS =    0     TIME =  0.38400000E+05
+  ELMAX =  1.2731E-001 AT NODE       73  SPEEDMAX =  1.7773E-001 AT NODE      221  ON MYPROC =    0
++time 20110825.224000   , step     32; iteration    1
++time 20110825.224000   , step     32; iteration    2
++time 20110825.224000   , step     32; iteration    3
++time 20110825.224000   , step     32; iteration    4
++time 20110825.224000   , step     32; iteration    5
++time 20110825.224000   , step     32; iteration    6
+ TIME STEP =   38500   6.37% COMPLETE     ITERATIONS =    0     TIME =  0.38500000E+05
+  ELMAX =  1.2803E-001 AT NODE       73  SPEEDMAX =  1.7826E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   38600   6.38% COMPLETE     ITERATIONS =    0     TIME =  0.38600000E+05
+  ELMAX =  1.2871E-001 AT NODE       73  SPEEDMAX =  1.7879E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   38700   6.40% COMPLETE     ITERATIONS =    0     TIME =  0.38700000E+05
+  ELMAX =  1.2935E-001 AT NODE       73  SPEEDMAX =  1.7933E-001 AT NODE      221  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 39600.00 to time 40500.00.
+Using group2 to interpolate pressure and wind fields from time 39600.00 to time 40500.00.
+ TIME STEP =   38800   6.42% COMPLETE     ITERATIONS =    0     TIME =  0.38800000E+05
+  ELMAX =  1.2994E-001 AT NODE       73  SPEEDMAX =  1.7988E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   38900   6.43% COMPLETE     ITERATIONS =    0     TIME =  0.38900000E+05
+  ELMAX =  1.3147E-001 AT NODE       57  SPEEDMAX =  1.8043E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   39000   6.45% COMPLETE     ITERATIONS =    0     TIME =  0.39000000E+05
+  ELMAX =  1.3307E-001 AT NODE       57  SPEEDMAX =  1.8098E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   39100   6.46% COMPLETE     ITERATIONS =    0     TIME =  0.39100000E+05
+  ELMAX =  1.3463E-001 AT NODE       57  SPEEDMAX =  1.8154E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   39200   6.48% COMPLETE     ITERATIONS =    0     TIME =  0.39200000E+05
+  ELMAX =  1.3615E-001 AT NODE       57  SPEEDMAX =  1.8210E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   39300   6.50% COMPLETE     ITERATIONS =    0     TIME =  0.39300000E+05
+  ELMAX =  1.3762E-001 AT NODE       57  SPEEDMAX =  1.8266E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   39400   6.51% COMPLETE     ITERATIONS =    0     TIME =  0.39400000E+05
+  ELMAX =  1.3903E-001 AT NODE       57  SPEEDMAX =  1.8323E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   39500   6.53% COMPLETE     ITERATIONS =    0     TIME =  0.39500000E+05
+  ELMAX =  1.4040E-001 AT NODE       57  SPEEDMAX =  1.8380E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   39600   6.55% COMPLETE     ITERATIONS =    0     TIME =  0.39600000E+05
+  ELMAX =  1.4171E-001 AT NODE       57  SPEEDMAX =  1.8438E-001 AT NODE      221  ON MYPROC =    0
++time 20110825.230000   , step     33; iteration    1
++time 20110825.230000   , step     33; iteration    2
++time 20110825.230000   , step     33; iteration    3
++time 20110825.230000   , step     33; iteration    4
++time 20110825.230000   , step     33; iteration    5
++time 20110825.230000   , step     33; iteration    6
+Using group1 to interpolate pressure and wind fields from time 40500.00 to time 41400.00.
+Using group2 to interpolate pressure and wind fields from time 40500.00 to time 41400.00.
+ TIME STEP =   39700   6.56% COMPLETE     ITERATIONS =    0     TIME =  0.39700000E+05
+  ELMAX =  1.4296E-001 AT NODE       57  SPEEDMAX =  1.8496E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   39800   6.58% COMPLETE     ITERATIONS =    0     TIME =  0.39800000E+05
+  ELMAX =  1.4416E-001 AT NODE       57  SPEEDMAX =  1.8554E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   39900   6.60% COMPLETE     ITERATIONS =    0     TIME =  0.39900000E+05
+  ELMAX =  1.4529E-001 AT NODE       57  SPEEDMAX =  1.8612E-001 AT NODE      221  ON MYPROC =    0
+ TIME STEP =   40000   6.61% COMPLETE     ITERATIONS =    0     TIME =  0.40000000E+05
+  ELMAX =  1.4636E-001 AT NODE       57  SPEEDMAX =  1.8973E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   40100   6.63% COMPLETE     ITERATIONS =    0     TIME =  0.40100000E+05
+  ELMAX =  1.4736E-001 AT NODE       57  SPEEDMAX =  1.9726E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   40200   6.65% COMPLETE     ITERATIONS =    0     TIME =  0.40200000E+05
+  ELMAX =  1.4829E-001 AT NODE       57  SPEEDMAX =  2.0486E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   40300   6.66% COMPLETE     ITERATIONS =    0     TIME =  0.40300000E+05
+  ELMAX =  1.4915E-001 AT NODE       57  SPEEDMAX =  2.1251E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   40400   6.68% COMPLETE     ITERATIONS =    0     TIME =  0.40400000E+05
+  ELMAX =  1.4994E-001 AT NODE       57  SPEEDMAX =  2.2020E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   40500   6.70% COMPLETE     ITERATIONS =    0     TIME =  0.40500000E+05
+  ELMAX =  1.5065E-001 AT NODE       57  SPEEDMAX =  2.2794E-001 AT NODE       90  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 41400.00 to time 42300.00.
+Using group2 to interpolate pressure and wind fields from time 41400.00 to time 42300.00.
+ TIME STEP =   40600   6.71% COMPLETE     ITERATIONS =    0     TIME =  0.40600000E+05
+  ELMAX =  1.5128E-001 AT NODE       57  SPEEDMAX =  2.3571E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   40700   6.73% COMPLETE     ITERATIONS =    0     TIME =  0.40700000E+05
+  ELMAX =  1.5183E-001 AT NODE       57  SPEEDMAX =  2.4351E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   40800   6.75% COMPLETE     ITERATIONS =    0     TIME =  0.40800000E+05
+  ELMAX =  1.5230E-001 AT NODE       57  SPEEDMAX =  2.5133E-001 AT NODE       90  ON MYPROC =    0
++time 20110825.232000   , step     34; iteration    1
++time 20110825.232000   , step     34; iteration    2
++time 20110825.232000   , step     34; iteration    3
++time 20110825.232000   , step     34; iteration    4
++time 20110825.232000   , step     34; iteration    5
++time 20110825.232000   , step     34; iteration    6
+ TIME STEP =   40900   6.76% COMPLETE     ITERATIONS =    0     TIME =  0.40900000E+05
+  ELMAX =  1.5269E-001 AT NODE       57  SPEEDMAX =  2.5915E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   41000   6.78% COMPLETE     ITERATIONS =    0     TIME =  0.41000000E+05
+  ELMAX =  1.5299E-001 AT NODE       57  SPEEDMAX =  2.6697E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   41100   6.80% COMPLETE     ITERATIONS =    0     TIME =  0.41100000E+05
+  ELMAX =  1.5319E-001 AT NODE       57  SPEEDMAX =  2.7479E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   41200   6.81% COMPLETE     ITERATIONS =    0     TIME =  0.41200000E+05
+  ELMAX =  1.5331E-001 AT NODE       57  SPEEDMAX =  2.8260E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   41300   6.83% COMPLETE     ITERATIONS =    0     TIME =  0.41300000E+05
+  ELMAX =  1.5333E-001 AT NODE       57  SPEEDMAX =  2.9038E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   41400   6.85% COMPLETE     ITERATIONS =    0     TIME =  0.41400000E+05
+  ELMAX =  1.5326E-001 AT NODE       57  SPEEDMAX =  2.9815E-001 AT NODE       90  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 42300.00 to time 43200.00.
+Using group2 to interpolate pressure and wind fields from time 42300.00 to time 43200.00.
+ TIME STEP =   41500   6.86% COMPLETE     ITERATIONS =    0     TIME =  0.41500000E+05
+  ELMAX =  1.5309E-001 AT NODE       57  SPEEDMAX =  3.0588E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   41600   6.88% COMPLETE     ITERATIONS =    0     TIME =  0.41600000E+05
+  ELMAX =  1.5283E-001 AT NODE       57  SPEEDMAX =  3.1358E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   41700   6.89% COMPLETE     ITERATIONS =    0     TIME =  0.41700000E+05
+  ELMAX =  1.5246E-001 AT NODE       57  SPEEDMAX =  3.2124E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   41800   6.91% COMPLETE     ITERATIONS =    0     TIME =  0.41800000E+05
+  ELMAX =  1.5198E-001 AT NODE       57  SPEEDMAX =  3.2884E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   41900   6.93% COMPLETE     ITERATIONS =    0     TIME =  0.41900000E+05
+  ELMAX =  1.5141E-001 AT NODE       57  SPEEDMAX =  3.3639E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   42000   6.94% COMPLETE     ITERATIONS =    0     TIME =  0.42000000E+05
+  ELMAX =  1.5073E-001 AT NODE       57  SPEEDMAX =  3.4388E-001 AT NODE       90  ON MYPROC =    0
++time 20110825.234000   , step     35; iteration    1
++time 20110825.234000   , step     35; iteration    2
++time 20110825.234000   , step     35; iteration    3
++time 20110825.234000   , step     35; iteration    4
++time 20110825.234000   , step     35; iteration    5
++time 20110825.234000   , step     35; iteration    6
+ TIME STEP =   42100   6.96% COMPLETE     ITERATIONS =    0     TIME =  0.42100000E+05
+  ELMAX =  1.4994E-001 AT NODE       57  SPEEDMAX =  3.5129E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   42200   6.98% COMPLETE     ITERATIONS =    0     TIME =  0.42200000E+05
+  ELMAX =  1.4904E-001 AT NODE       57  SPEEDMAX =  3.5863E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   42300   6.99% COMPLETE     ITERATIONS =    0     TIME =  0.42300000E+05
+  ELMAX =  1.4802E-001 AT NODE       57  SPEEDMAX =  3.6588E-001 AT NODE       90  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 43200.00 to time 44100.00.
+Using group2 to interpolate pressure and wind fields from time 43200.00 to time 44100.00.
+ TIME STEP =   42400   7.01% COMPLETE     ITERATIONS =    0     TIME =  0.42400000E+05
+  ELMAX =  1.4690E-001 AT NODE       57  SPEEDMAX =  3.7305E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   42500   7.03% COMPLETE     ITERATIONS =    0     TIME =  0.42500000E+05
+  ELMAX =  1.4567E-001 AT NODE       57  SPEEDMAX =  3.8013E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   42600   7.04% COMPLETE     ITERATIONS =    0     TIME =  0.42600000E+05
+  ELMAX =  1.4432E-001 AT NODE       57  SPEEDMAX =  3.8712E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   42700   7.06% COMPLETE     ITERATIONS =    0     TIME =  0.42700000E+05
+  ELMAX =  1.4285E-001 AT NODE       57  SPEEDMAX =  3.9401E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   42800   7.08% COMPLETE     ITERATIONS =    0     TIME =  0.42800000E+05
+  ELMAX =  1.4127E-001 AT NODE       57  SPEEDMAX =  4.0081E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   42900   7.09% COMPLETE     ITERATIONS =    0     TIME =  0.42900000E+05
+  ELMAX =  1.3957E-001 AT NODE       57  SPEEDMAX =  4.0750E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   43000   7.11% COMPLETE     ITERATIONS =    0     TIME =  0.43000000E+05
+  ELMAX =  1.3775E-001 AT NODE       57  SPEEDMAX =  4.1408E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   43100   7.13% COMPLETE     ITERATIONS =    0     TIME =  0.43100000E+05
+  ELMAX =  1.3582E-001 AT NODE       57  SPEEDMAX =  4.2055E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   43200   7.14% COMPLETE     ITERATIONS =    0     TIME =  0.43200000E+05
+  ELMAX = -1.3638E-001 AT NODE      543  SPEEDMAX =  4.2690E-001 AT NODE       90  ON MYPROC =    0
++time 20110826.000000   , step     36; iteration    1
++time 20110826.000000   , step     36; iteration    2
++time 20110826.000000   , step     36; iteration    3
++time 20110826.000000   , step     36; iteration    4
++time 20110826.000000   , step     36; iteration    5
++time 20110826.000000   , step     36; iteration    6
+Using group1 to interpolate pressure and wind fields from time 44100.00 to time 45000.00.
+Using group2 to interpolate pressure and wind fields from time 44100.00 to time 45000.00.
+ TIME STEP =   43300   7.16% COMPLETE     ITERATIONS =    0     TIME =  0.43300000E+05
+  ELMAX = -1.3892E-001 AT NODE      543  SPEEDMAX =  4.3312E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   43400   7.18% COMPLETE     ITERATIONS =    0     TIME =  0.43400000E+05
+  ELMAX = -1.4146E-001 AT NODE      543  SPEEDMAX =  4.3921E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   43500   7.19% COMPLETE     ITERATIONS =    0     TIME =  0.43500000E+05
+  ELMAX = -1.4399E-001 AT NODE      543  SPEEDMAX =  4.4517E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   43600   7.21% COMPLETE     ITERATIONS =    0     TIME =  0.43600000E+05
+  ELMAX = -1.4651E-001 AT NODE      543  SPEEDMAX =  4.5099E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   43700   7.23% COMPLETE     ITERATIONS =    0     TIME =  0.43700000E+05
+  ELMAX = -1.4903E-001 AT NODE      543  SPEEDMAX =  4.5667E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   43800   7.24% COMPLETE     ITERATIONS =    0     TIME =  0.43800000E+05
+  ELMAX = -1.5154E-001 AT NODE      543  SPEEDMAX =  4.6222E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   43900   7.26% COMPLETE     ITERATIONS =    0     TIME =  0.43900000E+05
+  ELMAX = -1.5416E-001 AT NODE      395  SPEEDMAX =  4.6762E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   44000   7.28% COMPLETE     ITERATIONS =    0     TIME =  0.44000000E+05
+  ELMAX = -1.5681E-001 AT NODE      395  SPEEDMAX =  4.7289E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   44100   7.29% COMPLETE     ITERATIONS =    0     TIME =  0.44100000E+05
+  ELMAX = -1.5945E-001 AT NODE      395  SPEEDMAX =  4.7801E-001 AT NODE       90  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 45000.00 to time 45900.00.
+Using group2 to interpolate pressure and wind fields from time 45000.00 to time 45900.00.
+ TIME STEP =   44200   7.31% COMPLETE     ITERATIONS =    0     TIME =  0.44200000E+05
+  ELMAX = -1.6208E-001 AT NODE      395  SPEEDMAX =  4.8298E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   44300   7.32% COMPLETE     ITERATIONS =    0     TIME =  0.44300000E+05
+  ELMAX = -1.6469E-001 AT NODE      395  SPEEDMAX =  4.8780E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   44400   7.34% COMPLETE     ITERATIONS =    0     TIME =  0.44400000E+05
+  ELMAX = -1.6729E-001 AT NODE      395  SPEEDMAX =  4.9246E-001 AT NODE       90  ON MYPROC =    0
++time 20110826.002000   , step     37; iteration    1
++time 20110826.002000   , step     37; iteration    2
++time 20110826.002000   , step     37; iteration    3
++time 20110826.002000   , step     37; iteration    4
++time 20110826.002000   , step     37; iteration    5
++time 20110826.002000   , step     37; iteration    6
+ TIME STEP =   44500   7.36% COMPLETE     ITERATIONS =    0     TIME =  0.44500000E+05
+  ELMAX = -1.6988E-001 AT NODE      395  SPEEDMAX =  4.9697E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   44600   7.37% COMPLETE     ITERATIONS =    0     TIME =  0.44600000E+05
+  ELMAX = -1.7245E-001 AT NODE      395  SPEEDMAX =  5.0131E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   44700   7.39% COMPLETE     ITERATIONS =    0     TIME =  0.44700000E+05
+  ELMAX = -1.7503E-001 AT NODE      394  SPEEDMAX =  5.0548E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   44800   7.41% COMPLETE     ITERATIONS =    0     TIME =  0.44800000E+05
+  ELMAX = -1.7760E-001 AT NODE      394  SPEEDMAX =  5.0950E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   44900   7.42% COMPLETE     ITERATIONS =    0     TIME =  0.44900000E+05
+  ELMAX = -1.8015E-001 AT NODE      394  SPEEDMAX =  5.1335E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   45000   7.44% COMPLETE     ITERATIONS =    0     TIME =  0.45000000E+05
+  ELMAX = -1.8269E-001 AT NODE      394  SPEEDMAX =  5.1703E-001 AT NODE       90  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 45900.00 to time 46800.00.
+Using group2 to interpolate pressure and wind fields from time 45900.00 to time 46800.00.
+ TIME STEP =   45100   7.46% COMPLETE     ITERATIONS =    0     TIME =  0.45100000E+05
+  ELMAX = -1.8520E-001 AT NODE      394  SPEEDMAX =  5.2055E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   45200   7.47% COMPLETE     ITERATIONS =    0     TIME =  0.45200000E+05
+  ELMAX = -1.8770E-001 AT NODE      394  SPEEDMAX =  5.2390E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   45300   7.49% COMPLETE     ITERATIONS =    0     TIME =  0.45300000E+05
+  ELMAX = -1.9019E-001 AT NODE      394  SPEEDMAX =  5.2708E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   45400   7.51% COMPLETE     ITERATIONS =    0     TIME =  0.45400000E+05
+  ELMAX = -1.9301E-001 AT NODE      302  SPEEDMAX =  5.3009E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   45500   7.52% COMPLETE     ITERATIONS =    0     TIME =  0.45500000E+05
+  ELMAX = -1.9586E-001 AT NODE      302  SPEEDMAX =  5.3292E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   45600   7.54% COMPLETE     ITERATIONS =    0     TIME =  0.45600000E+05
+  ELMAX = -1.9927E-001 AT NODE       71  SPEEDMAX =  5.3558E-001 AT NODE       90  ON MYPROC =    0
++time 20110826.004000   , step     38; iteration    1
++time 20110826.004000   , step     38; iteration    2
++time 20110826.004000   , step     38; iteration    3
++time 20110826.004000   , step     38; iteration    4
++time 20110826.004000   , step     38; iteration    5
++time 20110826.004000   , step     38; iteration    6
+ TIME STEP =   45700   7.56% COMPLETE     ITERATIONS =    0     TIME =  0.45700000E+05
+  ELMAX = -2.0269E-001 AT NODE       71  SPEEDMAX =  5.3805E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   45800   7.57% COMPLETE     ITERATIONS =    0     TIME =  0.45800000E+05
+  ELMAX = -2.0609E-001 AT NODE       71  SPEEDMAX =  5.4034E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   45900   7.59% COMPLETE     ITERATIONS =    0     TIME =  0.45900000E+05
+  ELMAX = -2.0945E-001 AT NODE       71  SPEEDMAX =  5.4245E-001 AT NODE       90  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 46800.00 to time 47700.00.
+Using group2 to interpolate pressure and wind fields from time 46800.00 to time 47700.00.
+ TIME STEP =   46000   7.61% COMPLETE     ITERATIONS =    0     TIME =  0.46000000E+05
+  ELMAX = -2.1278E-001 AT NODE       71  SPEEDMAX =  5.4437E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   46100   7.62% COMPLETE     ITERATIONS =    0     TIME =  0.46100000E+05
+  ELMAX = -2.1608E-001 AT NODE       71  SPEEDMAX =  5.4612E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   46200   7.64% COMPLETE     ITERATIONS =    0     TIME =  0.46200000E+05
+  ELMAX = -2.1934E-001 AT NODE       71  SPEEDMAX =  5.4767E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   46300   7.66% COMPLETE     ITERATIONS =    0     TIME =  0.46300000E+05
+  ELMAX = -2.2257E-001 AT NODE       71  SPEEDMAX =  5.4906E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   46400   7.67% COMPLETE     ITERATIONS =    0     TIME =  0.46400000E+05
+  ELMAX = -2.2577E-001 AT NODE       71  SPEEDMAX =  5.5026E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   46500   7.69% COMPLETE     ITERATIONS =    0     TIME =  0.46500000E+05
+  ELMAX = -2.2893E-001 AT NODE       71  SPEEDMAX =  5.5129E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   46600   7.71% COMPLETE     ITERATIONS =    0     TIME =  0.46600000E+05
+  ELMAX = -2.3205E-001 AT NODE       71  SPEEDMAX =  5.5213E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   46700   7.72% COMPLETE     ITERATIONS =    0     TIME =  0.46700000E+05
+  ELMAX = -2.3514E-001 AT NODE       71  SPEEDMAX =  5.5279E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   46800   7.74% COMPLETE     ITERATIONS =    0     TIME =  0.46800000E+05
+  ELMAX = -2.3820E-001 AT NODE       71  SPEEDMAX =  5.5328E-001 AT NODE       90  ON MYPROC =    0
++time 20110826.010000   , step     39; iteration    1
++time 20110826.010000   , step     39; iteration    2
++time 20110826.010000   , step     39; iteration    3
++time 20110826.010000   , step     39; iteration    4
++time 20110826.010000   , step     39; iteration    5
++time 20110826.010000   , step     39; iteration    6
+Using group1 to interpolate pressure and wind fields from time 47700.00 to time 48600.00.
+Using group2 to interpolate pressure and wind fields from time 47700.00 to time 48600.00.
+ TIME STEP =   46900   7.75% COMPLETE     ITERATIONS =    0     TIME =  0.46900000E+05
+  ELMAX = -2.4122E-001 AT NODE       71  SPEEDMAX =  5.5357E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   47000   7.77% COMPLETE     ITERATIONS =    0     TIME =  0.47000000E+05
+  ELMAX = -2.4420E-001 AT NODE       71  SPEEDMAX =  5.5368E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   47100   7.79% COMPLETE     ITERATIONS =    0     TIME =  0.47100000E+05
+  ELMAX = -2.4714E-001 AT NODE       71  SPEEDMAX =  5.5362E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   47200   7.80% COMPLETE     ITERATIONS =    0     TIME =  0.47200000E+05
+  ELMAX = -2.5004E-001 AT NODE       71  SPEEDMAX =  5.5338E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   47300   7.82% COMPLETE     ITERATIONS =    0     TIME =  0.47300000E+05
+  ELMAX = -2.5289E-001 AT NODE       71  SPEEDMAX =  5.5297E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   47400   7.84% COMPLETE     ITERATIONS =    0     TIME =  0.47400000E+05
+  ELMAX = -2.5571E-001 AT NODE       71  SPEEDMAX =  5.5237E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   47500   7.85% COMPLETE     ITERATIONS =    0     TIME =  0.47500000E+05
+  ELMAX = -2.5849E-001 AT NODE       71  SPEEDMAX =  5.5162E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   47600   7.87% COMPLETE     ITERATIONS =    0     TIME =  0.47600000E+05
+  ELMAX = -2.6122E-001 AT NODE       71  SPEEDMAX =  5.5070E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   47700   7.89% COMPLETE     ITERATIONS =    0     TIME =  0.47700000E+05
+  ELMAX = -2.6391E-001 AT NODE       71  SPEEDMAX =  5.4961E-001 AT NODE       90  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 48600.00 to time 49500.00.
+Using group2 to interpolate pressure and wind fields from time 48600.00 to time 49500.00.
+ TIME STEP =   47800   7.90% COMPLETE     ITERATIONS =    0     TIME =  0.47800000E+05
+  ELMAX = -2.6852E-001 AT NODE       55  SPEEDMAX =  5.4835E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   47900   7.92% COMPLETE     ITERATIONS =    0     TIME =  0.47900000E+05
+  ELMAX = -2.7319E-001 AT NODE       55  SPEEDMAX =  5.4693E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   48000   7.94% COMPLETE     ITERATIONS =    0     TIME =  0.48000000E+05
+  ELMAX = -2.7781E-001 AT NODE       55  SPEEDMAX =  5.4534E-001 AT NODE       90  ON MYPROC =    0
++time 20110826.012000   , step     40; iteration    1
++time 20110826.012000   , step     40; iteration    2
++time 20110826.012000   , step     40; iteration    3
++time 20110826.012000   , step     40; iteration    4
++time 20110826.012000   , step     40; iteration    5
++time 20110826.012000   , step     40; iteration    6
+ TIME STEP =   48100   7.95% COMPLETE     ITERATIONS =    0     TIME =  0.48100000E+05
+  ELMAX = -2.8238E-001 AT NODE       55  SPEEDMAX =  5.4358E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   48200   7.97% COMPLETE     ITERATIONS =    0     TIME =  0.48200000E+05
+  ELMAX = -2.8689E-001 AT NODE       55  SPEEDMAX =  5.4165E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   48300   7.99% COMPLETE     ITERATIONS =    0     TIME =  0.48300000E+05
+  ELMAX = -2.9134E-001 AT NODE       55  SPEEDMAX =  5.3956E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   48400   8.00% COMPLETE     ITERATIONS =    0     TIME =  0.48400000E+05
+  ELMAX = -2.9572E-001 AT NODE       55  SPEEDMAX =  5.3731E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   48500   8.02% COMPLETE     ITERATIONS =    0     TIME =  0.48500000E+05
+  ELMAX = -3.0004E-001 AT NODE       55  SPEEDMAX =  5.3489E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   48600   8.04% COMPLETE     ITERATIONS =    0     TIME =  0.48600000E+05
+  ELMAX = -3.0428E-001 AT NODE       55  SPEEDMAX =  5.3232E-001 AT NODE       90  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 49500.00 to time 50400.00.
+Using group2 to interpolate pressure and wind fields from time 49500.00 to time 50400.00.
+ TIME STEP =   48700   8.05% COMPLETE     ITERATIONS =    0     TIME =  0.48700000E+05
+  ELMAX = -3.0846E-001 AT NODE       55  SPEEDMAX =  5.2960E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   48800   8.07% COMPLETE     ITERATIONS =    0     TIME =  0.48800000E+05
+  ELMAX = -3.1256E-001 AT NODE       55  SPEEDMAX =  5.2672E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   48900   8.09% COMPLETE     ITERATIONS =    0     TIME =  0.48900000E+05
+  ELMAX = -3.1659E-001 AT NODE       55  SPEEDMAX =  5.2369E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   49000   8.10% COMPLETE     ITERATIONS =    0     TIME =  0.49000000E+05
+  ELMAX = -3.2054E-001 AT NODE       55  SPEEDMAX =  5.2051E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   49100   8.12% COMPLETE     ITERATIONS =    0     TIME =  0.49100000E+05
+  ELMAX = -3.2440E-001 AT NODE       55  SPEEDMAX =  5.1718E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   49200   8.13% COMPLETE     ITERATIONS =    0     TIME =  0.49200000E+05
+  ELMAX = -3.2819E-001 AT NODE       55  SPEEDMAX =  5.1370E-001 AT NODE       90  ON MYPROC =    0
++time 20110826.014000   , step     41; iteration    1
++time 20110826.014000   , step     41; iteration    2
++time 20110826.014000   , step     41; iteration    3
++time 20110826.014000   , step     41; iteration    4
++time 20110826.014000   , step     41; iteration    5
++time 20110826.014000   , step     41; iteration    6
+ TIME STEP =   49300   8.15% COMPLETE     ITERATIONS =    0     TIME =  0.49300000E+05
+  ELMAX = -3.3188E-001 AT NODE       55  SPEEDMAX =  5.1005E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   49400   8.17% COMPLETE     ITERATIONS =    0     TIME =  0.49400000E+05
+  ELMAX = -3.3549E-001 AT NODE       55  SPEEDMAX =  5.0625E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   49500   8.18% COMPLETE     ITERATIONS =    0     TIME =  0.49500000E+05
+  ELMAX = -3.3901E-001 AT NODE       55  SPEEDMAX =  5.0229E-001 AT NODE       90  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 50400.00 to time 51300.00.
+Using group2 to interpolate pressure and wind fields from time 50400.00 to time 51300.00.
+ TIME STEP =   49600   8.20% COMPLETE     ITERATIONS =    0     TIME =  0.49600000E+05
+  ELMAX = -3.4244E-001 AT NODE       55  SPEEDMAX =  4.9819E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   49700   8.22% COMPLETE     ITERATIONS =    0     TIME =  0.49700000E+05
+  ELMAX = -3.4577E-001 AT NODE       55  SPEEDMAX =  4.9392E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   49800   8.23% COMPLETE     ITERATIONS =    0     TIME =  0.49800000E+05
+  ELMAX = -3.4900E-001 AT NODE       55  SPEEDMAX =  4.8951E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   49900   8.25% COMPLETE     ITERATIONS =    0     TIME =  0.49900000E+05
+  ELMAX = -3.5214E-001 AT NODE       55  SPEEDMAX =  4.8495E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   50000   8.27% COMPLETE     ITERATIONS =    0     TIME =  0.50000000E+05
+  ELMAX = -3.5517E-001 AT NODE       55  SPEEDMAX =  4.8025E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   50100   8.28% COMPLETE     ITERATIONS =    0     TIME =  0.50100000E+05
+  ELMAX = -3.5811E-001 AT NODE       55  SPEEDMAX =  4.7540E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   50200   8.30% COMPLETE     ITERATIONS =    0     TIME =  0.50200000E+05
+  ELMAX = -3.6094E-001 AT NODE       55  SPEEDMAX =  4.7039E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   50300   8.32% COMPLETE     ITERATIONS =    0     TIME =  0.50300000E+05
+  ELMAX = -3.6366E-001 AT NODE       55  SPEEDMAX =  4.6524E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   50400   8.33% COMPLETE     ITERATIONS =    0     TIME =  0.50400000E+05
+  ELMAX = -3.6628E-001 AT NODE       55  SPEEDMAX =  4.5994E-001 AT NODE       90  ON MYPROC =    0
++time 20110826.020000   , step     42; iteration    1
++time 20110826.020000   , step     42; iteration    2
++time 20110826.020000   , step     42; iteration    3
++time 20110826.020000   , step     42; iteration    4
++time 20110826.020000   , step     42; iteration    5
++time 20110826.020000   , step     42; iteration    6
+Using group1 to interpolate pressure and wind fields from time 51300.00 to time 52200.00.
+Using group2 to interpolate pressure and wind fields from time 51300.00 to time 52200.00.
+ TIME STEP =   50500   8.35% COMPLETE     ITERATIONS =    0     TIME =  0.50500000E+05
+  ELMAX = -3.6879E-001 AT NODE       55  SPEEDMAX =  4.5449E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   50600   8.37% COMPLETE     ITERATIONS =    0     TIME =  0.50600000E+05
+  ELMAX = -3.7119E-001 AT NODE       55  SPEEDMAX =  4.4888E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   50700   8.38% COMPLETE     ITERATIONS =    0     TIME =  0.50700000E+05
+  ELMAX = -3.7348E-001 AT NODE       55  SPEEDMAX =  4.4313E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   50800   8.40% COMPLETE     ITERATIONS =    0     TIME =  0.50800000E+05
+  ELMAX = -3.7566E-001 AT NODE       55  SPEEDMAX =  4.3723E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   50900   8.42% COMPLETE     ITERATIONS =    0     TIME =  0.50900000E+05
+  ELMAX = -3.7772E-001 AT NODE       55  SPEEDMAX =  4.3118E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   51000   8.43% COMPLETE     ITERATIONS =    0     TIME =  0.51000000E+05
+  ELMAX = -3.7967E-001 AT NODE       55  SPEEDMAX =  4.2499E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   51100   8.45% COMPLETE     ITERATIONS =    0     TIME =  0.51100000E+05
+  ELMAX = -3.8151E-001 AT NODE       55  SPEEDMAX =  4.1868E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   51200   8.47% COMPLETE     ITERATIONS =    0     TIME =  0.51200000E+05
+  ELMAX = -3.8323E-001 AT NODE       55  SPEEDMAX =  4.1223E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   51300   8.48% COMPLETE     ITERATIONS =    0     TIME =  0.51300000E+05
+  ELMAX = -3.8484E-001 AT NODE       55  SPEEDMAX =  4.0564E-001 AT NODE       90  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 52200.00 to time 53100.00.
+Using group2 to interpolate pressure and wind fields from time 52200.00 to time 53100.00.
+ TIME STEP =   51400   8.50% COMPLETE     ITERATIONS =    0     TIME =  0.51400000E+05
+  ELMAX = -3.8633E-001 AT NODE       55  SPEEDMAX =  3.9893E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   51500   8.52% COMPLETE     ITERATIONS =    0     TIME =  0.51500000E+05
+  ELMAX = -3.8771E-001 AT NODE       55  SPEEDMAX =  3.9420E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   51600   8.53% COMPLETE     ITERATIONS =    0     TIME =  0.51600000E+05
+  ELMAX = -3.8897E-001 AT NODE       55  SPEEDMAX =  3.9110E-001 AT NODE       56  ON MYPROC =    0
++time 20110826.022000   , step     43; iteration    1
++time 20110826.022000   , step     43; iteration    2
++time 20110826.022000   , step     43; iteration    3
++time 20110826.022000   , step     43; iteration    4
++time 20110826.022000   , step     43; iteration    5
++time 20110826.022000   , step     43; iteration    6
+ TIME STEP =   51700   8.55% COMPLETE     ITERATIONS =    0     TIME =  0.51700000E+05
+  ELMAX = -3.9012E-001 AT NODE       55  SPEEDMAX =  3.8789E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   51800   8.56% COMPLETE     ITERATIONS =    0     TIME =  0.51800000E+05
+  ELMAX = -3.9117E-001 AT NODE       72  SPEEDMAX =  3.8458E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   51900   8.58% COMPLETE     ITERATIONS =    0     TIME =  0.51900000E+05
+  ELMAX = -3.9383E-001 AT NODE       72  SPEEDMAX =  3.8115E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   52000   8.60% COMPLETE     ITERATIONS =    0     TIME =  0.52000000E+05
+  ELMAX = -3.9640E-001 AT NODE       72  SPEEDMAX =  3.7761E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   52100   8.61% COMPLETE     ITERATIONS =    0     TIME =  0.52100000E+05
+  ELMAX = -3.9887E-001 AT NODE       72  SPEEDMAX =  3.7396E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   52200   8.63% COMPLETE     ITERATIONS =    0     TIME =  0.52200000E+05
+  ELMAX = -4.0125E-001 AT NODE       72  SPEEDMAX =  3.7020E-001 AT NODE       56  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 53100.00 to time 54000.00.
+Using group2 to interpolate pressure and wind fields from time 53100.00 to time 54000.00.
+ TIME STEP =   52300   8.65% COMPLETE     ITERATIONS =    0     TIME =  0.52300000E+05
+  ELMAX = -4.0353E-001 AT NODE       72  SPEEDMAX =  3.6631E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   52400   8.66% COMPLETE     ITERATIONS =    0     TIME =  0.52400000E+05
+  ELMAX = -4.0571E-001 AT NODE       72  SPEEDMAX =  3.6232E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   52500   8.68% COMPLETE     ITERATIONS =    0     TIME =  0.52500000E+05
+  ELMAX = -4.0780E-001 AT NODE       72  SPEEDMAX =  3.5821E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   52600   8.70% COMPLETE     ITERATIONS =    0     TIME =  0.52600000E+05
+  ELMAX = -4.0978E-001 AT NODE       72  SPEEDMAX =  3.5399E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   52700   8.71% COMPLETE     ITERATIONS =    0     TIME =  0.52700000E+05
+  ELMAX = -4.1167E-001 AT NODE       72  SPEEDMAX =  3.4965E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   52800   8.73% COMPLETE     ITERATIONS =    0     TIME =  0.52800000E+05
+  ELMAX = -4.1345E-001 AT NODE       72  SPEEDMAX =  3.4521E-001 AT NODE       56  ON MYPROC =    0
++time 20110826.024000   , step     44; iteration    1
++time 20110826.024000   , step     44; iteration    2
++time 20110826.024000   , step     44; iteration    3
++time 20110826.024000   , step     44; iteration    4
++time 20110826.024000   , step     44; iteration    5
++time 20110826.024000   , step     44; iteration    6
+ TIME STEP =   52900   8.75% COMPLETE     ITERATIONS =    0     TIME =  0.52900000E+05
+  ELMAX = -4.1514E-001 AT NODE       72  SPEEDMAX =  3.4067E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   53000   8.76% COMPLETE     ITERATIONS =    0     TIME =  0.53000000E+05
+  ELMAX = -4.1682E-001 AT NODE       56  SPEEDMAX =  3.3602E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   53100   8.78% COMPLETE     ITERATIONS =    0     TIME =  0.53100000E+05
+  ELMAX = -4.2102E-001 AT NODE       56  SPEEDMAX =  3.3127E-001 AT NODE       56  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 54000.00 to time 54900.00.
+Using group2 to interpolate pressure and wind fields from time 54000.00 to time 54900.00.
+ TIME STEP =   53200   8.80% COMPLETE     ITERATIONS =    0     TIME =  0.53200000E+05
+  ELMAX = -4.2514E-001 AT NODE       56  SPEEDMAX =  3.2642E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   53300   8.81% COMPLETE     ITERATIONS =    0     TIME =  0.53300000E+05
+  ELMAX = -4.2916E-001 AT NODE       56  SPEEDMAX =  3.2146E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   53400   8.83% COMPLETE     ITERATIONS =    0     TIME =  0.53400000E+05
+  ELMAX = -4.3309E-001 AT NODE       56  SPEEDMAX =  3.1639E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   53500   8.85% COMPLETE     ITERATIONS =    0     TIME =  0.53500000E+05
+  ELMAX = -4.3692E-001 AT NODE       56  SPEEDMAX =  3.1122E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   53600   8.86% COMPLETE     ITERATIONS =    0     TIME =  0.53600000E+05
+  ELMAX = -4.4066E-001 AT NODE       56  SPEEDMAX =  3.0594E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   53700   8.88% COMPLETE     ITERATIONS =    0     TIME =  0.53700000E+05
+  ELMAX = -4.4430E-001 AT NODE       56  SPEEDMAX =  3.0055E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   53800   8.90% COMPLETE     ITERATIONS =    0     TIME =  0.53800000E+05
+  ELMAX = -4.4784E-001 AT NODE       56  SPEEDMAX =  2.9507E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   53900   8.91% COMPLETE     ITERATIONS =    0     TIME =  0.53900000E+05
+  ELMAX = -4.5128E-001 AT NODE       56  SPEEDMAX =  2.8948E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   54000   8.93% COMPLETE     ITERATIONS =    0     TIME =  0.54000000E+05
+  ELMAX = -4.5461E-001 AT NODE       56  SPEEDMAX =  2.8379E-001 AT NODE       56  ON MYPROC =    0
++time 20110826.030000   , step     45; iteration    1
++time 20110826.030000   , step     45; iteration    2
++time 20110826.030000   , step     45; iteration    3
++time 20110826.030000   , step     45; iteration    4
++time 20110826.030000   , step     45; iteration    5
++time 20110826.030000   , step     45; iteration    6
+Using group1 to interpolate pressure and wind fields from time 54900.00 to time 55800.00.
+Using group2 to interpolate pressure and wind fields from time 54900.00 to time 55800.00.
+ TIME STEP =   54100   8.95% COMPLETE     ITERATIONS =    0     TIME =  0.54100000E+05
+  ELMAX = -4.5783E-001 AT NODE       56  SPEEDMAX =  2.7802E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   54200   8.96% COMPLETE     ITERATIONS =    0     TIME =  0.54200000E+05
+  ELMAX = -4.6096E-001 AT NODE       57  SPEEDMAX =  2.7215E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   54300   8.98% COMPLETE     ITERATIONS =    0     TIME =  0.54300000E+05
+  ELMAX = -4.6511E-001 AT NODE       57  SPEEDMAX =  2.6618E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   54400   8.99% COMPLETE     ITERATIONS =    0     TIME =  0.54400000E+05
+  ELMAX = -4.6915E-001 AT NODE       57  SPEEDMAX =  2.6013E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   54500   9.01% COMPLETE     ITERATIONS =    0     TIME =  0.54500000E+05
+  ELMAX = -4.7307E-001 AT NODE       57  SPEEDMAX =  2.5398E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   54600   9.03% COMPLETE     ITERATIONS =    0     TIME =  0.54600000E+05
+  ELMAX = -4.7688E-001 AT NODE       57  SPEEDMAX =  2.4774E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   54700   9.04% COMPLETE     ITERATIONS =    0     TIME =  0.54700000E+05
+  ELMAX = -4.8058E-001 AT NODE       57  SPEEDMAX =  2.4141E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   54800   9.06% COMPLETE     ITERATIONS =    0     TIME =  0.54800000E+05
+  ELMAX = -4.8415E-001 AT NODE       57  SPEEDMAX =  2.3499E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   54900   9.08% COMPLETE     ITERATIONS =    0     TIME =  0.54900000E+05
+  ELMAX = -4.8760E-001 AT NODE       57  SPEEDMAX =  2.2847E-001 AT NODE       56  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 55800.00 to time 56700.00.
+Using group2 to interpolate pressure and wind fields from time 55800.00 to time 56700.00.
+ TIME STEP =   55000   9.09% COMPLETE     ITERATIONS =    0     TIME =  0.55000000E+05
+  ELMAX = -4.9093E-001 AT NODE       57  SPEEDMAX =  2.2188E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   55100   9.11% COMPLETE     ITERATIONS =    0     TIME =  0.55100000E+05
+  ELMAX = -4.9412E-001 AT NODE       57  SPEEDMAX =  2.1520E-001 AT NODE       56  ON MYPROC =    0
+ TIME STEP =   55200   9.13% COMPLETE     ITERATIONS =    0     TIME =  0.55200000E+05
+  ELMAX = -4.9719E-001 AT NODE       57  SPEEDMAX =  2.0949E-001 AT NODE       24  ON MYPROC =    0
++time 20110826.032000   , step     46; iteration    1
++time 20110826.032000   , step     46; iteration    2
++time 20110826.032000   , step     46; iteration    3
++time 20110826.032000   , step     46; iteration    4
++time 20110826.032000   , step     46; iteration    5
++time 20110826.032000   , step     46; iteration    6
+ TIME STEP =   55300   9.14% COMPLETE     ITERATIONS =    0     TIME =  0.55300000E+05
+  ELMAX = -5.0012E-001 AT NODE       57  SPEEDMAX =  2.0538E-001 AT NODE       24  ON MYPROC =    0
+ TIME STEP =   55400   9.16% COMPLETE     ITERATIONS =    0     TIME =  0.55400000E+05
+  ELMAX = -5.0292E-001 AT NODE       57  SPEEDMAX =  2.0122E-001 AT NODE       24  ON MYPROC =    0
+ TIME STEP =   55500   9.18% COMPLETE     ITERATIONS =    0     TIME =  0.55500000E+05
+  ELMAX = -5.0557E-001 AT NODE       57  SPEEDMAX =  1.9703E-001 AT NODE       24  ON MYPROC =    0
+ TIME STEP =   55600   9.19% COMPLETE     ITERATIONS =    0     TIME =  0.55600000E+05
+  ELMAX = -5.0808E-001 AT NODE       57  SPEEDMAX =  1.9281E-001 AT NODE       24  ON MYPROC =    0
+ TIME STEP =   55700   9.21% COMPLETE     ITERATIONS =    0     TIME =  0.55700000E+05
+  ELMAX = -5.1045E-001 AT NODE       57  SPEEDMAX =  1.8855E-001 AT NODE       24  ON MYPROC =    0
+ TIME STEP =   55800   9.23% COMPLETE     ITERATIONS =    0     TIME =  0.55800000E+05
+  ELMAX = -5.1267E-001 AT NODE       57  SPEEDMAX =  1.8426E-001 AT NODE       24  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 56700.00 to time 57600.00.
+Using group2 to interpolate pressure and wind fields from time 56700.00 to time 57600.00.
+ TIME STEP =   55900   9.24% COMPLETE     ITERATIONS =    0     TIME =  0.55900000E+05
+  ELMAX = -5.1474E-001 AT NODE       57  SPEEDMAX =  1.7994E-001 AT NODE       24  ON MYPROC =    0
+ TIME STEP =   56000   9.26% COMPLETE     ITERATIONS =    0     TIME =  0.56000000E+05
+  ELMAX = -5.1666E-001 AT NODE       57  SPEEDMAX =  1.7559E-001 AT NODE       24  ON MYPROC =    0
+ TIME STEP =   56100   9.28% COMPLETE     ITERATIONS =    0     TIME =  0.56100000E+05
+  ELMAX = -5.1842E-001 AT NODE       57  SPEEDMAX =  1.7122E-001 AT NODE       24  ON MYPROC =    0
+ TIME STEP =   56200   9.29% COMPLETE     ITERATIONS =    0     TIME =  0.56200000E+05
+  ELMAX = -5.2002E-001 AT NODE       57  SPEEDMAX =  1.6683E-001 AT NODE       24  ON MYPROC =    0
+ TIME STEP =   56300   9.31% COMPLETE     ITERATIONS =    0     TIME =  0.56300000E+05
+  ELMAX = -5.2146E-001 AT NODE       57  SPEEDMAX =  1.6447E-001 AT NODE       13  ON MYPROC =    0
+ TIME STEP =   56400   9.33% COMPLETE     ITERATIONS =    0     TIME =  0.56400000E+05
+  ELMAX = -5.2274E-001 AT NODE       57  SPEEDMAX =  1.6238E-001 AT NODE       13  ON MYPROC =    0
++time 20110826.034000   , step     47; iteration    1
++time 20110826.034000   , step     47; iteration    2
++time 20110826.034000   , step     47; iteration    3
++time 20110826.034000   , step     47; iteration    4
++time 20110826.034000   , step     47; iteration    5
++time 20110826.034000   , step     47; iteration    6
+ TIME STEP =   56500   9.34% COMPLETE     ITERATIONS =    0     TIME =  0.56500000E+05
+  ELMAX = -5.2385E-001 AT NODE       57  SPEEDMAX =  1.6027E-001 AT NODE       13  ON MYPROC =    0
+ TIME STEP =   56600   9.36% COMPLETE     ITERATIONS =    0     TIME =  0.56600000E+05
+  ELMAX = -5.2479E-001 AT NODE       57  SPEEDMAX =  1.5817E-001 AT NODE       13  ON MYPROC =    0
+ TIME STEP =   56700   9.38% COMPLETE     ITERATIONS =    0     TIME =  0.56700000E+05
+  ELMAX = -5.2556E-001 AT NODE       57  SPEEDMAX =  1.5606E-001 AT NODE       13  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 57600.00 to time 58500.00.
+Using group2 to interpolate pressure and wind fields from time 57600.00 to time 58500.00.
+ TIME STEP =   56800   9.39% COMPLETE     ITERATIONS =    0     TIME =  0.56800000E+05
+  ELMAX = -5.2616E-001 AT NODE       57  SPEEDMAX =  1.5394E-001 AT NODE       13  ON MYPROC =    0
+ TIME STEP =   56900   9.41% COMPLETE     ITERATIONS =    0     TIME =  0.56900000E+05
+  ELMAX = -5.2659E-001 AT NODE       57  SPEEDMAX =  1.5183E-001 AT NODE       13  ON MYPROC =    0
+ TIME STEP =   57000   9.42% COMPLETE     ITERATIONS =    0     TIME =  0.57000000E+05
+  ELMAX = -5.2684E-001 AT NODE       57  SPEEDMAX =  1.6201E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   57100   9.44% COMPLETE     ITERATIONS =    0     TIME =  0.57100000E+05
+  ELMAX = -5.2692E-001 AT NODE       57  SPEEDMAX =  1.7444E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   57200   9.46% COMPLETE     ITERATIONS =    0     TIME =  0.57200000E+05
+  ELMAX = -5.2681E-001 AT NODE       57  SPEEDMAX =  1.8682E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   57300   9.47% COMPLETE     ITERATIONS =    0     TIME =  0.57300000E+05
+  ELMAX = -5.2653E-001 AT NODE       57  SPEEDMAX =  1.9914E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   57400   9.49% COMPLETE     ITERATIONS =    0     TIME =  0.57400000E+05
+  ELMAX = -5.2607E-001 AT NODE       57  SPEEDMAX =  2.1139E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   57500   9.51% COMPLETE     ITERATIONS =    0     TIME =  0.57500000E+05
+  ELMAX = -5.2543E-001 AT NODE       57  SPEEDMAX =  2.2355E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   57600   9.52% COMPLETE     ITERATIONS =    0     TIME =  0.57600000E+05
+  ELMAX = -5.2461E-001 AT NODE       57  SPEEDMAX =  2.3562E-001 AT NODE       90  ON MYPROC =    0
++time 20110826.040000   , step     48; iteration    1
++time 20110826.040000   , step     48; iteration    2
++time 20110826.040000   , step     48; iteration    3
++time 20110826.040000   , step     48; iteration    4
++time 20110826.040000   , step     48; iteration    5
++time 20110826.040000   , step     48; iteration    6
+Using group1 to interpolate pressure and wind fields from time 58500.00 to time 59400.00.
+Using group2 to interpolate pressure and wind fields from time 58500.00 to time 59400.00.
+ TIME STEP =   57700   9.54% COMPLETE     ITERATIONS =    0     TIME =  0.57700000E+05
+  ELMAX = -5.2360E-001 AT NODE       57  SPEEDMAX =  2.4759E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   57800   9.56% COMPLETE     ITERATIONS =    0     TIME =  0.57800000E+05
+  ELMAX = -5.2242E-001 AT NODE       57  SPEEDMAX =  2.5945E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   57900   9.57% COMPLETE     ITERATIONS =    0     TIME =  0.57900000E+05
+  ELMAX = -5.2105E-001 AT NODE       57  SPEEDMAX =  2.7118E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   58000   9.59% COMPLETE     ITERATIONS =    0     TIME =  0.58000000E+05
+  ELMAX = -5.1950E-001 AT NODE       57  SPEEDMAX =  2.8279E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   58100   9.61% COMPLETE     ITERATIONS =    0     TIME =  0.58100000E+05
+  ELMAX = -5.1777E-001 AT NODE       57  SPEEDMAX =  2.9425E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   58200   9.62% COMPLETE     ITERATIONS =    0     TIME =  0.58200000E+05
+  ELMAX = -5.1585E-001 AT NODE       57  SPEEDMAX =  3.0556E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   58300   9.64% COMPLETE     ITERATIONS =    0     TIME =  0.58300000E+05
+  ELMAX = -5.1376E-001 AT NODE       57  SPEEDMAX =  3.1672E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   58400   9.66% COMPLETE     ITERATIONS =    0     TIME =  0.58400000E+05
+  ELMAX = -5.1148E-001 AT NODE       57  SPEEDMAX =  3.2771E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   58500   9.67% COMPLETE     ITERATIONS =    0     TIME =  0.58500000E+05
+  ELMAX = -5.0903E-001 AT NODE       57  SPEEDMAX =  3.3853E-001 AT NODE       90  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 59400.00 to time 60300.00.
+Using group2 to interpolate pressure and wind fields from time 59400.00 to time 60300.00.
+ TIME STEP =   58600   9.69% COMPLETE     ITERATIONS =    0     TIME =  0.58600000E+05
+  ELMAX = -5.0639E-001 AT NODE       57  SPEEDMAX =  3.4917E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   58700   9.71% COMPLETE     ITERATIONS =    0     TIME =  0.58700000E+05
+  ELMAX = -5.0358E-001 AT NODE       57  SPEEDMAX =  3.5964E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   58800   9.72% COMPLETE     ITERATIONS =    0     TIME =  0.58800000E+05
+  ELMAX = -5.0060E-001 AT NODE       57  SPEEDMAX =  3.6993E-001 AT NODE       90  ON MYPROC =    0
++time 20110826.042000   , step     49; iteration    1
++time 20110826.042000   , step     49; iteration    2
++time 20110826.042000   , step     49; iteration    3
++time 20110826.042000   , step     49; iteration    4
++time 20110826.042000   , step     49; iteration    5
++time 20110826.042000   , step     49; iteration    6
+ TIME STEP =   58900   9.74% COMPLETE     ITERATIONS =    0     TIME =  0.58900000E+05
+  ELMAX = -4.9744E-001 AT NODE       57  SPEEDMAX =  3.8004E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   59000   9.76% COMPLETE     ITERATIONS =    0     TIME =  0.59000000E+05
+  ELMAX = -4.9411E-001 AT NODE       57  SPEEDMAX =  3.8996E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   59100   9.77% COMPLETE     ITERATIONS =    0     TIME =  0.59100000E+05
+  ELMAX = -4.9061E-001 AT NODE       57  SPEEDMAX =  3.9968E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   59200   9.79% COMPLETE     ITERATIONS =    0     TIME =  0.59200000E+05
+  ELMAX = -4.8694E-001 AT NODE       57  SPEEDMAX =  4.0921E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   59300   9.80% COMPLETE     ITERATIONS =    0     TIME =  0.59300000E+05
+  ELMAX = -4.8311E-001 AT NODE       57  SPEEDMAX =  4.1855E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   59400   9.82% COMPLETE     ITERATIONS =    0     TIME =  0.59400000E+05
+  ELMAX = -4.7912E-001 AT NODE       57  SPEEDMAX =  4.2768E-001 AT NODE       90  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 60300.00 to time 61200.00.
+Using group2 to interpolate pressure and wind fields from time 60300.00 to time 61200.00.
+ TIME STEP =   59500   9.84% COMPLETE     ITERATIONS =    0     TIME =  0.59500000E+05
+  ELMAX = -4.7498E-001 AT NODE       57  SPEEDMAX =  4.3659E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   59600   9.85% COMPLETE     ITERATIONS =    0     TIME =  0.59600000E+05
+  ELMAX = -4.7067E-001 AT NODE       57  SPEEDMAX =  4.4530E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   59700   9.87% COMPLETE     ITERATIONS =    0     TIME =  0.59700000E+05
+  ELMAX = -4.6622E-001 AT NODE       57  SPEEDMAX =  4.5379E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   59800   9.89% COMPLETE     ITERATIONS =    0     TIME =  0.59800000E+05
+  ELMAX = -4.6162E-001 AT NODE       57  SPEEDMAX =  4.6207E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   59900   9.90% COMPLETE     ITERATIONS =    0     TIME =  0.59900000E+05
+  ELMAX = -4.5687E-001 AT NODE       57  SPEEDMAX =  4.7012E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   60000   9.92% COMPLETE     ITERATIONS =    0     TIME =  0.60000000E+05
+  ELMAX = -4.5198E-001 AT NODE       57  SPEEDMAX =  4.7796E-001 AT NODE       90  ON MYPROC =    0
++time 20110826.044000   , step     50; iteration    1
++time 20110826.044000   , step     50; iteration    2
++time 20110826.044000   , step     50; iteration    3
++time 20110826.044000   , step     50; iteration    4
++time 20110826.044000   , step     50; iteration    5
++time 20110826.044000   , step     50; iteration    6
+ TIME STEP =   60100   9.94% COMPLETE     ITERATIONS =    0     TIME =  0.60100000E+05
+  ELMAX = -4.4696E-001 AT NODE       57  SPEEDMAX =  4.8557E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   60200   9.95% COMPLETE     ITERATIONS =    0     TIME =  0.60200000E+05
+  ELMAX = -4.4180E-001 AT NODE       57  SPEEDMAX =  4.9296E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   60300   9.97% COMPLETE     ITERATIONS =    0     TIME =  0.60300000E+05
+  ELMAX = -4.3651E-001 AT NODE       57  SPEEDMAX =  5.0013E-001 AT NODE       90  ON MYPROC =    0
+Using group1 to interpolate pressure and wind fields from time 61200.00 to time 62100.00.
+Using group2 to interpolate pressure and wind fields from time 61200.00 to time 62100.00.
+ TIME STEP =   60400   9.99% COMPLETE     ITERATIONS =    0     TIME =  0.60400000E+05
+  ELMAX = -4.3110E-001 AT NODE       57  SPEEDMAX =  5.0706E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   60500  10.00% COMPLETE     ITERATIONS =    0     TIME =  0.60500000E+05
+  ELMAX = -4.2556E-001 AT NODE       57  SPEEDMAX =  5.1377E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   60600  10.02% COMPLETE     ITERATIONS =    0     TIME =  0.60600000E+05
+  ELMAX = -4.1990E-001 AT NODE       57  SPEEDMAX =  5.2025E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   60700  10.04% COMPLETE     ITERATIONS =    0     TIME =  0.60700000E+05
+  ELMAX = -4.1412E-001 AT NODE       57  SPEEDMAX =  5.2649E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   60800  10.05% COMPLETE     ITERATIONS =    0     TIME =  0.60800000E+05
+  ELMAX = -4.0823E-001 AT NODE       57  SPEEDMAX =  5.3251E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   60900  10.07% COMPLETE     ITERATIONS =    0     TIME =  0.60900000E+05
+  ELMAX = -4.0223E-001 AT NODE       57  SPEEDMAX =  5.3829E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   61000  10.09% COMPLETE     ITERATIONS =    0     TIME =  0.61000000E+05
+  ELMAX = -3.9612E-001 AT NODE       57  SPEEDMAX =  5.4384E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   61100  10.10% COMPLETE     ITERATIONS =    0     TIME =  0.61100000E+05
+  ELMAX = -3.8991E-001 AT NODE       57  SPEEDMAX =  5.4917E-001 AT NODE       90  ON MYPROC =    0
+ TIME STEP =   61200  10.12% COMPLETE     ITERATIONS =    0     TIME =  0.61200000E+05
+  ELMAX = -3.8360E-001 AT NODE       57  SPEEDMAX =  5.5427E-001 AT NODE       90  ON MYPROC =    0
++time 20110826.050000   , step     51; iteration    1

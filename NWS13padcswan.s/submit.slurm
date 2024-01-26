@@ -2,8 +2,8 @@
 
 #SBATCH --job-name=nws13.padcswan
 #SBATCH --nodes=1
-#SBATCH --tasks-per-node=128
-#SBATCH --cpus-per-task=1
+#SBATCH --tasks-per-node=64
+#SBATCH --cpus-per-task=2
 #SBATCH --time=1:0:0
 
 # Replace [budget code] below with your project code (e.g. t01)
@@ -36,7 +36,7 @@ eval "$(conda shell.bash hook)"
 
 # define variables
 case_name=$SLURM_JOB_NAME # name for printing
-np=128 # how many parallel tasks to define
+np=64 # how many parallel tasks to define
 
 export OMP_NUM_THREADS=1
 
