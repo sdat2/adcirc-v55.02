@@ -2,8 +2,8 @@
 
 #SBATCH --job-name=Gustav-EC94d-v41.31
 #SBATCH --nodes=1
-#SBATCH --tasks-per-node=64
-#SBATCH --cpus-per-task=2
+#SBATCH --tasks-per-node=128
+#SBATCH --cpus-per-task=1
 #SBATCH --time=1:0:0
 
 # Replace [budget code] below with your project code (e.g. t01)
