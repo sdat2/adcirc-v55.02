@@ -2709,7 +2709,7 @@ C     ---------
          DRampWRad=DRamp
 C     -------
       CASE(2) ! Ramp for external flux boundary conditions.
-C     -------
+C     ------- Given 
          READ(15,*) DRamp,DRampExtFlux,FluxSettlingTime
          DRampIntFlux=DRamp
          DRampElev=DRamp
