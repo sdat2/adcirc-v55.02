@@ -1,0 +1,9 @@
+ INFO: Searching for ADCIRC subdomain directories:
+ INFO: Looking for './PE0000/fort.14' ...
+ INFO: File './PE0000/fort.14' was found!
+ INFO: The search for the subdomain directory was completed successfully.
+ INFO: The ROOTDIR is  '.'.
+ INFO: The INPUTDIR is './PE0000'.
+ INFO: The GBLINPUTDIR is '.'.
+ INFO: The GLOBALDIR is '.'.
+ INFO: The LOCALDIR is './PE0000'.
