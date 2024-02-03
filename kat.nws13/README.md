@@ -6,6 +6,10 @@
 
 
 ```bash
+cp ../NWS13set4/fort.22.nc .
+```
+
+```bash
 
 
 salloc --account=n01-SOWISE --partition=standard --qos=standard --nodes=1 --ntasks-per-node=128 --cpus-per-task=1 --exclusive  --time=01:00:00
