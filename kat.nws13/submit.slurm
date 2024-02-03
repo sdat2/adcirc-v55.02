@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=64
 #SBATCH --cpus-per-task=2
-#SBATCH --time=2:0:0
+#SBATCH --time=1:0:0
 
 # Potentially should underpopulate node for memory issues.
 
