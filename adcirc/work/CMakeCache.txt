@@ -29,8 +29,11 @@ ADDITIONAL_FLAGS_ASWIP:STRING=-ffixed-line-length-132 -ffree-line-length-132
 //Additional flags to compile SWAN with
 ADDITIONAL_FLAGS_SWAN:STRING=-ffixed-line-length-72 -ffree-line-length-72
 
+//No help, variable specified on the command line.
+ADDITIONAL_FLAGS_UTILITIES:UNINITIALIZED=-ffixed-line-length-132 -ffree-line-length-132
+
 //Additional flags for utility programs
-ADDITIONAL_FLAGS_UTLIITIES:STRING=-ffixed-line-length-132 -ffree-line-length-132
+ADDITIONAL_FLAGS_UTLIITIES:STRING=
 
 //Build the serial ADCIRC executable
 BUILD_ADCIRC:BOOL=ON
@@ -42,13 +45,13 @@ BUILD_ADCPREP:BOOL=ON
 BUILD_ADCSWAN:BOOL=ON
 
 //Build ASWIP (ASymmetric Wind Input Preprocessor)
-BUILD_ASWIP:BOOL=ON
+BUILD_ASWIP:BOOL=OFF
 
 //Build the shared library version of ADCIRC
-BUILD_LIBADCIRC_SHARED:BOOL=ON
+BUILD_LIBADCIRC_SHARED:BOOL=OFF
 
 //Build the static library version of ADCIRC
-BUILD_LIBADCIRC_STATIC:BOOL=ON
+BUILD_LIBADCIRC_STATIC:BOOL=OFF
 
 //Build the MPI parallel ADCIRC executable
 BUILD_PADCIRC:BOOL=ON
@@ -57,112 +60,136 @@ BUILD_PADCIRC:BOOL=ON
 BUILD_PADCSWAN:BOOL=ON
 
 //Build the MPI parallel unstructured SWAN executable
-BUILD_PUNSWAN:BOOL=ON
+BUILD_PUNSWAN:BOOL=OFF
 
 //Build the serial SWAN executable
-BUILD_SWAN:BOOL=ON
+BUILD_SWAN:BOOL=OFF
 
 //Build the ADCIRC utility programs
-BUILD_UTILITIES:BOOL=ON
+BUILD_UTILITIES:BOOL=OFF
 
 //Path to a program.
-CMAKE_AR:FILEPATH=/opt/cray/pe/cce/11.0.4/binutils/x86_64/x86_64-pc-linux-gnu/bin/ar
+CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
-//Choose the type of build,
-//\n        options are: None(CMAKE_CXX_FLAGS or CMAKE_C_FLAGS used)
-// Debug Release
-//\n        RelWithDebInfo MinSizeRel.
-CMAKE_BUILD_TYPE:STRING=Release
+//Path to a program.
+CMAKE_AR:FILEPATH=/usr/bin/ar
+
+//Choose the type of
+//\n        build, options are: None(CMAKE_CXX_FLAGS or CMAKE_C_FLAGS
+// used) Debug
+//\n        Release RelWithDebInfo MinSizeRel.
+CMAKE_BUILD_TYPE:STRING=Debug
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
+//saved value of CRAYPE_LINK_TYPE environment variable
+CMAKE_CRAYPE_LINKTYPE:STRING=
+
+//saved value of LOADEDMODULES environment variable
+CMAKE_CRAYPE_LOADEDMODULES:STRING=craype-x86-rome:libfabric/1.12.1.2.2.0.0:craype-network-ofi:perftools-base/22.12.0:xpmem/2.5.2-2.4_3.30__gd0f7936.shasta:bolt/0.8:epcc-setup-env:load-epcc-module:gcc/11.2.0:craype/2.7.19:cray-dsmml/0.2.2:cray-mpich/8.1.23:cray-libsci/22.12.1.1:PrgEnv-gnu/8.3.3:cray-parallel-netcdf/1.12.3.1:cray-hdf5-parallel/1.12.2.1
+
 //No help, variable specified on the command line.
 CMAKE_CXX_COMPILER:UNINITIALIZED=cc
 
-//LLVM archiver
-CMAKE_CXX_COMPILER_AR:FILEPATH=/opt/cray/pe/cce/11.0.4/cce-clang/x86_64/bin/llvm-ar
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar
 
-//Generate index for LLVM archive
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/opt/cray/pe/cce/11.0.4/cce-clang/x86_64/bin/llvm-ranlib
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib
 
-//Flags used by the compiler during all build types.
+//Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
 
-//Flags used by the compiler during debug builds.
+//Flags used by the CXX compiler during DEBUG builds.
 CMAKE_CXX_FLAGS_DEBUG:STRING=-g
 
-//Flags used by the compiler during release builds for minimum
-// size.
+//Flags used by the CXX compiler during MINSIZEREL builds.
 CMAKE_CXX_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
 
-//Flags used by the compiler during release builds.
+//Flags used by the CXX compiler during RELEASE builds.
 CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 
-//Flags used by the compiler during release builds with debug info.
+//Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //No help, variable specified on the command line.
 CMAKE_C_COMPILER:UNINITIALIZED=cc
 
-//LLVM archiver
-CMAKE_C_COMPILER_AR:FILEPATH=/opt/cray/pe/cce/11.0.4/cce-clang/x86_64/bin/llvm-ar
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_C_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar
 
-//Generate index for LLVM archive
-CMAKE_C_COMPILER_RANLIB:FILEPATH=/opt/cray/pe/cce/11.0.4/cce-clang/x86_64/bin/llvm-ranlib
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib
 
-//Flags used by the compiler during all build types.
+//Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
 
-//Flags used by the compiler during debug builds.
-CMAKE_C_FLAGS_DEBUG:STRING=
+//Flags used by the C compiler during DEBUG builds.
+CMAKE_C_FLAGS_DEBUG:STRING=-g
 
-//Flags used by the compiler during release builds for minimum
-// size.
-CMAKE_C_FLAGS_MINSIZEREL:STRING=
+//Flags used by the C compiler during MINSIZEREL builds.
+CMAKE_C_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
 
-//Flags used by the compiler during release builds.
-CMAKE_C_FLAGS_RELEASE:STRING=
+//Flags used by the C compiler during RELEASE builds.
+CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 
-//Flags used by the compiler during release builds with debug info.
-CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=
+//Flags used by the C compiler during RELWITHDEBINFO builds.
+CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//Flags used by the linker.
+//Path to a program.
+CMAKE_DLLTOOL:FILEPATH=CMAKE_DLLTOOL-NOTFOUND
+
+//Flags used by the linker during all build types.
 CMAKE_EXE_LINKER_FLAGS:STRING=
 
-//Flags used by the linker during debug builds.
+//Flags used by the linker during DEBUG builds.
 CMAKE_EXE_LINKER_FLAGS_DEBUG:STRING=
 
-//Flags used by the linker during release minsize builds.
+//Flags used by the linker during MINSIZEREL builds.
 CMAKE_EXE_LINKER_FLAGS_MINSIZEREL:STRING=
 
-//Flags used by the linker during release builds.
+//Flags used by the linker during RELEASE builds.
 CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 
-//Flags used by the linker during Release with Debug Info builds.
+//Flags used by the linker during RELWITHDEBINFO builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Enable/Disable output of compile commands during generation.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=OFF
+CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
+
+//Value Computed by CMake.
+CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/work/n01/n01/sithom/adcirc-swan/adcirc/work/CMakeFiles/pkgRedirects
 
 //No help, variable specified on the command line.
 CMAKE_Fortran_COMPILER:UNINITIALIZED=ftn
 
-//Flags for Fortran compiler.
-CMAKE_Fortran_FLAGS:STRING=-DREAL8 -DCSCA -DLINUX -w -fallow-argument-mismatch -O2
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_Fortran_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar
 
-//Flags used by the compiler during debug builds.
-CMAKE_Fortran_FLAGS_DEBUG:STRING="
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_Fortran_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib
 
-//Flags used by the compiler during release builds for minimum
-// size.
-CMAKE_Fortran_FLAGS_MINSIZEREL:STRING=
+//Flags used by the Fortran compiler during all build types.
+CMAKE_Fortran_FLAGS:STRING=-g -DREAL8 -DCSCA -DLINUX -w -fallow-argument-mismatch -O2
 
-//Flags used by the compiler during release builds.
-CMAKE_Fortran_FLAGS_RELEASE:STRING=
+//Flags used by the Fortran compiler during DEBUG builds.
+CMAKE_Fortran_FLAGS_DEBUG:STRING=-g
 
-//Flags used by the compiler during release builds with debug info.
-CMAKE_Fortran_FLAGS_RELWITHDEBINFO:STRING=
+//Flags used by the Fortran compiler during MINSIZEREL builds.
+CMAKE_Fortran_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG -Os
+
+//Flags used by the Fortran compiler during RELEASE builds.
+CMAKE_Fortran_FLAGS_RELEASE:STRING=-O3 -DNDEBUG -O3
+
+//Flags used by the Fortran compiler during RELWITHDEBINFO builds.
+CMAKE_Fortran_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //User executables (bin)
 CMAKE_INSTALL_BINDIR:PATH=bin
@@ -216,54 +243,73 @@ CMAKE_INSTALL_SHAREDSTATEDIR:PATH=com
 CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=/opt/cray/pe/cce/11.0.4/binutils/x86_64/x86_64-pc-linux-gnu/bin/ld
+CMAKE_LINKER:FILEPATH=/usr/bin/ld
 
 //Path to a program.
 CMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/gmake
 
-//Flags used by the linker during the creation of modules.
+//Flags used by the linker during the creation of modules during
+// all build types.
 CMAKE_MODULE_LINKER_FLAGS:STRING=
 
-//Flags used by the linker during debug builds.
+//Flags used by the linker during the creation of modules during
+// DEBUG builds.
 CMAKE_MODULE_LINKER_FLAGS_DEBUG:STRING=
 
-//Flags used by the linker during release minsize builds.
+//Flags used by the linker during the creation of modules during
+// MINSIZEREL builds.
 CMAKE_MODULE_LINKER_FLAGS_MINSIZEREL:STRING=
 
-//Flags used by the linker during release builds.
+//Flags used by the linker during the creation of modules during
+// RELEASE builds.
 CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 
-//Flags used by the linker during Release with Debug Info builds.
+//Flags used by the linker during the creation of modules during
+// RELWITHDEBINFO builds.
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=/opt/cray/pe/cce/11.0.4/binutils/x86_64/x86_64-pc-linux-gnu/bin/nm
+CMAKE_NM:FILEPATH=/usr/bin/nm
 
 //Path to a program.
-CMAKE_OBJCOPY:FILEPATH=/opt/cray/pe/cce/11.0.4/binutils/x86_64/x86_64-pc-linux-gnu/bin/objcopy
+CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=/opt/cray/pe/cce/11.0.4/binutils/x86_64/x86_64-pc-linux-gnu/bin/objdump
+CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
+
+//Value Computed by CMake
+CMAKE_PROJECT_DESCRIPTION:STATIC=
+
+//Value Computed by CMake
+CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=adcirc
 
 //Path to a program.
-CMAKE_RANLIB:FILEPATH=/opt/cray/pe/cce/11.0.4/binutils/x86_64/x86_64-pc-linux-gnu/bin/ranlib
+CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
 
-//Flags used by the linker during the creation of dll's.
+//Path to a program.
+CMAKE_READELF:FILEPATH=/usr/bin/readelf
+
+//Flags used by the linker during the creation of shared libraries
+// during all build types.
 CMAKE_SHARED_LINKER_FLAGS:STRING=
 
-//Flags used by the linker during debug builds.
+//Flags used by the linker during the creation of shared libraries
+// during DEBUG builds.
 CMAKE_SHARED_LINKER_FLAGS_DEBUG:STRING=
 
-//Flags used by the linker during release minsize builds.
+//Flags used by the linker during the creation of shared libraries
+// during MINSIZEREL builds.
 CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL:STRING=
 
-//Flags used by the linker during release builds.
+//Flags used by the linker during the creation of shared libraries
+// during RELEASE builds.
 CMAKE_SHARED_LINKER_FLAGS_RELEASE:STRING=
 
-//Flags used by the linker during Release with Debug Info builds.
+//Flags used by the linker during the creation of shared libraries
+// during RELWITHDEBINFO builds.
 CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //If set, runtime paths are not added when installing shared libraries,
@@ -273,23 +319,28 @@ CMAKE_SKIP_INSTALL_RPATH:BOOL=NO
 //If set, runtime paths are not added when using shared libraries.
 CMAKE_SKIP_RPATH:BOOL=NO
 
-//Flags used by the linker during the creation of static libraries.
+//Flags used by the linker during the creation of static libraries
+// during all build types.
 CMAKE_STATIC_LINKER_FLAGS:STRING=
 
-//Flags used by the linker during debug builds.
+//Flags used by the linker during the creation of static libraries
+// during DEBUG builds.
 CMAKE_STATIC_LINKER_FLAGS_DEBUG:STRING=
 
-//Flags used by the linker during release minsize builds.
+//Flags used by the linker during the creation of static libraries
+// during MINSIZEREL builds.
 CMAKE_STATIC_LINKER_FLAGS_MINSIZEREL:STRING=
 
-//Flags used by the linker during release builds.
+//Flags used by the linker during the creation of static libraries
+// during RELEASE builds.
 CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 
-//Flags used by the linker during Release with Debug Info builds.
+//Flags used by the linker during the creation of static libraries
+// during RELWITHDEBINFO builds.
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_STRIP:FILEPATH=/opt/cray/pe/cce/11.0.4/binutils/x86_64/x86_64-pc-linux-gnu/bin/strip
+CMAKE_STRIP:FILEPATH=/usr/bin/strip
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -391,7 +442,7 @@ DEBUG_WRITER_TRACE:BOOL=OFF
 DEBUG_WRITE_OUTPUT_TRACE:BOOL=OFF
 
 //Use DATETIME static libraries.
-ENABLE_DATETIME:BOOL=ON
+ENABLE_DATETIME:BOOL=OFF
 
 //Use GRIB2API static libraries.
 ENABLE_GRIB2:BOOL=OFF
@@ -412,17 +463,14 @@ ENABLE_WARN_ELEV_DEBUG:BOOL=OFF
 //Compiler specific flags
 Fortran_COMPILER_SPECIFIC_FLAG:STRING=
 
-//No help, variable specified on the command line.
-Fortran_FORMAT:UNINITIALIZED=FREE
-
 //Compiler specific flag to enable extended Fortran line length
-Fortran_LINELENGTH_FLAG:STRING=-ffixed-line-length-132 -ffree-line-length-132
+Fortran_LINELENGTH_FLAG:STRING=
 
 //Format code for IBM based architectures
 IBM:BOOL=OFF
 
 //Executable for running MPI programs.
-MPIEXEC_EXECUTABLE:FILEPATH=/usr/lib64/mpi/gcc/openmpi/bin/mpirun
+MPIEXEC_EXECUTABLE:FILEPATH=/usr/bin/srun
 
 //Maximum number of processors available to run MPI applications.
 MPIEXEC_MAX_NUMPROCS:STRING=128
@@ -442,31 +490,43 @@ MPIEXEC_PREFLAGS:STRING=
 MPI_CXX_ADDITIONAL_INCLUDE_DIRS:STRING=
 
 //MPI compiler for CXX
-MPI_CXX_COMPILER:FILEPATH=/opt/cray/pe/craype/2.7.6/bin/cc
+MPI_CXX_COMPILER:FILEPATH=/opt/cray/pe/craype/2.7.19/bin/cc
+
+//MPI CXX compiler wrapper include directories
+MPI_CXX_COMPILER_INCLUDE_DIRS:STRING=/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/include;/opt/cray/pe/libsci/22.12.1.1/GNU/9.1/x86_64/include;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/include;/opt/cray/pe/parallel-netcdf/1.12.3.1/gnu/9.1/include;/opt/cray/pe/dsmml/0.2.2/dsmml/include;/opt/cray/xpmem/2.5.2-2.4_3.30__gd0f7936.shasta/include
 
 //MPI CXX compilation definitions
 MPI_CXX_COMPILE_DEFINITIONS:STRING=
 
-//MPI CXX compilation flags
+//MPI CXX compilation options
 MPI_CXX_COMPILE_OPTIONS:STRING=
+
+//MPI CXX libraries to link against
+MPI_CXX_LIB_NAMES:STRING=hdf5_hl_parallel;hdf5_parallel;pnetcdf;mpichf90;sci_gnu_82_mpi;sci_gnu_82;dl;mpi_gnu_91;dsmml;xpmem
 
 //MPI CXX linker flags
 MPI_CXX_LINK_FLAGS:STRING=
 
 //If true, the MPI-2 C++ bindings are disabled using definitions.
-MPI_CXX_SKIP_MPICXX:BOOL=FALSE
+MPI_CXX_SKIP_MPICXX:BOOL=OFF
 
 //MPI C additional include directories
 MPI_C_ADDITIONAL_INCLUDE_DIRS:STRING=
 
 //MPI compiler for C
-MPI_C_COMPILER:FILEPATH=/opt/cray/pe/craype/2.7.6/bin/cc
+MPI_C_COMPILER:FILEPATH=/opt/cray/pe/craype/2.7.19/bin/cc
+
+//MPI C compiler wrapper include directories
+MPI_C_COMPILER_INCLUDE_DIRS:STRING=/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/include;/opt/cray/pe/libsci/22.12.1.1/GNU/9.1/x86_64/include;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/include;/opt/cray/pe/parallel-netcdf/1.12.3.1/gnu/9.1/include;/opt/cray/pe/dsmml/0.2.2/dsmml/include;/opt/cray/xpmem/2.5.2-2.4_3.30__gd0f7936.shasta/include
 
 //MPI C compilation definitions
 MPI_C_COMPILE_DEFINITIONS:STRING=
 
-//MPI C compilation flags
+//MPI C compilation options
 MPI_C_COMPILE_OPTIONS:STRING=
+
+//MPI C libraries to link against
+MPI_C_LIB_NAMES:STRING=hdf5_hl_parallel;hdf5_parallel;pnetcdf;mpichf90;sci_gnu_82_mpi;sci_gnu_82;dl;mpi_gnu_91;dsmml;xpmem
 
 //MPI C linker flags
 MPI_C_LINK_FLAGS:STRING=
@@ -475,40 +535,91 @@ MPI_C_LINK_FLAGS:STRING=
 MPI_Fortran_ADDITIONAL_INCLUDE_DIRS:STRING=
 
 //MPI compiler for Fortran
-MPI_Fortran_COMPILER:FILEPATH=/opt/cray/pe/craype/2.7.6/bin/ftn
+MPI_Fortran_COMPILER:FILEPATH=/opt/cray/pe/craype/2.7.19/bin/ftn
+
+//MPI Fortran compiler wrapper include directories
+MPI_Fortran_COMPILER_INCLUDE_DIRS:STRING=/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/include;/opt/cray/pe/libsci/22.12.1.1/GNU/9.1/x86_64/include;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/include;/opt/cray/pe/parallel-netcdf/1.12.3.1/gnu/9.1/include;/opt/cray/pe/dsmml/0.2.2/dsmml/include;/opt/cray/xpmem/2.5.2-2.4_3.30__gd0f7936.shasta/include
 
 //MPI Fortran compilation definitions
 MPI_Fortran_COMPILE_DEFINITIONS:STRING=
 
-//MPI Fortran compilation flags
+//MPI Fortran compilation options
 MPI_Fortran_COMPILE_OPTIONS:STRING=
+
+//MPI Fortran libraries to link against
+MPI_Fortran_LIB_NAMES:STRING=hdf5_hl_parallel;hdf5_parallel;hdf5hl_fortran_parallel;hdf5_fortran_parallel;pnetcdf;mpichf90;sci_gnu_82_mpi;sci_gnu_82;dl;mpifort_gnu_91;mpi_gnu_91;dsmml;xpmem
 
 //MPI Fortran linker flags
 MPI_Fortran_LINK_FLAGS:STRING=
+
+//Location of the dl library for MPI
+MPI_dl_LIBRARY:FILEPATH=/usr/lib64/libdl.so
+
+//Location of the dsmml library for MPI
+MPI_dsmml_LIBRARY:FILEPATH=/opt/cray/pe/dsmml/0.2.2/dsmml/lib/libdsmml.so
+
+//Location of the hdf5_fortran_parallel library for MPI
+MPI_hdf5_fortran_parallel_LIBRARY:FILEPATH=/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5_fortran_parallel.so
+
+//Location of the hdf5_hl_parallel library for MPI
+MPI_hdf5_hl_parallel_LIBRARY:FILEPATH=/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5_hl_parallel.so
+
+//Location of the hdf5_parallel library for MPI
+MPI_hdf5_parallel_LIBRARY:FILEPATH=/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5_parallel.so
+
+//Location of the hdf5hl_fortran_parallel library for MPI
+MPI_hdf5hl_fortran_parallel_LIBRARY:FILEPATH=/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5hl_fortran_parallel.so
+
+//Location of the mpi_gnu_91 library for MPI
+MPI_mpi_gnu_91_LIBRARY:FILEPATH=/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/lib/libmpi_gnu_91.so
+
+//Location of the mpichf90 library for MPI
+MPI_mpichf90_LIBRARY:FILEPATH=/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/lib/libmpichf90.so
+
+//Location of the mpifort_gnu_91 library for MPI
+MPI_mpifort_gnu_91_LIBRARY:FILEPATH=/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/lib/libmpifort_gnu_91.so
+
+//Location of the pnetcdf library for MPI
+MPI_pnetcdf_LIBRARY:FILEPATH=/opt/cray/pe/parallel-netcdf/1.12.3.1/gnu/9.1/lib/libpnetcdf.so
+
+//Location of the sci_gnu_82 library for MPI
+MPI_sci_gnu_82_LIBRARY:FILEPATH=/opt/cray/pe/libsci/22.12.1.1/GNU/9.1/x86_64/lib/libsci_gnu_82.so
+
+//Location of the sci_gnu_82_mpi library for MPI
+MPI_sci_gnu_82_mpi_LIBRARY:FILEPATH=/opt/cray/pe/libsci/22.12.1.1/GNU/9.1/x86_64/lib/libsci_gnu_82_mpi.so
+
+//Location of the xpmem library for MPI
+MPI_xpmem_LIBRARY:FILEPATH=/opt/cray/xpmem/2.5.2-2.4_3.30__gd0f7936.shasta/lib64/libxpmem.so
 
 //Additional libraries that may be required for netCDF
 NETCDF_AdditionalLibs:STRING=
 
 //Path to a file.
-NETCDF_F90_INCLUDE_DIR:PATH=/opt/cray/pe/netcdf/4.7.4.3/bin
+NETCDF_F90_INCLUDE_DIR:PATH=NETCDF_F90_INCLUDE_DIR-NOTFOUND
 
 //Path to a library.
-NETCDF_F90_LIBRARY:FILEPATH=/opt/cray/pe/netcdf/4.7.4.3/bin
+NETCDF_F90_LIBRARY:FILEPATH=NETCDF_F90_LIBRARY-NOTFOUND
 
 //Path to a file.
-NETCDF_INCLUDE_DIR:PATH=/opt/cray/pe/netcdf/4.7.4.3/bin
+NETCDF_INCLUDE_DIR:PATH=NETCDF_INCLUDE_DIR-NOTFOUND
 
 //No help, variable specified on the command line.
-NETCDF_INCLUDE_DIRS:UNINITIALIZED=/opt/cray/pe/netcdf/4.7.4.3/bin
+NETCDF_INCLUDE_DIRS:UNINITIALIZED=/opt/cray/pe/netcdf/default/bin
 
 //No help, variable specified on the command line.
-NETCDF_LIBRARIES:UNINITIALIZED=/opt/cray/pe/netcdf/4.7.4.3/bin
+NETCDF_LIBRARIES:UNINITIALIZED=/opt/cray/pe/netcdf/default/bin
 
 //Path to a library.
-NETCDF_LIBRARY:FILEPATH=/opt/cray/pe/netcdf/4.7.4.3/bin
+NETCDF_LIBRARY:FILEPATH=/opt/cray/pe/netcdf/default/bin
 
 //Path to a program.
 PERL:FILEPATH=/usr/bin/perl
+
+//Arguments to supply to pkg-config
+PKG_CONFIG_ARGN:STRING=
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
 //Use 8-byte real numbers instead of 4-byte.
 PRECISION_8BYTE:BOOL=ON
@@ -526,58 +637,22 @@ VECTOR_COMPUTER:BOOL=OFF
 adcirc_BINARY_DIR:STATIC=/work/n01/n01/sithom/adcirc-swan/adcirc/work
 
 //Value Computed by CMake
+adcirc_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
 adcirc_SOURCE_DIR:STATIC=/work/n01/n01/sithom/adcirc-swan/adcirc
 
-//Value Computed by CMake
-datetime-fortran_BINARY_DIR:STATIC=/work/n01/n01/sithom/adcirc-swan/adcirc/work/thirdparty/datetime_fortran
-
-//Value Computed by CMake
-datetime-fortran_SOURCE_DIR:STATIC=/work/n01/n01/sithom/adcirc-swan/adcirc/thirdparty/datetime_fortran
-
-//Dependencies for target
-datetime_LIB_DEPENDS:STATIC=
+//Dependencies for the target
+templib_adcswan1_LIB_DEPENDS:STATIC=general;version;
 
 //Dependencies for the target
-libadcirc_shared_LIB_DEPENDS:STATIC=general;version;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;datetime;general;mkdir2;
+templib_padcswan1_LIB_DEPENDS:STATIC=general;version;general;mkdir;general;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5_hl_parallel.so;general;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5_parallel.so;general;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5hl_fortran_parallel.so;general;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5_fortran_parallel.so;general;/opt/cray/pe/parallel-netcdf/1.12.3.1/gnu/9.1/lib/libpnetcdf.so;general;/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/lib/libmpichf90.so;general;/opt/cray/pe/libsci/22.12.1.1/GNU/9.1/x86_64/lib/libsci_gnu_82_mpi.so;general;/opt/cray/pe/libsci/22.12.1.1/GNU/9.1/x86_64/lib/libsci_gnu_82.so;general;/usr/lib64/libdl.so;general;/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/lib/libmpifort_gnu_91.so;general;/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/lib/libmpi_gnu_91.so;general;/opt/cray/pe/dsmml/0.2.2/dsmml/lib/libdsmml.so;general;/opt/cray/xpmem/2.5.2-2.4_3.30__gd0f7936.shasta/lib64/libxpmem.so;
 
 //Dependencies for the target
-libadcirc_static_LIB_DEPENDS:STATIC=general;version;general;mkdir;general;version;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;datetime;
-
-//Dependencies for target
-metis_LIB_DEPENDS:STATIC=
-
-//Dependencies for target
-mkdir2_LIB_DEPENDS:STATIC=
-
-//Dependencies for target
-mkdir_LIB_DEPENDS:STATIC=
+templib_swan1parallel_LIB_DEPENDS:STATIC=general;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5_hl_parallel.so;general;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5_parallel.so;general;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5hl_fortran_parallel.so;general;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5_fortran_parallel.so;general;/opt/cray/pe/parallel-netcdf/1.12.3.1/gnu/9.1/lib/libpnetcdf.so;general;/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/lib/libmpichf90.so;general;/opt/cray/pe/libsci/22.12.1.1/GNU/9.1/x86_64/lib/libsci_gnu_82_mpi.so;general;/opt/cray/pe/libsci/22.12.1.1/GNU/9.1/x86_64/lib/libsci_gnu_82.so;general;/usr/lib64/libdl.so;general;/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/lib/libmpifort_gnu_91.so;general;/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/lib/libmpi_gnu_91.so;general;/opt/cray/pe/dsmml/0.2.2/dsmml/lib/libdsmml.so;general;/opt/cray/xpmem/2.5.2-2.4_3.30__gd0f7936.shasta/lib64/libxpmem.so;
 
 //Dependencies for the target
-templib_adcswan1_LIB_DEPENDS:STATIC=general;version;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;datetime;
-
-//Dependencies for the target
-templib_padcswan1_LIB_DEPENDS:STATIC=general;version;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;datetime;general;mkdir;
-
-//Dependencies for the target
-templib_punmsglib_LIB_DEPENDS:STATIC=general;version;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;/opt/cray/pe/netcdf/4.7.4.3/bin;general;datetime;general;version;
-
-//Dependencies for target
-templib_punswan1_LIB_DEPENDS:STATIC=
-
-//Dependencies for target
-templib_swan1parallel_LIB_DEPENDS:STATIC=
-
-//Dependencies for target
-templib_swan1serial_LIB_DEPENDS:STATIC=
-
-//Dependencies for target
-templib_swan2parallel_LIB_DEPENDS:STATIC=
-
-//Dependencies for target
-templib_swan2serial_LIB_DEPENDS:STATIC=
-
-//Dependencies for target
-version_LIB_DEPENDS:STATIC=
+templib_swan2parallel_LIB_DEPENDS:STATIC=general;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5_hl_parallel.so;general;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5_parallel.so;general;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5hl_fortran_parallel.so;general;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5_fortran_parallel.so;general;/opt/cray/pe/parallel-netcdf/1.12.3.1/gnu/9.1/lib/libpnetcdf.so;general;/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/lib/libmpichf90.so;general;/opt/cray/pe/libsci/22.12.1.1/GNU/9.1/x86_64/lib/libsci_gnu_82_mpi.so;general;/opt/cray/pe/libsci/22.12.1.1/GNU/9.1/x86_64/lib/libsci_gnu_82.so;general;/usr/lib64/libdl.so;general;/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/lib/libmpifort_gnu_91.so;general;/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/lib/libmpi_gnu_91.so;general;/opt/cray/pe/dsmml/0.2.2/dsmml/lib/libdsmml.so;general;/opt/cray/xpmem/2.5.2-2.4_3.30__gd0f7936.shasta/lib64/libxpmem.so;
 
 
 ########################
@@ -592,6 +667,8 @@ ARCH_TEST_COMPILE:INTERNAL=TRUE
 BUILD_PUNSWAN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: BUILD_SWAN
 BUILD_SWAN-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ADDR2LINE
+CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created
@@ -599,15 +676,19 @@ CMAKE_CACHEFILE_DIR:INTERNAL=/work/n01/n01/sithom/adcirc-swan/adcirc/work
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=10
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=20
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=2
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=4
 //ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
 CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.
 CMAKE_COMMAND:INTERNAL=/usr/bin/cmake
 //Path to cpack program executable.
 CMAKE_CPACK_COMMAND:INTERNAL=/usr/bin/cpack
+//ADVANCED property for variable: CMAKE_CRAYPE_LINKTYPE
+CMAKE_CRAYPE_LINKTYPE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CRAYPE_LOADEDMODULES
+CMAKE_CRAYPE_LOADEDMODULES-ADVANCED:INTERNAL=1
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=/usr/bin/ctest
 //ADVANCED property for variable: CMAKE_CXX_COMPILER
@@ -642,10 +723,12 @@ CMAKE_C_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_C_FLAGS_RELEASE-ADVANCED:INTERNAL=0
 //ADVANCED property for variable: CMAKE_C_FLAGS_RELWITHDEBINFO
 CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_DLLTOOL
+CMAKE_DLLTOOL-ADVANCED:INTERNAL=1
 //Path to cache edit program executable.
 CMAKE_EDIT_COMMAND:INTERNAL=/usr/bin/ccmake
 //Executable file format
-CMAKE_EXECUTABLE_FORMAT:INTERNAL=Unknown
+CMAKE_EXECUTABLE_FORMAT:INTERNAL=ELF
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS
 CMAKE_EXE_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_DEBUG
@@ -662,6 +745,10 @@ CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 CMAKE_EXTRA_GENERATOR:INTERNAL=
 //ADVANCED property for variable: CMAKE_Fortran_COMPILER
 CMAKE_Fortran_COMPILER-ADVANCED:INTERNAL=0
+//ADVANCED property for variable: CMAKE_Fortran_COMPILER_AR
+CMAKE_Fortran_COMPILER_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_Fortran_COMPILER_RANLIB
+CMAKE_Fortran_COMPILER_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_Fortran_FLAGS
 CMAKE_Fortran_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_Fortran_FLAGS_DEBUG
@@ -674,6 +761,8 @@ CMAKE_Fortran_FLAGS_RELEASE-ADVANCED:INTERNAL=0
 CMAKE_Fortran_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //Name of generator.
 CMAKE_GENERATOR:INTERNAL=Unix Makefiles
+//Generator instance identifier.
+CMAKE_GENERATOR_INSTANCE:INTERNAL=
 //Name of generator platform.
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
@@ -732,7 +821,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -741,6 +830,8 @@ CMAKE_OBJDUMP-ADVANCED:INTERNAL=1
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RANLIB
 CMAKE_RANLIB-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_READELF
+CMAKE_READELF-ADVANCED:INTERNAL=1
 //Path to CMake installation.
 CMAKE_ROOT:INTERNAL=/usr/share/cmake
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
@@ -830,13 +921,11 @@ ENABLE_POWELL-ADVANCED:INTERNAL=1
 //Details about finding MPI
 FIND_PACKAGE_MESSAGE_DETAILS_MPI:INTERNAL=[TRUE][TRUE][TRUE][c ][v3.1()]
 //Details about finding MPI_C
-FIND_PACKAGE_MESSAGE_DETAILS_MPI_C:INTERNAL=[/opt/cray/pe/craype/2.7.6/bin/cc][TRUE][v3.1()]
+FIND_PACKAGE_MESSAGE_DETAILS_MPI_C:INTERNAL=[/opt/cray/pe/craype/2.7.19/bin/cc][TRUE][v3.1()]
 //Details about finding MPI_CXX
-FIND_PACKAGE_MESSAGE_DETAILS_MPI_CXX:INTERNAL=[/opt/cray/pe/craype/2.7.6/bin/cc][TRUE][v3.1()]
+FIND_PACKAGE_MESSAGE_DETAILS_MPI_CXX:INTERNAL=[/opt/cray/pe/craype/2.7.19/bin/cc][TRUE][v3.1()]
 //Details about finding MPI_Fortran
-FIND_PACKAGE_MESSAGE_DETAILS_MPI_Fortran:INTERNAL=[/opt/cray/pe/craype/2.7.6/bin/ftn][TRUE][v3.1()]
-//Details about finding NetCDF
-FIND_PACKAGE_MESSAGE_DETAILS_NetCDF:INTERNAL=[/opt/cray/pe/netcdf/4.7.4.3/bin;/opt/cray/pe/netcdf/4.7.4.3/bin][/opt/cray/pe/netcdf/4.7.4.3/bin;/opt/cray/pe/netcdf/4.7.4.3/bin][YES][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_MPI_Fortran:INTERNAL=[/opt/cray/pe/craype/2.7.19/bin/ftn][TRUE][v3.1()]
 //ADVANCED property for variable: IBM
 IBM-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPIEXEC_EXECUTABLE
@@ -855,10 +944,14 @@ MPIMOD_COMPILE:INTERNAL=TRUE
 MPI_CXX_ADDITIONAL_INCLUDE_DIRS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_CXX_COMPILER
 MPI_CXX_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_CXX_COMPILER_INCLUDE_DIRS
+MPI_CXX_COMPILER_INCLUDE_DIRS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_CXX_COMPILE_DEFINITIONS
 MPI_CXX_COMPILE_DEFINITIONS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_CXX_COMPILE_OPTIONS
 MPI_CXX_COMPILE_OPTIONS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_CXX_LIB_NAMES
+MPI_CXX_LIB_NAMES-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_CXX_LINK_FLAGS
 MPI_CXX_LINK_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_CXX_SKIP_MPICXX
@@ -867,20 +960,28 @@ MPI_CXX_SKIP_MPICXX-ADVANCED:INTERNAL=1
 MPI_C_ADDITIONAL_INCLUDE_DIRS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_C_COMPILER
 MPI_C_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_C_COMPILER_INCLUDE_DIRS
+MPI_C_COMPILER_INCLUDE_DIRS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_C_COMPILE_DEFINITIONS
 MPI_C_COMPILE_DEFINITIONS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_C_COMPILE_OPTIONS
 MPI_C_COMPILE_OPTIONS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_C_LIB_NAMES
+MPI_C_LIB_NAMES-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_C_LINK_FLAGS
 MPI_C_LINK_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_Fortran_ADDITIONAL_INCLUDE_DIRS
 MPI_Fortran_ADDITIONAL_INCLUDE_DIRS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_Fortran_COMPILER
 MPI_Fortran_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_Fortran_COMPILER_INCLUDE_DIRS
+MPI_Fortran_COMPILER_INCLUDE_DIRS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_Fortran_COMPILE_DEFINITIONS
 MPI_Fortran_COMPILE_DEFINITIONS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_Fortran_COMPILE_OPTIONS
 MPI_Fortran_COMPILE_OPTIONS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_Fortran_LIB_NAMES
+MPI_Fortran_LIB_NAMES-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_Fortran_LINK_FLAGS
 MPI_Fortran_LINK_FLAGS-ADVANCED:INTERNAL=1
 //Result of TRY_COMPILE
@@ -896,9 +997,33 @@ MPI_RESULT_Fortran_test_mpi_F08_MODULE:INTERNAL=TRUE
 //Result of TRY_COMPILE
 MPI_RESULT_Fortran_test_mpi_F77_HEADER:INTERNAL=TRUE
 //Result of TRY_COMPILE
-MPI_RESULT_Fortran_test_mpi_F77_HEADER_NOKIND:INTERNAL=FALSE
-//Result of TRY_COMPILE
 MPI_RESULT_Fortran_test_mpi_F90_MODULE:INTERNAL=TRUE
+//ADVANCED property for variable: MPI_dl_LIBRARY
+MPI_dl_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_dsmml_LIBRARY
+MPI_dsmml_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_hdf5_fortran_parallel_LIBRARY
+MPI_hdf5_fortran_parallel_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_hdf5_hl_parallel_LIBRARY
+MPI_hdf5_hl_parallel_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_hdf5_parallel_LIBRARY
+MPI_hdf5_parallel_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_hdf5hl_fortran_parallel_LIBRARY
+MPI_hdf5hl_fortran_parallel_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_mpi_gnu_91_LIBRARY
+MPI_mpi_gnu_91_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_mpichf90_LIBRARY
+MPI_mpichf90_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_mpifort_gnu_91_LIBRARY
+MPI_mpifort_gnu_91_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_pnetcdf_LIBRARY
+MPI_pnetcdf_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_sci_gnu_82_LIBRARY
+MPI_sci_gnu_82_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_sci_gnu_82_mpi_LIBRARY
+MPI_sci_gnu_82_mpi_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_xpmem_LIBRARY
+MPI_xpmem_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: NETCDF_F90_INCLUDE_DIR
 NETCDF_F90_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: NETCDF_F90_LIBRARY
@@ -907,10 +1032,10 @@ NETCDF_F90_LIBRARY-ADVANCED:INTERNAL=1
 NETCDF_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: NETCDF_LIBRARY
 NETCDF_LIBRARY-ADVANCED:INTERNAL=1
-//Result of TRY_COMPILE
-NETCDF_TEST1:INTERNAL=TRUE
-//Result of TRY_COMPILE
-NETCDF_TEST2:INTERNAL=TRUE
+//ADVANCED property for variable: PKG_CONFIG_ARGN
+PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PRECISION_8BYTE
 PRECISION_8BYTE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SGI
@@ -919,6 +1044,8 @@ SGI-ADVANCED:INTERNAL=1
 SUN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: VECTOR_COMPUTER
 VECTOR_COMPUTER-ADVANCED:INTERNAL=1
+//linker supports push/pop state
+_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
 

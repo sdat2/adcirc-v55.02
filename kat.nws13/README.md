@@ -6,6 +6,7 @@
 
 
 ```bash
+rm -rf fort.6* fort.7* *.63.nc
 cp ../NWS13set4/fort.22.nc .
 ```
 
