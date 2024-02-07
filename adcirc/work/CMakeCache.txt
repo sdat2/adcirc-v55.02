@@ -177,7 +177,7 @@ CMAKE_Fortran_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar
 CMAKE_Fortran_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib
 
 //Flags used by the Fortran compiler during all build types.
-CMAKE_Fortran_FLAGS:STRING=-g -DREAL8 -DCSCA -DLINUX -w -fallow-argument-mismatch -O2
+CMAKE_Fortran_FLAGS:STRING=-DREAL8 -DCSCA -DLINUX -w -fallow-argument-mismatch -O2
 
 //Flags used by the Fortran compiler during DEBUG builds.
 CMAKE_Fortran_FLAGS_DEBUG:STRING=-g
@@ -464,7 +464,7 @@ ENABLE_WARN_ELEV_DEBUG:BOOL=OFF
 Fortran_COMPILER_SPECIFIC_FLAG:STRING=
 
 //Compiler specific flag to enable extended Fortran line length
-Fortran_LINELENGTH_FLAG:STRING=
+Fortran_LINELENGTH_FLAG:STRING=-ffixed-line-length-132 -ffree-line-length-132
 
 //Format code for IBM based architectures
 IBM:BOOL=OFF
@@ -595,22 +595,34 @@ MPI_xpmem_LIBRARY:FILEPATH=/opt/cray/xpmem/2.5.2-2.4_3.30__gd0f7936.shasta/lib64
 NETCDF_AdditionalLibs:STRING=
 
 //Path to a file.
-NETCDF_F90_INCLUDE_DIR:PATH=NETCDF_F90_INCLUDE_DIR-NOTFOUND
+NETCDF_F90_INCLUDE_DIR:PATH=/opt/cray/pe/netcdf/default/gnu/9.1/include
 
 //Path to a library.
 NETCDF_F90_LIBRARY:FILEPATH=NETCDF_F90_LIBRARY-NOTFOUND
 
+//No help, variable specified on the command line.
+NETCDF_INCLUDES:UNINITIALIZED=/opt/cray/pe/netcdf/default/gnu/9.1/include
+
+//No help, variable specified on the command line.
+NETCDF_INCLUDES_F90:UNINITIALIZED=/opt/cray/pe/netcdf/default/gnu/9.1/include
+
 //Path to a file.
-NETCDF_INCLUDE_DIR:PATH=NETCDF_INCLUDE_DIR-NOTFOUND
+NETCDF_INCLUDE_DIR:PATH=/opt/cray/pe/netcdf/default/gnu/9.1/include
 
 //No help, variable specified on the command line.
-NETCDF_INCLUDE_DIRS:UNINITIALIZED=/opt/cray/pe/netcdf/default/bin
+NETCDF_INCLUDE_DIRS:UNINITIALIZED=/opt/cray/pe/netcdf/default/gnu/9.1/include
 
 //No help, variable specified on the command line.
-NETCDF_LIBRARIES:UNINITIALIZED=/opt/cray/pe/netcdf/default/bin
+NETCDF_LIBRARIES:UNINITIALIZED=/opt/cray/pe/netcdf/default/gnu/9.1/lib
+
+//No help, variable specified on the command line.
+NETCDF_LIBRARIES_C:UNINITIALIZED=/opt/cray/pe/netcdf/default/gnu/9.1/lib
+
+//No help, variable specified on the command line.
+NETCDF_LIBRARIES_F90:UNINITIALIZED=/opt/cray/pe/netcdf/default/gnu/9.1/lib
 
 //Path to a library.
-NETCDF_LIBRARY:FILEPATH=/opt/cray/pe/netcdf/default/bin
+NETCDF_LIBRARY:FILEPATH=/opt/cray/pe/netcdf/default/gnu/9.1/lib
 
 //Path to a program.
 PERL:FILEPATH=/usr/bin/perl
@@ -996,6 +1008,8 @@ MPI_RESULT_Fortran_mpiver_F08_MODULE:INTERNAL=TRUE
 MPI_RESULT_Fortran_test_mpi_F08_MODULE:INTERNAL=TRUE
 //Result of TRY_COMPILE
 MPI_RESULT_Fortran_test_mpi_F77_HEADER:INTERNAL=TRUE
+//Result of TRY_COMPILE
+MPI_RESULT_Fortran_test_mpi_F77_HEADER_NOKIND:INTERNAL=FALSE
 //Result of TRY_COMPILE
 MPI_RESULT_Fortran_test_mpi_F90_MODULE:INTERNAL=TRUE
 //ADVANCED property for variable: MPI_dl_LIBRARY
