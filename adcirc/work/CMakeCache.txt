@@ -162,6 +162,9 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //Enable/Disable output of compile commands during generation.
 CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 
+//Value Computed by CMake.
+CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/work/n01/n01/sithom/adcirc-swan/adcirc/work/CMakeFiles/pkgRedirects
+
 //No help, variable specified on the command line.
 CMAKE_Fortran_COMPILER:UNINITIALIZED=ftn
 
@@ -514,13 +517,16 @@ MPI_CXX_ADDITIONAL_INCLUDE_DIRS:STRING=
 MPI_CXX_COMPILER:FILEPATH=/opt/cray/pe/craype/2.7.19/bin/cc
 
 //MPI CXX compiler wrapper include directories
-MPI_CXX_COMPILER_INCLUDE_DIRS:STRING=
+MPI_CXX_COMPILER_INCLUDE_DIRS:STRING=/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/include;/opt/cray/pe/libsci/22.12.1.1/GNU/9.1/x86_64/include;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/include;/opt/cray/pe/parallel-netcdf/1.12.3.1/gnu/9.1/include;/opt/cray/pe/dsmml/0.2.2/dsmml/include;/opt/cray/xpmem/2.5.2-2.4_3.30__gd0f7936.shasta/include
 
 //MPI CXX compilation definitions
 MPI_CXX_COMPILE_DEFINITIONS:STRING=
 
-//MPI CXX compilation flags
+//MPI CXX compilation options
 MPI_CXX_COMPILE_OPTIONS:STRING=
+
+//MPI CXX libraries to link against
+MPI_CXX_LIB_NAMES:STRING=hdf5_hl_parallel;hdf5_parallel;pnetcdf;mpichf90;sci_gnu_82_mpi;sci_gnu_82;dl;mpi_gnu_91;dsmml;xpmem
 
 //MPI CXX linker flags
 MPI_CXX_LINK_FLAGS:STRING=
@@ -535,13 +541,16 @@ MPI_C_ADDITIONAL_INCLUDE_DIRS:STRING=
 MPI_C_COMPILER:FILEPATH=/opt/cray/pe/craype/2.7.19/bin/cc
 
 //MPI C compiler wrapper include directories
-MPI_C_COMPILER_INCLUDE_DIRS:STRING=
+MPI_C_COMPILER_INCLUDE_DIRS:STRING=/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/include;/opt/cray/pe/libsci/22.12.1.1/GNU/9.1/x86_64/include;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/include;/opt/cray/pe/parallel-netcdf/1.12.3.1/gnu/9.1/include;/opt/cray/pe/dsmml/0.2.2/dsmml/include;/opt/cray/xpmem/2.5.2-2.4_3.30__gd0f7936.shasta/include
 
 //MPI C compilation definitions
 MPI_C_COMPILE_DEFINITIONS:STRING=
 
-//MPI C compilation flags
+//MPI C compilation options
 MPI_C_COMPILE_OPTIONS:STRING=
+
+//MPI C libraries to link against
+MPI_C_LIB_NAMES:STRING=hdf5_hl_parallel;hdf5_parallel;pnetcdf;mpichf90;sci_gnu_82_mpi;sci_gnu_82;dl;mpi_gnu_91;dsmml;xpmem
 
 //MPI C linker flags
 MPI_C_LINK_FLAGS:STRING=
@@ -553,25 +562,79 @@ MPI_Fortran_ADDITIONAL_INCLUDE_DIRS:STRING=
 MPI_Fortran_COMPILER:FILEPATH=/opt/cray/pe/craype/2.7.19/bin/ftn
 
 //MPI Fortran compiler wrapper include directories
-MPI_Fortran_COMPILER_INCLUDE_DIRS:STRING=
+MPI_Fortran_COMPILER_INCLUDE_DIRS:STRING=/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/include;/opt/cray/pe/libsci/22.12.1.1/GNU/9.1/x86_64/include;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/include;/opt/cray/pe/parallel-netcdf/1.12.3.1/gnu/9.1/include;/opt/cray/pe/dsmml/0.2.2/dsmml/include;/opt/cray/xpmem/2.5.2-2.4_3.30__gd0f7936.shasta/include
 
 //MPI Fortran compilation definitions
 MPI_Fortran_COMPILE_DEFINITIONS:STRING=
 
-//MPI Fortran compilation flags
+//MPI Fortran compilation options
 MPI_Fortran_COMPILE_OPTIONS:STRING=
+
+//MPI Fortran libraries to link against
+MPI_Fortran_LIB_NAMES:STRING=hdf5_hl_parallel;hdf5_parallel;hdf5hl_fortran_parallel;hdf5_fortran_parallel;pnetcdf;mpichf90;sci_gnu_82_mpi;sci_gnu_82;dl;mpifort_gnu_91;mpi_gnu_91;dsmml;xpmem
 
 //MPI Fortran linker flags
 MPI_Fortran_LINK_FLAGS:STRING=
 
+//Location of the dl library for MPI
+MPI_dl_LIBRARY:FILEPATH=/usr/lib64/libdl.so
+
+//Location of the dsmml library for MPI
+MPI_dsmml_LIBRARY:FILEPATH=/opt/cray/pe/dsmml/0.2.2/dsmml/lib/libdsmml.so
+
+//Location of the hdf5_fortran_parallel library for MPI
+MPI_hdf5_fortran_parallel_LIBRARY:FILEPATH=/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5_fortran_parallel.so
+
+//Location of the hdf5_hl_parallel library for MPI
+MPI_hdf5_hl_parallel_LIBRARY:FILEPATH=/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5_hl_parallel.so
+
+//Location of the hdf5_parallel library for MPI
+MPI_hdf5_parallel_LIBRARY:FILEPATH=/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5_parallel.so
+
+//Location of the hdf5hl_fortran_parallel library for MPI
+MPI_hdf5hl_fortran_parallel_LIBRARY:FILEPATH=/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5hl_fortran_parallel.so
+
+//Location of the mpi_gnu_91 library for MPI
+MPI_mpi_gnu_91_LIBRARY:FILEPATH=/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/lib/libmpi_gnu_91.so
+
+//Location of the mpichf90 library for MPI
+MPI_mpichf90_LIBRARY:FILEPATH=/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/lib/libmpichf90.so
+
+//Location of the mpifort_gnu_91 library for MPI
+MPI_mpifort_gnu_91_LIBRARY:FILEPATH=/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/lib/libmpifort_gnu_91.so
+
+//Location of the pnetcdf library for MPI
+MPI_pnetcdf_LIBRARY:FILEPATH=/opt/cray/pe/parallel-netcdf/1.12.3.1/gnu/9.1/lib/libpnetcdf.so
+
+//Location of the sci_gnu_82 library for MPI
+MPI_sci_gnu_82_LIBRARY:FILEPATH=/opt/cray/pe/libsci/22.12.1.1/GNU/9.1/x86_64/lib/libsci_gnu_82.so
+
+//Location of the sci_gnu_82_mpi library for MPI
+MPI_sci_gnu_82_mpi_LIBRARY:FILEPATH=/opt/cray/pe/libsci/22.12.1.1/GNU/9.1/x86_64/lib/libsci_gnu_82_mpi.so
+
+//Location of the xpmem library for MPI
+MPI_xpmem_LIBRARY:FILEPATH=/opt/cray/xpmem/2.5.2-2.4_3.30__gd0f7936.shasta/lib64/libxpmem.so
+
 //Additional libraries that may be required for netCDF
 NETCDF_AdditionalLibs:STRING=
+
+//No help, variable specified on the command line.
+NETCDF_C_INCLUDE_DIR:UNINITIALIZED=/opt/cray/pe/netcdf/default/gnu/9.1/include
+
+//No help, variable specified on the command line.
+NETCDF_C_LIBRARY:UNINITIALIZED=/opt/cray/pe/netcdf/default/gnu/9.1/lib/libnetcdf.so
 
 //Path to a file.
 NETCDF_F90_INCLUDE_DIR:PATH=NETCDF_F90_INCLUDE_DIR-NOTFOUND
 
 //Path to a library.
 NETCDF_F90_LIBRARY:FILEPATH=NETCDF_F90_LIBRARY-NOTFOUND
+
+//No help, variable specified on the command line.
+NETCDF_Fortran_INCLUDE_DIR:UNINITIALIZED=/opt/cray/pe/netcdf/default/gnu/9.1/include
+
+//No help, variable specified on the command line.
+NETCDF_Fortran_LIBRARY:UNINITIALIZED=/opt/cray/pe/netcdf/default/gnu/9.1/lib/libnetcdff.so
 
 //No help, variable specified on the command line.
 NETCDF_INCLUDES:UNINITIALIZED=/opt/cray/pe/netcdf/default/gnu/9.1/include
@@ -600,6 +663,12 @@ NETCDF_LIBRARY:FILEPATH=/opt/cray/pe/netcdf/default/gnu/9.1/lib
 //Path to a program.
 PERL:FILEPATH=/usr/bin/perl
 
+//Arguments to supply to pkg-config
+PKG_CONFIG_ARGN:STRING=
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
+
 //Use 8-byte real numbers instead of 4-byte.
 PRECISION_8BYTE:BOOL=ON
 
@@ -616,13 +685,22 @@ VECTOR_COMPUTER:BOOL=OFF
 adcirc_BINARY_DIR:STATIC=/work/n01/n01/sithom/adcirc-swan/adcirc/work
 
 //Value Computed by CMake
+adcirc_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
 adcirc_SOURCE_DIR:STATIC=/work/n01/n01/sithom/adcirc-swan/adcirc
 
 //Dependencies for the target
 templib_adcswan1_LIB_DEPENDS:STATIC=general;version;
 
 //Dependencies for the target
-templib_padcswan1_LIB_DEPENDS:STATIC=general;version;general;mkdir;
+templib_padcswan1_LIB_DEPENDS:STATIC=general;version;general;mkdir;general;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5_hl_parallel.so;general;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5_parallel.so;general;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5hl_fortran_parallel.so;general;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5_fortran_parallel.so;general;/opt/cray/pe/parallel-netcdf/1.12.3.1/gnu/9.1/lib/libpnetcdf.so;general;/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/lib/libmpichf90.so;general;/opt/cray/pe/libsci/22.12.1.1/GNU/9.1/x86_64/lib/libsci_gnu_82_mpi.so;general;/opt/cray/pe/libsci/22.12.1.1/GNU/9.1/x86_64/lib/libsci_gnu_82.so;general;/usr/lib64/libdl.so;general;/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/lib/libmpifort_gnu_91.so;general;/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/lib/libmpi_gnu_91.so;general;/opt/cray/pe/dsmml/0.2.2/dsmml/lib/libdsmml.so;general;/opt/cray/xpmem/2.5.2-2.4_3.30__gd0f7936.shasta/lib64/libxpmem.so;
+
+//Dependencies for the target
+templib_swan1parallel_LIB_DEPENDS:STATIC=general;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5_hl_parallel.so;general;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5_parallel.so;general;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5hl_fortran_parallel.so;general;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5_fortran_parallel.so;general;/opt/cray/pe/parallel-netcdf/1.12.3.1/gnu/9.1/lib/libpnetcdf.so;general;/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/lib/libmpichf90.so;general;/opt/cray/pe/libsci/22.12.1.1/GNU/9.1/x86_64/lib/libsci_gnu_82_mpi.so;general;/opt/cray/pe/libsci/22.12.1.1/GNU/9.1/x86_64/lib/libsci_gnu_82.so;general;/usr/lib64/libdl.so;general;/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/lib/libmpifort_gnu_91.so;general;/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/lib/libmpi_gnu_91.so;general;/opt/cray/pe/dsmml/0.2.2/dsmml/lib/libdsmml.so;general;/opt/cray/xpmem/2.5.2-2.4_3.30__gd0f7936.shasta/lib64/libxpmem.so;
+
+//Dependencies for the target
+templib_swan2parallel_LIB_DEPENDS:STATIC=general;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5_hl_parallel.so;general;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5_parallel.so;general;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5hl_fortran_parallel.so;general;/opt/cray/pe/hdf5-parallel/1.12.2.1/gnu/9.1/lib/libhdf5_fortran_parallel.so;general;/opt/cray/pe/parallel-netcdf/1.12.3.1/gnu/9.1/lib/libpnetcdf.so;general;/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/lib/libmpichf90.so;general;/opt/cray/pe/libsci/22.12.1.1/GNU/9.1/x86_64/lib/libsci_gnu_82_mpi.so;general;/opt/cray/pe/libsci/22.12.1.1/GNU/9.1/x86_64/lib/libsci_gnu_82.so;general;/usr/lib64/libdl.so;general;/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/lib/libmpifort_gnu_91.so;general;/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/lib/libmpi_gnu_91.so;general;/opt/cray/pe/dsmml/0.2.2/dsmml/lib/libdsmml.so;general;/opt/cray/xpmem/2.5.2-2.4_3.30__gd0f7936.shasta/lib64/libxpmem.so;
 
 
 ########################
@@ -920,6 +998,8 @@ MPI_CXX_COMPILER_INCLUDE_DIRS-ADVANCED:INTERNAL=1
 MPI_CXX_COMPILE_DEFINITIONS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_CXX_COMPILE_OPTIONS
 MPI_CXX_COMPILE_OPTIONS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_CXX_LIB_NAMES
+MPI_CXX_LIB_NAMES-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_CXX_LINK_FLAGS
 MPI_CXX_LINK_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_CXX_SKIP_MPICXX
@@ -934,6 +1014,8 @@ MPI_C_COMPILER_INCLUDE_DIRS-ADVANCED:INTERNAL=1
 MPI_C_COMPILE_DEFINITIONS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_C_COMPILE_OPTIONS
 MPI_C_COMPILE_OPTIONS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_C_LIB_NAMES
+MPI_C_LIB_NAMES-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_C_LINK_FLAGS
 MPI_C_LINK_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_Fortran_ADDITIONAL_INCLUDE_DIRS
@@ -946,6 +1028,8 @@ MPI_Fortran_COMPILER_INCLUDE_DIRS-ADVANCED:INTERNAL=1
 MPI_Fortran_COMPILE_DEFINITIONS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_Fortran_COMPILE_OPTIONS
 MPI_Fortran_COMPILE_OPTIONS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_Fortran_LIB_NAMES
+MPI_Fortran_LIB_NAMES-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_Fortran_LINK_FLAGS
 MPI_Fortran_LINK_FLAGS-ADVANCED:INTERNAL=1
 //Result of TRY_COMPILE
@@ -962,6 +1046,32 @@ MPI_RESULT_Fortran_test_mpi_F08_MODULE:INTERNAL=TRUE
 MPI_RESULT_Fortran_test_mpi_F77_HEADER:INTERNAL=TRUE
 //Result of TRY_COMPILE
 MPI_RESULT_Fortran_test_mpi_F90_MODULE:INTERNAL=TRUE
+//ADVANCED property for variable: MPI_dl_LIBRARY
+MPI_dl_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_dsmml_LIBRARY
+MPI_dsmml_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_hdf5_fortran_parallel_LIBRARY
+MPI_hdf5_fortran_parallel_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_hdf5_hl_parallel_LIBRARY
+MPI_hdf5_hl_parallel_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_hdf5_parallel_LIBRARY
+MPI_hdf5_parallel_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_hdf5hl_fortran_parallel_LIBRARY
+MPI_hdf5hl_fortran_parallel_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_mpi_gnu_91_LIBRARY
+MPI_mpi_gnu_91_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_mpichf90_LIBRARY
+MPI_mpichf90_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_mpifort_gnu_91_LIBRARY
+MPI_mpifort_gnu_91_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_pnetcdf_LIBRARY
+MPI_pnetcdf_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_sci_gnu_82_LIBRARY
+MPI_sci_gnu_82_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_sci_gnu_82_mpi_LIBRARY
+MPI_sci_gnu_82_mpi_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_xpmem_LIBRARY
+MPI_xpmem_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: NETCDF_F90_INCLUDE_DIR
 NETCDF_F90_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: NETCDF_F90_LIBRARY
@@ -970,6 +1080,10 @@ NETCDF_F90_LIBRARY-ADVANCED:INTERNAL=1
 NETCDF_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: NETCDF_LIBRARY
 NETCDF_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_ARGN
+PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PRECISION_8BYTE
 PRECISION_8BYTE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SGI
@@ -978,6 +1092,8 @@ SGI-ADVANCED:INTERNAL=1
 SUN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: VECTOR_COMPUTER
 VECTOR_COMPUTER-ADVANCED:INTERNAL=1
+//linker supports push/pop state
+_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
 
