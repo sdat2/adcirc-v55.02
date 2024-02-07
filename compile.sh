@@ -29,17 +29,23 @@ cd adcirc
 cd work
 
 
-
+sw="-ffixed-line-length-72 -ffree-line-length-72"
+ll="-ffixed-line-length-132 -ffree-line-length-132"
 # turned on swan, seemed to work? # -CMAKE_BUILD_TYPE=Debug \
-cmake .. -DCMAKE_C_COMPILER=cc -DCMAKE_CXX_COMPILER=cc -DCMAKE_Fortran_COMPILER=ftn -DBUILD_ADCIRC=ON -DBUILD_PADCIRC=ON  -DBUILD_ADCPREP=ON -DBUILD_ADCSWAN=ON -DENABLE_OUTPUT_NETCDF=ON -DBUILD_PADCSWAN=ON -DCMAKE_Fortran_FLAGS="-DREAL8 -DCSCA -DLINUX -w -fallow-argument-mismatch -O2" \
+
+cmake .. -DCMAKE_C_COMPILER=cc -DCMAKE_CXX_COMPILER=cc \
+ -DCMAKE_Fortran_COMPILER=ftn -DBUILD_ADCIRC=ON \
+ -DBUILD_PADCIRC=ON  -DBUILD_ADCPREP=ON \
+ -DBUILD_ADCSWAN=ON -DENABLE_OUTPUT_NETCDF=ON\
+ -DBUILD_PADCSWAN=ON -DCMAKE_Fortran_FLAGS="-DREAL8 -DCSCA -DLINUX -w -fallow-argument-mismatch -O2 ${ll}" \
  -DADDITIONAL_FLAGS_SWAN="${sw}" -DADDITIONAL_FLAGS_ADCPREP="${ll}" \
  -DADDITIONAL_FLAGS_ADCIRC="${ll}" \
- -DCMAKE_Fortran_LINELENGTH_FLAG="${ll}" \
   -DADDITIONAL_FLAGS_ASWIP="${ll}" \
-  -DADDITIONAL_FLAGS_UTILITIES="${ll}" -DNETCDF_C_INCLUDE_DIR=/opt/cray/pe/netcdf/default/gnu/9.1/include \
+  -DADDITIONAL_FLAGS_UTILITIES="${ll}" \
+  -DNETCDF_C_INCLUDE_DIR=/opt/cray/pe/netcdf/default/gnu/9.1/include \
   -DNETCDF_C_LIBRARY=/opt/cray/pe/netcdf/default/gnu/9.1/lib/libnetcdf.so \
   -DNETCDF_Fortran_INCLUDE_DIR=/opt/cray/pe/netcdf/default/gnu/9.1/include \
-  -DNETCDF_Fortran_LIBRARY=/opt/cray/pe/netcdf/default/gnu/9.1/lib/libnetcdff.so \
+  -DNETCDF_Fortran_LIBRARY=/opt/cray/pe/netcdf/default/gnu/9.1/lib/libnetcdff.so
 
 #cmake -DCMAKE_C_COMPILER=/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/bin/mpicc \
 #      -DCMAKE_CXX_COMPILER=/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/bin/mpicxx \
