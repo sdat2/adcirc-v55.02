@@ -1432,7 +1432,6 @@ thirdparty/metis/Lib/util.o: thirdparty/metis/Lib/util.c.o
 
 # target to build an object file
 thirdparty/metis/Lib/util.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/metis.dir/build.make CMakeFiles/metis.dir/thirdparty/metis/Lib/util.c.o
 .PHONY : thirdparty/metis/Lib/util.c.o
 
 thirdparty/metis/Lib/util.i: thirdparty/metis/Lib/util.c.i

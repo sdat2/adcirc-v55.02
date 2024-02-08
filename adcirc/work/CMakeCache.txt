@@ -69,7 +69,7 @@ BUILD_UTILITIES:BOOL=OFF
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
 //Path to a program.
-CMAKE_AR:FILEPATH=/usr/bin/ar
+CMAKE_AR:FILEPATH=/opt/cray/pe/cce/15.0.0/binutils/x86_64/x86_64-pc-linux-gnu/bin/ar
 
 //Choose the type of build,
 //\n        options are: None(CMAKE_CXX_FLAGS or CMAKE_C_FLAGS used)
@@ -84,18 +84,16 @@ CMAKE_COLOR_MAKEFILE:BOOL=ON
 CMAKE_CRAYPE_LINKTYPE:STRING=
 
 //saved value of LOADEDMODULES environment variable
-CMAKE_CRAYPE_LOADEDMODULES:STRING=craype-x86-rome:libfabric/1.12.1.2.2.0.0:craype-network-ofi:perftools-base/22.12.0:xpmem/2.5.2-2.4_3.30__gd0f7936.shasta:bolt/0.8:epcc-setup-env:load-epcc-module:gcc/11.2.0:craype/2.7.19:cray-dsmml/0.2.2:cray-mpich/8.1.23:cray-libsci/22.12.1.1:PrgEnv-gnu/8.3.3:cray-parallel-netcdf/1.12.3.1:cray-hdf5-parallel/1.12.2.1
+CMAKE_CRAYPE_LOADEDMODULES:STRING=craype-x86-rome:libfabric/1.12.1.2.2.0.0:craype-network-ofi:perftools-base/22.12.0:xpmem/2.5.2-2.4_3.30__gd0f7936.shasta:cce/15.0.0:craype/2.7.19:cray-dsmml/0.2.2:cray-mpich/8.1.23:cray-libsci/22.12.1.1:PrgEnv-cray/8.3.3:bolt/0.8:epcc-setup-env:load-epcc-module
 
 //CXX compiler
 CMAKE_CXX_COMPILER:FILEPATH=/opt/cray/pe/craype/2.7.19/bin/CC
 
-//A wrapper around 'ar' adding the appropriate '--plugin' option
-// for the GCC compiler
-CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar
+//LLVM archiver
+CMAKE_CXX_COMPILER_AR:FILEPATH=/opt/cray/pe/cce/15.0.0/cce-clang/x86_64/bin/llvm-ar
 
-//A wrapper around 'ranlib' adding the appropriate '--plugin' option
-// for the GCC compiler
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib
+//Generate index for LLVM archive
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/opt/cray/pe/cce/15.0.0/cce-clang/x86_64/bin/llvm-ranlib
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -115,13 +113,11 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 //C compiler
 CMAKE_C_COMPILER:FILEPATH=/opt/cray/pe/craype/2.7.19/bin/cc
 
-//A wrapper around 'ar' adding the appropriate '--plugin' option
-// for the GCC compiler
-CMAKE_C_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar
+//LLVM archiver
+CMAKE_C_COMPILER_AR:FILEPATH=/opt/cray/pe/cce/15.0.0/cce-clang/x86_64/bin/llvm-ar
 
-//A wrapper around 'ranlib' adding the appropriate '--plugin' option
-// for the GCC compiler
-CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib
+//Generate index for LLVM archive
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/opt/cray/pe/cce/15.0.0/cce-clang/x86_64/bin/llvm-ranlib
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -139,7 +135,7 @@ CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Path to a program.
-CMAKE_DLLTOOL:FILEPATH=CMAKE_DLLTOOL-NOTFOUND
+CMAKE_DLLTOOL:FILEPATH=/opt/cray/pe/cce/15.0.0/cce-clang/x86_64/bin/llvm-dlltool
 
 //Flags used by the linker during all build types.
 CMAKE_EXE_LINKER_FLAGS:STRING=
@@ -162,28 +158,20 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 //Fortran compiler
 CMAKE_Fortran_COMPILER:FILEPATH=/opt/cray/pe/craype/2.7.19/bin/ftn
 
-//A wrapper around 'ar' adding the appropriate '--plugin' option
-// for the GCC compiler
-CMAKE_Fortran_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar
-
-//A wrapper around 'ranlib' adding the appropriate '--plugin' option
-// for the GCC compiler
-CMAKE_Fortran_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib
-
 //Flags used by the Fortran compiler during all build types.
 CMAKE_Fortran_FLAGS:STRING=
 
 //Flags used by the Fortran compiler during DEBUG builds.
-CMAKE_Fortran_FLAGS_DEBUG:STRING=-g
+CMAKE_Fortran_FLAGS_DEBUG:STRING=
 
 //Flags used by the Fortran compiler during MINSIZEREL builds.
-CMAKE_Fortran_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG -Os
+CMAKE_Fortran_FLAGS_MINSIZEREL:STRING=
 
 //Flags used by the Fortran compiler during RELEASE builds.
-CMAKE_Fortran_FLAGS_RELEASE:STRING=-O3 -DNDEBUG -O3
+CMAKE_Fortran_FLAGS_RELEASE:STRING=
 
 //Flags used by the Fortran compiler during RELWITHDEBINFO builds.
-CMAKE_Fortran_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
+CMAKE_Fortran_FLAGS_RELWITHDEBINFO:STRING=
 
 //User executables (bin)
 CMAKE_INSTALL_BINDIR:PATH=bin
@@ -237,7 +225,7 @@ CMAKE_INSTALL_SHAREDSTATEDIR:PATH=com
 CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=/usr/bin/ld
+CMAKE_LINKER:FILEPATH=/opt/cray/pe/cce/15.0.0/binutils/x86_64/x86_64-pc-linux-gnu/bin/ld
 
 //Path to a program.
 CMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/gmake
@@ -263,13 +251,13 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=/usr/bin/nm
+CMAKE_NM:FILEPATH=/opt/cray/pe/cce/15.0.0/binutils/x86_64/x86_64-pc-linux-gnu/bin/nm
 
 //Path to a program.
-CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
+CMAKE_OBJCOPY:FILEPATH=/opt/cray/pe/cce/15.0.0/binutils/x86_64/x86_64-pc-linux-gnu/bin/objcopy
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
+CMAKE_OBJDUMP:FILEPATH=/opt/cray/pe/cce/15.0.0/binutils/x86_64/x86_64-pc-linux-gnu/bin/objdump
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -281,10 +269,10 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_NAME:STATIC=adcirc
 
 //Path to a program.
-CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
+CMAKE_RANLIB:FILEPATH=/opt/cray/pe/cce/15.0.0/binutils/x86_64/x86_64-pc-linux-gnu/bin/ranlib
 
 //Path to a program.
-CMAKE_READELF:FILEPATH=/usr/bin/readelf
+CMAKE_READELF:FILEPATH=/opt/cray/pe/cce/15.0.0/binutils/x86_64/x86_64-pc-linux-gnu/bin/readelf
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
@@ -334,7 +322,7 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_STRIP:FILEPATH=/usr/bin/strip
+CMAKE_STRIP:FILEPATH=/opt/cray/pe/cce/15.0.0/binutils/x86_64/x86_64-pc-linux-gnu/bin/strip
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -646,10 +634,6 @@ CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 CMAKE_EXTRA_GENERATOR:INTERNAL=
 //ADVANCED property for variable: CMAKE_Fortran_COMPILER
 CMAKE_Fortran_COMPILER-ADVANCED:INTERNAL=0
-//ADVANCED property for variable: CMAKE_Fortran_COMPILER_AR
-CMAKE_Fortran_COMPILER_AR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_Fortran_COMPILER_RANLIB
-CMAKE_Fortran_COMPILER_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_Fortran_FLAGS
 CMAKE_Fortran_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_Fortran_FLAGS_DEBUG

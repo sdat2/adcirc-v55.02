@@ -74,7 +74,7 @@ ifeq ($(compiler),gnu)
   PPFC		:=  gfortran
   FC		:=  gfortran
   PFC		:=  mpif90
-  FFLAGS1	:=  $(INCDIRS) --ffreeform -O2 -std=f90 -mcmodel=medium -ffixed-line-length-none -march=k8 -m64
+  FFLAGS1	:=  $(INCDIRS) --ffreeform -O2 -std=f90 -mcmodel=medium -ffixed-line-length -march=k8 -m64
   FFLAGS2	:=  $(FFLAGS1)
   FFLAGS3	:=  $(FFLAGS1)
   DA		:=  -DREAL8 -DLINUX -DCSCA
