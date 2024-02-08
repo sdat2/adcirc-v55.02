@@ -15,55 +15,55 @@
 ########################
 
 //The fortran compiler being used does not have F2008 intrinsics
-ADCIRC_NOF2008:BOOL=OFF
+ADCIRC_NOF2008:BOOL=ON
 
 //Additional flags to compile ADCIRC with
-ADDITIONAL_FLAGS_ADCIRC:STRING=
+ADDITIONAL_FLAGS_ADCIRC:STRING=-ffixed-line-length-132 -ffree-line-length-132
 
 //Additional flags to compile ADCPREP with
-ADDITIONAL_FLAGS_ADCPREP:STRING=
+ADDITIONAL_FLAGS_ADCPREP:STRING=-ffixed-line-length-132 -ffree-line-length-132
 
 //Additional flags to compile ASWIP with
-ADDITIONAL_FLAGS_ASWIP:STRING=
+ADDITIONAL_FLAGS_ASWIP:STRING=-ffixed-line-length-132 -ffree-line-length-132
 
 //Additional flags to compile SWAN with
-ADDITIONAL_FLAGS_SWAN:STRING=
+ADDITIONAL_FLAGS_SWAN:STRING=-ffixed-line-length-72 -ffree-line-length-72
 
 //Additional flags for utility programs
-ADDITIONAL_FLAGS_UTLIITIES:STRING=
+ADDITIONAL_FLAGS_UTLIITIES:STRING=-ffixed-line-length-132 -ffree-line-length-132
 
 //Build the serial ADCIRC executable
-BUILD_ADCIRC:BOOL=OFF
+BUILD_ADCIRC:BOOL=ON
 
 //Build the MPI parallel ADCIRC preprocessor
-BUILD_ADCPREP:BOOL=OFF
+BUILD_ADCPREP:BOOL=ON
 
 //Build the serial SWAN+ADCIRC executable
-BUILD_ADCSWAN:BOOL=OFF
+BUILD_ADCSWAN:BOOL=ON
 
 //Build ASWIP (ASymmetric Wind Input Preprocessor)
-BUILD_ASWIP:BOOL=OFF
+BUILD_ASWIP:BOOL=ON
 
 //Build the shared library version of ADCIRC
-BUILD_LIBADCIRC_SHARED:BOOL=OFF
+BUILD_LIBADCIRC_SHARED:BOOL=ON
 
 //Build the static library version of ADCIRC
-BUILD_LIBADCIRC_STATIC:BOOL=OFF
+BUILD_LIBADCIRC_STATIC:BOOL=ON
 
 //Build the MPI parallel ADCIRC executable
-BUILD_PADCIRC:BOOL=OFF
+BUILD_PADCIRC:BOOL=ON
 
 //Build the MPI parallel SWAN+ADCIRC executable
-BUILD_PADCSWAN:BOOL=OFF
+BUILD_PADCSWAN:BOOL=ON
 
 //Build the MPI parallel unstructured SWAN executable
-BUILD_PUNSWAN:BOOL=OFF
+BUILD_PUNSWAN:BOOL=ON
 
 //Build the serial SWAN executable
-BUILD_SWAN:BOOL=OFF
+BUILD_SWAN:BOOL=ON
 
 //Build the ADCIRC utility programs
-BUILD_UTILITIES:BOOL=OFF
+BUILD_UTILITIES:BOOL=ON
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
@@ -75,7 +75,7 @@ CMAKE_AR:FILEPATH=/opt/cray/pe/cce/15.0.0/binutils/x86_64/x86_64-pc-linux-gnu/bi
 //\n        options are: None(CMAKE_CXX_FLAGS or CMAKE_C_FLAGS used)
 // Debug Release
 //\n        RelWithDebInfo MinSizeRel.
-CMAKE_BUILD_TYPE:STRING=Release
+CMAKE_BUILD_TYPE:STRING=Debug
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -84,7 +84,7 @@ CMAKE_COLOR_MAKEFILE:BOOL=ON
 CMAKE_CRAYPE_LINKTYPE:STRING=
 
 //saved value of LOADEDMODULES environment variable
-CMAKE_CRAYPE_LOADEDMODULES:STRING=craype-x86-rome:libfabric/1.12.1.2.2.0.0:craype-network-ofi:perftools-base/22.12.0:xpmem/2.5.2-2.4_3.30__gd0f7936.shasta:cce/15.0.0:craype/2.7.19:cray-dsmml/0.2.2:cray-mpich/8.1.23:cray-libsci/22.12.1.1:PrgEnv-cray/8.3.3:bolt/0.8:epcc-setup-env:load-epcc-module
+CMAKE_CRAYPE_LOADEDMODULES:STRING=/opt/cray/pe/hdf5-parallel/1.12.2.1/bin:/opt/cray/pe/hdf5/1.12.2.1/bin:/opt/cray/pe/mpich/8.1.23/ofi/gnu/9.1/bin:/opt/cray/pe/mpich/8.1.23/bin:/opt/cray/pe/craype/2.7.19/bin:/opt/cray/pe/gcc/11.2.0/bin:/work/y07/shared/utils/core/bolt/0.8/bin:/work/y07/shared/utils/core/bin:/opt/cray/pe/cce/15.0.0/binutils/cross/x86_64-aarch64/bin:/opt/cray/pe/perftools/22.12.0/bin:/opt/cray/pe/papi/6.0.0.17/bin:/opt/cray/libfabric/1.12.1.2.2.0.0/bin:/home/n01/n01/sithom/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/lib/mit/bin:/opt/cray/pe/bin
 
 //CXX compiler
 CMAKE_CXX_COMPILER:FILEPATH=/opt/cray/pe/craype/2.7.19/bin/CC
@@ -542,6 +542,21 @@ adcirc_BINARY_DIR:STATIC=/work/n01/n01/sithom/adcirc-swan/adcirc/work
 
 //Value Computed by CMake
 adcirc_SOURCE_DIR:STATIC=/work/n01/n01/sithom/adcirc-swan/adcirc
+
+//Dependencies for the target
+libadcirc_shared_LIB_DEPENDS:STATIC=general;version;general;mkdir2;
+
+//Dependencies for the target
+libadcirc_static_LIB_DEPENDS:STATIC=general;version;general;mkdir;general;version;
+
+//Dependencies for the target
+templib_adcswan1_LIB_DEPENDS:STATIC=general;version;
+
+//Dependencies for the target
+templib_padcswan1_LIB_DEPENDS:STATIC=general;version;general;mkdir;
+
+//Dependencies for the target
+templib_punmsglib_LIB_DEPENDS:STATIC=general;version;general;version;
 
 
 ########################
