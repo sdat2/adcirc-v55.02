@@ -4,13 +4,13 @@
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=128
 #SBATCH --cpus-per-task=1
-#SBATCH --time=10:0:0
+#SBATCH --time=0:20:0
 
 # Replace [budget code] below with your project code (e.g. t01)
 
 #SBATCH --account=n01-SOWISE
 #SBATCH --partition=standard
-#SBATCH --qos=standard
+#SBATCH --qos=short
 
 # emailing for start and end.
 #SBATCH --mail-type=BEGIN
@@ -36,7 +36,7 @@ eval "$(conda shell.bash hook)"
 
 
 # define variables
-case_name="kat3" # name for printing
+case_name=$SLURM_JOB_NAME # name for printing
 np=128 # how many parallel tasks to define
 
 export OMP_NUM_THREADS=1
