@@ -177,4 +177,3 @@ TODO:
 - Try with extra entries in 
 - Try running in debugging mode (need to recompile programs with option -g).
 - Verify different model setups against tidal gauge data.
-- Set up firework to manage bayesopt.
