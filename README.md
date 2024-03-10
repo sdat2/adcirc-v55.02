@@ -170,10 +170,10 @@ Done:
 - Translate betweeen track netcdf and `fort.22.nc'
 - Force some 30k node examples.
 - Find way to trim big meshes.
+- Try with extra entries in.
 
 
 TODO:
 
-- Try with extra entries in 
 - Try running in debugging mode (need to recompile programs with option -g).
 - Verify different model setups against tidal gauge data.
