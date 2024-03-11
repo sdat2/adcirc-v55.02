@@ -41,7 +41,7 @@ if(NETCDF_USE_DEFAULT_PATHS)
   set(USE_DEFAULT_PATHS "")
 endif()
 
-find_path(NETCDF_INCLUDE_DIR pnetcdf.h HINTS "${NETCDF_DIR}/include")
+find_path(NETCDF_INCLUDE_DIR netcdf.h HINTS "${NETCDF_DIR}/include")
 mark_as_advanced(NETCDF_INCLUDE_DIR)
 set(NETCDF_C_INCLUDE_DIRS ${NETCDF_INCLUDE_DIR})
 

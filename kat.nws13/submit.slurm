@@ -2,8 +2,8 @@
 
 #SBATCH --job-name=kat.nws13
 #SBATCH --nodes=1
-#SBATCH --tasks-per-node=64
-#SBATCH --cpus-per-task=2
+#SBATCH --tasks-per-node=128
+#SBATCH --cpus-per-task=1
 #SBATCH --time=1:0:0
 
 # Potentially should underpopulate node for memory issues.
@@ -22,8 +22,6 @@
 
 # Load modules
 module load PrgEnv-gnu/8.3.3
-module load cray-hdf5-parallel
-module load cray-netcdf-hdf5parallel
 
 # try to activate bashrc
 
@@ -31,7 +29,8 @@ work=/mnt/lustre/a2fs-work1/work/n01/n01/sithom
 
 source $work/.bashrc
 
-d1=/work/n01/n01/sithom/adcirc-swan/katrina1
+d1=/work/n01/n01/sithom/adcirc-swan/adcirc/work
+
 
 echo "hook 1"
 eval "$(conda shell.bash hook)"

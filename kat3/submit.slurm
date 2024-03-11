@@ -20,8 +20,9 @@
 
 # Load modules
 module load PrgEnv-gnu/8.3.3
-module load cray-hdf5-parallel
-module load cray-netcdf-hdf5parallel
+module load cray-hdf5-parallel/1.12.2.1
+module load cray-netcdf-hdf5parallel/4.9.0.1
+
 
 # try to activate bashrc
 
@@ -29,7 +30,7 @@ work=/mnt/lustre/a2fs-work1/work/n01/n01/sithom
 
 source $work/.bashrc
 
-d1=/work/n01/n01/sithom/adcirc-swan/katrina1
+d1=/work/n01/n01/sithom/adcirc-swan/adcirc/work
 
 echo "hook 1"
 eval "$(conda shell.bash hook)"
