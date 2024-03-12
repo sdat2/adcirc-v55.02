@@ -38,8 +38,8 @@ eval "$(conda shell.bash hook)"
 
 # define variables
 case_name=$SLURM_JOB_NAME # name for printing
-np=128 # how many parallel tasks to define
-
+np=$(($SLURM_TASKS_PER_NODE * $SLURM_NODES ))  # how many parallel tasks to define
+echo "np = ${np}"
 export OMP_NUM_THREADS=1
 
 # Propagate the cpus-per-task setting from script to srun commands
@@ -54,11 +54,17 @@ export SRUN_CPUS_PER_TASK=$SLURM_CPUS_PER_TASK
 
 
 #...Run the case
-echo ""
-echo "|---------------------------------------------|"
-echo "    TEST CASE: $case_name"
-echo ""
 echo -n "    Prepping case..."
+# check if directories ["PE{:04}".format(x) for x in range(1, np+1)] exist in bash
+# if not run adcprep to create them
+for i in $(seq 1 $np)
+do
+    if [ ! -d "PE{:04}".format($i) ]; then
+        echo "Creating directory PE{:04}".format($i)
+        mkdir "PE{:04}".format($i)
+    fi
+done
+
 ${d1}/adcprep --np $np --partmesh >  adcprep.log
 ${d1}/adcprep --np $np --prepall  >> adcprep.log
 if [ $? == 0 ] ; then
