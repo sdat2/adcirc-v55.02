@@ -4,13 +4,13 @@
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=128
 #SBATCH --cpus-per-task=1
-#SBATCH --time=0:20:0
+#SBATCH --time=2:00:0
 
 # Replace [budget code] below with your project code (e.g. t01)
 
 #SBATCH --account=n01-SOWISE
 #SBATCH --partition=standard
-#SBATCH --qos=short
+#SBATCH --qos=standard
 
 # emailing for start and end.
 #SBATCH --mail-type=BEGIN
@@ -23,18 +23,8 @@ module load PrgEnv-gnu/8.3.3
 module load cray-hdf5-parallel/1.12.2.1
 module load cray-netcdf-hdf5parallel/4.9.0.1
 
-
-# try to activate bashrc
-
-work=/mnt/lustre/a2fs-work1/work/n01/n01/sithom
-
-source $work/.bashrc
-
+# adcirc executables
 d1=/work/n01/n01/sithom/adcirc-swan/adcirc/work
-
-echo "hook 1"
-eval "$(conda shell.bash hook)"
-
 
 # define variables
 case_name=$SLURM_JOB_NAME # name for printing
@@ -46,7 +36,7 @@ np=$SLURM_NTASKS #  $(( $SLURM_TASKS_PER_NODE * $SLURM_NNODES ))  # how many par
 echo "np = ${np}"
 
 # prevent unauthorized access.
-# export OMP_NUM_THREADS=1
+export OMP_NUM_THREADS=1
 
 # Propagate the cpus-per-task setting from script to srun commands
 #    By default, Slurm does not propagate this setting from the sbatch
@@ -64,7 +54,6 @@ echo ""
 echo "|---------------------------------------------|"
 echo "    TEST CASE: $case_name"
 echo ""
-echo -n "    Prepping case..."
 
 # check if directories ["PE{:04}".format(x) for x in range(1, np+1)] exist in bash
 # if not run adcprep to create them
@@ -87,7 +76,10 @@ if [ -d $(printf "PE%04d\n" $((np))) ]; then
     skip_adcprep=false
 fi
 
-if ! [ $skip_adcprep ]; then 
+skip_adcprep=false
+
+if [ true ]; then #  ! [ $skip_adcprep ]; then
+    echo -n "    Prepping case..."
     ${d1}/adcprep --np $np --partmesh >  adcprep.log
     ${d1}/adcprep --np $np --prepall  >> adcprep.log
     if [ $? == 0 ] ; then
@@ -96,6 +88,8 @@ if ! [ $skip_adcprep ]; then
         echo "ERROR!"
         exit 1
     fi
+else
+    echo "    Skipping adcprep"
 fi
 
 echo -n "    Runnning case..."

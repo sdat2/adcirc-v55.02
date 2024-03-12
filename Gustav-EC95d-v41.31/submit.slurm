@@ -17,7 +17,6 @@
 #SBATCH --mail-type=END
 #SBATCH --mail-user=sdat2@cam.ac.uk
 
-
 # Load modules
 module load PrgEnv-gnu/8.3.3
 module load cray-hdf5-parallel
@@ -27,12 +26,7 @@ module load cray-netcdf-hdf5parallel
 
 work=/mnt/lustre/a2fs-work1/work/n01/n01/sithom
 
-source $work/.bashrc
-
-d1=/work/n01/n01/sithom/adcirc-swan/katrina1
-
-echo "hook 1"
-eval "$(conda shell.bash hook)"
+d1=/work/n01/n01/sithom/adcirc-swan/adcirc/work
 
 # define variables
 case_name=$SLURM_JOB_NAME # name for printing

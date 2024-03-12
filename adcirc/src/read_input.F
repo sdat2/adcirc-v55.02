@@ -1579,7 +1579,7 @@ Casey 180318: Added NWS=13
          CALL allMessage(ERROR,
      &   'NWS13ColdStartString must be set in the owiWindNetcdf '
      &   //'namelist in the fort.15 file.  Shutting down ADCIRC now.')
-         CALL adcirc_terminate()
+         CALL adcirc_terminate() ! called at the moment during big run
       ENDIF
       ENDIF
 #endif
