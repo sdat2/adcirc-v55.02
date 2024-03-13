@@ -1,6 +1,6 @@
 #!/bin/bash --login
 
-#SBATCH --job-name=kat.nws13
+#SBATCH --job-name=kat.nws13.new
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=128
 #SBATCH --cpus-per-task=1
