@@ -167,13 +167,12 @@ sbatch submit.slurm
 Done:
 
 - First check that editing NWS13 files using xarray-datatree works ok.
-- Translate betweeen track netcdf and `fort.22.nc'
+- Translate between track netcdf and `fort.22.nc'
 - Force some 30k node examples.
 - Find way to trim big meshes.
 - Try with extra entries in.
-
+- Try running in debugging mode (need to recompile programs with option -g).
 
 TODO:
 
-- Try running in debugging mode (need to recompile programs with option -g).
 - Verify different model setups against tidal gauge data.
