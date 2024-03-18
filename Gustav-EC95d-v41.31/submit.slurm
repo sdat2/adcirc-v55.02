@@ -1,6 +1,6 @@
 #!/bin/bash --login
 
-#SBATCH --job-name=Gustav-EC94d-v41.31
+#SBATCH --job-name=Gustav-EC94d-v41.31-new
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=128
 #SBATCH --cpus-per-task=1
