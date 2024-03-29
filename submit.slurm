@@ -14,7 +14,6 @@
 module load PrgEnv-gnu/8.3.3
 module load cray-hdf5-parallel/1.12.2.1
 module load cray-parallel-netcdf/1.12.3.1
-module load cray-mpich/8.1.23
 # module load PrgEnv-gnu/8.3.3
 # module load other-software
 # module load openmpi
