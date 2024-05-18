@@ -176,3 +176,10 @@ Done:
 TODO:
 
 - Verify different model setups against tidal gauge data.
+
+
+Moving files:
+
+```
+rsync -rvtaP --dry-run sithom@archer2-login.ac.uk:/work/n01/n01/users/sithom .
+```
