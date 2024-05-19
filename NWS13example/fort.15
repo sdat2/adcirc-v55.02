@@ -11,9 +11,6 @@
  1                       ! NOLICA - SPATIAL DERIVATIVE CONVECTIVE SELECTION PARAMETER
  1                       ! NOLICAT - TIME DERIVATIVE CONVECTIVE TERM SELECTION PARAMETER
 0                       ! NWP - VARIABLE BOTTOM FRICTION AND LATERAL VISCOSITY OPTION PARAMETER
-sea_surface_height_above_geoid
-primitive_weighting_in_continuity_equation
-mannings_n_at_sea_floor
  1                       ! NCOR - VARIABLE CORIOLIS IN SPACE OPTION PARAMETER
  0                       ! NTIP - TIDAL POTENTIAL OPTION PARAMETER
  13                      ! NWS - WIND STRESS AND BAROMETRIC PRESSURE OPTION PARAMETER
