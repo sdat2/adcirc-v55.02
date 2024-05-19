@@ -4,13 +4,13 @@
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=128
 #SBATCH --cpus-per-task=1
-#SBATCH --time=1:0:0
+#SBATCH --time=0:20:0
 
 # Replace [budget code] below with your project code (e.g. t01)
 
 #SBATCH --account=n01-SOWISE
 #SBATCH --partition=standard
-#SBATCH --qos=standard
+#SBATCH --qos=short
 
 # emailing for start and end.
 #SBATCH --mail-type=BEGIN
@@ -22,12 +22,6 @@
 module load PrgEnv-gnu/8.3.3
 module load cray-hdf5-parallel/1.12.2.1
 module load cray-netcdf-hdf5parallel/4.9.0.1
-
-# try to activate bashrc
-
-work=/mnt/lustre/a2fs-work1/work/n01/n01/sithom
-
-source $work/.bashrc
 
 d1=/work/n01/n01/sithom/adcirc-swan/0/adcirc/work
 
