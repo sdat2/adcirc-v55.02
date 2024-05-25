@@ -550,7 +550,7 @@ NETCDF_AdditionalLibs:STRING=
 NETCDF_F90_INCLUDE_DIR:PATH=/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/include
 
 //Path to a library.
-NETCDF_F90_LIBRARY:FILEPATH=NETCDF_F90_LIBRARY-NOTFOUND
+NETCDF_F90_LIBRARY:FILEPATH=/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib/libnetcdff.so
 
 //Path to a file.
 NETCDF_INCLUDE_DIR:PATH=/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/include
@@ -580,13 +580,13 @@ adcirc_BINARY_DIR:STATIC=/home/n02/n02/sdat2/adcirc-swan/adcirc/work
 adcirc_SOURCE_DIR:STATIC=/home/n02/n02/sdat2/adcirc-swan/adcirc
 
 //Dependencies for the target
-templib_adcswan1_LIB_DEPENDS:STATIC=general;version;
+templib_adcswan1_LIB_DEPENDS:STATIC=general;version;general;/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib/libnetcdff.so;general;/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib;
 
 //Dependencies for the target
-templib_padcswan1_LIB_DEPENDS:STATIC=general;version;general;mkdir;
+templib_padcswan1_LIB_DEPENDS:STATIC=general;version;general;/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib/libnetcdff.so;general;/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib;general;mkdir;
 
 //Dependencies for the target
-templib_punmsglib_LIB_DEPENDS:STATIC=general;version;general;version;
+templib_punmsglib_LIB_DEPENDS:STATIC=general;version;general;/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib/libnetcdff.so;general;/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib;general;version;
 
 
 ########################
@@ -860,6 +860,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_MPI_C:INTERNAL=[/opt/cray/pe/craype/2.7.19/bin/cc][
 FIND_PACKAGE_MESSAGE_DETAILS_MPI_CXX:INTERNAL=[/opt/cray/pe/craype/2.7.19/bin/cc][TRUE][v3.1()]
 //Details about finding MPI_Fortran
 FIND_PACKAGE_MESSAGE_DETAILS_MPI_Fortran:INTERNAL=[/opt/cray/pe/craype/2.7.19/bin/ftn][TRUE][v3.1()]
+//Details about finding NetCDF
+FIND_PACKAGE_MESSAGE_DETAILS_NetCDF:INTERNAL=[/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib/libnetcdff.so;/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib][/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/include;/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/include][YES][v()]
 //ADVANCED property for variable: IBM
 IBM-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPIEXEC_EXECUTABLE
@@ -934,6 +936,10 @@ NETCDF_F90_LIBRARY-ADVANCED:INTERNAL=1
 NETCDF_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: NETCDF_LIBRARY
 NETCDF_LIBRARY-ADVANCED:INTERNAL=1
+//Result of TRY_COMPILE
+NETCDF_TEST1:INTERNAL=TRUE
+//Result of TRY_COMPILE
+NETCDF_TEST2:INTERNAL=TRUE
 //ADVANCED property for variable: PRECISION_8BYTE
 PRECISION_8BYTE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SGI

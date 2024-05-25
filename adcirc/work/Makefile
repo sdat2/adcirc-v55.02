@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/n02/n02/sdat2//adcirc-swan/adcirc
+CMAKE_SOURCE_DIR = /home/n02/n02/sdat2/adcirc-swan/adcirc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/n02/n02/sdat2//adcirc-swan/adcirc/work
+CMAKE_BINARY_DIR = /home/n02/n02/sdat2/adcirc-swan/adcirc/work
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -111,6 +111,15 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -121,20 +130,11 @@ edit_cache:
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/n02/n02/sdat2//adcirc-swan/adcirc/work/CMakeFiles /home/n02/n02/sdat2//adcirc-swan/adcirc/work//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/n02/n02/sdat2/adcirc-swan/adcirc/work/CMakeFiles /home/n02/n02/sdat2/adcirc-swan/adcirc/work//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/n02/n02/sdat2//adcirc-swan/adcirc/work/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/n02/n02/sdat2/adcirc-swan/adcirc/work/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -160,32 +160,6 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named libadcirc_shared
-
-# Build rule for target.
-libadcirc_shared: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libadcirc_shared
-.PHONY : libadcirc_shared
-
-# fast build rule for target.
-libadcirc_shared/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/build
-.PHONY : libadcirc_shared/fast
-
-#=============================================================================
-# Target rules for targets named mkdir2
-
-# Build rule for target.
-mkdir2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mkdir2
-.PHONY : mkdir2
-
-# fast build rule for target.
-mkdir2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mkdir2.dir/build.make CMakeFiles/mkdir2.dir/build
-.PHONY : mkdir2/fast
 
 #=============================================================================
 # Target rules for targets named templib_swan1parallel
@@ -225,32 +199,6 @@ templib_swan2serial: cmake_check_build_system
 templib_swan2serial/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_swan2serial.dir/build.make CMakeFiles/templib_swan2serial.dir/build
 .PHONY : templib_swan2serial/fast
-
-#=============================================================================
-# Target rules for targets named hot2asc
-
-# Build rule for target.
-hot2asc: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hot2asc
-.PHONY : hot2asc
-
-# fast build rule for target.
-hot2asc/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hot2asc.dir/build.make CMakeFiles/hot2asc.dir/build
-.PHONY : hot2asc/fast
-
-#=============================================================================
-# Target rules for targets named libadcirc_static
-
-# Build rule for target.
-libadcirc_static: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libadcirc_static
-.PHONY : libadcirc_static
-
-# fast build rule for target.
-libadcirc_static/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/build
-.PHONY : libadcirc_static/fast
 
 #=============================================================================
 # Target rules for targets named templib_swan1serial
@@ -524,6 +472,19 @@ inflate: cmake_check_build_system
 inflate/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/inflate.dir/build.make CMakeFiles/inflate.dir/build
 .PHONY : inflate/fast
+
+#=============================================================================
+# Target rules for targets named hot2asc
+
+# Build rule for target.
+hot2asc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hot2asc
+.PHONY : hot2asc
+
+# fast build rule for target.
+hot2asc/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hot2asc.dir/build.make CMakeFiles/hot2asc.dir/build
+.PHONY : hot2asc/fast
 
 #=============================================================================
 # Target rules for targets named templib_swan2parallel
@@ -7289,7 +7250,6 @@ CMakeFiles/version_cmake.o: CMakeFiles/version_cmake.F.o
 
 # target to build an object file
 CMakeFiles/version_cmake.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/CMakeFiles/version_cmake.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/version.dir/build.make CMakeFiles/version.dir/CMakeFiles/version_cmake.F.o
 .PHONY : CMakeFiles/version_cmake.F.o
 
@@ -7298,7 +7258,6 @@ CMakeFiles/version_cmake.i: CMakeFiles/version_cmake.F.i
 
 # target to preprocess a source file
 CMakeFiles/version_cmake.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/CMakeFiles/version_cmake.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/version.dir/build.make CMakeFiles/version.dir/CMakeFiles/version_cmake.F.i
 .PHONY : CMakeFiles/version_cmake.F.i
 
@@ -7307,7 +7266,6 @@ CMakeFiles/version_cmake.s: CMakeFiles/version_cmake.F.s
 
 # target to generate assembly for a file
 CMakeFiles/version_cmake.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/CMakeFiles/version_cmake.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/version.dir/build.make CMakeFiles/version.dir/CMakeFiles/version_cmake.F.s
 .PHONY : CMakeFiles/version_cmake.F.s
 
@@ -7436,7 +7394,6 @@ prep/mkdir.o: prep/mkdir.c.o
 
 # target to build an object file
 prep/mkdir.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mkdir2.dir/build.make CMakeFiles/mkdir2.dir/prep/mkdir.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mkdir.dir/build.make CMakeFiles/mkdir.dir/prep/mkdir.c.o
 .PHONY : prep/mkdir.c.o
 
@@ -7445,7 +7402,6 @@ prep/mkdir.i: prep/mkdir.c.i
 
 # target to preprocess a source file
 prep/mkdir.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mkdir2.dir/build.make CMakeFiles/mkdir2.dir/prep/mkdir.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mkdir.dir/build.make CMakeFiles/mkdir.dir/prep/mkdir.c.i
 .PHONY : prep/mkdir.c.i
 
@@ -7454,7 +7410,6 @@ prep/mkdir.s: prep/mkdir.c.s
 
 # target to generate assembly for a file
 prep/mkdir.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mkdir2.dir/build.make CMakeFiles/mkdir2.dir/prep/mkdir.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mkdir.dir/build.make CMakeFiles/mkdir.dir/prep/mkdir.c.s
 .PHONY : prep/mkdir.c.s
 
@@ -7607,8 +7562,6 @@ src/adcirc.o: src/adcirc.F.o
 
 # target to build an object file
 src/adcirc.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/adcirc.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/adcirc.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/adcirc.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/adcirc.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcswan.dir/build.make CMakeFiles/padcswan.dir/src/adcirc.F.o
@@ -7620,8 +7573,6 @@ src/adcirc.i: src/adcirc.F.i
 
 # target to preprocess a source file
 src/adcirc.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/adcirc.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/adcirc.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/adcirc.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/adcirc.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcswan.dir/build.make CMakeFiles/padcswan.dir/src/adcirc.F.i
@@ -7633,8 +7584,6 @@ src/adcirc.s: src/adcirc.F.s
 
 # target to generate assembly for a file
 src/adcirc.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/adcirc.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/adcirc.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/adcirc.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/adcirc.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcswan.dir/build.make CMakeFiles/padcswan.dir/src/adcirc.F.s
@@ -7646,8 +7595,6 @@ src/boundaries.o: src/boundaries.F.o
 
 # target to build an object file
 src/boundaries.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/boundaries.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/boundaries.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/boundaries.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/boundaries.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/boundaries.F.o
@@ -7662,8 +7609,6 @@ src/boundaries.i: src/boundaries.F.i
 
 # target to preprocess a source file
 src/boundaries.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/boundaries.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/boundaries.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/boundaries.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/boundaries.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/boundaries.F.i
@@ -7678,8 +7623,6 @@ src/boundaries.s: src/boundaries.F.s
 
 # target to generate assembly for a file
 src/boundaries.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/boundaries.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/boundaries.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/boundaries.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/boundaries.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/boundaries.F.s
@@ -7694,8 +7637,6 @@ src/control.o: src/control.F.o
 
 # target to build an object file
 src/control.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/control.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/control.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/control.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/control.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/control.F.o
@@ -7707,8 +7648,6 @@ src/control.i: src/control.F.i
 
 # target to preprocess a source file
 src/control.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/control.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/control.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/control.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/control.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/control.F.i
@@ -7720,8 +7659,6 @@ src/control.s: src/control.F.s
 
 # target to generate assembly for a file
 src/control.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/control.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/control.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/control.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/control.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/control.F.s
@@ -7733,8 +7670,6 @@ src/couple2baroclinic3D.o: src/couple2baroclinic3D.F.o
 
 # target to build an object file
 src/couple2baroclinic3D.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/couple2baroclinic3D.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/couple2baroclinic3D.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/couple2baroclinic3D.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/couple2baroclinic3D.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/couple2baroclinic3D.F.o
@@ -7747,8 +7682,6 @@ src/couple2baroclinic3D.i: src/couple2baroclinic3D.F.i
 
 # target to preprocess a source file
 src/couple2baroclinic3D.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/couple2baroclinic3D.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/couple2baroclinic3D.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/couple2baroclinic3D.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/couple2baroclinic3D.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/couple2baroclinic3D.F.i
@@ -7761,8 +7694,6 @@ src/couple2baroclinic3D.s: src/couple2baroclinic3D.F.s
 
 # target to generate assembly for a file
 src/couple2baroclinic3D.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/couple2baroclinic3D.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/couple2baroclinic3D.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/couple2baroclinic3D.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/couple2baroclinic3D.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/couple2baroclinic3D.F.s
@@ -7775,8 +7706,6 @@ src/couple2swan.o: src/couple2swan.F.o
 
 # target to build an object file
 src/couple2swan.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/couple2swan.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/couple2swan.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/couple2swan.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/couple2swan.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/couple2swan.F.o
@@ -7789,8 +7718,6 @@ src/couple2swan.i: src/couple2swan.F.i
 
 # target to preprocess a source file
 src/couple2swan.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/couple2swan.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/couple2swan.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/couple2swan.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/couple2swan.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/couple2swan.F.i
@@ -7803,8 +7730,6 @@ src/couple2swan.s: src/couple2swan.F.s
 
 # target to generate assembly for a file
 src/couple2swan.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/couple2swan.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/couple2swan.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/couple2swan.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/couple2swan.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/couple2swan.F.s
@@ -7817,8 +7742,6 @@ src/cstart.o: src/cstart.F.o
 
 # target to build an object file
 src/cstart.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/cstart.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/cstart.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/cstart.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/cstart.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcswan.dir/build.make CMakeFiles/padcswan.dir/src/cstart.F.o
@@ -7830,8 +7753,6 @@ src/cstart.i: src/cstart.F.i
 
 # target to preprocess a source file
 src/cstart.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/cstart.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/cstart.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/cstart.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/cstart.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcswan.dir/build.make CMakeFiles/padcswan.dir/src/cstart.F.i
@@ -7843,8 +7764,6 @@ src/cstart.s: src/cstart.F.s
 
 # target to generate assembly for a file
 src/cstart.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/cstart.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/cstart.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/cstart.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/cstart.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcswan.dir/build.make CMakeFiles/padcswan.dir/src/cstart.F.s
@@ -7889,8 +7808,6 @@ src/global.o: src/global.F.o
 
 # target to build an object file
 src/global.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/global.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/global.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/global.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/global.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/global.F.o
@@ -7905,8 +7822,6 @@ src/global.i: src/global.F.i
 
 # target to preprocess a source file
 src/global.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/global.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/global.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/global.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/global.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/global.F.i
@@ -7921,8 +7836,6 @@ src/global.s: src/global.F.s
 
 # target to generate assembly for a file
 src/global.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/global.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/global.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/global.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/global.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/global.F.s
@@ -7937,8 +7850,6 @@ src/global_3dvs.o: src/global_3dvs.F.o
 
 # target to build an object file
 src/global_3dvs.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/global_3dvs.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/global_3dvs.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/global_3dvs.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/global_3dvs.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/global_3dvs.F.o
@@ -7953,8 +7864,6 @@ src/global_3dvs.i: src/global_3dvs.F.i
 
 # target to preprocess a source file
 src/global_3dvs.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/global_3dvs.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/global_3dvs.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/global_3dvs.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/global_3dvs.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/global_3dvs.F.i
@@ -7969,8 +7878,6 @@ src/global_3dvs.s: src/global_3dvs.F.s
 
 # target to generate assembly for a file
 src/global_3dvs.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/global_3dvs.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/global_3dvs.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/global_3dvs.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/global_3dvs.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/global_3dvs.F.s
@@ -7985,8 +7892,6 @@ src/globalio.o: src/globalio.F.o
 
 # target to build an object file
 src/globalio.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/globalio.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/globalio.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/globalio.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/globalio.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/globalio.F.o
@@ -7998,8 +7903,6 @@ src/globalio.i: src/globalio.F.i
 
 # target to preprocess a source file
 src/globalio.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/globalio.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/globalio.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/globalio.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/globalio.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/globalio.F.i
@@ -8011,8 +7914,6 @@ src/globalio.s: src/globalio.F.s
 
 # target to generate assembly for a file
 src/globalio.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/globalio.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/globalio.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/globalio.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/globalio.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/globalio.F.s
@@ -8024,8 +7925,6 @@ src/gwce.o: src/gwce.F.o
 
 # target to build an object file
 src/gwce.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/gwce.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/gwce.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/gwce.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/gwce.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/gwce.F.o
@@ -8038,8 +7937,6 @@ src/gwce.i: src/gwce.F.i
 
 # target to preprocess a source file
 src/gwce.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/gwce.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/gwce.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/gwce.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/gwce.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/gwce.F.i
@@ -8052,8 +7949,6 @@ src/gwce.s: src/gwce.F.s
 
 # target to generate assembly for a file
 src/gwce.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/gwce.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/gwce.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/gwce.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/gwce.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/gwce.F.s
@@ -8066,8 +7961,6 @@ src/harm.o: src/harm.F.o
 
 # target to build an object file
 src/harm.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/harm.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/harm.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/harm.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/harm.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/harm.F.o
@@ -8080,8 +7973,6 @@ src/harm.i: src/harm.F.i
 
 # target to preprocess a source file
 src/harm.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/harm.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/harm.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/harm.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/harm.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/harm.F.i
@@ -8094,8 +7985,6 @@ src/harm.s: src/harm.F.s
 
 # target to generate assembly for a file
 src/harm.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/harm.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/harm.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/harm.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/harm.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/harm.F.s
@@ -8108,8 +7997,6 @@ src/hashtable.o: src/hashtable.F.o
 
 # target to build an object file
 src/hashtable.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/hashtable.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/hashtable.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/hashtable.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/hashtable.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/hashtable.F.o
@@ -8123,8 +8010,6 @@ src/hashtable.i: src/hashtable.F.i
 
 # target to preprocess a source file
 src/hashtable.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/hashtable.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/hashtable.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/hashtable.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/hashtable.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/hashtable.F.i
@@ -8138,8 +8023,6 @@ src/hashtable.s: src/hashtable.F.s
 
 # target to generate assembly for a file
 src/hashtable.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/hashtable.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/hashtable.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/hashtable.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/hashtable.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/hashtable.F.s
@@ -8153,8 +8036,6 @@ src/hstart.o: src/hstart.F.o
 
 # target to build an object file
 src/hstart.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/hstart.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/hstart.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/hstart.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/hstart.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcswan.dir/build.make CMakeFiles/padcswan.dir/src/hstart.F.o
@@ -8166,8 +8047,6 @@ src/hstart.i: src/hstart.F.i
 
 # target to preprocess a source file
 src/hstart.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/hstart.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/hstart.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/hstart.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/hstart.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcswan.dir/build.make CMakeFiles/padcswan.dir/src/hstart.F.i
@@ -8179,8 +8058,6 @@ src/hstart.s: src/hstart.F.s
 
 # target to generate assembly for a file
 src/hstart.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/hstart.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/hstart.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/hstart.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/hstart.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcswan.dir/build.make CMakeFiles/padcswan.dir/src/hstart.F.s
@@ -8192,8 +8069,6 @@ src/itpackv.o: src/itpackv.F.o
 
 # target to build an object file
 src/itpackv.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/itpackv.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/itpackv.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/itpackv.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/itpackv.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/itpackv.F.o
@@ -8206,8 +8081,6 @@ src/itpackv.i: src/itpackv.F.i
 
 # target to preprocess a source file
 src/itpackv.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/itpackv.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/itpackv.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/itpackv.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/itpackv.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/itpackv.F.i
@@ -8220,8 +8093,6 @@ src/itpackv.s: src/itpackv.F.s
 
 # target to generate assembly for a file
 src/itpackv.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/itpackv.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/itpackv.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/itpackv.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/itpackv.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/itpackv.F.s
@@ -8234,8 +8105,6 @@ src/mesh.o: src/mesh.F.o
 
 # target to build an object file
 src/mesh.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/mesh.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/mesh.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/mesh.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/mesh.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/mesh.F.o
@@ -8249,8 +8118,6 @@ src/mesh.i: src/mesh.F.i
 
 # target to preprocess a source file
 src/mesh.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/mesh.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/mesh.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/mesh.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/mesh.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/mesh.F.i
@@ -8264,8 +8131,6 @@ src/mesh.s: src/mesh.F.s
 
 # target to generate assembly for a file
 src/mesh.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/mesh.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/mesh.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/mesh.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/mesh.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/mesh.F.s
@@ -8279,8 +8144,6 @@ src/messenger.o: src/messenger.F.o
 
 # target to build an object file
 src/messenger.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/messenger.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/messenger.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/messenger.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/messenger.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_punmsglib.dir/build.make CMakeFiles/templib_punmsglib.dir/src/messenger.F.o
@@ -8291,8 +8154,6 @@ src/messenger.i: src/messenger.F.i
 
 # target to preprocess a source file
 src/messenger.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/messenger.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/messenger.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/messenger.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/messenger.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_punmsglib.dir/build.make CMakeFiles/templib_punmsglib.dir/src/messenger.F.i
@@ -8303,8 +8164,6 @@ src/messenger.s: src/messenger.F.s
 
 # target to generate assembly for a file
 src/messenger.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/messenger.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/messenger.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/messenger.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/messenger.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_punmsglib.dir/build.make CMakeFiles/templib_punmsglib.dir/src/messenger.F.s
@@ -8315,8 +8174,6 @@ src/momentum.o: src/momentum.F.o
 
 # target to build an object file
 src/momentum.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/momentum.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/momentum.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/momentum.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/momentum.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/momentum.F.o
@@ -8329,8 +8186,6 @@ src/momentum.i: src/momentum.F.i
 
 # target to preprocess a source file
 src/momentum.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/momentum.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/momentum.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/momentum.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/momentum.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/momentum.F.i
@@ -8343,8 +8198,6 @@ src/momentum.s: src/momentum.F.s
 
 # target to generate assembly for a file
 src/momentum.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/momentum.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/momentum.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/momentum.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/momentum.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/momentum.F.s
@@ -8357,8 +8210,6 @@ src/netcdfio.o: src/netcdfio.F.o
 
 # target to build an object file
 src/netcdfio.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/netcdfio.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/netcdfio.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/netcdfio.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/netcdfio.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/netcdfio.F.o
@@ -8371,8 +8222,6 @@ src/netcdfio.i: src/netcdfio.F.i
 
 # target to preprocess a source file
 src/netcdfio.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/netcdfio.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/netcdfio.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/netcdfio.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/netcdfio.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/netcdfio.F.i
@@ -8385,8 +8234,6 @@ src/netcdfio.s: src/netcdfio.F.s
 
 # target to generate assembly for a file
 src/netcdfio.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/netcdfio.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/netcdfio.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/netcdfio.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/netcdfio.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/netcdfio.F.s
@@ -8399,8 +8246,6 @@ src/nodalattr.o: src/nodalattr.F.o
 
 # target to build an object file
 src/nodalattr.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/nodalattr.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/nodalattr.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/nodalattr.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/nodalattr.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/nodalattr.F.o
@@ -8414,8 +8259,6 @@ src/nodalattr.i: src/nodalattr.F.i
 
 # target to preprocess a source file
 src/nodalattr.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/nodalattr.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/nodalattr.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/nodalattr.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/nodalattr.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/nodalattr.F.i
@@ -8429,8 +8272,6 @@ src/nodalattr.s: src/nodalattr.F.s
 
 # target to generate assembly for a file
 src/nodalattr.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/nodalattr.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/nodalattr.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/nodalattr.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/nodalattr.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/nodalattr.F.s
@@ -8444,8 +8285,6 @@ src/owi_ice.o: src/owi_ice.F.o
 
 # target to build an object file
 src/owi_ice.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/owi_ice.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/owi_ice.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/owi_ice.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/owi_ice.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/owi_ice.F.o
@@ -8459,8 +8298,6 @@ src/owi_ice.i: src/owi_ice.F.i
 
 # target to preprocess a source file
 src/owi_ice.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/owi_ice.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/owi_ice.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/owi_ice.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/owi_ice.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/owi_ice.F.i
@@ -8474,8 +8311,6 @@ src/owi_ice.s: src/owi_ice.F.s
 
 # target to generate assembly for a file
 src/owi_ice.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/owi_ice.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/owi_ice.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/owi_ice.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/owi_ice.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/owi_ice.F.s
@@ -8489,8 +8324,6 @@ src/owiwind.o: src/owiwind.F.o
 
 # target to build an object file
 src/owiwind.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/owiwind.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/owiwind.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/owiwind.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/owiwind.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/owiwind.F.o
@@ -8504,8 +8337,6 @@ src/owiwind.i: src/owiwind.F.i
 
 # target to preprocess a source file
 src/owiwind.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/owiwind.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/owiwind.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/owiwind.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/owiwind.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/owiwind.F.i
@@ -8519,8 +8350,6 @@ src/owiwind.s: src/owiwind.F.s
 
 # target to generate assembly for a file
 src/owiwind.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/owiwind.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/owiwind.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/owiwind.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/owiwind.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/owiwind.F.s
@@ -8534,8 +8363,6 @@ src/owiwind_netcdf.o: src/owiwind_netcdf.F.o
 
 # target to build an object file
 src/owiwind_netcdf.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/owiwind_netcdf.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/owiwind_netcdf.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/owiwind_netcdf.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/owiwind_netcdf.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/owiwind_netcdf.F.o
@@ -8549,8 +8376,6 @@ src/owiwind_netcdf.i: src/owiwind_netcdf.F.i
 
 # target to preprocess a source file
 src/owiwind_netcdf.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/owiwind_netcdf.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/owiwind_netcdf.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/owiwind_netcdf.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/owiwind_netcdf.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/owiwind_netcdf.F.i
@@ -8564,8 +8389,6 @@ src/owiwind_netcdf.s: src/owiwind_netcdf.F.s
 
 # target to generate assembly for a file
 src/owiwind_netcdf.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/owiwind_netcdf.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/owiwind_netcdf.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/owiwind_netcdf.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/owiwind_netcdf.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/owiwind_netcdf.F.s
@@ -8579,8 +8402,6 @@ src/quadrature.o: src/quadrature.F.o
 
 # target to build an object file
 src/quadrature.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/quadrature.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/quadrature.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/quadrature.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/quadrature.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/quadrature.F.o
@@ -8593,8 +8414,6 @@ src/quadrature.i: src/quadrature.F.i
 
 # target to preprocess a source file
 src/quadrature.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/quadrature.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/quadrature.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/quadrature.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/quadrature.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/quadrature.F.i
@@ -8607,8 +8426,6 @@ src/quadrature.s: src/quadrature.F.s
 
 # target to generate assembly for a file
 src/quadrature.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/quadrature.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/quadrature.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/quadrature.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/quadrature.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/quadrature.F.s
@@ -8621,8 +8438,6 @@ src/read_input.o: src/read_input.F.o
 
 # target to build an object file
 src/read_input.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/read_input.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/read_input.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/read_input.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/read_input.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcswan.dir/build.make CMakeFiles/padcswan.dir/src/read_input.F.o
@@ -8634,8 +8449,6 @@ src/read_input.i: src/read_input.F.i
 
 # target to preprocess a source file
 src/read_input.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/read_input.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/read_input.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/read_input.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/read_input.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcswan.dir/build.make CMakeFiles/padcswan.dir/src/read_input.F.i
@@ -8647,8 +8460,6 @@ src/read_input.s: src/read_input.F.s
 
 # target to generate assembly for a file
 src/read_input.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/read_input.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/read_input.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/read_input.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/read_input.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcswan.dir/build.make CMakeFiles/padcswan.dir/src/read_input.F.s
@@ -8660,8 +8471,6 @@ src/rs2.o: src/rs2.F.o
 
 # target to build an object file
 src/rs2.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/rs2.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/rs2.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/rs2.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/rs2.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/rs2.F.o
@@ -8674,8 +8483,6 @@ src/rs2.i: src/rs2.F.i
 
 # target to preprocess a source file
 src/rs2.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/rs2.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/rs2.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/rs2.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/rs2.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/rs2.F.i
@@ -8688,8 +8495,6 @@ src/rs2.s: src/rs2.F.s
 
 # target to generate assembly for a file
 src/rs2.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/rs2.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/rs2.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/rs2.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/rs2.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/rs2.F.s
@@ -8702,8 +8507,6 @@ src/sizes.o: src/sizes.F.o
 
 # target to build an object file
 src/sizes.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/sizes.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/sizes.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/sizes.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/sizes.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/sizes.F.o
@@ -8718,8 +8521,6 @@ src/sizes.i: src/sizes.F.i
 
 # target to preprocess a source file
 src/sizes.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/sizes.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/sizes.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/sizes.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/sizes.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/sizes.F.i
@@ -8734,8 +8535,6 @@ src/sizes.s: src/sizes.F.s
 
 # target to generate assembly for a file
 src/sizes.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/sizes.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/sizes.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/sizes.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/sizes.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/sizes.F.s
@@ -8750,8 +8549,6 @@ src/sponge_layer.o: src/sponge_layer.F.o
 
 # target to build an object file
 src/sponge_layer.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/sponge_layer.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/sponge_layer.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/sponge_layer.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/sponge_layer.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/sponge_layer.F.o
@@ -8764,8 +8561,6 @@ src/sponge_layer.i: src/sponge_layer.F.i
 
 # target to preprocess a source file
 src/sponge_layer.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/sponge_layer.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/sponge_layer.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/sponge_layer.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/sponge_layer.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/sponge_layer.F.i
@@ -8778,8 +8573,6 @@ src/sponge_layer.s: src/sponge_layer.F.s
 
 # target to generate assembly for a file
 src/sponge_layer.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/sponge_layer.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/sponge_layer.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/sponge_layer.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/sponge_layer.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/sponge_layer.F.s
@@ -8792,8 +8585,6 @@ src/subdomain.o: src/subdomain.F.o
 
 # target to build an object file
 src/subdomain.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/subdomain.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/subdomain.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/subdomain.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/subdomain.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/subdomain.F.o
@@ -8807,8 +8598,6 @@ src/subdomain.i: src/subdomain.F.i
 
 # target to preprocess a source file
 src/subdomain.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/subdomain.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/subdomain.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/subdomain.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/subdomain.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/subdomain.F.i
@@ -8822,8 +8611,6 @@ src/subdomain.s: src/subdomain.F.s
 
 # target to generate assembly for a file
 src/subdomain.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/subdomain.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/subdomain.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/subdomain.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/subdomain.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/subdomain.F.s
@@ -8837,8 +8624,6 @@ src/timestep.o: src/timestep.F.o
 
 # target to build an object file
 src/timestep.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/timestep.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/timestep.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/timestep.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/timestep.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcswan.dir/build.make CMakeFiles/padcswan.dir/src/timestep.F.o
@@ -8850,8 +8635,6 @@ src/timestep.i: src/timestep.F.i
 
 # target to preprocess a source file
 src/timestep.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/timestep.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/timestep.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/timestep.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/timestep.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcswan.dir/build.make CMakeFiles/padcswan.dir/src/timestep.F.i
@@ -8863,8 +8646,6 @@ src/timestep.s: src/timestep.F.s
 
 # target to generate assembly for a file
 src/timestep.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/timestep.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/timestep.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/timestep.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/timestep.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcswan.dir/build.make CMakeFiles/padcswan.dir/src/timestep.F.s
@@ -8876,8 +8657,6 @@ src/transport.o: src/transport.F.o
 
 # target to build an object file
 src/transport.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/transport.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/transport.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/transport.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/transport.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcswan.dir/build.make CMakeFiles/padcswan.dir/src/transport.F.o
@@ -8889,8 +8668,6 @@ src/transport.i: src/transport.F.i
 
 # target to preprocess a source file
 src/transport.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/transport.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/transport.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/transport.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/transport.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcswan.dir/build.make CMakeFiles/padcswan.dir/src/transport.F.i
@@ -8902,8 +8679,6 @@ src/transport.s: src/transport.F.s
 
 # target to generate assembly for a file
 src/transport.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/transport.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/transport.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/transport.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/transport.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcswan.dir/build.make CMakeFiles/padcswan.dir/src/transport.F.s
@@ -8915,8 +8690,6 @@ src/vsmy.o: src/vsmy.F.o
 
 # target to build an object file
 src/vsmy.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/vsmy.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/vsmy.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/vsmy.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/vsmy.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcswan.dir/build.make CMakeFiles/padcswan.dir/src/vsmy.F.o
@@ -8928,8 +8701,6 @@ src/vsmy.i: src/vsmy.F.i
 
 # target to preprocess a source file
 src/vsmy.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/vsmy.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/vsmy.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/vsmy.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/vsmy.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcswan.dir/build.make CMakeFiles/padcswan.dir/src/vsmy.F.i
@@ -8941,8 +8712,6 @@ src/vsmy.s: src/vsmy.F.s
 
 # target to generate assembly for a file
 src/vsmy.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/vsmy.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/vsmy.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/vsmy.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/vsmy.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcswan.dir/build.make CMakeFiles/padcswan.dir/src/vsmy.F.s
@@ -8954,8 +8723,6 @@ src/weir_boundary.o: src/weir_boundary.F.o
 
 # target to build an object file
 src/weir_boundary.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/weir_boundary.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/weir_boundary.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/weir_boundary.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/weir_boundary.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcswan.dir/build.make CMakeFiles/padcswan.dir/src/weir_boundary.F.o
@@ -8967,8 +8734,6 @@ src/weir_boundary.i: src/weir_boundary.F.i
 
 # target to preprocess a source file
 src/weir_boundary.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/weir_boundary.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/weir_boundary.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/weir_boundary.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/weir_boundary.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcswan.dir/build.make CMakeFiles/padcswan.dir/src/weir_boundary.F.i
@@ -8980,8 +8745,6 @@ src/weir_boundary.s: src/weir_boundary.F.s
 
 # target to generate assembly for a file
 src/weir_boundary.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/weir_boundary.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/weir_boundary.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/weir_boundary.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/weir_boundary.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcswan.dir/build.make CMakeFiles/padcswan.dir/src/weir_boundary.F.s
@@ -8993,8 +8756,6 @@ src/wetdry.o: src/wetdry.F.o
 
 # target to build an object file
 src/wetdry.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/wetdry.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/wetdry.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/wetdry.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/wetdry.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/wetdry.F.o
@@ -9007,8 +8768,6 @@ src/wetdry.i: src/wetdry.F.i
 
 # target to preprocess a source file
 src/wetdry.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/wetdry.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/wetdry.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/wetdry.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/wetdry.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/wetdry.F.i
@@ -9021,8 +8780,6 @@ src/wetdry.s: src/wetdry.F.s
 
 # target to generate assembly for a file
 src/wetdry.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/wetdry.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/wetdry.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/wetdry.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/wetdry.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/wetdry.F.s
@@ -9035,8 +8792,6 @@ src/wind.o: src/wind.F.o
 
 # target to build an object file
 src/wind.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/wind.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/wind.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/wind.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/wind.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/wind.F.o
@@ -9050,8 +8805,6 @@ src/wind.i: src/wind.F.i
 
 # target to preprocess a source file
 src/wind.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/wind.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/wind.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/wind.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/wind.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/wind.F.i
@@ -9065,8 +8818,6 @@ src/wind.s: src/wind.F.s
 
 # target to generate assembly for a file
 src/wind.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/wind.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/wind.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/src/wind.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/wind.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/wind.F.s
@@ -9080,8 +8831,6 @@ src/write_output.o: src/write_output.F.o
 
 # target to build an object file
 src/write_output.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/write_output.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/write_output.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/write_output.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/write_output.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/write_output.F.o
@@ -9093,8 +8842,6 @@ src/write_output.i: src/write_output.F.i
 
 # target to preprocess a source file
 src/write_output.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/write_output.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/write_output.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/write_output.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/write_output.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/write_output.F.i
@@ -9106,8 +8853,6 @@ src/write_output.s: src/write_output.F.s
 
 # target to generate assembly for a file
 src/write_output.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/write_output.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/write_output.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/write_output.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/write_output.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/write_output.F.s
@@ -9119,8 +8864,6 @@ src/writer.o: src/writer.F.o
 
 # target to build an object file
 src/writer.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/writer.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/writer.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/writer.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/writer.F.o
 .PHONY : src/writer.F.o
@@ -9130,8 +8873,6 @@ src/writer.i: src/writer.F.i
 
 # target to preprocess a source file
 src/writer.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/writer.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/writer.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/writer.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/writer.F.i
 .PHONY : src/writer.F.i
@@ -9141,8 +8882,6 @@ src/writer.s: src/writer.F.s
 
 # target to generate assembly for a file
 src/writer.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/writer.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/writer.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/writer.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/writer.F.s
 .PHONY : src/writer.F.s
@@ -9152,8 +8891,6 @@ src/xdmfio.o: src/xdmfio.F.o
 
 # target to build an object file
 src/xdmfio.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/xdmfio.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/xdmfio.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/xdmfio.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/xdmfio.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/xdmfio.F.o
@@ -9165,8 +8902,6 @@ src/xdmfio.i: src/xdmfio.F.i
 
 # target to preprocess a source file
 src/xdmfio.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/xdmfio.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/xdmfio.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/xdmfio.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/xdmfio.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/xdmfio.F.i
@@ -9178,8 +8913,6 @@ src/xdmfio.s: src/xdmfio.F.s
 
 # target to generate assembly for a file
 src/xdmfio.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/src/xdmfio.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/src/xdmfio.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/src/xdmfio.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/src/xdmfio.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcirc.dir/build.make CMakeFiles/adcirc.dir/src/xdmfio.F.s
@@ -9191,8 +8924,6 @@ thirdparty/KDTREE2/kdtree2.o: thirdparty/KDTREE2/kdtree2.F.o
 
 # target to build an object file
 thirdparty/KDTREE2/kdtree2.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/thirdparty/KDTREE2/kdtree2.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/thirdparty/KDTREE2/kdtree2.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/thirdparty/KDTREE2/kdtree2.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/thirdparty/KDTREE2/kdtree2.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/thirdparty/KDTREE2/kdtree2.F.o
@@ -9207,8 +8938,6 @@ thirdparty/KDTREE2/kdtree2.i: thirdparty/KDTREE2/kdtree2.F.i
 
 # target to preprocess a source file
 thirdparty/KDTREE2/kdtree2.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/thirdparty/KDTREE2/kdtree2.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/thirdparty/KDTREE2/kdtree2.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/thirdparty/KDTREE2/kdtree2.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/thirdparty/KDTREE2/kdtree2.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/thirdparty/KDTREE2/kdtree2.F.i
@@ -9223,8 +8952,6 @@ thirdparty/KDTREE2/kdtree2.s: thirdparty/KDTREE2/kdtree2.F.s
 
 # target to generate assembly for a file
 thirdparty/KDTREE2/kdtree2.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/thirdparty/KDTREE2/kdtree2.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/thirdparty/KDTREE2/kdtree2.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/thirdparty/KDTREE2/kdtree2.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/thirdparty/KDTREE2/kdtree2.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/thirdparty/KDTREE2/kdtree2.F.s
@@ -10727,8 +10454,6 @@ wind/vortex.o: wind/vortex.F.o
 
 # target to build an object file
 wind/vortex.F.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/wind/vortex.F.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/wind/vortex.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/wind/vortex.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/wind/vortex.F.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/wind/vortex.F.o
@@ -10742,8 +10467,6 @@ wind/vortex.i: wind/vortex.F.i
 
 # target to preprocess a source file
 wind/vortex.F.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/wind/vortex.F.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/wind/vortex.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/wind/vortex.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/wind/vortex.F.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/wind/vortex.F.i
@@ -10757,8 +10480,6 @@ wind/vortex.s: wind/vortex.F.s
 
 # target to generate assembly for a file
 wind/vortex.F.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_shared.dir/build.make CMakeFiles/libadcirc_shared.dir/wind/vortex.F.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libadcirc_static.dir/build.make CMakeFiles/libadcirc_static.dir/wind/vortex.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/adcprep.dir/build.make CMakeFiles/adcprep.dir/wind/vortex.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/templib_padcswan1.dir/build.make CMakeFiles/templib_padcswan1.dir/wind/vortex.F.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/padcirc.dir/build.make CMakeFiles/padcirc.dir/wind/vortex.F.s
@@ -10790,11 +10511,8 @@ help:
 	@echo "... hot2asc"
 	@echo "... hstime"
 	@echo "... inflate"
-	@echo "... libadcirc_shared"
-	@echo "... libadcirc_static"
 	@echo "... metis"
 	@echo "... mkdir"
-	@echo "... mkdir2"
 	@echo "... owi22"
 	@echo "... p15"
 	@echo "... padcirc"

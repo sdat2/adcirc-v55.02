@@ -47,7 +47,9 @@ cmake .. --debug-output -DCMAKE_C_COMPILER=cc \
         -DADDITIONAL_FLAGS_UTILITIES="${ll}" \
         -DNETCDFHOME="${NETCDF_DIR}" \
         -DNETCDF_LIBRARY="${ncl}" -DNETCDF_INCLUDE_DIR="${nci}" \
-        -DNETCDFHOME=$(nc-config --prefix)
+        -DNETCDFHOME=$(nc-config --prefix) \
+        -DNETCDF_F90_LIBRARY="${ncl}/libnetcdff.so"
+
         # -DNETCDF_F90_LIBRARY="/opt/cray/pe/netcdf/4.9.0.1/gnu/9.1/lib/libnetcdff.so"
 
 # -DNETCDFHOME=$(nc-config --prefix)
