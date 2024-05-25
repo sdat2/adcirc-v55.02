@@ -180,6 +180,10 @@ TODO:
 
 Moving files:
 
-```
+```bash
 rsync -rvtaP --dry-run sithom@archer2-login.ac.uk:/work/n01/n01/users/sithom .
+```
+
+```bash
+/mnt/lustre/a2fs-work1/work/n01/n01/sithom /work/n02/n02/sdat2
 ```
