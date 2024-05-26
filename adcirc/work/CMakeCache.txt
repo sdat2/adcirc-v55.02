@@ -35,6 +35,18 @@ ADDITIONAL_FLAGS_UTILITIES:UNINITIALIZED=-ffixed-line-length-132 -ffree-line-len
 //Additional flags for utility programs
 ADDITIONAL_FLAGS_UTLIITIES:STRING=
 
+//Allow an in-source build
+ALLOW_IN_SOURCE_BUILD:BOOL=OFF
+
+//Path to a program.
+BASH_PROGRAM:FILEPATH=/usr/bin/bash
+
+//Path to a program.
+BIBER_COMPILER:FILEPATH=BIBER_COMPILER-NOTFOUND
+
+//Path to a program.
+BIBTEX_COMPILER:FILEPATH=BIBTEX_COMPILER-NOTFOUND
+
 //Build the serial ADCIRC executable
 BUILD_ADCIRC:BOOL=ON
 
@@ -64,6 +76,9 @@ BUILD_PUNSWAN:BOOL=ON
 
 //Build the serial SWAN executable
 BUILD_SWAN:BOOL=ON
+
+//Build the testing tree.
+BUILD_TESTING:BOOL=ON
 
 //Build the ADCIRC utility programs
 BUILD_UTILITIES:BOOL=ON
@@ -345,11 +360,45 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Path to the coverage program that CTest uses for performing coverage
+// inspection
+COVERAGE_COMMAND:FILEPATH=/opt/cray/pe/gcc/11.2.0/bin/gcov
+
+//Extra command line flags to pass to the coverage tool
+COVERAGE_EXTRA_FLAGS:STRING=-l
+
+//Enable to build RPM source packages
+CPACK_SOURCE_RPM:BOOL=OFF
+
+//Enable to build TBZ2 source packages
+CPACK_SOURCE_TBZ2:BOOL=ON
+
+//Enable to build TGZ source packages
+CPACK_SOURCE_TGZ:BOOL=ON
+
+//Enable to build TXZ source packages
+CPACK_SOURCE_TXZ:BOOL=ON
+
+//Enable to build TZ source packages
+CPACK_SOURCE_TZ:BOOL=ON
+
+//Enable to build ZIP source packages
+CPACK_SOURCE_ZIP:BOOL=OFF
+
 //Format code for CRAY based architectures
 CRAY:BOOL=OFF
 
 //Format code for CRAYX1 based architectures
 CRAYX1:BOOL=OFF
+
+//How many times to retry timed-out CTest submissions.
+CTEST_SUBMIT_RETRY_COUNT:STRING=3
+
+//How long to wait between timed-out CTest submissions.
+CTEST_SUBMIT_RETRY_DELAY:STRING=5
+
+//Maximum time allowed before CTest will kill the test.
+DART_TESTING_TIMEOUT:STRING=1500
 
 //Write the tracing debug information for the main ADCIRC module
 DEBUG_ADCIRC_TRACE:BOOL=OFF
@@ -438,11 +487,23 @@ DEBUG_WRITER_TRACE:BOOL=OFF
 //Write tracing debug information for the write output module
 DEBUG_WRITE_OUTPUT_TRACE:BOOL=OFF
 
+//Dot tool for use with Doxygen
+DOXYGEN_DOT_EXECUTABLE:FILEPATH=DOXYGEN_DOT_EXECUTABLE-NOTFOUND
+
+//Doxygen documentation generation tool (http://www.doxygen.org)
+DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
+
+//Path to a program.
+DVIPDF_CONVERTER:FILEPATH=DVIPDF_CONVERTER-NOTFOUND
+
+//Path to a program.
+DVIPS_CONVERTER:FILEPATH=DVIPS_CONVERTER-NOTFOUND
+
 //Use DATETIME static libraries.
-ENABLE_DATETIME:BOOL=OFF
+ENABLE_DATETIME:BOOL=ON
 
 //Use GRIB2API static libraries.
-ENABLE_GRIB2:BOOL=OFF
+ENABLE_GRIB2:BOOL=ON
 
 //Turn on netCDF output options
 ENABLE_OUTPUT_NETCDF:BOOL=ON
@@ -463,8 +524,56 @@ Fortran_COMPILER_SPECIFIC_FLAG:STRING=
 //Compiler specific flag to enable extended Fortran line length
 Fortran_LINELENGTH_FLAG:STRING=-ffixed-line-length-132 -ffree-line-length-132
 
+//Path to a program.
+HTLATEX_COMPILER:FILEPATH=HTLATEX_COMPILER-NOTFOUND
+
 //Format code for IBM based architectures
 IBM:BOOL=OFF
+
+//Enable shared JAS
+JAS_ENABLE_SHARED:BOOL=FALSE
+
+//Path to a library.
+JPEG:FILEPATH=JPEG-NOTFOUND
+
+//Path to a file.
+JPEG_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+JPEG_LIBRARY_DEBUG:FILEPATH=JPEG_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+JPEG_LIBRARY_RELEASE:FILEPATH=/usr/lib64/libjpeg.so
+
+//Value Computed by CMake
+JasPer_BINARY_DIR:STATIC=/work/n02/n02/sdat2/adcirc-swan/adcirc/work/thirdparty/wgrib2/jasper
+
+//Value Computed by CMake
+JasPer_SOURCE_DIR:STATIC=/work/n02/n02/sdat2/adcirc-swan/adcirc/thirdparty/wgrib2/jasper
+
+//Path to a program.
+LATEX2HTML_CONVERTER:FILEPATH=LATEX2HTML_CONVERTER-NOTFOUND
+
+//Path to a program.
+LATEX_COMPILER:FILEPATH=LATEX_COMPILER-NOTFOUND
+
+//Path to a program.
+LUALATEX_COMPILER:FILEPATH=LUALATEX_COMPILER-NOTFOUND
+
+//Command to build the project
+MAKECOMMAND:STRING=/usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
+
+//Path to a program.
+MAKEINDEX_COMPILER:FILEPATH=MAKEINDEX_COMPILER-NOTFOUND
+
+//Path to a library.
+MATH_LIBRARY:FILEPATH=/usr/lib64/libm.so
+
+//Path to the memory checking command, used for memory error detection.
+MEMORYCHECK_COMMAND:FILEPATH=MEMORYCHECK_COMMAND-NOTFOUND
+
+//File that contains suppressions for the memory checker
+MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
 
 //Executable for running MPI programs.
 MPIEXEC_EXECUTABLE:FILEPATH=/usr/bin/srun
@@ -559,13 +668,25 @@ NETCDF_INCLUDE_DIR:PATH=/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/include
 NETCDF_LIBRARY:FILEPATH=/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib
 
 //Path to a program.
+PDFLATEX_COMPILER:FILEPATH=PDFLATEX_COMPILER-NOTFOUND
+
+//Path to a program.
+PDFTOPS_CONVERTER:FILEPATH=PDFTOPS_CONVERTER-NOTFOUND
+
+//Path to a program.
 PERL:FILEPATH=/usr/bin/perl
 
 //Use 8-byte real numbers instead of 4-byte.
 PRECISION_8BYTE:BOOL=ON
 
+//Path to a program.
+PS2PDF_CONVERTER:FILEPATH=PS2PDF_CONVERTER-NOTFOUND
+
 //Format code for SGI based architectures
 SGI:BOOL=OFF
+
+//Name of the computer/site where compile is being run
+SITE:STRING=ln01
 
 //Format code for SUN based architectures
 SUN:BOOL=OFF
@@ -573,20 +694,44 @@ SUN:BOOL=OFF
 //Assume the system is a vector computer
 VECTOR_COMPUTER:BOOL=OFF
 
+//Path to a program.
+XELATEX_COMPILER:FILEPATH=XELATEX_COMPILER-NOTFOUND
+
+//Path to a program.
+XINDY_COMPILER:FILEPATH=XINDY_COMPILER-NOTFOUND
+
 //Value Computed by CMake
 adcirc_BINARY_DIR:STATIC=/work/n02/n02/sdat2/adcirc-swan/adcirc/work
 
 //Value Computed by CMake
 adcirc_SOURCE_DIR:STATIC=/work/n02/n02/sdat2/adcirc-swan/adcirc
 
-//Dependencies for the target
-templib_adcswan1_LIB_DEPENDS:STATIC=general;version;general;/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib/libnetcdff.so;general;/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib;
+//Value Computed by CMake
+datetime-fortran_BINARY_DIR:STATIC=/work/n02/n02/sdat2/adcirc-swan/adcirc/work/thirdparty/datetime_fortran
+
+//Value Computed by CMake
+datetime-fortran_SOURCE_DIR:STATIC=/work/n02/n02/sdat2/adcirc-swan/adcirc/thirdparty/datetime_fortran
 
 //Dependencies for the target
-templib_padcswan1_LIB_DEPENDS:STATIC=general;version;general;/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib/libnetcdff.so;general;/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib;general;mkdir;
+grib2_LIB_DEPENDS:STATIC=general;ipolates;general;geo;general;libjasper;general;/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib/libnetcdff.so;general;/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib;
 
 //Dependencies for the target
-templib_punmsglib_LIB_DEPENDS:STATIC=general;version;general;/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib/libnetcdff.so;general;/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib;general;version;
+libjasper_LIB_DEPENDS:STATIC=general;/usr/lib64/libjpeg.so;general;/usr/lib64/libm.so;
+
+//Dependencies for the target
+templib_adcswan1_LIB_DEPENDS:STATIC=general;version;general;/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib/libnetcdff.so;general;/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib;general;grib2;general;ipolates;general;geo;general;datetime;
+
+//Dependencies for the target
+templib_padcswan1_LIB_DEPENDS:STATIC=general;version;general;/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib/libnetcdff.so;general;/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib;general;grib2;general;ipolates;general;geo;general;datetime;general;mkdir;
+
+//Dependencies for the target
+templib_punmsglib_LIB_DEPENDS:STATIC=general;version;general;/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib/libnetcdff.so;general;/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib;general;grib2;general;ipolates;general;geo;general;datetime;general;version;
+
+//Value Computed by CMake
+wgrib2_BINARY_DIR:STATIC=/work/n02/n02/sdat2/adcirc-swan/adcirc/work/thirdparty/wgrib2
+
+//Value Computed by CMake
+wgrib2_SOURCE_DIR:STATIC=/work/n02/n02/sdat2/adcirc-swan/adcirc/thirdparty/wgrib2
 
 
 ########################
@@ -597,6 +742,10 @@ templib_punmsglib_LIB_DEPENDS:STATIC=general;version;general;/opt/cray/pe/netcdf
 ADCIRC_NOF2008-ADVANCED:INTERNAL=1
 //Result of TRY_COMPILE
 ARCH_TEST_COMPILE:INTERNAL=TRUE
+//ADVANCED property for variable: BIBER_COMPILER
+BIBER_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: BIBTEX_COMPILER
+BIBTEX_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: BUILD_PUNSWAN
 BUILD_PUNSWAN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: BUILD_SWAN
@@ -623,6 +772,8 @@ CMAKE_CPACK_COMMAND:INTERNAL=/usr/bin/cpack
 CMAKE_CRAYPE_LINKTYPE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CRAYPE_LOADEDMODULES
 CMAKE_CRAYPE_LOADEDMODULES-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CTEST_COMMAND
+CMAKE_CTEST_COMMAND-ADVANCED:INTERNAL=1
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=/usr/bin/ctest
 //ADVANCED property for variable: CMAKE_CXX_COMPILER
@@ -755,7 +906,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -798,10 +949,32 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: COVERAGE_COMMAND
+COVERAGE_COMMAND-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: COVERAGE_EXTRA_FLAGS
+COVERAGE_EXTRA_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_RPM
+CPACK_SOURCE_RPM-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TBZ2
+CPACK_SOURCE_TBZ2-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TGZ
+CPACK_SOURCE_TGZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TXZ
+CPACK_SOURCE_TXZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TZ
+CPACK_SOURCE_TZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_ZIP
+CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CRAY
 CRAY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CRAYX1
 CRAYX1-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CTEST_SUBMIT_RETRY_COUNT
+CTEST_SUBMIT_RETRY_COUNT-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CTEST_SUBMIT_RETRY_DELAY
+CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: DART_TESTING_TIMEOUT
+DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DEBUG_ADCIRC_TRACE
 DEBUG_ADCIRC_TRACE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DEBUG_COLDSTART_TRACE
@@ -850,8 +1023,18 @@ DEBUG_WIND_TRACE-ADVANCED:INTERNAL=1
 DEBUG_WRITER_TRACE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DEBUG_WRITE_OUTPUT_TRACE
 DEBUG_WRITE_OUTPUT_TRACE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: DOXYGEN_DOT_EXECUTABLE
+DOXYGEN_DOT_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: DOXYGEN_EXECUTABLE
+DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: DVIPDF_CONVERTER
+DVIPDF_CONVERTER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: DVIPS_CONVERTER
+DVIPS_CONVERTER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ENABLE_POWELL
 ENABLE_POWELL-ADVANCED:INTERNAL=1
+//Details about finding JPEG
+FIND_PACKAGE_MESSAGE_DETAILS_JPEG:INTERNAL=[/usr/lib64/libjpeg.so][/usr/include][v80()]
 //Details about finding MPI
 FIND_PACKAGE_MESSAGE_DETAILS_MPI:INTERNAL=[TRUE][TRUE][TRUE][c ][v3.1()]
 //Details about finding MPI_C
@@ -862,8 +1045,48 @@ FIND_PACKAGE_MESSAGE_DETAILS_MPI_CXX:INTERNAL=[/opt/cray/pe/craype/2.7.19/bin/cc
 FIND_PACKAGE_MESSAGE_DETAILS_MPI_Fortran:INTERNAL=[/opt/cray/pe/craype/2.7.19/bin/ftn][TRUE][v3.1()]
 //Details about finding NetCDF
 FIND_PACKAGE_MESSAGE_DETAILS_NetCDF:INTERNAL=[/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib/libnetcdff.so;/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/lib][/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/include;/opt/cray/pe/netcdf-hdf5parallel/4.9.0.1/gnu/9.1/include][YES][v()]
+//ADVANCED property for variable: HTLATEX_COMPILER
+HTLATEX_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: IBM
 IBM-ADVANCED:INTERNAL=1
+//Have include fcntl.h
+JAS_HAVE_FCNTL_H:INTERNAL=1
+//Have function getrusage
+JAS_HAVE_GETRUSAGE:INTERNAL=1
+//Have function gettimeofday
+JAS_HAVE_GETTIMEOFDAY:INTERNAL=1
+//Have includes io.h
+JAS_HAVE_IO_H:INTERNAL=
+//Test JAS_HAVE_JPEGLIB_H
+JAS_HAVE_JPEGLIB_H:INTERNAL=1
+//Have include sys/time.h
+JAS_HAVE_SYS_TIME_H:INTERNAL=1
+//Have include sys/types.h
+JAS_HAVE_SYS_TYPES_H:INTERNAL=1
+//Have include unistd.h
+JAS_HAVE_UNISTD_H:INTERNAL=1
+//Have includes windows.h
+JAS_HAVE_WINDOWS_H:INTERNAL=
+//ADVANCED property for variable: JPEG_INCLUDE_DIR
+JPEG_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: JPEG_LIBRARY_DEBUG
+JPEG_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: JPEG_LIBRARY_RELEASE
+JPEG_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: LATEX2HTML_CONVERTER
+LATEX2HTML_CONVERTER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: LATEX_COMPILER
+LATEX_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: LUALATEX_COMPILER
+LUALATEX_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MAKECOMMAND
+MAKECOMMAND-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MAKEINDEX_COMPILER
+MAKEINDEX_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MEMORYCHECK_COMMAND
+MEMORYCHECK_COMMAND-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MEMORYCHECK_SUPPRESSIONS_FILE
+MEMORYCHECK_SUPPRESSIONS_FILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPIEXEC_EXECUTABLE
 MPIEXEC_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPIEXEC_MAX_NUMPROCS
@@ -940,14 +1163,26 @@ NETCDF_LIBRARY-ADVANCED:INTERNAL=1
 NETCDF_TEST1:INTERNAL=TRUE
 //Result of TRY_COMPILE
 NETCDF_TEST2:INTERNAL=TRUE
+//ADVANCED property for variable: PDFLATEX_COMPILER
+PDFLATEX_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PDFTOPS_CONVERTER
+PDFTOPS_CONVERTER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PRECISION_8BYTE
 PRECISION_8BYTE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PS2PDF_CONVERTER
+PS2PDF_CONVERTER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SGI
 SGI-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: SITE
+SITE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SUN
 SUN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: VECTOR_COMPUTER
 VECTOR_COMPUTER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: XELATEX_COMPILER
+XELATEX_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: XINDY_COMPILER
+XINDY_COMPILER-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
 
