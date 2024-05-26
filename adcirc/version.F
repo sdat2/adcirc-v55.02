@@ -1,6 +1,6 @@
       module version
-      character(80), parameter :: ADC_VERSION = "3e5cf3e"
-      character(80), parameter :: ADC_HASH    = "3e5cf3e19a1d031bcaaf13047517404655d11a90"
+      character(80), parameter :: ADC_VERSION = "62bef51"
+      character(80), parameter :: ADC_HASH    = "62bef51f4729c55b07dafc7bb6baba38e96ea7ed"
       integer, save       :: FileFmtMajor = 1
       integer, save       :: FileFmtMinor = 2
       integer, save       :: FileFmtRev   = 0
