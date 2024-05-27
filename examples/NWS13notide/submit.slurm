@@ -1,6 +1,6 @@
 #!/bin/bash --login
 
-#SBATCH --job-name=data-processing
+#SBATCH --job-name=notide
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=128
 #SBATCH --cpus-per-task=1
@@ -21,9 +21,7 @@
 # Load modules
 module load PrgEnv-gnu/8.3.3 cray-hdf5-parallel/1.12.2.1 cray-netcdf-hdf5parallel/4.9.0.1
 
-
-
-case_name="adcirc_katrina-2d-nws13-parallel"
+case_name="adcirc_notide_charley"
 
 #...Set variables
 exepath=/work/n02/n02/sdat2/adcirc-swan/adcirc/work
