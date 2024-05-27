@@ -11,6 +11,9 @@
 *.gch
 *.pch
 
+# Experiments
+exp/
+
 # Compiled Dynamic libraries
 *.so
 *.dylib
@@ -37,8 +40,11 @@
 # Output files
 *.out
 
-# ADCIRC TESTSUITE
+# folders to keep out
 adcirc-cg-testsuite/
+worstsurge/
+adcirc-testsuite/
+examples/
 xdmf/
 pyadcirc/
 talea/
@@ -53,3 +59,4 @@ hyparam/
 PE*/
 NWS13*/
 oct2py/
+adcircpy/
