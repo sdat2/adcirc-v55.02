@@ -12,17 +12,12 @@ I experimented to some extent with installing the environment as a singularity c
 
 The `cmake` method seems to be much more reliable than `Makefile`.
 
+## Getting Python loaded
 
-
-## TODO
-
-I still have issues with:
-
- - compiling SWAN.
- - running the unit tests.
- - testing netcdf outputs.
- - running slurm jobs easily in an automated fashion.
-
+```
+source ~/.bashrc
+micromamba activate tcpips
+```
 
 ## Look at old jobs
 
@@ -95,4 +90,14 @@ rsync -rvtaP --dry-run sithom@archer2-login.ac.uk:/work/n01/n01/users/sithom .
 
 ```bash
 /mnt/lustre/a2fs-work1/work/n01/n01/sithom /work/n02/n02/sdat2
+```
+
+# Getting git-lfs
+
+```bash
+wget https://github.com/git-lfs/git-lfs/releases/download/v3.5.1/git-lfs-linux-amd64-v3.5.1.tar.gz
+tar -xzvf git-lfs-linux-amd64-v3.5.1.tar.gz 
+cd git-lfs-3.5.1/
+sh install.sh --local
+git lfs install
 ```
