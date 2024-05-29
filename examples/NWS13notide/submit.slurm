@@ -21,15 +21,12 @@
 # Load modules
 module load PrgEnv-gnu/8.3.3 cray-hdf5-parallel/1.12.2.1 cray-netcdf-hdf5parallel/4.9.0.1
 
-case_name="adcirc_notide_charley"
+# ADCIRC test case: Charley (2004)
+case_name=adcirc_notide_charley
 
 #...Set variables
 exepath=/work/n02/n02/sdat2/adcirc-swan/adcirc/work
-err=0.0001
-np=$SLURM_NTASKS
-
-#np=$SLURM_NTASKS  # how many parallel tasks to define
-
+np=$SLURM_NTASKS # how many parallel tasks to define
 
 
 #...Run the case

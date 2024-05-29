@@ -72,12 +72,7 @@ sbatch submit.slurm
 
 ### Getting NWS 13 span up
 
-Done:
-
-- Try with extra entries in.
-- Try running in debugging mode (need to recompile programs with option -g).
-
-TODO:
+#### TODO:
 
 - Verify different model setups against tidal gauge data.
 
@@ -92,7 +87,7 @@ rsync -rvtaP --dry-run sithom@archer2-login.ac.uk:/work/n01/n01/users/sithom .
 /mnt/lustre/a2fs-work1/work/n01/n01/sithom /work/n02/n02/sdat2
 ```
 
-# Getting git-lfs
+## Getting git-lfs for downloading testsuite data
 
 ```bash
 wget https://github.com/git-lfs/git-lfs/releases/download/v3.5.1/git-lfs-linux-amd64-v3.5.1.tar.gz
