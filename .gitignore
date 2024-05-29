@@ -44,6 +44,7 @@ exp/
 adcirc-cg-testsuite/
 worstsurge/
 adcirc-testsuite/
+adcirc-emulation/
 examples/
 xdmf/
 pyadcirc/
