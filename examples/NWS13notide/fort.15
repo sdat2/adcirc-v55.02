@@ -1,4 +1,4 @@
- SWAN+ADCIRC Example     ! 32 CHARACTER ALPHANUMERIC RUN DESCRIPTION
+notide-example     ! 32 CHARACTER ALPHANUMERIC RUN DESCRIPTION
  Gustav (508) on EC95d  ! 24 CHARACTER ALPANUMERIC RUN IDENTIFICATION
  1 20.0 1 20 100.0       ! NFOVER - NONFATAL ERROR OVERRIDE OPTION
  1                       ! NABOUT - ABREVIATED OUTPUT OPTION PARAMETER
@@ -209,6 +209,5 @@ RENCI HPC
 CF
 jason.fleming@seahorsecoastal.com
 2014-04-29 00:00:00
-&SWANOutputControl SWAN_OutputHS=.true., SWAN_OutputDIR=.true., SWAN_OutputTPS=.true. /
 &metControl WindDragLimit=0.0020 DragLawString='Powell' /
-&owiWindNetcdf NWS13ColdStartString='5040809.000000' NWS13GroupForPowell='3' /
+&owiWindNetcdf NWS13ColdStartString='20040809.000000' NWS13GroupForPowell='3' /
