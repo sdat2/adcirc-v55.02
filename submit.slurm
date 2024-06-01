@@ -1,6 +1,6 @@
 #!/bin/bash --login
 
-#SBATCH --job-name=data-processing
+#SBATCH --job-name=test
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=128
 #SBATCH --cpus-per-task=1

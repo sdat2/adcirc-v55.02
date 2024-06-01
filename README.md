@@ -14,9 +14,17 @@ The `cmake` method seems to be much more reliable than `Makefile`.
 
 ## Getting Python loaded
 
-```
-source ~/.bashrc
+```bash
+#source ~/.bashrc
+source /work/n02/n02/sdat2/.bashrc
+
 micromamba activate tcpips
+```
+
+## Running jobs
+
+```bash
+squeue -u $USER
 ```
 
 ## Look at old jobs
@@ -96,3 +104,4 @@ cd git-lfs-3.5.1/
 sh install.sh --local
 git lfs install
 ```
+
