@@ -1,14 +1,12 @@
-# adcirc-swan
+# adcirc-v55.02 for ARCHER2
 
-ADCIRC-SWAN folder, which includes particular versions of the code, and script to run it.
+A folder containing ADCIRC-55.02 source code used for various studies, along with compiling setting. It includes the particular version of the source code used, and scripts to compile and run it on Archer2.
 
 On Archer2 I have found that the cray `gfortran` compilers seem to work the best for compiling ADCIRC.
 
 One particular issue in the code is the presence of Fortran from multiple styles (ending determined), and very long lines (up to 132 characters).
 
 I found that trying to use the default cray compilers was very difficult, as the compiler flag, which should have been `-N 132` did not seem to work.
-
-I experimented to some extent with installing the environment as a singularity container from various docker images, but this was generally unsuccessful.
 
 The `cmake` method seems to be much more reliable than `Makefile`.
 
@@ -18,7 +16,7 @@ The `cmake` method seems to be much more reliable than `Makefile`.
 #source ~/.bashrc
 source /work/n02/n02/sdat2/.bashrc
 
-micromamba activate tcpips
+micromamba activate t1
 ```
 
 ## Running jobs
@@ -30,7 +28,7 @@ squeue -u $USER
 ## Look at old jobs
 
 ```bash
-sacct -l
+sacct -l -u $USER
 ```
 
 ## Manual Pages for SWAN/ADCIRC
