@@ -1,0 +1,8 @@
+# The fortran modules provided by this target.
+provides
+ adcirc_mod.mod
+ couple2swan.mod
+ subdomain.mod
+ time_varying_weir_boundary.mod
+ weir.mod
+ weir_flux.mod

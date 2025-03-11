@@ -1,0 +1,10 @@
+# The fortran modules provided by this target.
+provides
+ gdswzd_equid_cylind_mod.mod
+ gdswzd_gaussian_mod.mod
+ gdswzd_lambert_conf_mod.mod
+ gdswzd_mercator_mod.mod
+ gdswzd_mod.mod
+ gdswzd_polar_stereo_mod.mod
+ gdswzd_rot_equid_cylind_egrid_mod.mod
+ gdswzd_rot_equid_cylind_mod.mod

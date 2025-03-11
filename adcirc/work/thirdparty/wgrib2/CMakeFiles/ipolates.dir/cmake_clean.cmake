@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "../../CMakeFiles/libipolates.a"
+  "../../CMakeFiles/libipolates.pdb"
+  "CMakeFiles/ipolates.dir/ip2lib_d/earth_radius.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/gdswzd_c.F90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/gdswzd_equid_cylind_mod.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/gdswzd_gaussian_mod.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/gdswzd_lambert_conf_mod.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/gdswzd_mercator_mod.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/gdswzd_mod.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/gdswzd_polar_stereo_mod.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/gdswzd_rot_equid_cylind_egrid_mod.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/gdswzd_rot_equid_cylind_mod.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/ijkgds0.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/ijkgds1.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/ipolates.F90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/ipolatev.F90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/ipxetas.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/ipxwafs.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/ipxwafs2.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/ipxwafs3.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/movect.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/polates0.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/polates1.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/polates2.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/polates3.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/polates4.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/polates6.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/polatev0.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/polatev1.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/polatev2.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/polatev3.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/polatev4.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/polatev6.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/polfixs.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/polfixv.f90.o"
+  "CMakeFiles/ipolates.dir/ip2lib_d/splat.f90.o"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang Fortran)
+  include(CMakeFiles/ipolates.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

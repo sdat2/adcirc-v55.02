@@ -1,0 +1,29 @@
+# The fortran modules provided by this target.
+provides
+ couple2adcirc.mod
+ m_bndspec.mod
+ m_constants.mod
+ m_diffr.mod
+ m_fileio.mod
+ m_genarr.mod
+ m_obsta.mod
+ m_parall.mod
+ m_snl4.mod
+ m_wcap.mod
+ m_xnldata.mod
+ ocpcomm1.mod
+ ocpcomm2.mod
+ ocpcomm3.mod
+ ocpcomm4.mod
+ outp_data.mod
+ serv_xnl4v5.mod
+ swancompdata.mod
+ swangriddata.mod
+ swangridobjects.mod
+ swcomm1.mod
+ swcomm2.mod
+ swcomm3.mod
+ swcomm4.mod
+ swpartmd.mod
+ timecomm.mod
+ w3odatmd.mod

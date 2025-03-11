@@ -1,0 +1,27 @@
+z_star: 7
+ns: 50
+gamma_range:
+  min: -0.4
+  max: -0.1
+  steps: 6
+beta_range:
+  min: 0.2
+  max: 1.5
+  steps: 6
+seed: 35
+quantiles:
+- 0.01
+- 0.002
+seed_steps_Nr: 10
+fit:
+  alpha_guess: 0.0
+  beta_guess: 1.0
+  gamma_guess: -0.1
+  steps: 1000
+  lr: 0.01
+  force_weibull: false
+reload: true
+figure:
+  lp: 0.05
+  up: 0.95
+verbose: false

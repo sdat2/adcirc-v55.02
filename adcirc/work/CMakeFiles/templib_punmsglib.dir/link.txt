@@ -1,0 +1,2 @@
+/usr/bin/ar qc CMakeFiles/libtemplib_punmsglib.a CMakeFiles/templib_punmsglib.dir/src/sizes.F.o CMakeFiles/templib_punmsglib.dir/thirdparty/KDTREE2/kdtree2.F.o CMakeFiles/templib_punmsglib.dir/src/global.F.o CMakeFiles/templib_punmsglib.dir/src/boundaries.F.o CMakeFiles/templib_punmsglib.dir/src/global_3dvs.F.o CMakeFiles/templib_punmsglib.dir/src/messenger.F.o
+/usr/bin/ranlib CMakeFiles/libtemplib_punmsglib.a

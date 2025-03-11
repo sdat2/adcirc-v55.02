@@ -1,0 +1,28 @@
+z_star: 7
+z_star_sigma:
+  min: 0
+  max: 5
+  steps: 30
+beta: 1
+gamma: -0.2
+ns: 50
+seed_steps_Nr: 600
+quantiles:
+- 0.01
+- 0.002
+fit:
+  alpha_guess: 0.0
+  beta_guess: 1.0
+  gamma_guess: -0.1
+  steps: 1000
+  lr: 0.01
+  force_weibull: false
+reload: true
+figure:
+  lp: 0.05
+  up: 0.95
+verbose: false
+color:
+  true_gev: black
+  max_known: '#1f77b4'
+  max_unknown: '#d95f02'

@@ -1,0 +1,19 @@
+# The fortran modules provided by this target.
+provides
+ asymmetricvortexprocessing.mod
+ boundaries.mod
+ diagnosticoutput.mod
+ global.mod
+ global_3dvs.mod
+ hashtable.mod
+ kdtree2_module.mod
+ kdtree2_precision_module.mod
+ kdtree2_priority_queue_module.mod
+ mesh.mod
+ nodalattributes.mod
+ owi_ice.mod
+ owiwind.mod
+ owiwind_netcdf.mod
+ sizes.mod
+ vortex.mod
+ wind.mod

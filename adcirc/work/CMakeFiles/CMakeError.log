@@ -1,0 +1,46 @@
+Determining if files io.h exist failed with the following output:
+Change Dir: /work/n02/n02/sdat2/adcirc-swan/adcirc/work/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8f3dc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8f3dc.dir/build.make CMakeFiles/cmTC_8f3dc.dir/build
+gmake[1]: Entering directory '/mnt/lustre/a2fs-work2/work/n02/n02/sdat2/adcirc-swan/adcirc/work/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8f3dc.dir/JAS_HAVE_IO_H.c.o
+/opt/cray/pe/craype/2.7.19/bin/cc   -fPIE -o CMakeFiles/cmTC_8f3dc.dir/JAS_HAVE_IO_H.c.o -c /work/n02/n02/sdat2/adcirc-swan/adcirc/work/CMakeFiles/CheckIncludeFiles/JAS_HAVE_IO_H.c
+/work/n02/n02/sdat2/adcirc-swan/adcirc/work/CMakeFiles/CheckIncludeFiles/JAS_HAVE_IO_H.c:2:10: fatal error: io.h: No such file or directory
+    2 | #include <io.h>
+      |          ^~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_8f3dc.dir/build.make:78: CMakeFiles/cmTC_8f3dc.dir/JAS_HAVE_IO_H.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/lustre/a2fs-work2/work/n02/n02/sdat2/adcirc-swan/adcirc/work/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_8f3dc/fast] Error 2
+
+
+Source:
+/* */
+#include <io.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h exist failed with the following output:
+Change Dir: /work/n02/n02/sdat2/adcirc-swan/adcirc/work/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_06727/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_06727.dir/build.make CMakeFiles/cmTC_06727.dir/build
+gmake[1]: Entering directory '/mnt/lustre/a2fs-work2/work/n02/n02/sdat2/adcirc-swan/adcirc/work/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_06727.dir/JAS_HAVE_WINDOWS_H.c.o
+/opt/cray/pe/craype/2.7.19/bin/cc   -fPIE -o CMakeFiles/cmTC_06727.dir/JAS_HAVE_WINDOWS_H.c.o -c /work/n02/n02/sdat2/adcirc-swan/adcirc/work/CMakeFiles/CheckIncludeFiles/JAS_HAVE_WINDOWS_H.c
+/work/n02/n02/sdat2/adcirc-swan/adcirc/work/CMakeFiles/CheckIncludeFiles/JAS_HAVE_WINDOWS_H.c:2:10: fatal error: windows.h: No such file or directory
+    2 | #include <windows.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_06727.dir/build.make:78: CMakeFiles/cmTC_06727.dir/JAS_HAVE_WINDOWS_H.c.o] Error 1
+gmake[1]: Leaving directory '/mnt/lustre/a2fs-work2/work/n02/n02/sdat2/adcirc-swan/adcirc/work/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_06727/fast] Error 2
+
+
+Source:
+/* */
+#include <windows.h>
+
+
+int main(void){return 0;}
+

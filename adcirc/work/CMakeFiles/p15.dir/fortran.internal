@@ -1,0 +1,17 @@
+# The fortran modules provided by this target.
+provides
+ c0.mod
+ c1.mod
+ c2.mod
+ c3.mod
+ c4.mod
+ c5.mod
+ c57.mod
+ c6.mod
+ c8.mod
+ d13.mod
+ djm.mod
+ ihour.mod
+ p1.mod
+ p15extents.mod
+ p15global.mod

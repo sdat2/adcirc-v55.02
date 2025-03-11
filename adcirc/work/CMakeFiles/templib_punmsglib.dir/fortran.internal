@@ -1,0 +1,10 @@
+# The fortran modules provided by this target.
+provides
+ boundaries.mod
+ global.mod
+ global_3dvs.mod
+ kdtree2_module.mod
+ kdtree2_precision_module.mod
+ kdtree2_priority_queue_module.mod
+ messenger.mod
+ sizes.mod

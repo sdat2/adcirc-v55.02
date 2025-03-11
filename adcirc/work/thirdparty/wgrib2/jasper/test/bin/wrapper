@@ -1,0 +1,28 @@
+#! /bin/bash
+
+function eecho()
+{
+	echo "$@" 1>&2
+}
+
+verbose=${JAS_TEST_WRAPPER_VERBOSE:-0}
+
+abs_source_dir="/work/n02/n02/sdat2/adcirc-swan/adcirc"
+abs_build_dir="/work/n02/n02/sdat2/adcirc-swan/adcirc/work"
+command="$1"
+shift 1
+
+export JAS_ABS_TOP_BUILDDIR="$abs_build_dir"
+export JAS_TOP_BUILDDIR="$abs_build_dir"
+export JAS_ABS_TOP_SRCDIR="$abs_source_dir"
+export JAS_TOP_SRCDIR="$abs_source_dir"
+
+export JAS_CMAKE_SOURCE_DIR="/work/n02/n02/sdat2/adcirc-swan/adcirc"
+export JAS_CMAKE_BINARY_DIR="/work/n02/n02/sdat2/adcirc-swan/adcirc/work"
+export JAS_CMAKE_INSTALL_PREFIX="/usr/local"
+
+if [ "$verbose" -gt 0 ]; then
+	printenv | fgrep JAS_ 1>&2
+	eecho "Running command $command"
+fi
+"$command" "$@"
